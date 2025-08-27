@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario Interactivo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; background: #f5f5f5; }
+    h1 { color: #333; }
+    label { display: block; margin-top: 1rem; }
+    input, textarea { width: 100%; padding: 0.5rem; margin-top: 0.3rem; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; cursor: pointer; }
+    #feedback { margin-top: 1rem; background: #fff; padding: 1rem; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <h1>Cuestionario Interactivo</h1>
+
+  <form id="cuestionario">
+    <label>
+      Pregunta:
+      <input type="text" id="pregunta" placeholder="Escribe tu pregunta aquí" required>
+    </label>
+
+    <label>
+      Respuesta:
+      <textarea id="respuesta" rows="4" placeholder="Escribe tu respuesta aquí" required></textarea>
+    </label>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="feedback"></div>
+
+  <script>
+    const form = document.getElementById('cuestionario');
+    const feedbackDiv = document.getElementById('feedback');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Evita que se recargue la página
+
+      const pregunta = document.getElementById('pregunta').value;
+      const respuesta = document.getElementById('respuesta').value;
+
+      feedbackDiv.textContent = 'Enviando...';
+
+      try {
+        const res = await fetch('https://cuestionario-proxy.vercel.app/api/feedback', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ pregunta, respuesta })
+        });
+
+        if (!res.ok) throw new Error('Error en la respuesta del servidor');
+
+        const data = await res.json();
+        feedbackDiv.textContent = data.feedback || 'No se recibió retroalimentación.';
+      } catch (err) {
+        feedbackDiv.textContent = 'Ocurrió un error: ' + err.message;
+      }
+    });
+  </script>
+</body>
+</html>
