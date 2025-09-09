@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(../Type/Lato-Regular.ttf) format("truetype");
+    font-style: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
