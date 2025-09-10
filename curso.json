@@ -400,6 +400,17 @@
                           }
                         ]
                       }
+                    },
+                    {
+                      "titulo": "Reflexiona sobre la comunicación",
+                      "contenido": "",
+                      "actividad": {
+                        "tipo": "openquiz",
+                        "instrucciones": "<p>Lee la situación y escribe tu respuesta.</p>",
+                        "planteamiento": "Describe cómo responderías a un compañero que se siente frustrado en el trabajo.",
+                        "pregunta": "¿Qué harías?",
+                        "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                      }
                     }
                   ]
                 }

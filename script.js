@@ -123,8 +123,6 @@ fetch("curso.json")
     });
   }
   
-  
-
 
   function cargarContenido(subtemaId, modulos) {
     const content = document.getElementById("content");
@@ -247,11 +245,6 @@ fetch("curso.json")
         );
       }
 
-      if (subtema.actividad.tipo === "skillquiz") {
-        const container = document.getElementById("content");
-        handleSkillQuiz(subtema.actividad, container);
-      }
-
   
       content.innerHTML = `
         <div class="row m-0 p-3 encabezado">
@@ -275,35 +268,66 @@ fetch("curso.json")
         ${subtema.imagen || ""}
       `;
   
-      // ---------------- Actividades ----------------
-      if (subtema && subtema.actividad) {
-        let actividadHTML = "";
-      
-        if (subtema.actividad.tipo === "tabsSimple") {
-          const parentDivId = `tabsSubtema${subtema.id}`;
-          actividadHTML += `<div id="${parentDivId}"></div>`;
-          actividadHTML += renderTabsSimple(subtema.actividad, parentDivId);
-        } else {
-          actividadHTML += renderActividad(subtema.actividad);
-        }
-      
-        content.innerHTML += actividadHTML;
-      
-        // Validaciones por tipo
-        switch (subtema.actividad.tipo) {
-          case "quiz":
-            handleQuiz(subtema.actividad.preguntas);
-            break;
-          case "truefalse":
-            handleTrueFalse(subtema.actividad.preguntas);
-            break;
-          case "tablaVF":
-            const tabla = content.querySelector("table:last-child");
-            handleTablaVF(subtema.actividad, tabla);
-            break;
-        }
+
+// ---------------- Actividades ----------------
+// ---------------- Actividades ----------------
+// ---------------- Actividades ----------------
+if (subtema) {
+  console.log("Subtema recibido:", subtema);
+
+  // 1️⃣ Actividad directa en el subtema
+  if (subtema.actividad) {
+    let actividadHTML = "";
+    let skillContainerId = `skillQuiz_${subtema.id}_${Date.now()}`;
+
+    if (subtema.actividad.tipo === "skillquiz") {
+      actividadHTML += renderSkillQuiz(subtema.actividad, skillContainerId);
+    } else {
+      actividadHTML += renderActividad(subtema.actividad);
+    }
+
+    // Insertamos directamente en content
+    content.insertAdjacentHTML("beforeend", actividadHTML);
+
+    // Ejecutamos skillquiz si aplica
+    if (subtema.actividad.tipo === "skillquiz") {
+      const skillContainer = document.getElementById(skillContainerId);
+      if (skillContainer) handleSkillQuizAuto(subtema.actividad, skillContainer);
+    }
+  }
+
+  // 2️⃣ Actividades dentro de slides.items
+  if (subtema.slides) {
+    subtema.slides.forEach((slide, i) => {
+      if (slide.items) {
+        slide.items.forEach((item, j) => {
+          if (item.actividad) {
+            let actividadHTML = "";
+            const skillContainerId = `skillQuiz_${subtema.id}_${i}_${j}_${Date.now()}`;
+
+            if (item.actividad.tipo === "skillquiz") {
+              actividadHTML += renderSkillQuiz(item.actividad, skillContainerId);
+            } else {
+              actividadHTML += renderActividad(item.actividad);
+            }
+
+            // Insertamos directamente en content (o en un contenedor específico del slide si lo quieres)
+            content.insertAdjacentHTML("beforeend", actividadHTML);
+
+            // Ejecutamos skillquiz si aplica
+            if (item.actividad.tipo === "skillquiz") {
+              const skillContainer = document.getElementById(skillContainerId);
+              if (skillContainer) handleSkillQuizAuto(item.actividad, skillContainer);
+            }
+          }
+        });
       }
-      
+    });
+  }
+}
+
+
+
   
       mostrarToast("Contenido actualizado");
     }, 800);
@@ -332,7 +356,7 @@ fetch("curso.json")
 function findSubtemaById(modulos, id, path = []) {
   for (let modulo of modulos) {
     for (let st of modulo.subtemas) {
-      if (st.id === id) {
+      if (String(st.id) === String(id)) {
         return { subtema: st, path: [modulo.titulo, st.titulo] };
       }
       if (st.children) {
@@ -345,7 +369,7 @@ function findSubtemaById(modulos, id, path = []) {
 }
 
 function findChild(subtema, id, path) {
-  if (subtema.id === id) {
+  if (String(subtema.id) === String(id)) {
     return { subtema, path };
   }
   if (subtema.children) {
@@ -579,15 +603,12 @@ function renderTabsSimple(actividad) {
 
 /* ---------------------- RENDER SLIDES ---------------------- */
 function renderSlides(subtema, path = []) {
-  activeSlideIndex = 0;
+  let activeSlideIndex = 0;
   const slideId = `slides_${subtema.id}`;
 
-  const flatSlides = subtema.slides.flatMap(grupo =>
-    grupo.items.map(item => ({
-      ...item,
-      grupo: grupo.grupo
-    }))
-  );
+  const flatSlides = subtema.slides?.flatMap(grupo =>
+    grupo.items.map(item => ({ ...item, grupo: grupo.grupo }))
+  ) || [];
 
   function getCurrentBreadcrumb(index) {
     const numModulo = subtema.id.split(".")[0];
@@ -617,19 +638,21 @@ function renderSlides(subtema, path = []) {
     const slideContent = document.getElementById("slideContent");
     const slideEncabezado = document.getElementById("slideEncabezado");
 
-    function renderCurrentSlide() {
+    async function renderCurrentSlide() {
       const current = flatSlides[activeSlideIndex];
-      if (!current) return;
+      if (!current) {
+        slideContent.innerHTML = "<p>No hay slides disponibles.</p>";
+        return;
+      }
 
       const numModulo = subtema.id.split(".")[0];
       const breadcrumbPath = getCurrentBreadcrumb(activeSlideIndex);
 
-      // 🔹 encabezado + título del subtema
       slideEncabezado.innerHTML = `
         <div class="row m-0 p-3 encabezado">
           <h3>
             <span class="fw-bold">Módulo ${numModulo}:</span>
-            <span class="fw-light">${path[0]}</span>
+            <span class="fw-light">${path[0] || ""}</span>
           </h3>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -642,37 +665,59 @@ function renderSlides(subtema, path = []) {
           </nav>
         </div>
         <div class="row m-0 p-3">
-          <div><h2 class="pb-4 fw-bold">${subtema.titulo}</h2></div>
+          <div><h2 class="pb-4 fw-bold">${subtema.titulo || ""}</h2></div>
         </div>
       `;
 
-      // 🔹 contenido del slide
       let html = "";
       if (current.titulo) html += `<h3 class="fw-bold mb-3 title-body-secondary">${current.titulo}</h3>`;
 
       if (typeof current.contenido === "string") {
         html += current.contenido;
-      } 
-      else if (current.contenido?.tipo === "lista") {
+      } else if (current.contenido?.tipo === "lista") {
         html += renderLista(
-          current.contenido.items, 
-          current.contenido.estilo || "dot", 
-          0, 
-          `slideLista${activeSlideIndex}`, 
+          current.contenido.items,
+          current.contenido.estilo || "dot",
+          0,
+          `slideLista${activeSlideIndex}`,
           `subtema${subtema.id}`
         );
       }
 
-      if (current.actividad) html += renderActividad(current.actividad);
+      // 🔹 Actividad
+      let containerId = null;
+      if (current.actividad) {
+        if (current.actividad.tipo === "skillquiz") {
+          containerId = `skillQuiz_slide${activeSlideIndex}_${Date.now()}`;
+          html += renderSkillQuiz(current.actividad, containerId);
+        } else if (current.actividad.tipo === "openquiz") {
+          containerId = `openQuiz_slide${activeSlideIndex}_${Date.now()}`;
+          html += renderOpenQuiz(current.actividad, containerId);
+        } else {
+          html += renderActividad(current.actividad);
+        }
+      }
 
       slideContent.innerHTML = html;
 
-      // hooks
+      // Inicializar skillquiz
+      if (containerId && current.actividad.tipo === "skillquiz") {
+        const skillContainer = document.getElementById(containerId);
+        if (skillContainer) handleSkillQuizAuto(current.actividad, skillContainer);
+      }
+
+      // Inicializar openquiz
+      if (containerId && current.actividad.tipo === "openquiz") {
+        const openContainer = document.getElementById(containerId);
+        if (openContainer) handleOpenQuiz(current.actividad, openContainer);
+      }
+
+      // Otros tipos
       if (current.actividad?.tipo === "quiz") handleQuiz(current.actividad.preguntas);
       if (current.actividad?.tipo === "truefalse") handleTrueFalse(current.actividad.preguntas);
       if (current.actividad?.tipo === "tablaVF") {
         const tabla = slideContent.querySelector("table:last-child");
-        handleTablaVF(current.actividad, tabla);
+        if (tabla) handleTablaVF(current.actividad, tabla);
       }
     }
 
@@ -691,10 +736,13 @@ function renderSlides(subtema, path = []) {
         renderCurrentSlide();
       }
     });
+
   }, 0);
 
   return container;
 }
+
+
 
 
 
@@ -968,69 +1016,211 @@ function renderLista(lista, tipo = "dot", nivel = 0, parentId = "lista", unidad 
   `;
 }
 
-/* ---------------------- SKILL QUIZ ---------------------- */
-function renderSkillQuiz(actividad) {
-  const containerId = `skillQuiz_${Date.now()}`;
+// ---------------- Render Skill Quiz ----------------
+function renderSkillQuiz(actividad, containerId) {
+  const modalId = `modal_${containerId}`;
+
   return `
     <div class="actividad my-4" id="${containerId}">
-      
-      <!-- Bloque 1: Botón instrucciones -->
       <div class="mb-3">
-        <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#instrucciones_${containerId}">
+        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#${modalId}">
           Instrucciones
         </button>
-        <div class="collapse mt-2" id="instrucciones_${containerId}">
-          <div class="p-2 border rounded">
-            ${actividad.instrucciones || "<p>Lee atentamente y selecciona la respuesta correcta.</p>"}
+      </div>
+
+      <div class="modal fade" id="${modalId}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h5 class="modal-title fw-bold">Instrucciones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              ${actividad.instrucciones || "<p>Lee atentamente y selecciona la respuesta correcta.</p>"}
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Bloque 2: Planteamiento -->
       <div class="mb-3">
         <p class="fw-bold">${actividad.planteamiento || "Responde la siguiente pregunta:"}</p>
       </div>
 
-      <!-- Bloque 3: Pregunta + opciones -->
-      <div class="quiz-skill border p-3 rounded">
-        <p class="mb-2"><strong>${actividad.pregunta}</strong></p>
-        <form class="d-flex flex-column gap-2">
-          ${actividad.opciones.map((op, idx) => `
-            <label class="form-check-label">
-              <input type="radio" name="skillquiz_${containerId}" class="form-check-input" data-index="${idx}"> ${op.texto}
-            </label>
-          `).join("")}
-        </form>
-        <div class="feedback mt-3 p-2 border rounded" style="display:none;"></div>
+      <div class="quiz-skill border p-3 rounded row g-3">
+        <div class="col-12 d-flex align-items-center">
+          <p class="mb-0"><strong>${actividad.pregunta}</strong></p>
+        </div>
+
+        <div class="col-12">
+          <form class="d-flex flex-column gap-2">
+            ${actividad.opciones.map((op, idx) => `
+              <label class="form-check-label">
+                <input type="radio" name="skillquiz_${containerId}" class="form-check-input" data-index="${idx}"> ${op.texto}
+              </label>
+            `).join("")}
+          </form>
+          <div class="feedback mt-3 p-2 border rounded" style="display:none;"></div>
+        </div>
       </div>
     </div>
   `;
 }
 
+
+
+
+
+
+
+// ---------------- Handle Skill Quiz ----------------
 function handleSkillQuizAuto(actividad, container) {
+  if (!actividad || !container) return;
+
   const radios = container.querySelectorAll("input[type='radio']");
-  const feedbackEl = container.querySelector(".feedback");
+  const formContainer = container.querySelector("form"); // Feedback estará dentro del form
+  formContainer.style.position = "relative"; // necesario para que feedback se posicione relativo al form
 
-  const actualizarFeedback = () => {
-    const checked = Array.from(radios).find(r => r.checked);
-    if (!checked) return;
+  radios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      const idx = parseInt(radio.dataset.index);
+      const opcion = actividad.opciones[idx];
+      if (!opcion) return;
 
-    const idx = parseInt(checked.dataset.index);
-    const opcion = actividad.opciones[idx];
+      // Creamos feedback dinámico si no existe
+      let feedbackDiv = formContainer.querySelector(".feedback-modal");
+      if (!feedbackDiv) {
+        feedbackDiv = document.createElement("div");
+        feedbackDiv.className = "feedback-modal";
 
-    if (!opcion) return;
+        // Contenedor de texto
+        const textDiv = document.createElement("div");
+        textDiv.className = "feedback-text";
+        feedbackDiv.appendChild(textDiv);
 
-    if (opcion.correcta) {
-      feedbackEl.innerHTML = `<p class="text-success fw-bold">✔ Correcto: ${opcion.feedback}</p>`;
-    } else {
-      feedbackEl.innerHTML = `<p class="text-danger fw-bold">✘ Incorrecto: ${opcion.feedback}</p>`;
-    }
+        // Botón cerrar
+        const closeBtn = document.createElement("button");
+        closeBtn.innerHTML = "&times;";
+        closeBtn.className = "feedback-close";
+        closeBtn.type = "button";
+        closeBtn.addEventListener("click", (e) => {
+          e.stopPropagation(); // evita que afecte otros eventos
+          feedbackDiv.style.display = "none";
+        });
+        feedbackDiv.appendChild(closeBtn);
 
-    feedbackEl.style.display = "block";
-  };
+        formContainer.appendChild(feedbackDiv);
+      }
 
-  radios.forEach(r => r.addEventListener("change", actualizarFeedback));
+      // Actualizamos contenido
+      const textDiv = feedbackDiv.querySelector(".feedback-text");
+      textDiv.innerHTML = `
+        <p class="${opcion.correcta ? 'text-success' : 'text-danger'} fw-bold">
+          ${opcion.correcta ? '✔ Correcto' : '✘ Incorrecto'}
+        </p>
+        <p>${opcion.feedback}</p>
+      `;
+      feedbackDiv.style.display = "flex";
+    });
+  });
 }
+
+// ---------------- Render Open Quiz ----------------
+
+function renderOpenQuiz(actividad, containerId) {
+  const modalId = `modal_${containerId}`;
+
+  return `
+    <div class="actividad my-4" id="${containerId}">
+      <div class="mb-3">
+        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#${modalId}">
+          Instrucciones
+        </button>
+      </div>
+
+      <div class="modal fade" id="${modalId}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h5 class="modal-title fw-bold">Instrucciones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              ${actividad.instrucciones || "<p>Lee atentamente y escribe tu respuesta.</p>"}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <p class="fw-bold">${actividad.pregunta || "Responde la siguiente pregunta:"}</p>
+      </div>
+
+      <div class="quiz-open border p-3 rounded position-relative">
+        <form class="openquiz-form d-flex flex-column gap-2">
+          <label>
+            Respuesta:
+            <textarea class="openquiz-textarea" rows="4" placeholder="Escribe tu respuesta aquí" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+        </form>
+
+        <div class="openquiz-feedback mt-3 p-3 border rounded bg-light" style="display:none; position: relative;"></div>
+      </div>
+    </div>
+  `;
+}
+
+
+function handleOpenQuiz(actividad, container) {
+  if (!actividad || !container) return;
+
+  const form = container.querySelector(".openquiz-form");
+  const textarea = container.querySelector(".openquiz-textarea");
+  const feedbackDiv = container.querySelector(".openquiz-feedback");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const respuesta = textarea.value.trim();
+    if (!respuesta) return;
+
+    feedbackDiv.style.display = "block";
+    feedbackDiv.textContent = "Enviando...";
+
+    try {
+      // Adaptar URL a tu servicio
+      const res = await fetch("https://cuestionario-proxy.vercel.app/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          pregunta: actividad.pregunta,
+          respuesta
+        })
+      });
+
+      if (!res.ok) throw new Error("Error en la respuesta del servidor");
+
+      const data = await res.json();
+      feedbackDiv.innerHTML = `
+        <div class="d-flex justify-content-between align-items-start">
+          <div class="feedback-text flex-grow-1 me-2">${data.feedback || "No se recibió retroalimentación."}</div>
+          <button type="button" class="btn-close feedback-close"></button>
+        </div>
+      `;
+
+      const closeBtn = feedbackDiv.querySelector(".feedback-close");
+      closeBtn.addEventListener("click", () => {
+        feedbackDiv.style.display = "none";
+      });
+    } catch (err) {
+      feedbackDiv.textContent = "Ocurrió un error: " + err.message;
+    }
+  });
+}
+
+
+
+
 
 
 
