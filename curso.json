@@ -3,7 +3,7 @@
       {
         "id": 0,
         "titulo": "Inicio",
-        "img": "/src/img/Modulo1.jpg",
+        "img": "src/img/Modulo1.jpg",
         "contenido": "<h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs), tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidades de Práctica.<br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p>",
         "subtemas": [
           {
@@ -17,19 +17,19 @@
       {
         "id": 1,
         "titulo": "Las comunidades de práctica (CoP)",
-        "img": "/src/img/Modulo1.jpg",
+        "img": "src/img/Modulo1.jpg",
         "subtemas": [
           {
             "id": "1.1",
             "titulo": "¿Qué es una comunidad de práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
-            "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='/src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='/src/img/Modulo1.jpg' alt='' class='img-fluid rounded-5'></div></div>"
+            "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/Modulo1.jpg' alt='' class='img-fluid rounded-5'></div></div>"
           },
           {
             "id": "1.2",
             "titulo": "¿Por qué una comunidad de práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
-            "imagen": "<img src='/src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+            "imagen": "<img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
           },
           {
             "id": "1.3",
@@ -177,11 +177,11 @@
                 },
                 {
                   "label": "GESTIÓN",
-                  "contenido": "<p>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.<br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='/src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+                  "contenido": "<p>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.<br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
                 },
                 {
                   "label": "CIERRE",
-                  "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='/src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+                  "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
                 }
               ]
             }
@@ -200,7 +200,7 @@
                 { "texto": "<strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras." }
               ]
             }],
-            "imagen": "<img src='/src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+            "imagen": "<img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
           },
           {
             "id": "1.5",
@@ -247,7 +247,7 @@
       {
         "id": 2,
         "titulo": "Roles claves de la comunidad",
-        "img": "/src/img/Modulo1.jpg",
+        "img": "src/img/Modulo1.jpg",
         "subtemas": [
           {
             "id": "2.1",
@@ -264,7 +264,7 @@
             {
         "id": 4,
         "titulo": "Habilidades del Facilitador",
-        "img": "/src/img/Modulo1.jpg",
+        "img": "src/img/Modulo1.jpg",
         "subtemas": [
           {
             "id": "4.1",
@@ -301,7 +301,7 @@
                     },
                     {
                       "titulo": "Escucha activa",
-                      "contenido": "<img class='img-fluid' src='/src/img/Modulo1.jpg'><div class='row m-0'><p class='p-0'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
+                      "contenido": "<img class='img-fluid' src='src/img/Modulo1.jpg'><div class='row m-0'><p class='p-0'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
                     },
                     {
                       "titulo": "Consejos para demostrar escucha activa",

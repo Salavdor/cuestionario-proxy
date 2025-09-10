@@ -86,7 +86,7 @@ fetch("curso.json")
           contenido: `
           <div class="row m-0 p-3 encabezado">
             <div class="d-flex flex-row-reverse">
-              <img src="/src/img/logoKWORKS.svg" alt="Modulo1" style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" class="img-fluid">
+              <img src="src/img/logoKWORKS.svg" alt="Modulo1" style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" class="img-fluid">
             </div>
             <h2>
               <span class="fw-bold display-2">Módulo ${modulo.id}</span><br>
@@ -184,7 +184,7 @@ fetch("curso.json")
         content.innerHTML = `
           <div class="row m-0 p-3 encabezado">
             <div class="d-flex flex-row-reverse">
-              <img src="/src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" 
+              <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" 
                   style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" 
                   class="img-fluid">
             </div>
