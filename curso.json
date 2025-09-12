@@ -174,7 +174,7 @@
                 },
                 {
                   "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 4 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
-                  "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080);'>"
+                  "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080); position: relative; z-index: -1;'>"
                 },
                 {
                   "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 5 <br><strong class='title-body-secondary'>CIERRE</strong>",
