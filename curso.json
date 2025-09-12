@@ -3,7 +3,7 @@
       {
         "id": 0,
         "titulo": "Inicio",
-        "img": "src/img/Modulo1.jpg",
+        "img": "src/img/inicio_curso.jpg",
         "contenido": "<h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs), tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidades de Práctica.<br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p>",
         "subtemas": [
           {
@@ -23,13 +23,13 @@
             "id": "1.1",
             "titulo": "¿Qué es una comunidad de práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
-            "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/Modulo1.jpg' alt='' class='img-fluid rounded-5'></div></div>"
+            "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/m1_s2_f1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/m1_s2_f2.jpg' alt='' class='img-fluid rounded-5'></div></div>"
           },
           {
             "id": "1.2",
             "titulo": "¿Por qué una comunidad de práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
-            "imagen": "<img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+            "imagen": "<img src='src/img/m1_s3_f1.jpg' alt='Modulo1' class='img-fluid'>"
           },
           {
             "id": "1.3",
@@ -45,7 +45,7 @@
               "showArrows": true,
               "items": [
                 {
-                  "label": "DETECCIÓN",
+                  "label": "Etapa 1 <br><strong class='title-body-secondary'>DETECCIÓN</strong>",
                   "contenido": "<p>En esta primera etapa, el objetivo consiste en identificar aquellos casos en que una COP puede resultar la respuesta adecuada para una serie de personas que buscan la oportunidad de trabajar y aprender colaborativamente.<br><br>Para ello, proponemos responder estas 3 preguntas, de manera flexible ya que cada caso reúne sus propias peculiaridades:</p>",
                   "actividad": {
                     "tipo": "openquestion",

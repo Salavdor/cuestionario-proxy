@@ -150,7 +150,7 @@ fetch("curso.json")
         content.innerHTML = `
           <div class="row m-0 p-3">
             <div class="col-12 mb-3">
-              <img src="${inicioModulo.img}" alt="Inicio" class="img-fluid rounded-3">
+              <img src="${inicioModulo.img}" alt="Inicio" class="img-fluid">
             </div>
             <div class="col-12 mb-3">
               ${inicioModulo.contenido}
@@ -159,6 +159,7 @@ fetch("curso.json")
               <ul class="list-unstyled">
                 ${listaModulosHTML}
               </ul>
+              <img src="src/img/vineta.png" alt="Inicio" class="img-fluid">
             </div>
           </div>
         `;
