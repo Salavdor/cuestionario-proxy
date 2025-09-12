@@ -12,21 +12,33 @@ fetch("curso.json")
     renderMenu(modulosData, "menuModulosMobile");
   });
 
-  function renderMenu(modulos, containerId) {
-    const menu = document.getElementById(containerId);
-    menu.innerHTML = ""; // limpiar
-  
-    modulos.forEach((modulo, index) => {
-      const moduloId = `modulo${modulo.id}_${containerId}`;
-      const collapseId = `collapse${modulo.id}_${containerId}`;
-  
-      const moduloItem = document.createElement("div");
-      moduloItem.classList.add("accordion-item");
-  
-      // Condición especial para "Inicio"
-      const isInicio = modulo.id === 0; // o algún id que uses para inicio
+function renderMenu(modulos, containerId) {
+  const menu = document.getElementById(containerId);
+  menu.innerHTML = ""; // limpiar
 
-      moduloItem.innerHTML = `
+  modulos.forEach((modulo, index) => {
+    const moduloId = `modulo${modulo.id}_${containerId}`;
+    const collapseId = `collapse${modulo.id}_${containerId}`;
+
+    const moduloItem = document.createElement("div");
+    moduloItem.classList.add("accordion-item");
+
+    // Condición especial para "Inicio"
+    const isInicio = modulo.id === 0;
+
+    // Render de subtemas solo si existen
+    let subtemasHTML = "";
+    if (modulo.subtemas && modulo.subtemas.length > 0 && !isInicio) {
+      subtemasHTML = `
+        <div class="accordion-body">
+          <ul class="list-unstyled subtema-lista">
+            ${modulo.subtemas.map(st => `<li class="subtema" data-id="${st.id}">${st.titulo}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    }
+
+    moduloItem.innerHTML = `
       <h2 class="accordion-header" id="${moduloId}">
         <button class="accordion-button ${index > 0 ? 'collapsed' : ''}" 
                 type="button" 
@@ -49,79 +61,75 @@ fetch("curso.json")
         </button>
       </h2>
       <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}">
-        <div class="accordion-body">
-          <ul class="list-unstyled subtema-lista">
-            ${modulo.subtemas.map(st => `<li class="subtema" data-id="${st.id}">${st.titulo}</li>`).join("")}
-          </ul>
-        </div>
+        ${subtemasHTML}
       </div>
     `;
-  
-      menu.appendChild(moduloItem);
-  
-      // ------------------- Evento del botón del módulo -------------------
-      const btnModulo = moduloItem.querySelector(".accordion-button");
-      const collapse = new bootstrap.Collapse(document.getElementById(collapseId), { toggle: false });
-  
-      btnModulo.addEventListener("click", () => {
-        // Cerrar todos los demás collapse
-        modulos.forEach(m => {
-          if (m.id !== modulo.id) {
-            const otherCollapseEl = document.getElementById(`collapse${m.id}_${containerId}`);
-            const otherCollapse = bootstrap.Collapse.getInstance(otherCollapseEl);
-            if (otherCollapse) otherCollapse.hide();
-          }
-        });
-      
-        // Abrir el collapse del módulo actual
-        collapse.show();
 
-        // Quitar estado "active" de todos los subtemas
-        menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
-      
-        // Portada
-        const portada = {
-          id: `${modulo.id}.0`,
-          titulo: modulo.titulo,
-          contenido: `
+    menu.appendChild(moduloItem);
+
+    // ------------------- Evento del botón del módulo -------------------
+    const btnModulo = moduloItem.querySelector(".accordion-button");
+    const collapse = new bootstrap.Collapse(document.getElementById(collapseId), { toggle: false });
+
+    btnModulo.addEventListener("click", () => {
+      // Cerrar todos los demás collapse
+      modulos.forEach(m => {
+        if (m.id !== modulo.id) {
+          const otherCollapseEl = document.getElementById(`collapse${m.id}_${containerId}`);
+          const otherCollapse = bootstrap.Collapse.getInstance(otherCollapseEl);
+          if (otherCollapse) otherCollapse.hide();
+        }
+      });
+
+      // Abrir el collapse del módulo actual
+      collapse.show();
+
+      // Quitar estado "active" de todos los subtemas
+      menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
+
+      // Portada
+      const portada = {
+        id: `${modulo.id}.0`,
+        titulo: modulo.titulo,
+        contenido: `
           <div class="row m-0 p-3 encabezado">
             <div class="d-flex flex-row-reverse">
-              <img src="src/img/logoKWORKS.svg" alt="Modulo1" style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" class="img-fluid">
+              <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" class="img-fluid">
             </div>
             <h2>
-              <span class="fw-bold display-2">Módulo ${modulo.id}</span><br>
+              <span class="fw-bold display-2">${isInicio ? "" : "Módulo " + modulo.id}</span><br>
               <span class="fw-bold title-body-secondary">${modulo.titulo}</span>
             </h2>
           </div>
-          <img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid">
-          `,
-          imagen: ""
-        };
-      
-        // Llamada correcta a cargarContenido con portada temporal
-        const moduloTemp = { ...modulo, subtemas: [portada, ...modulo.subtemas] };
-        cargarContenido(portada.id, modulosData);
-      });
-      
-  
-      // ------------------- Eventos de subtemas -------------------
-      const menuList = moduloItem.querySelectorAll(".subtema");
-      menuList.forEach(item => {
-        item.addEventListener("click", () => {
-          // limpiar estados anteriores
-          menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
-          item.classList.add("active");
-  
-          const id = item.dataset.id;
-          cargarContenido(id, modulosData);
-  
-          // cerrar offcanvas en móvil
-          const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById("offcanvasMenu"));
-          if (offcanvas) offcanvas.hide();
-        });
+          ${modulo.img ? `<img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid">` : ""}
+        `,
+        imagen: ""
+      };
+
+      // Llamada correcta a cargarContenido con portada temporal
+      const moduloTemp = { ...modulo, subtemas: [portada, ...(modulo.subtemas || [])] };
+      cargarContenido(portada.id, modulosData);
+    });
+
+    // ------------------- Eventos de subtemas -------------------
+    const menuList = moduloItem.querySelectorAll(".subtema");
+    menuList.forEach(item => {
+      item.addEventListener("click", () => {
+        // limpiar estados anteriores
+        menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
+        item.classList.add("active");
+
+        const id = item.dataset.id;
+        cargarContenido(id, modulosData);
+
+        // cerrar offcanvas en móvil
+        const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById("offcanvasMenu"));
+        if (offcanvas) offcanvas.hide();
       });
     });
-  }
+  });
+}
+
   
 
   function cargarContenido(subtemaId, modulos) {
@@ -194,7 +202,9 @@ fetch("curso.json")
               <span class="fw-bold title-body-secondary">${modulo.titulo}</span>
             </h2>
           </div>
-          <img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid">
+          
+            <img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid p-0" style="object-fit: cover; object-position: bottom;">
+          
         `;
   
         mostrarToast("Portada cargada");
