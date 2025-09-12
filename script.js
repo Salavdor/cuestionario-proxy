@@ -202,9 +202,9 @@ function renderMenu(modulos, containerId) {
               <span class="fw-bold title-body-secondary">${modulo.titulo}</span>
             </h2>
           </div>
-          
-            <img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid p-0" style="object-fit: cover; object-position: bottom;">
-          
+          <div class="img-container">
+            <img src="${modulo.img}" alt="Modulo ${modulo.id}" class="p-0">
+          </div>
         `;
   
         mostrarToast("Portada cargada");
