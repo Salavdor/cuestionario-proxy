@@ -1248,8 +1248,9 @@ function handleOpenQuiz(actividad, container) {
 
 
 
-
-
-{/* <button class="btn btn-success mt-3" onclick="marcarCompletado('${subtema.id}')">
-Marcar como leído
-</button> */}
+          // {
+          //   "id": "1.4",
+          //   "titulo": "Actividades para asegurar el aprendizaje en la organización",
+          //   "contenido": "<h2 class='pb-4 fw-bold'>Actividades para asegurar el aprendizaje en la organización</h2><ul id='lista_u_unidad1_4-lista1' class='list-unstyled'><li><p><strong class='title-body-secondary'>Comunicar la intención de cerrar</strong> a todos los miembros de la CoP, agradeciendo los logros obtenidos y reconociendo las contribuciones de los miembros.</p></li><li><p><strong class='title-body-secondary'>Realizar Taller de cierre</strong>, para lo cual se propone la utilización de la metodología de Retrospectiva (descrita en el documento de metodología de CoPs).</p></li><li><p><strong class='title-body-secondary'>Recopilación/archivo de los documentos y artefactos de conocimiento</strong> generados por la CoP para ponerlos a disposición de la organización en el formato o canales que permitan su localización y uso.</p></li><li><p><strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras.</li></ul>",
+          //   "imagen": "<img src='src/img/m1_s6_f1.jpg' alt='Modulo1' class='img-fluid'>"
+          // },
