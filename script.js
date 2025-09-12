@@ -271,8 +271,6 @@ fetch("curso.json")
   
 
 // ---------------- Actividades ----------------
-// ---------------- Actividades ----------------
-// ---------------- Actividades ----------------
 if (subtema) {
   console.log("Subtema recibido:", subtema);
 
@@ -290,10 +288,15 @@ if (subtema) {
     // Insertamos directamente en content
     content.insertAdjacentHTML("beforeend", actividadHTML);
 
-    // Ejecutamos skillquiz si aplica
+    // 🔹 Inicializadores según el tipo
     if (subtema.actividad.tipo === "skillquiz") {
       const skillContainer = document.getElementById(skillContainerId);
       if (skillContainer) handleSkillQuizAuto(subtema.actividad, skillContainer);
+    }
+
+    if (subtema.actividad.tipo === "tablaVF") {
+      const tabla = content.querySelector("table.table");
+      if (tabla) handleTablaVF(subtema.actividad, tabla);
     }
   }
 
@@ -312,13 +315,18 @@ if (subtema) {
               actividadHTML += renderActividad(item.actividad);
             }
 
-            // Insertamos directamente en content (o en un contenedor específico del slide si lo quieres)
+            // Insertamos directamente en content
             content.insertAdjacentHTML("beforeend", actividadHTML);
 
-            // Ejecutamos skillquiz si aplica
+            // 🔹 Inicializadores según el tipo
             if (item.actividad.tipo === "skillquiz") {
               const skillContainer = document.getElementById(skillContainerId);
               if (skillContainer) handleSkillQuizAuto(item.actividad, skillContainer);
+            }
+
+            if (item.actividad.tipo === "tablaVF") {
+              const tabla = content.querySelector("table.table:last-child");
+              if (tabla) handleTablaVF(item.actividad, tabla);
             }
           }
         });
@@ -326,6 +334,7 @@ if (subtema) {
     });
   }
 }
+
 
 
 
@@ -443,10 +452,12 @@ function renderTabs(config) {
 
   // Botones con flechas condicionales
   const botones = items.map((item, i) => `
-    <button class="btn btn-outline-primary actividad-btn" data-index="${i}">
-      ${item.label}
-    </button>
-    ${showArrows && i < items.length-1 ? '<span class="mx-1 text-danger">▶</span>' : ""}
+    <div class="d-flex justify-content-center" style="flex: 0 0 auto; width: 16%;">
+      <button class="btn btn-outline-primary actividad-btn" data-index="${i}">
+        ${item.label}
+      </button>
+    </div>
+    ${showArrows && i < items.length-1 ? '<span class="mx-1 text-danger" style="flex: 0 0 auto; width: 1%;">▶</span>' : ""}
   `).join("");
 
   const navButtons = `
@@ -553,9 +564,11 @@ function renderTabs(config) {
 function renderTabsSimple(actividad) {
   // Botones
   const botonesHTML = actividad.items.map((item, idx) => `
-    <button type="button" class="tab-btn btn btn-outline-primary me-2 ${idx === 0 ? 'active' : ''}" data-index="${idx}">
-      ${item.label}
-    </button>
+    <div class="d-flex justify-content-center" style="flex: 0 0 auto; width: 16%;">
+      <button type="button" class="tab-btn btn btn-outline-primary actividad-btn-tab ${idx === 0 ? 'active' : ''}" data-index="${idx}">
+        ${item.label}
+      </button>
+    </div>
   `).join("");
 
   // Contenedor para contenido
@@ -564,8 +577,8 @@ function renderTabsSimple(actividad) {
   </div>`;
 
   const containerHTML = `
-    <div class="tab-wrapper mb-3">
-      <div class="tab-buttons d-flex align-items-center justify-content-between mb-2">${botonesHTML}</div>
+    <div class="tab-wrapper mb-3 pt-3">
+      <div class="tab-buttons d-flex align-items-start justify-content-between mb-2">${botonesHTML}</div>
       ${contenidoHTML}
     </div>
   `;
@@ -822,16 +835,17 @@ function renderOpenQuestion(actividad) {
     if (p.ejemplos && p.ejemplos.length > 0) {
       ejemplosHTML = `
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-sm btn-outline-secondary" 
+          <button type="button" class="btn btn-sm btn-outline-secondary btn-ejemplos" 
                   data-bs-toggle="modal" 
                   data-bs-target="#ModalEjemplos${i}">
-            Ejemplos
+            <img src="src/img/m1_s4_icono_deteccion_baul.svg">
+            <strong>Ejemplos</strong>
           </button>
         </div>
 
         <!-- Modal de ejemplos -->
         <div class="modal fade" id="ModalEjemplos${i}" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
                 <h5 class="modal-title fw-bold">Ejemplos</h5>
@@ -913,9 +927,9 @@ function handleTablaVF(actividad, container) {
         const pregunta = actividad.preguntas[idx];
 
         if (valor === pregunta.respuestaCorrecta) {
-          retro.innerHTML = `<span class="text-success fw-bold">${pregunta.retroCorrecta}</span>`;
+          retro.innerHTML = `<span class="fw-bold">${pregunta.retroCorrecta}</span>`;
         } else {
-          retro.innerHTML = `<span class="text-danger fw-bold">${pregunta.retroIncorrecta}</span>`;
+          retro.innerHTML = `<span class="fw-bold">${pregunta.retroIncorrecta}</span>`;
         }
       });
     });
@@ -978,9 +992,11 @@ function renderCollapseActivity(actividad) {
     return `
       <div class="mb-4">
         ${b.titulo ? `<h4 class="fw-bold title-body-secondary">${b.titulo}</h4>` : ""}
-        ${b.parrafo ? `<p>${b.parrafo}</p>` : ""}
-        <div class="accordion" id="accordionBloque${i}">
-          ${opcionesHTML}
+        <div class="ps-5">
+          ${b.parrafo ? `<p>${b.parrafo}</p>` : ""}
+          <div class="accordion" id="accordionBloque${i}">
+            ${opcionesHTML}
+          </div>
         </div>
       </div>
     `;

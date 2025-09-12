@@ -69,7 +69,7 @@ background-size: cover;
         color: var(--color-secundario-3); /* púrpura */
         position: absolute;
         left: 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 0.4;
       }
       .subtema-lista li:hover {
@@ -93,6 +93,7 @@ background-size: cover;
         color: var(--color-blanco);
         filter: drop-shadow(3px 3px 5px #00000022);
       }
+
       .accordion-button:not(.collapsed) {
         background-color: var(--color-primario-2);
         color: var(--color-blanco);
@@ -136,17 +137,142 @@ background-size: cover;
   font-weight: 500;
   margin-bottom: 0.5rem;
   border-color: var(--color-primario-2);
-  color: --var(--color-negro);
+  border-width: 1.5px;
+  color: var(--color-negro);
+  justify-content: center !important;
 }
 .actividad-btn.active, .actividad-btn:hover {
   background-color: var(--color-primario-4);
-  color: --var(--color-negro);
+  border-color: var(--color-primario-4);
+  color: var(--color-negro);
+  transform: scale(1.1);
 }
 
 .actividad-btn:hover .title-body-secondary,
 .actividad-btn:active .title-body-secondary,
 .actividad-btn.active .title-body-secondary {
   color: var(--color-blanco);
+}
+
+.actividad-btn img {
+  position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -43px;
+    margin-left: 5px;
+}
+
+.actividad-btn-tab {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  border-color: transparent;
+  border-width: 0px;
+  color: var(--color-primario-4);;
+  justify-content: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actividad-btn-tab.active, .actividad-btn-tab:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-primario-2);
+  transform: scale(1.1);
+}
+
+.actividad-btn-tab:hover .title-body-secondary,
+.actividad-btn-tab:active .title-body-secondary,
+.actividad-btn-tab.active .title-body-secondary {
+  color: var(--color-blanco);
+}
+
+.actividad-btn-tab img {
+  position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -43px;
+    margin-left: 5px;
+}
+
+.btn-ejemplos {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  border-color: transparent;
+  border-width: 1.5px;
+  color: var(--color-secundario-2);
+  justify-content: center !important;
+  margin-top: 50px;
+}
+
+.btn-ejemplos:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-negro);
+  transform: scale(1.1);
+}
+
+.btn-ejemplos img {
+  position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -47px;
+    margin-left: 10px;
+}
+
+#accordionBloque2 div h2 button.accordion-button {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  border-color: transparent;
+  border-width: 1.5px;
+  color: var(--color-secundario-2);
+  justify-content: center !important;
+  margin-top: 65px;
+  background-color: transparent;
+}
+
+#accordionBloque2 div h2 button.accordion-button:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-negro);
+  transform: scale(1.1);
+}
+
+#accordionBloque2 div h2 button.accordion-button img {
+  position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -36px;
+    margin-left: 4px;
+}
+
+button.accordion-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#accordionBloque0,
+#accordionBloque1,
+#accordionBloque0 div h2 button.accordion-button,
+#accordionBloque1 div h2 button.accordion-button{
+  background-color: var(--color-secundario-5);
+  border-radius: 15px !important;
+}
+
+#accordionBloque0 div h2 button.accordion-button:not(.collapsed),
+#accordionBloque1 div h2 button.accordion-button:not(.collapsed),
+#accordionBloque0 div h2 button.accordion-button:hover,
+#accordionBloque1 div h2 button.accordion-button:hover {
+  background-color: var(--color-primario-5);
+  color: var(--color-blanco);
+  border-radius: 0px 15px 15px 0px !important;
 }
 
 /* Feedback */
@@ -163,6 +289,10 @@ background-size: cover;
   counter-increment: item;
   font-weight: bold;
   margin-right: 0.5rem;
+}
+
+#lista_u_unidad1_4-lista1 li p{
+  font-weight: 600;
 }
 .form-control {
     font-size: 0.8rem;
@@ -230,6 +360,97 @@ textarea.empty{
   cursor: pointer;
 }
 
+/* ===================== */
+/* Tabla VF personalizada */
+/* ===================== */
+
+table.tabla-vf {
+  border: 2px solid var(--color-primario-4) !important;   /* borde externo */
+  border-collapse: collapse !important; /* colapsar bordes */
+  table-layout: fixed !important;       /* ancho fijo */
+  width: 100% !important;
+}
+
+/* Encabezado azul forzado */
+table.tabla-vf thead tr th{
+  background-color: var(--color-primario-2) !important;  /* azul */
+  color: var(--color-blanco) !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+
+/* Ancho fijo de columnas */
+table.tabla-vf td th:nth-child(1),
+table.tabla-vf td:nth-child(1) {
+  width: 50% !important;   /* Pregunta */
+}
+table.tabla-vf th:nth-child(2),
+table.tabla-vf td:nth-child(2),
+table.tabla-vf th:nth-child(3),
+table.tabla-vf td:nth-child(3) {
+  width: 5% !important;   /* V y F */
+}
+table.tabla-vf th:nth-child(4),
+table.tabla-vf td:nth-child(4) {
+  width: 40% !important;   /* Retroalimentación */
+}
+
+/* Filas intercaladas (zebra) */
+table.tabla-vf tbody tr:nth-child(odd) {
+  background-color: #ffffff !important; /* blanco */
+}
+table.tabla-vf tbody tr:nth-child(even) {
+  background-color: var(--color-secundario-5) !important; /* gris claro */
+}
+
+/* Bordes internos verdes */
+table.tabla-vf td, 
+table.tabla-vf th {
+  border: 2px solid var(--color-primario-4)  !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+/* Pregunta alineada a la izquierda */
+table.tabla-vf td.text-start {
+  text-align: left !important;
+}
+
+/* 🔲 Checkbox base en gris claro */
+table.tabla-vf .vf-checkbox {
+  appearance: none !important;          
+  -webkit-appearance: none !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: 2px solid #ccc !important;  /* borde gris claro */
+  border-radius: 3px !important;
+  cursor: pointer !important;
+  position: relative !important;
+  background-color: #ffffff3b !important;
+}
+
+/* ❌ al marcar */
+table.tabla-vf .vf-checkbox:checked::after {
+  content: "✘";
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-size: 18px;
+}
+
+
+
+.table>:not(caption)>*>*, .table-striped>tbody>tr:nth-of-type(odd)>* {
+  background-color: transparent;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: transparent;
+}
   </style>
 </head>
 <body>

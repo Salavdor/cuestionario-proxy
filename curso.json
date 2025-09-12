@@ -39,13 +39,13 @@
             "actividad": {
               "tipo": "tabs",
               "default": {
-                "titulo": "Explora los conceptos",
-                "contenido": "<p>Haz clic en un botón para ver el detalle.</p>"
+                "titulo": "",
+                "contenido": "<img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'>"
               },
               "showArrows": true,
               "items": [
                 {
-                  "label": "Etapa 1 <br><strong class='title-body-secondary'>DETECCIÓN</strong>",
+                  "label": "<img src='src/img/m1_s4_icono_deteccion.svg'>Etapa 1 <br><strong class='title-body-secondary'>DETECCIÓN</strong>",
                   "contenido": "<p>En esta primera etapa, el objetivo consiste en identificar aquellos casos en que una COP puede resultar la respuesta adecuada para una serie de personas que buscan la oportunidad de trabajar y aprender colaborativamente.<br><br>Para ello, proponemos responder estas 3 preguntas, de manera flexible ya que cada caso reúne sus propias peculiaridades:</p>",
                   "actividad": {
                     "tipo": "openquestion",
@@ -87,8 +87,8 @@
                   }
                 },
                 {
-                  "label": "DISEÑO",
-                  "contenido": "<p>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestasobtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
+                  "label": "<img src='src/img/m1_s4_icono_diseno.svg'>Etapa 1 <br><strong class='title-body-secondary'>DISEÑO</strong>",
+                  "contenido": "<p class='mb-5'>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestasobtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
                   "actividad": {
                     "tipo": "collapse",
                     "bloques": [
@@ -140,7 +140,7 @@
                         "parrafo": "",
                         "opciones": [
                           {
-                            "boton": "ideas",
+                            "boton": "<img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong>",
                             "contenido": {
                               "tipo": "lista",
                               "estilo": "nodot",
@@ -161,27 +161,27 @@
                   }
                 },
                 {
-                  "label": "LANZAMIENTO",
-                  "contenido": "<p>Esta tercera etapa consiste en reunir a los participantes propuestos en la etapa previa para explicarles lo que es una CoP y presentarles el marco general de trabajo con el objeto de que estos –si aceptan participar- lo complementen y concreten en su propio plan de trabajo.<br><br>Se espera abarcar todos los aspectos delineados en la etapa anterior, más lo que este grupo considere necesario para el cumplimiento del propósito; ejercicio que también contribuye poderosamente al sentimiento de propiedad que las personas han de tener sobre el propósito, naturaleza y características de la comunidad a la que pertenecerán.<br><br><span style='color: var(--color-primario-2);'>Consideraciones sobre algunos elementos del Plan de Trabajo de la CoP</span> (no es indispensable abarcarlos todos durante el primer taller. De no alcanzar a cubrirlo todo, es posible completar los temas necesarios durante las primeras sesiones de funcionamiento de la comunidad).</p>",
+                  "label": "<img src='src/img/m1_s4_icono_lanzamiento.svg'>Etapa 1 <br><strong class='title-body-secondary'>LANZAMIENTO</strong>",
+                  "contenido": "<p class='mb-5'>Esta tercera etapa consiste en reunir a los participantes propuestos en la etapa previa para explicarles lo que es una CoP y presentarles el marco general de trabajo con el objeto de que estos –si aceptan participar- lo complementen y concreten en su propio plan de trabajo.<br><br>Se espera abarcar todos los aspectos delineados en la etapa anterior, más lo que este grupo considere necesario para el cumplimiento del propósito; ejercicio que también contribuye poderosamente al sentimiento de propiedad que las personas han de tener sobre el propósito, naturaleza y características de la comunidad a la que pertenecerán.<br><br><span style='color: var(--color-primario-2);'>Consideraciones sobre algunos elementos del Plan de Trabajo de la CoP</span> (no es indispensable abarcarlos todos durante el primer taller. De no alcanzar a cubrirlo todo, es posible completar los temas necesarios durante las primeras sesiones de funcionamiento de la comunidad).</p>",
                   "actividad": {
                     "tipo": "tabsSimple",
                     "items": [
-                      { "label": "Propósito", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Principios de trabajo:</span> se propondrá elaborar una propuesta de “Reglas de funcionamiento de la CoP”, que regirán el comportamiento esperado en relación al trabajo en la CoP, como, por ejemplo: qué información compartir (o no), confidencialidad, transparencia, respeto por todas las opiniones, rotación de cargos, cumplimiento de los compromisos, condiciones de ingreso de nuevos participantes, causales de egreso, u otros que se consideren importantes por la comunidad.</p></div>" },
-                      { "label": "Objetivos", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'></span></p></div>" },
-                      { "label": "Roles", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'></span></p></div>" },
-                      { "label": "Principios del trabajo", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'></span></p></div>" },
-                      { "label": "Recursos", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'></span></p></div>" },
-                      { "label": "Gantt", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'></span></p></div>" }
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_proposito.svg'><strong>Propósito</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Principios de trabajo:</span> se propondrá elaborar una propuesta de “Reglas de funcionamiento de la CoP”, que regirán el comportamiento esperado en relación al trabajo en la CoP, como, por ejemplo: qué información compartir (o no), confidencialidad, transparencia, respeto por todas las opiniones, rotación de cargos, cumplimiento de los compromisos, condiciones de ingreso de nuevos participantes, causales de egreso, u otros que se consideren importantes por la comunidad.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_objetivos.svg'><strong>Objetivos</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Objetivos:</span> es posible que se puedan visualizar algunos objetivos intermedios o más específicos, que el conjunto cree necesario o posibles de cumplir.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_Roles.svg'><strong>Roles</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Roles:</span> los participantes podrán distribuirse roles, asumiendo compromisos diferenciados para cumplir con ciertas tareas u objetivos. Desde luego elegirán un delegado o líder de la comunidad para que los represente y agilice la comunicación entre la CoP y la organización u otro ente.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_principios.svg'><strong>Principios del trabajo</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Principios del trabajo:</span> se propondrá elaborar una propuesta de “Reglas de funcionamiento de la CoP”, que regirán el comportamiento esperado en relación al trabajo en la CoP, como, por ejemplo: qué información compartir (o no), confidencialidad, transparencia, respeto por todas las opiniones, rotación de cargos, cumplimiento de los compromisos, condiciones de ingreso de nuevos participantes, causales de egreso, u otros que se consideren importantes por la comunidad.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_Roles.svg'><strong>Recursos</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Recursos</span> asignación de tiempo, espacio físico, apoyo institucional, tecnología, presupuesto, permisos, etc.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_gantt.svg'><strong>Gantt</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Gantt</span> Establecer una carta Gantt y socializarla con todos los actores e interesados.</p></div>" }
                     ]
                   }
                 },
                 {
-                  "label": "GESTIÓN",
-                  "contenido": "<p>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.<br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+                  "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 1 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
+                  "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080);'>"
                 },
                 {
-                  "label": "CIERRE",
-                  "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+                  "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 1 <br><strong class='title-body-secondary'>CIERRE</strong>",
+                  "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/m1_s5_f1.svg' alt='Modulo1' class='img-fluid'>"
                 }
               ]
             }
@@ -189,55 +189,45 @@
           {
             "id": "1.4",
             "titulo": "Actividades para asegurar el aprendizaje en la organización",
-            "contenido": ["<h2 class='pb-4 fw-bold'>Actividades para asegurar el aprendizaje en la organización</h2>",
-            {
-              "tipo": "lista",
-              "estilo": "nodot",
-              "items": [
-                { "texto": "<strong class='title-body-secondary'>Comunicar la intención de cerrar</strong> a todos los miembros de la CoP, agradeciendo los logros obtenidos y reconociendo las contribuciones de los miembros." },
-                { "texto": "<strong class='title-body-secondary'>Realizar Taller de cierre</strong>, para lo cual se propone la utilización de la metodología de Retrospectiva (descrita en el documento de metodología de CoPs)." },
-                { "texto": "<strong class='title-body-secondary'>Recopilación/archivo de los documentos y artefactos de conocimiento</strong> generados por la CoP para ponerlos a disposición de la organización en el formato o canales que permitan su localización y uso." },
-                { "texto": "<strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras." }
-              ]
-            }],
-            "imagen": "<img src='src/img/Modulo1.jpg' alt='Modulo1' class='img-fluid'>"
+            "contenido": "<h2 class='pb-4 fw-bold'>Actividades para asegurar el aprendizaje en la organización</h2><ul id='lista_u_unidad1_4-lista1' class='list-unstyled'><li><p><strong class='title-body-secondary'>Comunicar la intención de cerrar</strong> a todos los miembros de la CoP, agradeciendo los logros obtenidos y reconociendo las contribuciones de los miembros.</p></li><li><p><strong class='title-body-secondary'>Realizar Taller de cierre</strong>, para lo cual se propone la utilización de la metodología de Retrospectiva (descrita en el documento de metodología de CoPs).</p></li><li><p><strong class='title-body-secondary'>Recopilación/archivo de los documentos y artefactos de conocimiento</strong> generados por la CoP para ponerlos a disposición de la organización en el formato o canales que permitan su localización y uso.</p></li><li><p><strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras.</li></ul>",
+            "imagen": "<img src='src/img/m1_s6_f1.jpg' alt='Modulo1' class='img-fluid'>"
           },
           {
             "id": "1.5",
             "titulo": "Evaluación",
-            "contenido": "<h2 class='pb-4 fw-bold'>Evaluación</h2>",
+            "contenido": "<h2 class='fw-bold'>Evaluación</h2>",
             "actividad": {
                 "tipo": "tablaVF",
                 "preguntas": [
                   {
                     "pregunta": "Una CoP es una manera sistematizar la colaboración por parte de un grupo de personas",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Es fundamental que el grupo de personas, en una CoP, <span class='fw-bold'>comparta un interés o práctica común</span>.",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                    "retroIncorrecta": "Respuesta Incorrecta: Es fundamental que el grupo de personas que conforman una CoP, comparta un interés o práctica común y sistematice sus hallazgos."
                   },
                   {
                     "pregunta": "La etapa de “Gestión” se refiere al momento en que las personas convocadas conocen el marco de trabajo y lo ajustan",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "<span class='fw-bold'>La etapa referida</span>, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el <span class='fw-bold'>taller de lanzamiento</span>.",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "Respuesta Incorrecta: La etapa referida, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el taller de lanzamiento.",
+                    "retroIncorrecta": "Felicitaciones, respuesta correcta."
                   },
                   {
                     "pregunta": "La CoP siempre debe tener y responder a un Propósito",
                     "respuestaCorrecta": "V",
-                    "retroCorrecta": "",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                    "retroIncorrecta": "Respuesta Incorrecta: Una CoP, ciertamente necesita un propósito que le dé sentido y dirija su quehacer."
                   },
                   {
                     "pregunta": "Las CoPs siempre surgen por la necesidad de la alta gerencia, por iniciativa de alguna gerencia",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia.",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "Respuesta Incorrecta: También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia.",
+                    "retroIncorrecta": "Felicitaciones, respuesta correcta."
                   },
                   {
                     "pregunta": "Una vez que la Cop cumple su objetivo debe cerrarse",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "También tiene como opción Transformarse, cambiar su propósito u objetivos.",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "Respuesta Incorrecta: Una CoP también tiene como opción transformarse, cambiar su propósito u objetivos.",
+                    "retroIncorrecta": "Felicitaciones, respuesta correcta."
                   }
                 ]
               }
@@ -264,7 +254,7 @@
             {
         "id": 4,
         "titulo": "Habilidades del Facilitador",
-        "img": "src/img/Modulo1.jpg",
+        "img": "src/img/m4_inicio.jpg",
         "subtemas": [
           {
             "id": "4.1",
