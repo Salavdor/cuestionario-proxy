@@ -58,7 +58,7 @@
                           "Buscas un espacio para reflexionar en el que puedan participar profesionales distribuidos geograficamente.",
                           "Quieres crear una instancia para que personas que realizan tareas similares puedan compartir sus experiencias y conocimientos.",
                           "Un equipo o un área necesita elaborar un producto, resolver una problemática, consensuar una mejor manera de hacer las cosas o lograr un resultado.",
-                          "Personas con intereses comunes -de diferentes organizaciones- queremos aprender más de loque sabemos sobre algo."
+                          "Personas con intereses comunes -<strong><i>de diferentes organizaciones</i></strong>- queremos aprender más de loque sabemos sobre algo."
                         ]
                       },
                       {
@@ -66,10 +66,9 @@
                         "enunciado": "",
                         "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
                         "ejemplos": [
-                          "Buscas un espacio para reflexionar en el que puedan participar profesionales distribuidos geograficamente.",
-                          "Quieres crear una instancia para que personas que realizan tareas similares puedan compartir sus experiencias y conocimientos.",
-                          "Un equipo o un área necesita elaborar un producto, resolver una problemática, consensuar una mejor manera de hacer las cosas o lograr un resultado.",
-                          "Personas con intereses comunes -de diferentes organizaciones- queremos aprender más de loque sabemos sobre algo."
+                          "Se trata de los participantes que van a contribuir a que la COP logre su propósito.",
+                          "<strong>Por ejemplo:</strong> Integrantes de un área o de un equipo, o pares que desempeñan el mismo trabajo en lugares diferentes, o representantes de distintas organizaciones…",
+                          "Es fundamental conseguir un Patrocinador, que apoye estas ideas iniciales. Con éste, puedes completar esta etapa y pasar a la siguiente."
                         ]
                       },
                       {
@@ -77,17 +76,15 @@
                         "enunciado": "",
                         "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
                         "ejemplos": [
-                          "Buscas un espacio para reflexionar en el que puedan participar profesionales distribuidos geograficamente.",
-                          "Quieres crear una instancia para que personas que realizan tareas similares puedan compartir sus experiencias y conocimientos.",
-                          "Un equipo o un área necesita elaborar un producto, resolver una problemática, consensuar una mejor manera de hacer las cosas o lograr un resultado.",
-                          "Personas con intereses comunes -de diferentes organizaciones- queremos aprender más de loque sabemos sobre algo."
+                          "Que recursos hacen falta para que la COP y sus integrantes puedan lograr su propósito:",
+                          "<strong>Por ejemplo:</strong> apoyo directivo (patrocinador), tiempo y cargas de trabajo necesarias, permisos o información a las jefaturas, disponibilidad de un espacio físico para las sesiones, recursos tecnológicos, dinero para traslados u otros, acceso a expertos, etc."
                         ]
                       }
                     ]
                   }
                 },
                 {
-                  "label": "<img src='src/img/m1_s4_icono_diseno.svg'>Etapa 1 <br><strong class='title-body-secondary'>DISEÑO</strong>",
+                  "label": "<img src='src/img/m1_s4_icono_diseno.svg'>Etapa 2 <br><strong class='title-body-secondary'>DISEÑO</strong>",
                   "contenido": "<p class='mb-5'>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestasobtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
                   "actividad": {
                     "tipo": "collapse",
@@ -161,27 +158,27 @@
                   }
                 },
                 {
-                  "label": "<img src='src/img/m1_s4_icono_lanzamiento.svg'>Etapa 1 <br><strong class='title-body-secondary'>LANZAMIENTO</strong>",
+                  "label": "<img src='src/img/m1_s4_icono_lanzamiento.svg'>Etapa 3 <br><strong class='title-body-secondary'>LANZAMIENTO</strong>",
                   "contenido": "<p class='mb-5'>Esta tercera etapa consiste en reunir a los participantes propuestos en la etapa previa para explicarles lo que es una CoP y presentarles el marco general de trabajo con el objeto de que estos –si aceptan participar- lo complementen y concreten en su propio plan de trabajo.<br><br>Se espera abarcar todos los aspectos delineados en la etapa anterior, más lo que este grupo considere necesario para el cumplimiento del propósito; ejercicio que también contribuye poderosamente al sentimiento de propiedad que las personas han de tener sobre el propósito, naturaleza y características de la comunidad a la que pertenecerán.<br><br><span style='color: var(--color-primario-2);'>Consideraciones sobre algunos elementos del Plan de Trabajo de la CoP</span> (no es indispensable abarcarlos todos durante el primer taller. De no alcanzar a cubrirlo todo, es posible completar los temas necesarios durante las primeras sesiones de funcionamiento de la comunidad).</p>",
                   "actividad": {
                     "tipo": "tabsSimple",
                     "items": [
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_proposito.svg'><strong>Propósito</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Principios de trabajo:</span> se propondrá elaborar una propuesta de “Reglas de funcionamiento de la CoP”, que regirán el comportamiento esperado en relación al trabajo en la CoP, como, por ejemplo: qué información compartir (o no), confidencialidad, transparencia, respeto por todas las opiniones, rotación de cargos, cumplimiento de los compromisos, condiciones de ingreso de nuevos participantes, causales de egreso, u otros que se consideren importantes por la comunidad.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_proposito.svg'><strong>Propósito</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Propósito:</span> complementar el propósito planteado en etapas anteriores, de acuerdo a la experiencia e intereses del grupo, en relación a lo que se desea alcanzar.</p></div>" },
                       { "label": "<img src='src/img/m1_s4_icono_lanzamiento_objetivos.svg'><strong>Objetivos</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Objetivos:</span> es posible que se puedan visualizar algunos objetivos intermedios o más específicos, que el conjunto cree necesario o posibles de cumplir.</p></div>" },
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_Roles.svg'><strong>Roles</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Roles:</span> los participantes podrán distribuirse roles, asumiendo compromisos diferenciados para cumplir con ciertas tareas u objetivos. Desde luego elegirán un delegado o líder de la comunidad para que los represente y agilice la comunicación entre la CoP y la organización u otro ente.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_roles.svg'><strong>Roles</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Roles:</span> los participantes podrán distribuirse roles, asumiendo compromisos diferenciados para cumplir con ciertas tareas u objetivos. Desde luego elegirán un delegado o líder de la comunidad para que los represente y agilice la comunicación entre la CoP y la organización u otro ente.</p></div>" },
                       { "label": "<img src='src/img/m1_s4_icono_lanzamiento_principios.svg'><strong>Principios del trabajo</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Principios del trabajo:</span> se propondrá elaborar una propuesta de “Reglas de funcionamiento de la CoP”, que regirán el comportamiento esperado en relación al trabajo en la CoP, como, por ejemplo: qué información compartir (o no), confidencialidad, transparencia, respeto por todas las opiniones, rotación de cargos, cumplimiento de los compromisos, condiciones de ingreso de nuevos participantes, causales de egreso, u otros que se consideren importantes por la comunidad.</p></div>" },
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_Roles.svg'><strong>Recursos</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Recursos</span> asignación de tiempo, espacio físico, apoyo institucional, tecnología, presupuesto, permisos, etc.</p></div>" },
+                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_recursos.svg'><strong>Recursos</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Recursos</span> asignación de tiempo, espacio físico, apoyo institucional, tecnología, presupuesto, permisos, etc.</p></div>" },
                       { "label": "<img src='src/img/m1_s4_icono_lanzamiento_gantt.svg'><strong>Gantt</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Gantt</span> Establecer una carta Gantt y socializarla con todos los actores e interesados.</p></div>" }
                     ]
                   }
                 },
                 {
-                  "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 1 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
+                  "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 4 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
                   "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080);'>"
                 },
                 {
-                  "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 1 <br><strong class='title-body-secondary'>CIERRE</strong>",
-                  "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/m1_s5_f1.svg' alt='Modulo1' class='img-fluid'>"
+                  "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 5 <br><strong class='title-body-secondary'>CIERRE</strong>",
+                  "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/m1_s5_f1.svg' alt='Modulo1' class='img-fluid' style='padding: 0 10%;'>"
                 }
               ]
             }

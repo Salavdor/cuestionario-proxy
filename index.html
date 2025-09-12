@@ -44,6 +44,7 @@
     }
     #content {
       padding: 20px;
+      overflow: hidden;
     }
     .subtema {
       cursor: pointer;
@@ -456,20 +457,20 @@ table.tabla-vf .vf-checkbox:checked::after {
 </head>
 <body>
   <!-- Encabezado -->
-<nav class="brand navbar px-3 d-flex justify-content-between align-items-center">
-  <div class="d-flex align-items-center">
+<nav class="brand navbar px-3 d-flex align-items-center">
+  <div class="col-md-3 col-6 d-flex align-items-center">
     <button class="btn btn-outline-light d-md-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
       ☰
     </button>
     <a class="navbar-brand me-2" href="#">
       <img src="src/img/logoSOFOFA-blanco.png" alt="Logo SOFOFA" style="max-height:40px;" class="img-fluid">
     </a>
+  </div>
+
+  <div class="col-md-9 col-6 d-flex justify-content-between align-items-center">
     <a class="navbar-brand ms-2" href="#">
       <img src="src/img/logoFACILITADOR-blanco.svg" alt="Logo formacion para el facilitador"  style="height:40px; width:auto; display:block;" class="img-fluid">
     </a>
-  </div>
-
-  <div class="d-flex align-items-center">
     <a href="#">
       <img src="src/img/logoSENSE-blanco.svg" alt="Logo sense" style="height:40px; width:auto; display:block;" class="img-fluid">
     </a>
