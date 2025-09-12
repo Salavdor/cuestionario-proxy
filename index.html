@@ -440,26 +440,30 @@ table.tabla-vf td.text-start {
 table.tabla-vf .vf-checkbox {
   appearance: none !important;          
   -webkit-appearance: none !important;
-  width: 20px !important;
-  height: 20px !important;
-  border: 2px solid #ccc !important;  /* borde gris claro */
-  border-radius: 3px !important;
+  width: 1.25em !important;        /* tamaño relativo */
+  height: 1.25em !important;
+  border: 0.125em solid #ccc !important;  
+  border-radius: 50% !important;    /* esquinas ligeramente redondeadas */
   cursor: pointer !important;
   position: relative !important;
-  background-color: #ffffff3b !important;
+  background-color: rgba(255, 255, 255, 0.23) !important;
+  vertical-align: middle;
 }
 
-/* ❌ al marcar */
+/* 🔵 Punto azul al marcar */
 table.tabla-vf .vf-checkbox:checked::after {
-  content: "✘";
-  color: red;
-  font-weight: bold;
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -55%);
-  font-size: 18px;
+  width: 0.6em;      /* tamaño del punto relativo al checkbox */
+  height: 0.6em;
+  background-color: var(--color-primario-1); /* azul preestablecido */
+  border-radius: 50%; /* círculo perfecto */
+  transform: translate(-50%, -50%);
 }
+
+
 
 
 
