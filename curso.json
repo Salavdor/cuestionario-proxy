@@ -40,7 +40,7 @@
               "tipo": "tabs",
               "default": {
                 "titulo": "",
-                "contenido": "<img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'>"
+                "contenido": "<img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.jpg'>"
               },
               "showArrows": true,
               "items": [
