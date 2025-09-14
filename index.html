@@ -1,68 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso Escuela de Negocios</title>
+  <title>Formación para el facilitador y para el lider de una comunidad de práctica (CoP)</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
-    --color-negro: #000;
-    --color-blanco: #fff;
-    --color-primario-1: #174d9c;
-    --color-primario-2: #2670e0;
-    --color-primario-3: #1d2345;
-    --color-primario-4: #00adef;
-    --color-secundario-1: #ed475b;
-    --color-secundario-2: #9327af;
-    --color-secundario-3: #5b5fa5;
-    --color-secundario-4: #808aa8;
-    --color-secundario-5: #b2cff9;
-    --color-secundario-6: rgb(222, 236, 252);
+      --color-negro: #000;
+      --color-blanco: #fff;
+      --color-primario-1: #174d9c;
+      --color-primario-2: #2670e0;
+      --color-primario-3: #1d2345;
+      --color-primario-4: #00adef;
+      --color-secundario-1: #ed475b;
+      --color-secundario-2: #9327af;
+      --color-secundario-3: #5b5fa5;
+      --color-secundario-4: #808aa8;
+      --color-secundario-5: #b2cff9;
+      --color-secundario-6: rgb(222, 236, 252);
 
-    --titulos-: "Chunkfive";
-    --numeros-: "Luminari";
-    --texto-: "OpenSans";
-}
+      --titulos-: "Chunkfive";
+      --numeros-: "Luminari";
+      --texto-: "OpenSans";
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      /* pantalla completa */
     }
+
+    nav.brand {
+  flex-shrink: 0; /* navbar no crece ni suma al espacio restante */
+}
+
+.row.flex-grow-1 {
+  min-height: 0; /* 🔑 permite scroll en los hijos */
+}
 
     h2 {
       color: var(--color-primario-2);
     }
+
     .title-body-secondary {
       color: var(--color-primario-4);
     }
 
-    #sidebar {
-      overflow-y: auto;
-      background-color: var(--color-secundario-6);
-    }
-    #content {
-      padding: 20px;
-      overflow: hidden;
-    }
     .subtema {
       cursor: pointer;
     }
-.brand {
-background: url(src/img/encabezado.jpg);
-background-size: cover;
-height: 5rem;
-}
 
-.img-container {
-  flex: 1; /* llena espacio restante */
+    /* Sidebar fijo */
+    #sidebar {
+      /* flex: 0 0 250px; */
+      overflow-y: auto;
+      min-height: 0;
+      background-color: var(--color-secundario-6);
+    }
+
+    #content {
+      flex: 1 1 auto;
+      /* ocupa todo el espacio restante */
+      min-height: 0;
+      overflow-y: auto;
+    }
+
+    .brand {
+      background: url(src/img/encabezado.jpg);
+      background-size: cover;
+      height: 5rem;
+    }
+
+    .img-container {
+  flex-grow: 1;   /* ocupa lo que sobra */
   position: relative;
-  width: 100%;
+  min-height: 0;  /* 🔑 para que flex calcule bien */
 }
 
 .img-container img {
@@ -71,466 +96,529 @@ height: 5rem;
   object-fit: cover;
   object-position: center bottom;
 }
+
     .accordion-button::after {
       display: none !important;
     }
-      /* Subtemas */
-      .subtema-lista li {
-        position: relative;
-        padding-left: 1.2rem;
-        margin-bottom: 0.5rem;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        font-weight: 400;
+
+    /* Subtemas */
+    .subtema-lista li {
+      position: relative;
+      padding-left: 1.2rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      font-weight: 400;
+    }
+
+    .subtema-lista li::before {
+      content: "•";
+      color: var(--color-secundario-3);
+      /* púrpura */
+      position: absolute;
+      left: 0;
+      font-size: 2.5rem;
+      line-height: 0.4;
+    }
+
+    .subtema-lista li:hover {
+      font-weight: 700;
+      color: var(--color-negro);
+    }
+
+    .subtema-lista li.active {
+      font-weight: 700;
+      color: var(--color-negro);
+    }
+
+    /* Botones del acordeón */
+    .accordion-button {
+      transition: all 0.2s ease-in-out;
+      background-color: var(--color-secundario-5);
+      border-radius: 0px 15px 15px 0px !important;
+      filter: drop-shadow(3px 3px 5px #00000022);
+    }
+
+    .accordion-button:hover {
+      background-color: var(--color-primario-2);
+      color: var(--color-blanco);
+      filter: drop-shadow(3px 3px 5px #00000022);
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: var(--color-primario-2);
+      color: var(--color-blanco);
+    }
+
+    .accordion-item {
+      background-color: #ffffff00;
+      border: 0px;
+      margin-bottom: 5px;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .encabezado {
+      position: relative;
+      background: #fff;
+      /* o el color de fondo que uses */
+    }
+
+    .encabezado::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 20px;
+      bottom: 0;
+      width: 40px;
+      height: 40px;
+      background-color: var(--color-primario-4);
+    }
+
+    .accordion-button.collapsed {
+      filter: drop-shadow(3px 3px 5px #00000000);
+    }
+
+    .breadcrumb-item {
+      color: var(--color-secundario-4);
+    }
+
+    .breadcrumb-item.active {
+      color: var(--color-negro);
+    }
+
+    /* Para botones tabs */
+    .actividad-btn {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      border-color: var(--color-primario-2);
+      border-width: 2.5px;
+      color: var(--color-negro);
+      justify-content: center !important;
+    }
+
+    .actividad-btn.active,
+    .actividad-btn:hover {
+      background-color: var(--color-primario-4);
+      border-color: var(--color-primario-4);
+      color: var(--color-negro);
+      transform: scale(1.1);
+    }
+
+    .actividad-btn:hover .title-body-secondary,
+    .actividad-btn:active .title-body-secondary,
+    .actividad-btn.active .title-body-secondary {
+      color: var(--color-blanco);
+    }
+
+    .actividad-btn img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -43px;
+      margin-left: 5px;
+    }
+
+    .actividad-btn-tab {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      border-color: transparent;
+      border-width: 0px;
+      color: var(--color-primario-4);
+      ;
+      justify-content: center !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .actividad-btn-tab.active,
+    .actividad-btn-tab:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--color-primario-2);
+      transform: scale(1.1);
+    }
+
+    .actividad-btn-tab:hover .title-body-secondary,
+    .actividad-btn-tab:active .title-body-secondary,
+    .actividad-btn-tab.active .title-body-secondary {
+      color: var(--color-blanco);
+    }
+
+    .actividad-btn-tab img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -43px;
+      margin-left: 5px;
+    }
+
+    .btn-ejemplos {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      border-color: transparent;
+      border-width: 1.5px;
+      color: var(--color-secundario-2);
+      justify-content: center !important;
+      margin-top: 50px;
+    }
+
+    .btn-ejemplos:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--color-negro);
+      transform: scale(1.1);
+    }
+
+    .btn-ejemplos img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -47px;
+      margin-left: 10px;
+    }
+
+    #accordionBloque2 div h2 button.accordion-button {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      border-color: transparent;
+      border-width: 1.5px;
+      color: var(--color-secundario-2);
+      justify-content: center !important;
+      margin-top: 65px;
+      background-color: transparent;
+    }
+
+    #accordionBloque2 div h2 button.accordion-button:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--color-negro);
+      transform: scale(1.1);
+    }
+
+    #accordionBloque2 div h2 button.accordion-button img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -36px;
+      margin-left: 4px;
+    }
+
+    button.accordion-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #accordionBloque0,
+    #accordionBloque1,
+    #accordionBloque0 div h2 button.accordion-button,
+    #accordionBloque1 div h2 button.accordion-button {
+      background-color: var(--color-secundario-5);
+      border-radius: 15px !important;
+    }
+
+    #accordionBloque0 div h2 button.accordion-button:not(.collapsed),
+    #accordionBloque1 div h2 button.accordion-button:not(.collapsed),
+    #accordionBloque0 div h2 button.accordion-button:hover,
+    #accordionBloque1 div h2 button.accordion-button:hover {
+      background-color: var(--color-primario-5);
+      color: var(--color-blanco);
+      border-radius: 0px 15px 15px 0px !important;
+    }
+
+    /* Feedback */
+    #quizFeedback,
+    #tfFeedback {
+      font-weight: bold;
+    }
+
+    /* Steps */
+    .list-group-numbered {
+      counter-reset: item;
+    }
+
+    .list-group-numbered .list-group-item::before {
+      content: counters(item, ".") ". ";
+      counter-increment: item;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    #lista_u_unidad1_4-lista1 li p {
+      font-weight: 600;
+    }
+
+    .form-control {
+      font-size: 0.8rem;
+      border: 1px solid var(--color-primario-1);
+      border-radius: 0% 0% 40px 0%;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      /* permitir redimensionar solo verticalmente */
+      font-family: 'Montserrat', sans-serif;
+      min-height: calc(7.5em + .75rem + calc(var(--bs-border-width) * 2));
+    }
+
+    .modal-body ul li {
+      margin-bottom: 0.5rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .modal-content {
+      background-color: var(--color-primario-4);
+      color: var(--color-blanco);
+    }
+
+    .btn-close {
+      --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e) !important;
+    }
+
+    textarea.empty {
+      width: 100%;
+      background-color: var(--color-secundario-6);
+      border: none;
+    }
+
+    .lanzamientoTAB {
+      border: 2px solid var(--color-primario-1);
+      border-radius: 5px;
+    }
+
+    .feedback-modal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: rgba(248, 249, 250, 0.95);
+      /* semi-transparente */
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    .feedback-text {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .feedback-close {
+      position: absolute;
+      top: 0.25rem;
+      right: 0.25rem;
+      border: none;
+      background: transparent;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ===================== */
+    /* Tabla VF personalizada */
+    /* ===================== */
+
+    table.tabla-vf {
+      border: 2px solid var(--color-primario-4) !important;
+      /* borde externo */
+      border-collapse: collapse !important;
+      /* colapsar bordes */
+      table-layout: fixed !important;
+      /* ancho fijo */
+      width: 100% !important;
+    }
+
+    /* Encabezado azul forzado */
+    table.tabla-vf thead tr th {
+      background-color: var(--color-primario-2) !important;
+      /* azul */
+      color: var(--color-blanco) !important;
+      font-weight: bold !important;
+      text-align: center !important;
+    }
+
+
+    /* Ancho fijo de columnas */
+    table.tabla-vf td th:nth-child(1),
+    table.tabla-vf td:nth-child(1) {
+      width: 50% !important;
+      /* Pregunta */
+    }
+
+    table.tabla-vf th:nth-child(2),
+    table.tabla-vf td:nth-child(2),
+    table.tabla-vf th:nth-child(3),
+    table.tabla-vf td:nth-child(3) {
+      width: 5% !important;
+      /* V y F */
+    }
+
+    table.tabla-vf th:nth-child(4),
+    table.tabla-vf td:nth-child(4) {
+      width: 40% !important;
+      /* Retroalimentación */
+    }
+
+    /* Filas intercaladas (zebra) */
+    table.tabla-vf tbody tr:nth-child(odd) {
+      background-color: #ffffff !important;
+      /* blanco */
+    }
+
+    table.tabla-vf tbody tr:nth-child(even) {
+      background-color: var(--color-secundario-5) !important;
+      /* gris claro */
+    }
+
+    /* Bordes internos verdes */
+    table.tabla-vf td,
+    table.tabla-vf th {
+      border: 2px solid var(--color-primario-4) !important;
+      vertical-align: middle !important;
+      text-align: center !important;
+    }
+
+    /* Pregunta alineada a la izquierda */
+    table.tabla-vf td.text-start {
+      text-align: left !important;
+    }
+
+    /* 🔲 Checkbox base en gris claro */
+    table.tabla-vf .vf-checkbox {
+      appearance: none !important;
+      -webkit-appearance: none !important;
+      width: 1.25em !important;
+      /* tamaño relativo */
+      height: 1.25em !important;
+      border: 0.125em solid #ccc !important;
+      border-radius: 50% !important;
+      /* esquinas ligeramente redondeadas */
+      cursor: pointer !important;
+      position: relative !important;
+      background-color: rgba(255, 255, 255, 0.23) !important;
+      vertical-align: middle;
+    }
+
+    /* 🔵 Punto azul al marcar */
+    table.tabla-vf .vf-checkbox:checked::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0.6em;
+      /* tamaño del punto relativo al checkbox */
+      height: 0.6em;
+      background-color: var(--color-primario-1);
+      /* azul preestablecido */
+      border-radius: 50%;
+      /* círculo perfecto */
+      transform: translate(-50%, -50%);
+    }
+
+
+
+
+
+    .table>:not(caption)>*>*,
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+      background-color: transparent;
+    }
+
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+      --bs-table-bg-type: transparent;
+    }
+
+
+
+    @media (min-width: 1200px) {
+
+      p,
+      .accordion-button,
+      .subtema-lista,
+      .actividad-btn,
+      .list-unstyled,
+      .actividad-btn-tab,
+      .tabla-vf {
+        font-size: 18px;
       }
-      .subtema-lista li::before {
-        content: "•";
-        color: var(--color-secundario-3); /* púrpura */
-        position: absolute;
-        left: 0;
-        font-size: 2.5rem;
-        line-height: 0.4;
+
+      h5 {
+        font-size: 24px;
       }
-      .subtema-lista li:hover {
-        font-weight: 700;
-        color: var(--color-negro);
-      }
-      .subtema-lista li.active {
-        font-weight: 700;
-        color: var(--color-negro);
-      }
-  
-      /* Botones del acordeón */
-      .accordion-button {
-        transition: all 0.2s ease-in-out;
-        background-color: var(--color-secundario-5);
-        border-radius: 0px 15px 15px 0px !important;
-        filter: drop-shadow(3px 3px 5px #00000022);
-      }
-      .accordion-button:hover {
-        background-color: var(--color-primario-2);
-        color: var(--color-blanco);
-        filter: drop-shadow(3px 3px 5px #00000022);
-      }
+    }
 
-      .accordion-button:not(.collapsed) {
-        background-color: var(--color-primario-2);
-        color: var(--color-blanco);
-      }
-      .accordion-item {
-        background-color: #ffffff00;
-        border: 0px;
-        margin-bottom: 5px;
-      }
-      .accordion-button:focus {
-    box-shadow:none;
-}
-.encabezado {
-  position: relative;
-  background: #fff; /* o el color de fondo que uses */
+    @media (min-width: 1400px) {
+
+p,
+.accordion-button,
+.subtema-lista,
+.actividad-btn,
+.list-unstyled,
+.actividad-btn-tab,
+.tabla-vf {
+  font-size: 20px;
 }
 
-.encabezado::before {
-  content: "";
-    position: absolute;
-    right: 0;
-    top: 20px;
-    bottom: 0;
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-primario-4);
+h5 {
+  font-size: 26px;
 }
-.accordion-button.collapsed {
-    filter: drop-shadow(3px 3px 5px #00000000);
 }
-.breadcrumb-item {
-    color: var(--color-secundario-4);
-}
-.breadcrumb-item.active {
-    color: var(--color-negro);
-}
-/* Para botones tabs */
-.actividad-btn {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  border-color: var(--color-primario-2);
-  border-width: 1.5px;
-  color: var(--color-negro);
-  justify-content: center !important;
-}
-.actividad-btn.active, .actividad-btn:hover {
-  background-color: var(--color-primario-4);
-  border-color: var(--color-primario-4);
-  color: var(--color-negro);
-  transform: scale(1.1);
-}
-
-.actividad-btn:hover .title-body-secondary,
-.actividad-btn:active .title-body-secondary,
-.actividad-btn.active .title-body-secondary {
-  color: var(--color-blanco);
-}
-
-.actividad-btn img {
-  position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -43px;
-    margin-left: 5px;
-}
-
-.actividad-btn-tab {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  border-color: transparent;
-  border-width: 0px;
-  color: var(--color-primario-4);;
-  justify-content: center !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.actividad-btn-tab.active, .actividad-btn-tab:hover {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--color-primario-2);
-  transform: scale(1.1);
-}
-
-.actividad-btn-tab:hover .title-body-secondary,
-.actividad-btn-tab:active .title-body-secondary,
-.actividad-btn-tab.active .title-body-secondary {
-  color: var(--color-blanco);
-}
-
-.actividad-btn-tab img {
-  position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -43px;
-    margin-left: 5px;
-}
-
-.btn-ejemplos {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  border-color: transparent;
-  border-width: 1.5px;
-  color: var(--color-secundario-2);
-  justify-content: center !important;
-  margin-top: 50px;
-}
-
-.btn-ejemplos:hover {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--color-negro);
-  transform: scale(1.1);
-}
-
-.btn-ejemplos img {
-  position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -47px;
-    margin-left: 10px;
-}
-
-#accordionBloque2 div h2 button.accordion-button {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  border-color: transparent;
-  border-width: 1.5px;
-  color: var(--color-secundario-2);
-  justify-content: center !important;
-  margin-top: 65px;
-  background-color: transparent;
-}
-
-#accordionBloque2 div h2 button.accordion-button:hover {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--color-negro);
-  transform: scale(1.1);
-}
-
-#accordionBloque2 div h2 button.accordion-button img {
-  position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -36px;
-    margin-left: 4px;
-}
-
-button.accordion-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#accordionBloque0,
-#accordionBloque1,
-#accordionBloque0 div h2 button.accordion-button,
-#accordionBloque1 div h2 button.accordion-button{
-  background-color: var(--color-secundario-5);
-  border-radius: 15px !important;
-}
-
-#accordionBloque0 div h2 button.accordion-button:not(.collapsed),
-#accordionBloque1 div h2 button.accordion-button:not(.collapsed),
-#accordionBloque0 div h2 button.accordion-button:hover,
-#accordionBloque1 div h2 button.accordion-button:hover {
-  background-color: var(--color-primario-5);
-  color: var(--color-blanco);
-  border-radius: 0px 15px 15px 0px !important;
-}
-
-/* Feedback */
-#quizFeedback, #tfFeedback {
-  font-weight: bold;
-}
-
-/* Steps */
-.list-group-numbered {
-  counter-reset: item;
-}
-.list-group-numbered .list-group-item::before {
-  content: counters(item, ".") ". ";
-  counter-increment: item;
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-
-#lista_u_unidad1_4-lista1 li p{
-  font-weight: 600;
-}
-.form-control {
-    font-size: 0.8rem;
-    border: 1px solid var(--color-primario-1);
-    border-radius: 0% 0% 40px 0%;
-}
-textarea.form-control {
-  resize: vertical; /* permitir redimensionar solo verticalmente */
-  font-family: 'Montserrat', sans-serif;
-  min-height: calc(7.5em + .75rem + calc(var(--bs-border-width) * 2));
-}
-
-.modal-body ul li {
-  margin-bottom: 0.5rem;
-  font-family: 'Montserrat', sans-serif;
-}
-.modal-content{
-  background-color: var(--color-primario-4);
-  color: var(--color-blanco);
-}
-.btn-close {
-    --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e) !important;
-}
-
-textarea.empty{
-  width: 100%;
-    background-color: var(--color-secundario-6);
-    border: none;
-}
-
-.lanzamientoTAB {
-  border: 2px solid var(--color-primario-1);
-  border-radius: 5px;
-}
-
-.feedback-modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: rgba(248, 249, 250, 0.95); /* semi-transparente */
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
-}
-
-.feedback-text {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.feedback-close {
-  position: absolute;
-  top: 0.25rem;
-  right: 0.25rem;
-  border: none;
-  background: transparent;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* ===================== */
-/* Tabla VF personalizada */
-/* ===================== */
-
-table.tabla-vf {
-  border: 2px solid var(--color-primario-4) !important;   /* borde externo */
-  border-collapse: collapse !important; /* colapsar bordes */
-  table-layout: fixed !important;       /* ancho fijo */
-  width: 100% !important;
-}
-
-/* Encabezado azul forzado */
-table.tabla-vf thead tr th{
-  background-color: var(--color-primario-2) !important;  /* azul */
-  color: var(--color-blanco) !important;
-  font-weight: bold !important;
-  text-align: center !important;
-}
-
-
-/* Ancho fijo de columnas */
-table.tabla-vf td th:nth-child(1),
-table.tabla-vf td:nth-child(1) {
-  width: 50% !important;   /* Pregunta */
-}
-table.tabla-vf th:nth-child(2),
-table.tabla-vf td:nth-child(2),
-table.tabla-vf th:nth-child(3),
-table.tabla-vf td:nth-child(3) {
-  width: 5% !important;   /* V y F */
-}
-table.tabla-vf th:nth-child(4),
-table.tabla-vf td:nth-child(4) {
-  width: 40% !important;   /* Retroalimentación */
-}
-
-/* Filas intercaladas (zebra) */
-table.tabla-vf tbody tr:nth-child(odd) {
-  background-color: #ffffff !important; /* blanco */
-}
-table.tabla-vf tbody tr:nth-child(even) {
-  background-color: var(--color-secundario-5) !important; /* gris claro */
-}
-
-/* Bordes internos verdes */
-table.tabla-vf td, 
-table.tabla-vf th {
-  border: 2px solid var(--color-primario-4)  !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-/* Pregunta alineada a la izquierda */
-table.tabla-vf td.text-start {
-  text-align: left !important;
-}
-
-/* 🔲 Checkbox base en gris claro */
-table.tabla-vf .vf-checkbox {
-  appearance: none !important;          
-  -webkit-appearance: none !important;
-  width: 1.25em !important;        /* tamaño relativo */
-  height: 1.25em !important;
-  border: 0.125em solid #ccc !important;  
-  border-radius: 50% !important;    /* esquinas ligeramente redondeadas */
-  cursor: pointer !important;
-  position: relative !important;
-  background-color: rgba(255, 255, 255, 0.23) !important;
-  vertical-align: middle;
-}
-
-/* 🔵 Punto azul al marcar */
-table.tabla-vf .vf-checkbox:checked::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.6em;      /* tamaño del punto relativo al checkbox */
-  height: 0.6em;
-  background-color: var(--color-primario-1); /* azul preestablecido */
-  border-radius: 50%; /* círculo perfecto */
-  transform: translate(-50%, -50%);
-}
-
-
-
-
-
-.table>:not(caption)>*>*, .table-striped>tbody>tr:nth-of-type(odd)>* {
-  background-color: transparent;
-}
-
-.table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-bg-type: transparent;
-}
-
-
-
-@media (min-width: 1200px) { 
-  p , .accordion-button, .subtema-lista, .actividad-btn, .list-unstyled, .actividad-btn-tab, .tabla-vf {
-    font-size: 20px;
-  } 
-  h5 {
-    font-size: 26px;
-  }
- }
   </style>
 </head>
+
 <body>
   <!-- Encabezado -->
-<nav class="brand navbar px-3 d-flex align-items-center">
-  <div class="col-md-3 col-6 d-flex align-items-center">
-    <button class="btn btn-outline-light d-md-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
-      ☰
-    </button>
-    <a class="navbar-brand me-2" href="#">
-      <img src="src/img/logoSOFOFA-blanco.png" alt="Logo SOFOFA" style="max-height:40px;" class="img-fluid">
-    </a>
-  </div>
+  <div class="container-fluid h-100 d-flex flex-column p-0">
+    <nav class="brand navbar px-3 d-flex align-items-center">
+      <div class="col-md-3 col-6 d-flex align-items-center">
+        <button class="btn btn-outline-light d-md-none me-2" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasMenu">
+          ☰
+        </button>
+        <a class="navbar-brand me-2" href="#">
+          <img src="src/img/logoSOFOFA-blanco.png" alt="Logo SOFOFA" style="max-height:55px;" class="img-fluid">
+        </a>
+      </div>
 
-  <div class="col-md-9 col-6 d-flex justify-content-between align-items-center">
-    <a class="navbar-brand ms-2" href="#">
-      <img src="src/img/logoFACILITADOR-blanco.svg" alt="Logo formacion para el facilitador"  style="height:40px; width:auto; display:block;" class="img-fluid">
-    </a>
-    <a href="#">
-      <img src="src/img/logoSENSE-blanco.svg" alt="Logo sense" style="height:40px; width:auto; display:block;" class="img-fluid">
-    </a>
-  </div>
-</nav>
+      <div class="col-md-9 col-6 d-flex justify-content-between align-items-center">
+        <a class="navbar-brand ms-2" href="#">
+          <img src="src/img/logoFACILITADOR-blanco.svg" alt="Logo formacion para el facilitador"
+            style="height:40px; width:auto; display:block;" class="img-fluid">
+        </a>
+        <a href="#">
+          <img src="src/img/logoSENSE-blanco.svg" alt="Logo sense" style="height:35px; width:auto; display:block;"
+            class="img-fluid">
+        </a>
+      </div>
+    </nav>
 
-  <div class="container-fluid" style="display: flex; flex-direction: column; height: 100%;">
-    <div class="row" style="display: flex; flex: 1;">
-      
+    <div class="row m-0 flex-grow-1 h-100 min-vh-0">
       <!-- Sidebar fijo en escritorio -->
-      <div id="sidebar" class="col-md-3 d-none d-md-block ps-0 py-3">
+      <div id="sidebar" class="col-md-3 d-none d-md-block ps-0 py-3 h-100 overflow-auto">
         <div id="menuModulos" class="accordion"></div>
       </div>
 
       <!-- Contenido principal -->
-      <div id="content" class="col-md-9 p-0 d-flex flex-column">
-        <div class="row m-0 p-3 encabezado">
-          <div class="d-flex flex-row-reverse">
-            <img src="src/img/logoKWORKS.svg" alt="Modulo1" style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" class="img-fluid">
-          </div>
-          <h2>
-            <span class="fw-bold display-2">Módulo 1</span><br>
-            <span class="fw-bold title-body-secondary">Las comunidades de práctica (CoP)</span>
-          </h2>
-        </div>
-        <img src="src/img/Modulo1.jpg" alt="Modulo1" class="img-fluid">
+      <div id="content" class="col-md-9 p-0 h-100 overflow-auto">
+        
       </div>
-
     </div>
   </div>
 
@@ -556,5 +644,7 @@ table.tabla-vf .vf-checkbox:checked::after {
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+
 </body>
+
 </html>

@@ -4,7 +4,7 @@
         "id": 0,
         "titulo": "Inicio",
         "img": "src/img/inicio_curso.jpg",
-        "contenido": "<h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs), tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidades de Práctica.<br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p>",
+        "contenido": "<h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto \"Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs)\", tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidad de Práctica.<br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p>",
         "subtemas": [
           {
             "id": "0.0",
@@ -16,18 +16,18 @@
       },
       {
         "id": 1,
-        "titulo": "Las comunidades de práctica (CoP)",
+        "titulo": "Las Comunidades de práctica (CoP)",
         "img": "src/img/Modulo1.jpg",
         "subtemas": [
           {
             "id": "1.1",
-            "titulo": "¿Qué es una comunidad de práctica?",
+            "titulo": "¿Qué es una Comunidad de práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
             "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/m1_s2_f1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/m1_s2_f2.jpg' alt='' class='img-fluid rounded-5'></div></div>"
           },
           {
             "id": "1.2",
-            "titulo": "¿Por qué una comunidad de práctica?",
+            "titulo": "¿Por qué una Comunidad de práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
             "imagen": "<img src='src/img/m1_s3_f1.jpg' alt='Modulo1' class='img-fluid'>"
           },
@@ -174,7 +174,7 @@
                 },
                 {
                   "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 4 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
-                  "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080); position: relative; z-index: -1;'>"
+                  "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080) translateY(45px); position: relative; z-index: -1;'>"
                 },
                 {
                   "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 5 <br><strong class='title-body-secondary'>CIERRE</strong>",
@@ -194,30 +194,30 @@
                     "pregunta": "Una CoP es una manera sistematizar la colaboración por parte de un grupo de personas",
                     "respuestaCorrecta": "F",
                     "retroCorrecta": "Felicitaciones, respuesta correcta.",
-                    "retroIncorrecta": "Respuesta Incorrecta: Es fundamental que el grupo de personas que conforman una CoP, comparta un interés o práctica común y sistematice sus hallazgos."
+                    "retroIncorrecta": "Respuesta incorrecta: Es fundamental que el grupo de personas que conforman una CoP, comparta un interés o práctica común y sistematice sus hallazgos."
                   },
                   {
                     "pregunta": "La etapa de “Gestión” se refiere al momento en que las personas convocadas conocen el marco de trabajo y lo ajustan",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Respuesta Incorrecta: La etapa referida, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el taller de lanzamiento.",
+                    "retroCorrecta": "Respuesta incorrecta: La etapa referida, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el taller de lanzamiento.",
                     "retroIncorrecta": "Felicitaciones, respuesta correcta."
                   },
                   {
-                    "pregunta": "La CoP siempre debe tener y responder a un Propósito",
+                    "pregunta": "La CoP siempre debe tener y responder a un propósito",
                     "respuestaCorrecta": "V",
                     "retroCorrecta": "Felicitaciones, respuesta correcta.",
-                    "retroIncorrecta": "Respuesta Incorrecta: Una CoP, ciertamente necesita un propósito que le dé sentido y dirija su quehacer."
+                    "retroIncorrecta": "Respuesta incorrecta: Una CoP, ciertamente necesita un propósito que le dé sentido y dirija su quehacer."
                   },
                   {
                     "pregunta": "Las CoPs siempre surgen por la necesidad de la alta gerencia, por iniciativa de alguna gerencia",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Respuesta Incorrecta: También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia.",
+                    "retroCorrecta": "Respuesta incorrecta: También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia.",
                     "retroIncorrecta": "Felicitaciones, respuesta correcta."
                   },
                   {
-                    "pregunta": "Una vez que la Cop cumple su objetivo debe cerrarse",
+                    "pregunta": "Una vez que la CoP cumple su objetivo debe cerrarse",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Respuesta Incorrecta: Una CoP también tiene como opción transformarse, cambiar su propósito u objetivos.",
+                    "retroCorrecta": "Respuesta incorrecta: Una CoP también tiene como opción transformarse, cambiar su propósito u objetivos.",
                     "retroIncorrecta": "Felicitaciones, respuesta correcta."
                   }
                 ]

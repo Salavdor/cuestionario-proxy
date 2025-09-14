@@ -136,7 +136,7 @@ function renderMenu(modulos, containerId) {
     const content = document.getElementById("content");
   
     // Mostrar spinner
-    content.innerHTML = `<div class="text-center p-5"><div class="spinner-border" role="status"></div><p>Cargando...</p></div>`;
+    content.innerHTML = `<div class="d-flex justify-content-center align-items-center h-100 w-100"><div class="text-center p-5"><div class="spinner-border" role="status"></div><p>Cargando...</p></div></div>`;
   
     setTimeout(() => {
       // ---------------- Caso especial: Inicio ----------------
@@ -191,6 +191,7 @@ function renderMenu(modulos, containerId) {
         if (!modulo) return;
   
         content.innerHTML = `
+        <div class="d-flex flex-column h-100">
           <div class="row m-0 p-3 encabezado">
             <div class="d-flex flex-row-reverse">
               <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" 
@@ -202,9 +203,10 @@ function renderMenu(modulos, containerId) {
               <span class="fw-bold title-body-secondary">${modulo.titulo}</span>
             </h2>
           </div>
-          <div class="img-container">
+          <div class="img-container flex-grow-1">
             <img src="${modulo.img}" alt="Modulo ${modulo.id}" class="p-0">
           </div>
+        </div>  
         `;
   
         mostrarToast("Portada cargada");
