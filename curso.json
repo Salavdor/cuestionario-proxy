@@ -357,23 +357,28 @@
                       "actividad": {
                         "tipo": "skillquiz",
                         "instrucciones": "<p>Lee la situación y selecciona la mejor respuesta.</p>",
-                        "planteamiento": "<span class='title-body-secondary'>Situación 1:</span><br><span style='color: var(--color-primario-2)'>Reunión de Comunidad</span><br>Un compañero comparte una experiencia difícil, ¿cómo respondes?",
-                        "pregunta": "¿Cuál es la mejor respuesta?",
+                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
+                        "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
                         "opciones": [
                           {
-                            "texto": "Dar consejos rápidos",
+                            "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
                             "correcta": false,
-                            "feedback": "Respuesta incorrecta: no refleja escucha activa."
+                            "feedback": "No refleja escucha activa."
                           },
                           {
-                            "texto": "Mostrar empatía y dejar espacio",
+                            "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
+                            "correcta": false,
+                            "feedback": "No refleja escucha activa."
+                          },
+                          {
+                            "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
                             "correcta": true,
-                            "feedback": "Correcto: refleja comprensión emocional y apertura."
+                            "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
                           },
                           {
-                            "texto": "Cambiar de tema para evitar incomodidad",
+                            "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
                             "correcta": false,
-                            "feedback": "Incorrecto: evadir no ayuda al interlocutor."
+                            "feedback": "No refleja escucha activa."
                           }
                         ]
                       }
