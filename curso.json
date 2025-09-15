@@ -356,7 +356,7 @@
                       "contenido": "",
                       "actividad": {
                         "tipo": "skillquiz",
-                        "instrucciones": "<p>Lee la situación y selecciona la mejor respuesta.</p>",
+                        "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
                         "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
                         "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
                         "opciones": [
@@ -388,9 +388,157 @@
                       "contenido": "",
                       "actividad": {
                         "tipo": "openquiz",
-                        "instrucciones": "<p>Lee la situación y escribe tu respuesta.</p>",
-                        "planteamiento": "<span class='title-body-secondary'>Situación 1:</span><br><span style='color: var(--color-primario-2)'>Reunión de Comunidad</span><br>Un compañero comparte una experiencia difícil, ¿cómo respondes?",
-                        "pregunta": "¿Qué harías?",
+                        "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
+                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
+                        "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
+                        "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                      }
+                    }
+                  ]
+                }
+              ]
+          },
+          {
+            "id": "4_3",
+            "titulo": "Habilidades Interpersonales test de sub navegación",
+            "contenido": "<h2 class='fw-bold'>Habilidades Interpersonales</h2>",
+            "subtemas": [
+              
+            ],
+            "slides": [
+                {
+                  "grupo": "Escucha activa",
+                  "items": [
+                    {
+                      "titulo": "",
+                      "contenido": {
+                              "tipo": "lista",
+                              "estilo": "nodot",
+                              "items": [
+                                { "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>" }
+                              ]
+                            }
+                    },
+                    {
+                      "titulo": "Escucha activa",
+                      "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
+                    },
+                    {
+                      "titulo": "Consejos para demostrar escucha activa",
+                      "contenido": {
+                                        "tipo": "lista",
+                                        "estilo": "dot",
+                                        "items": [
+                                          {
+                                            "texto": "<strong>Establece contacto visual sincero (sin invadir)</strong>",
+                                            "hijos": [
+                                              {
+                                                "texto": "Mira a los ojos de quien habla con atención y calma, sin forzar la mirada."
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "texto": "<strong>Asiente con la cabeza de forma natural</strong>",
+                                            "hijos": [
+                                              { "texto": "Usa pequeños gestos para mostrar que estás siguiendo el mensaje (sin exagerar)." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>Evita interrupciones</strong>",
+                                            "hijos": [
+                                              { "texto": "No completes frases, no corrijas, ni des consejos mientras la otra persona expone su punto." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>Mantén una postura abierta y receptiva</strong>",
+                                            "hijos": [
+                                              { "texto": "Inclina ligeramente el cuerpo hacia adelante, brazos relajados, sin cruzarlos." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>Usa breves verbalizaciones de seguimiento</strong>",
+                                            "hijos": [
+                                              { "texto": "Expresiones como: “sí“, “entiendo“, “claro“, “mmm“, ayudan a mantener el flujo comunicativo." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>Refleja emocionalmente lo que escuchas</strong>",
+                                            "hijos": [
+                                              { "texto": "Muestra empatía con frases como: “eso suena difícil“, “parece que eso te impactó mucho“." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>Parafrasea para confirmar comprensión</strong>",
+                                            "hijos": [
+                                              { "texto": "Resume con tus palabras lo que entendiste: “Entonces, lo que estás diciendo es que...“." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>Haz preguntas abiertas, no invasivas</strong>",
+                                            "hijos": [
+                                              { "texto": "Estimula la profundización sin desviar el foco: “¿Cómo te sentiste en ese momento?“ o “¿Qué crees que necesitas ahora?“." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>No te distraigas (ni física ni mentalmente)</strong>",
+                                            "hijos": [
+                                              { "texto": "Guarda el celular, cierra el computador, y enfoca tu atención completa en la persona." }
+                                            ]
+                                          },
+                                                                                    {
+                                            "texto": "<strong>Respeta los silencios</strong>",
+                                            "hijos": [
+                                              { "texto": "No llenes cada pausa; permite que la otra persona piense o sienta sin presión" }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                    },
+                    {
+                      "titulo": "Prueba tus habilidades de Escucha Activa",
+                      "contenido": "",
+                      "actividad": {
+                        "tipo": "skillquiz",
+                        "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
+                        "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
+                        "opciones": [
+                          {
+                            "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
+                            "correcta": false,
+                            "feedback": "No refleja escucha activa."
+                          },
+                          {
+                            "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
+                            "correcta": false,
+                            "feedback": "No refleja escucha activa."
+                          },
+                          {
+                            "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
+                            "correcta": true,
+                            "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
+                          },
+                          {
+                            "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
+                            "correcta": false,
+                            "feedback": "No refleja escucha activa."
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "titulo": "Reflexiona sobre la comunicación",
+                      "contenido": "",
+                      "actividad": {
+                        "tipo": "openquiz",
+                        "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
+                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
+                        "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
                         "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                       }
                     }
