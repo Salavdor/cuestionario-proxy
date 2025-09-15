@@ -643,21 +643,25 @@ function renderSlides(subtema, path = []) {
   }
 
   const navButtons = `
-    <div class="d-flex justify-content-between mt-3">
-      <button id="btnSlidePrev" class="btn btn-outline-secondary">◂ Volver</button>
-      <button id="btnSlideNext" class="btn btn-outline-secondary">Siguiente ▸</button>
-    </div>
-  `;
+  <div id="navButtons" class="d-flex justify-content-between p-3">
+    <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">
+      <span>◂</span> Volver
+    </button>
+    <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">
+      Siguiente <span>▸</span>
+    </button>
+  </div>
+`;
 
-  const container = `
-    <div id="${slideId}">
-      <div id="slideEncabezado"></div>
-      <div class="row m-0 p-3 actividad">
-        <div id="slideContent" class="mt-3 p-3"></div>
-        ${navButtons}
-      </div>
+const container = `
+  <div id="${slideId}" class="d-flex flex-column h-100">
+    <div id="slideEncabezado"></div>
+    <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
+      <div id="slideContent" class="px-3 h-100"></div>
     </div>
-  `;
+    ${navButtons}
+  </div>
+`;
 
   setTimeout(() => {
     const slideContent = document.getElementById("slideContent");
@@ -670,7 +674,7 @@ function renderSlides(subtema, path = []) {
         return;
       }
 
-      const numModulo = subtema.id.split(".")[0];
+      const numModulo = subtema.id[0];
       const breadcrumbPath = getCurrentBreadcrumb(activeSlideIndex);
 
       slideEncabezado.innerHTML = `
@@ -690,7 +694,7 @@ function renderSlides(subtema, path = []) {
           </nav>
         </div>
         <div class="row m-0 p-3">
-          <div><h2 class="pb-4 fw-bold">${subtema.titulo || ""}</h2></div>
+          <div><h2 class="m-0 fw-bold">${subtema.titulo || ""}</h2></div>
         </div>
       `;
 
@@ -1050,9 +1054,9 @@ function renderSkillQuiz(actividad, containerId) {
 
   return `
     <div class="actividad my-4" id="${containerId}">
-      <div class="mb-3">
-        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#${modalId}">
-          Instrucciones
+      <div class="m-0 d-flex justify-content-end">
+        <button class="btn btn-sm btn-outline-secondary btn-instrucciones" data-bs-toggle="modal" data-bs-target="#${modalId}">
+          <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones.svg"><strong>Instrucciones</strong>
         </button>
       </div>
 
@@ -1070,17 +1074,17 @@ function renderSkillQuiz(actividad, containerId) {
         </div>
       </div>
 
-      <div class="mb-3">
-        <p class="fw-bold">${actividad.planteamiento || "Responde la siguiente pregunta:"}</p>
+      <div class="p-3 mb-3 skillQuizContainer">
+        <p class="fw-bold m-0">${actividad.planteamiento || "Responde la siguiente pregunta:"}</p>
       </div>
 
-      <div class="quiz-skill border p-3 rounded row g-3">
-        <div class="col-12 d-flex align-items-center">
+      <div class="p-0 row g-3 m-0 quiz-skill">
+        <div class="p-3 m-0 d-flex justify-content-center align-items-center quiz-skill-pregunta">
           <p class="mb-0"><strong>${actividad.pregunta}</strong></p>
         </div>
 
-        <div class="col-12">
-          <form class="d-flex flex-column gap-2">
+        <div class="p-3 m-0">
+          <form class="d-flex flex-column gap-3">
             ${actividad.opciones.map((op, idx) => `
               <label class="form-check-label">
                 <input type="radio" name="skillquiz_${containerId}" class="form-check-input" data-index="${idx}"> ${op.texto}
@@ -1139,13 +1143,18 @@ function handleSkillQuizAuto(actividad, container) {
         formContainer.appendChild(feedbackDiv);
       }
 
+      // Actualizamos contenido y clases
+      feedbackDiv.classList.remove("correcta", "incorrecta"); // limpiamos estado previo
+      if (opcion.correcta) {
+        feedbackDiv.classList.add("correcta");
+      } else {
+        feedbackDiv.classList.add("incorrecta");
+      }
+
       // Actualizamos contenido
       const textDiv = feedbackDiv.querySelector(".feedback-text");
       textDiv.innerHTML = `
-        <p class="${opcion.correcta ? 'text-success' : 'text-danger'} fw-bold">
-          ${opcion.correcta ? '✔ Correcto' : '✘ Incorrecto'}
-        </p>
-        <p>${opcion.feedback}</p>
+        <p class="m-0">${opcion.correcta ? '✔ Correcto' : '✘ Incorrecto'}<br>${opcion.feedback}</p>
       `;
       feedbackDiv.style.display = "flex";
     });

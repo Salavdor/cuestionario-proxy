@@ -192,15 +192,15 @@
                 "preguntas": [
                   {
                     "pregunta": "Una CoP es una manera sistematizar la colaboración por parte de un grupo de personas",
-                    "respuestaCorrecta": "F",
+                    "respuestaCorrecta": "V",
                     "retroCorrecta": "Felicitaciones, respuesta correcta.",
                     "retroIncorrecta": "Respuesta incorrecta: Es fundamental que el grupo de personas que conforman una CoP, comparta un interés o práctica común y sistematice sus hallazgos."
                   },
                   {
                     "pregunta": "La etapa de “Gestión” se refiere al momento en que las personas convocadas conocen el marco de trabajo y lo ajustan",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Respuesta incorrecta: La etapa referida, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el taller de lanzamiento.",
-                    "retroIncorrecta": "Felicitaciones, respuesta correcta."
+                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                    "retroIncorrecta": "Respuesta incorrecta: La etapa referida, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el taller de lanzamiento."
                   },
                   {
                     "pregunta": "La CoP siempre debe tener y responder a un propósito",
@@ -211,14 +211,14 @@
                   {
                     "pregunta": "Las CoPs siempre surgen por la necesidad de la alta gerencia, por iniciativa de alguna gerencia",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Respuesta incorrecta: También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia.",
-                    "retroIncorrecta": "Felicitaciones, respuesta correcta."
+                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                    "retroIncorrecta": "Respuesta incorrecta: También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia."
                   },
                   {
                     "pregunta": "Una vez que la CoP cumple su objetivo debe cerrarse",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Respuesta incorrecta: Una CoP también tiene como opción transformarse, cambiar su propósito u objetivos.",
-                    "retroIncorrecta": "Felicitaciones, respuesta correcta."
+                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                    "retroIncorrecta": "Respuesta incorrecta: Una CoP también tiene como opción transformarse, cambiar su propósito u objetivos."
                   }
                 ]
               }
@@ -242,7 +242,7 @@
           }
         ]
       },
-            {
+      {
         "id": 4,
         "titulo": "Habilidades del Facilitador",
         "img": "src/img/m4_inicio.jpg",
@@ -250,17 +250,13 @@
           {
             "id": "4.1",
             "titulo": "Habilidades de Facilitación",
-            "contenido": "<h2 class='pb-4 fw-bold'>Habilidades de Facilitación</h2>",
-            "actividad": {
-              "tipo": "openquestion",
-              "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de práctica?",
-              "placeholder": "Escribe tu respuesta aquí..."
-            }
+            "contenido": "<h2 class='pb-4 fw-bold'>Habilidades de Facilitación</h2> ",
+            "imagen": "<img src='src/img/m4_s1_f1.jpg' alt='Modulo1' class='img-fluid'>"
           },
           {
-            "id": "4.2",
+            "id": "4_2",
             "titulo": "Habilidades Interpersonales",
-            "contenido": "<h2 class='pb-4 fw-bold'>Habilidades Interpersonales</h2>",
+            "contenido": "<h2 class='fw-bold'>Habilidades Interpersonales</h2>",
             "slides": [
                 {
                   "grupo": "Escucha activa",
@@ -272,17 +268,17 @@
                               "estilo": "nodot",
                               "items": [
                                 { "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3'><button class='btn btn-outline-primary actividad-btn m-0'>Revisa <br> y ejercítate</button><p class='fw-bold m-0'><span class='title-body-secondary'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3'><button class='btn btn-outline-primary actividad-btn m-0'>Revisa <br>y ejercítate</button><p class='fw-bold m-0'><span class='title-body-secondary'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3'><button class='btn btn-outline-primary actividad-btn m-0'>Revisa <br>y ejercítate</button><p class='fw-bold m-0'><span class='title-body-secondary'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3'><button class='btn btn-outline-primary actividad-btn m-0'>Revisa <br>y ejercítate</button><p class='fw-bold m-0'><span class='title-body-secondary'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3'><button class='btn btn-outline-primary actividad-btn m-0'>Revisa <br>y ejercítate</button><p class='fw-bold m-0'><span class='title-body-secondary'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>" }
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>" },
+                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>" }
                               ]
                             }
                     },
                     {
                       "titulo": "Escucha activa",
-                      "contenido": "<img class='img-fluid' src='src/img/Modulo1.jpg'><div class='row m-0'><p class='p-0'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
+                      "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
                     },
                     {
                       "titulo": "Consejos para demostrar escucha activa",
@@ -361,7 +357,7 @@
                       "actividad": {
                         "tipo": "skillquiz",
                         "instrucciones": "<p>Lee la situación y selecciona la mejor respuesta.</p>",
-                        "planteamiento": "Un compañero comparte una experiencia difícil, ¿cómo respondes?",
+                        "planteamiento": "<span class='title-body-secondary'>Situación 1:</span><br><span style='color: var(--color-primario-2)'>Reunión de Comunidad</span><br>Un compañero comparte una experiencia difícil, ¿cómo respondes?",
                         "pregunta": "¿Cuál es la mejor respuesta?",
                         "opciones": [
                           {
