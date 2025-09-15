@@ -16,18 +16,18 @@
       },
       {
         "id": 1,
-        "titulo": "Las Comunidades de práctica (CoP)",
+        "titulo": "Las Comunidades de Práctica (CoP)",
         "img": "src/img/Modulo1.jpg",
         "subtemas": [
           {
             "id": "1.1",
-            "titulo": "¿Qué es una Comunidad de práctica?",
+            "titulo": "¿Qué es una Comunidad de Práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
             "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/m1_s2_f1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/m1_s2_f2.jpg' alt='' class='img-fluid rounded-5'></div></div>"
           },
           {
             "id": "1.2",
-            "titulo": "¿Por qué una Comunidad de práctica?",
+            "titulo": "¿Por qué una Comunidad de Práctica?",
             "contenido": "<h2 class='pb-4 fw-bold'>¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
             "imagen": "<img src='src/img/m1_s3_f1.jpg' alt='Modulo1' class='img-fluid'>"
           },
@@ -236,7 +236,7 @@
             "contenido": "<p>El líder orienta el trabajo de la comunidad, mientras que el facilitador promueve la participación.</p>",
             "actividad": {
               "tipo": "openquestion",
-              "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de práctica?",
+              "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de Práctica?",
               "placeholder": "Escribe tu respuesta aquí..."
             }
           }
@@ -384,7 +384,7 @@
                       "actividad": {
                         "tipo": "openquiz",
                         "instrucciones": "<p>Lee la situación y escribe tu respuesta.</p>",
-                        "planteamiento": "Describe cómo responderías a un compañero que se siente frustrado en el trabajo.",
+                        "planteamiento": "<span class='title-body-secondary'>Situación 1:</span><br><span style='color: var(--color-primario-2)'>Reunión de Comunidad</span><br>Un compañero comparte una experiencia difícil, ¿cómo respondes?",
                         "pregunta": "¿Qué harías?",
                         "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                       }

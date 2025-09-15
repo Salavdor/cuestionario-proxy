@@ -364,11 +364,11 @@
 
     .form-control {
       font-size: 0.8rem;
-      border: 1px solid var(--color-primario-1);
+      border: 2px solid var(--color-primario-2);
       border-radius: 0% 0% 40px 0%;
     }
 
-    textarea.form-control {
+    textarea.form-control, textarea.openquiz-textarea {
       resize: vertical;
       /* permitir redimensionar solo verticalmente */
       font-family: 'Montserrat', sans-serif;
@@ -685,6 +685,10 @@ background-color: var(--color-secundario-6);
 }
 
 .quiz-skill input[type="radio"].form-check-input {
+ appearance: none;         /* quita el estilo nativo */
+  -webkit-appearance: none; /* quita el estilo nativo en Safari */
+  -moz-appearance: none;    /* quita el estilo nativo en Firefox */
+
   width: 18px;       /* ajusta el tamaño si lo quieres más grande */
   height: 18px;
   border-radius: 0;  /* lo hace cuadrado */
@@ -693,9 +697,16 @@ background-color: var(--color-secundario-6);
   margin-top: 2px;
 }
 
+
+
 .quiz-skill form {
   font-weight: bold;
 }
+
+.form-check-label:hover {
+cursor: pointer;
+}
+
     /* @media (min-width: 1200px) {
 
       p,

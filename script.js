@@ -1080,7 +1080,7 @@ function renderSkillQuiz(actividad, containerId) {
 
       <div class="p-0 row g-3 m-0 quiz-skill">
         <div class="p-3 m-0 d-flex justify-content-center align-items-center quiz-skill-pregunta">
-          <p class="mb-0"><strong>${actividad.pregunta}</strong></p>
+          <p class="fs-4 mb-0"><strong>${actividad.pregunta}</strong></p>
         </div>
 
         <div class="p-3 m-0">
@@ -1168,9 +1168,9 @@ function renderOpenQuiz(actividad, containerId) {
 
   return `
     <div class="actividad my-4" id="${containerId}">
-      <div class="mb-3">
-        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#${modalId}">
-          Instrucciones
+      <div class="m-0 d-flex justify-content-end">
+        <button class="btn btn-sm btn-outline-secondary btn-instrucciones" data-bs-toggle="modal" data-bs-target="#${modalId}">
+          <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones.svg"><strong>Instrucciones</strong>
         </button>
       </div>
 
@@ -1188,20 +1188,24 @@ function renderOpenQuiz(actividad, containerId) {
         </div>
       </div>
 
-      <div class="mb-3">
-        <p class="fw-bold">${actividad.pregunta || "Responde la siguiente pregunta:"}</p>
+      <div class="p-3 mb-3 skillQuizContainer">
+        <p class="fw-bold m-0">${actividad.planteamiento || "Responde la siguiente pregunta:"}</p>
       </div>
 
-      <div class="quiz-open border p-3 rounded position-relative">
+      <div class="mb-3">
+        <p class="fs-4 fw-bold">${actividad.pregunta || "Responde la siguiente pregunta:"}</p>
+      </div>
+
+      <div class="quiz-open position-relative">
         <form class="openquiz-form d-flex flex-column gap-2">
-          <label>
-            Respuesta:
-            <textarea class="openquiz-textarea" rows="4" placeholder="Escribe tu respuesta aquí" required></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+          
+            <textarea class="form-control openquiz-textarea" rows="4" placeholder="Escribe tu respuesta aquí" required></textarea>
+          <div>
+          <button type="submit" class="btn btn-lista mt-2" style="max-width: 210px;float: right;">Evaluar mi respuesta</button>
+          </div>
         </form>
 
-        <div class="openquiz-feedback mt-3 p-3 border rounded bg-light" style="display:none; position: relative;"></div>
+        <div class="openquiz-feedback mt-3 p-3 form-control" style=" position: relative; min-height: 60px;"></div>
       </div>
     </div>
   `;
