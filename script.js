@@ -223,65 +223,51 @@ function cargarContenido(subtemaId, modulos) {
     ${subtema.imagen||""}`;
 
     // ---------------- Procesar actividades y slides ----------------
-    function procesarActividades(obj, parentId = "", isSlideItem = false) {
-      if (!obj) return;
+function procesarActividades(obj, parentId = "", isSlideItem = false) {
+  if (!obj) return;
 
-      const esGrupo = !!subtema.slides && subtema.slides.length > 0;
+  const esGrupo = !!subtema.slides && subtema.slides.length > 0;
 
-      // --- Actividad normal ---
-      if (!isSlideItem && obj.actividad && !esGrupo) {
-        const skillId = `skillQuiz_${subtema.id}_${parentId}_${Date.now()}`;
-        let html = "";
-        if (obj.actividad.tipo === "skillquiz") html = renderSkillQuiz(obj.actividad, skillId);
-        else if (obj.actividad.tipo === "lista") html = renderLista(obj.actividad.items, obj.actividad.estilo || "dot", 0, `unidad${subtema.id}-lista${Date.now()}`);
-        else html = renderActividad(obj.actividad);
+  // --- Actividad normal ---
+  if (!isSlideItem && obj.actividad && !esGrupo) {
+    const skillId = `skillQuiz_${subtema.id}_${parentId}_${Date.now()}`;
+    let html = "";
+    if (obj.actividad.tipo === "skillquiz") html = renderSkillQuiz(obj.actividad, skillId);
+    else if (obj.actividad.tipo === "lista") html = renderLista(obj.actividad.items, obj.actividad.estilo || "dot", 0, `unidad${subtema.id}-lista${Date.now()}`);
+    else html = renderActividad(obj.actividad);
 
-        content.insertAdjacentHTML("beforeend", html);
+    content.insertAdjacentHTML("beforeend", html);
 
-        if (obj.actividad.tipo === "skillquiz") handleSkillQuizAuto(obj.actividad, document.getElementById(skillId));
-        if (obj.actividad.tipo === "tablaVF") handleTablaVF(obj.actividad, content.querySelector("table.table:last-child"));
-      }
+    if (obj.actividad.tipo === "skillquiz") handleSkillQuizAuto(obj.actividad, document.getElementById(skillId));
+    if (obj.actividad.tipo === "tablaVF") handleTablaVF(obj.actividad, content.querySelector("table.table:last-child"));
+  }
 
-      // --- Slides: solo si es grupo y estamos en el subtema principal ---
-      if (esGrupo && obj === subtema && obj.slides?.length) {
-        // Crear contenedor principal para slides
-        let slideContainer = document.getElementById("slideContentWrapper");
-        if (!slideContainer) {
-          content.insertAdjacentHTML("beforeend", `
-            <div id="slides_${subtema.id}" class="d-flex flex-column h-100">
-              <div id="slideEncabezado" class="px-3 pb-3"></div>
-              <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
-                <div id="slideContent" class="px-3 h-100"></div>
-              </div>
-              <div id="navButtons" class="d-flex justify-content-between p-3">
-                <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver"><span>◂</span> Volver</button>
-                <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente <span>▸</span></button>
-              </div>
-            </div>
-          `);
-          slideContainer = document.getElementById("slideContentWrapper");
-        }
-
-        const slideContentDiv = slideContainer.querySelector("#slideContent");
-        slideContentDiv.innerHTML = ""; // limpiar mensaje de "No hay slides disponibles"
-
-        obj.slides.forEach((slide, i) => {
-          const slideHTML = renderSlides({
-            titulo: slide.grupo,
-            items: slide.items || []
-          });
-          slideContentDiv.insertAdjacentHTML("beforeend", slideHTML);
-
-          // Procesar actividades dentro de los items del slide
-          if (slide.items && slide.items.length) {
-            slide.items.forEach((item, j) => procesarActividades(item, `${parentId}_slide${i}_${j}`, true));
-          }
-        });
-      }
-
-      // --- Subtemas hijos ---
-      if (obj.subtemas) obj.subtemas.forEach(st => procesarActividades(st, parentId));
+  // --- Slides: solo si es grupo y estamos en el subtema principal ---
+  if (esGrupo && obj === subtema && obj.slides?.length) {
+    // Crear contenedor principal para slides si no existe
+    let slideContainer = document.getElementById(`slides_${subtema.id}`);
+    if (!slideContainer) {
+      content.insertAdjacentHTML("beforeend", `<div id="slides_${subtema.id}"></div>`);
+      slideContainer = document.getElementById(`slides_${subtema.id}`);
     }
+
+    // Preparamos objeto para renderSlides con la estructura correcta
+    const slideObj = {
+      id: `${subtema.id}-slides`,
+      titulo: subtema.titulo,
+      slides: subtema.slides.map(slide => ({
+        grupo: slide.grupo,
+        items: slide.items || []
+      }))
+    };
+
+    // Renderizar todos los slides dentro del contenedor
+    slideContainer.innerHTML = renderSlides(slideObj);
+  }
+
+  // --- Subtemas hijos ---
+  if (obj.subtemas) obj.subtemas.forEach(st => procesarActividades(st, parentId));
+}
 
     procesarActividades(subtema);
 
@@ -292,28 +278,40 @@ function cargarContenido(subtemaId, modulos) {
 
 
 
-
 // -------------------- Búsqueda recursiva --------------------
 function findSubtemaRecursivo(modulos, subtemaId) {
-  for(const modulo of modulos){
-    if(modulo.subtemas){
+  for (const modulo of modulos) {
+    if (modulo.subtemas) {
       const result = findSubtemaEnLista(modulo.subtemas, subtemaId);
-      if(result) return result;
+      if (result) {
+        console.log("✅ Subtema encontrado en módulo:", modulo.titulo);
+        console.log("   📌 Path:", result.path);
+        console.log("   🔎 Subtema completo:", result.subtema);
+        console.log("   📑 Slides detectados:", result.subtema.slides);
+        console.log("   📑 Actividad detectada:", result.subtema.actividad);
+        return result;
+      }
     }
   }
+  console.log("⚠️ No se encontró el subtema con id:", subtemaId);
   return null;
 }
-function findSubtemaEnLista(lista, subtemaId, path=[]){
-  for(const sub of lista){
-    if(sub.id===subtemaId) return { subtema: sub, path: [...path, sub.titulo] };
-    if(sub.subtemas){
+
+function findSubtemaEnLista(lista, subtemaId, path = []) {
+  for (const sub of lista) {
+    console.log("👀 Revisando subtema:", sub.titulo, "| ID:", sub.id);
+    if (sub.id === subtemaId) {
+      console.log("🎯 ¡Match encontrado!");
+      return { subtema: sub, path: [...path, sub.titulo] };
+    }
+    if (sub.subtemas) {
       const res = findSubtemaEnLista(sub.subtemas, subtemaId, [...path, sub.titulo]);
-      if(res) return res;
+      if (res) return res;
     }
   }
   return null;
-}
-  
+}  
+
   // ---------------- Función auxiliar para listas ----------------
   function renderLista(items, estilo = "dot", nivel = 0, listaId = null) {
     if (!items || !Array.isArray(items)) return "";
@@ -589,53 +587,70 @@ function renderSlides(subtema, path = []) {
   let activeSlideIndex = 0;
   const slideId = `slides_${subtema.id}`;
 
-  const flatSlides = subtema.slides?.flatMap(grupo =>
-    grupo.items.map(item => ({ ...item, grupo: grupo.grupo }))
-  ) || [];
+  const flatSlides = (subtema.slides || []).flatMap(grupo =>
+    (grupo.items || []).map(item => ({ ...item, grupo: grupo.grupo }))
+  );
+
+  // Si no hay slides, retornamos un contenedor simple
+  if (!flatSlides.length) {
+    return `
+      <div id="${slideId}" class="d-flex flex-column h-100">
+        <div id="slideEncabezado" class="px-3 pb-3"></div>
+        <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
+          <div id="slideContent" class="px-3 h-100">
+            <p>No hay slides disponibles.</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
 
   const navButtons = `
-  <div id="navButtons" class="d-flex justify-content-between p-3">
-    <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">
-      <span>◂</span> Volver
-    </button>
-    <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">
-      Siguiente <span>▸</span>
-    </button>
-  </div>
-`;
+    <div id="navButtons" class="d-flex justify-content-between align-items-center p-3 w-100">
+      <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">◂ Volver</button>
+      <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente ▸</button>
+    </div>
+  `;
 
   const container = `
-  <div id="${slideId}" class="d-flex flex-column h-100">
-    <div id="slideEncabezado" class="px-3 pb-3"></div> <!-- 🔹 aquí solo título -->
-    <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
-      <div id="slideContent" class="px-3 h-100"></div>
+    <div id="${slideId}" class="d-flex flex-column h-100">
+      <div id="slideEncabezado" class="px-3 pb-3"></div>
+      <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
+        <div id="slideContent" class="px-3 h-100"></div>
+      </div>
+      ${navButtons}
     </div>
-    ${navButtons}
-  </div>
-`;
+  `;
 
   setTimeout(() => {
     const slideContent = document.getElementById("slideContent");
     const slideEncabezado = document.getElementById("slideEncabezado");
+    const btnPrev = document.getElementById("btnSlidePrev");
+    const btnNext = document.getElementById("btnSlideNext");
+    const slideIndicator = document.getElementById("slideIndicator");
+
+    function updateNav() {
+ btnPrev.style.visibility = activeSlideIndex === 0 ? "hidden" : "visible";
+  btnNext.style.visibility = activeSlideIndex === flatSlides.length - 1 ? "hidden" : "visible";
+      // slideIndicator.textContent = `Slide ${activeSlideIndex + 1} de ${flatSlides.length}`;
+    }
 
     async function renderCurrentSlide() {
       const current = flatSlides[activeSlideIndex];
       if (!current) {
         slideContent.innerHTML = "<p>No hay slides disponibles.</p>";
         slideEncabezado.innerHTML = "";
+        updateNav();
         return;
       }
 
-      // 🔹 Solo título del slide
       slideEncabezado.innerHTML = current.grupo
         ? `<h2 class="fw-bold m-0 px-3 title-body-secondary">${current.grupo}</h2>`
         : "";
 
-      // 🔹 Contenido del slide
       let html = "";
-      if (typeof current.contenido === "string") {
-        html += current.contenido;
-      } else if (current.contenido?.tipo === "lista") {
+      if (typeof current.contenido === "string") html += current.contenido;
+      else if (current.contenido?.tipo === "lista") {
         html += renderLista(
           current.contenido.items,
           current.contenido.estilo || "dot",
@@ -645,7 +660,6 @@ function renderSlides(subtema, path = []) {
         );
       }
 
-      // 🔹 Actividad
       let containerId = null;
       if (current.actividad) {
         if (current.actividad.tipo === "skillquiz") {
@@ -659,45 +673,43 @@ function renderSlides(subtema, path = []) {
         }
       }
 
-      slideContent.innerHTML = html;
+      slideContent.innerHTML = html || "<p>No hay slides disponibles.</p>";
 
-      // Inicializar skillquiz
-      if (containerId && current.actividad.tipo === "skillquiz") {
+      if (containerId && current.actividad?.tipo === "skillquiz") {
         const skillContainer = document.getElementById(containerId);
         if (skillContainer) handleSkillQuizAuto(current.actividad, skillContainer);
       }
 
-      // Inicializar openquiz
-      if (containerId && current.actividad.tipo === "openquiz") {
+      if (containerId && current.actividad?.tipo === "openquiz") {
         const openContainer = document.getElementById(containerId);
         if (openContainer) handleOpenQuiz(current.actividad, openContainer);
       }
 
-      // Otros tipos
       if (current.actividad?.tipo === "quiz") handleQuiz(current.actividad.preguntas);
       if (current.actividad?.tipo === "truefalse") handleTrueFalse(current.actividad.preguntas);
       if (current.actividad?.tipo === "tablaVF") {
         const tabla = slideContent.querySelector("table:last-child");
         if (tabla) handleTablaVF(current.actividad, tabla);
       }
+
+      updateNav();
     }
 
-    renderCurrentSlide();
-
-    document.getElementById("btnSlidePrev").addEventListener("click", () => {
+    btnPrev.addEventListener("click", () => {
       if (activeSlideIndex > 0) {
         activeSlideIndex--;
         renderCurrentSlide();
       }
     });
 
-    document.getElementById("btnSlideNext").addEventListener("click", () => {
+    btnNext.addEventListener("click", () => {
       if (activeSlideIndex < flatSlides.length - 1) {
         activeSlideIndex++;
         renderCurrentSlide();
       }
     });
 
+    renderCurrentSlide();
   }, 0);
 
   return container;

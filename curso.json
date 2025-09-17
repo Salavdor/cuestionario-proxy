@@ -315,12 +315,7 @@
           "id": "4-2",
           "titulo": "Habilidades Interpersonales",
           "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
-          "subtemas": [
-            {
-              "id": "4-2-1",
-              "titulo": "Escucha activa",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
-              "actividad": {
+          "actividad": {
                  "tipo": "lista",
                         "estilo": "nodot",
                         "items": [
@@ -344,37 +339,15 @@
                           }
                         ]
               }, 
+          "subtemas": [
+            {
+              "id": "4-2-1",
+              "titulo": "Escucha activa",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
               "slides": [
                 {
                   "grupo": "Escucha activa",
                   "items": [
-                    {
-                      "titulo": "",
-                      "contenido": {
-                        "tipo": "lista",
-                        "estilo": "nodot",
-                        "items": [
-                          {
-                            "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
-                          }
-                        ]
-                      }
-                    },
                     {
                       "titulo": "Escucha activa",
                       "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
