@@ -1,553 +1,523 @@
 {
-    "modulos": [
-      {
-        "id": 0,
-        "titulo": "Inicio",
-        "img": "src/img/inicio_curso.jpg",
-        "contenido": "<h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto \"Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs)\", tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidad de Práctica.<br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p>",
-        "subtemas": [
-          {
-            "id": "0.0",
-            "titulo": "",
-            "contenido": "",
-            "imagen": ""
-          }
-        ]
-      },
-      {
-        "id": 1,
-        "titulo": "Las Comunidades de Práctica (CoP)",
-        "img": "src/img/Modulo1.jpg",
-        "subtemas": [
-          {
-            "id": "1.1",
-            "titulo": "¿Qué es una Comunidad de Práctica?",
-            "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
-            "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/m1_s2_f1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/m1_s2_f2.jpg' alt='' class='img-fluid rounded-5'></div></div>"
-          },
-          {
-            "id": "1.2",
-            "titulo": "¿Por qué una Comunidad de Práctica?",
-            "contenido": "<h2 class='pb-4 fw-bold'>¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
-            "imagen": "<img src='src/img/m1_s3_f1.jpg' alt='Modulo1' class='img-fluid'>"
-          },
-          {
-            "id": "1.3",
-            "titulo": "Metodología para el desarrollo y la gestión de una CoP",
-            "contenido": "<h2 class='pb-4 fw-bold'>Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span></h2>",
-            "imagen": "",
-            "actividad": {
-              "tipo": "tabs",
-              "default": {
-                "titulo": "",
-                "contenido": "<img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'>"
+  "modulos": [
+    {
+      "id": 0,
+      "titulo": "Inicio",
+      "img": "src/img/inicio_curso.jpg",
+      "contenido": "<h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto \"Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs)\", tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidad de Práctica.<br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p>",
+      "subtemas": [
+        {
+          "id": "0.0",
+          "titulo": "",
+          "contenido": "",
+          "imagen": ""
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "titulo": "Las Comunidades de Práctica (CoP)",
+      "img": "src/img/Modulo1.jpg",
+      "subtemas": [
+        {
+          "id": "1.1",
+          "titulo": "¿Qué es una Comunidad de Práctica?",
+          "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
+          "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/m1_s2_f1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/m1_s2_f2.jpg' alt='' class='img-fluid rounded-5'></div></div>"
+        },
+        {
+          "id": "1.2",
+          "titulo": "¿Por qué una Comunidad de Práctica?",
+          "contenido": "<h2 class='pb-4 fw-bold'>¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
+          "imagen": "<img src='src/img/m1_s3_f1.jpg' alt='Modulo1' class='img-fluid'>"
+        },
+        {
+          "id": "1.3",
+          "titulo": "Metodología para el desarrollo y la gestión de una CoP",
+          "contenido": "<h2 class='pb-4 fw-bold'>Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span></h2>",
+          "imagen": "",
+          "actividad": {
+            "tipo": "tabs",
+            "default": {
+              "titulo": "",
+              "contenido": "<img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'>"
+            },
+            "showArrows": true,
+            "items": [
+              {
+                "label": "<img src='src/img/m1_s4_icono_deteccion.svg'>Etapa 1 <br><strong class='title-body-secondary'>DETECCIÓN</strong>",
+                "contenido": "<p>En esta primera etapa, el objetivo consiste en identificar aquellos casos en que una COP puede resultar la respuesta adecuada para una serie de personas que buscan la oportunidad de trabajar y aprender colaborativamente.<br><br>Para ello, proponemos responder estas 3 preguntas, de manera flexible ya que cada caso reúne sus propias peculiaridades:</p>",
+                "actividad": {
+                  "tipo": "openquestion",
+                  "preguntas": [
+                    {
+                      "pregunta": "¿Para qué te ayudaría crear una COP?",
+                      "enunciado": "",
+                      "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
+                      "ejemplos": [
+                        "Buscas un espacio para reflexionar en el que puedan participar profesionales distribuidos geograficamente.",
+                        "Quieres crear una instancia para que personas que realizan tareas similares puedan compartir sus experiencias y conocimientos.",
+                        "Un equipo o un área necesita elaborar un producto, resolver una problemática, consensuar una mejor manera de hacer las cosas o lograr un resultado.",
+                        "Personas con intereses comunes -<strong><i>de diferentes organizaciones</i></strong>- queremos aprender más de loque sabemos sobre algo."
+                      ]
+                    },
+                    {
+                      "pregunta": "¿Quiénes son las personas que debieran formar parte de la comunidad?",
+                      "enunciado": "",
+                      "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
+                      "ejemplos": [
+                        "Se trata de los participantes que van a contribuir a que la COP logre su propósito.",
+                        "<strong>Por ejemplo:</strong> Integrantes de un área o de un equipo, o pares que desempeñan el mismo trabajo en lugares diferentes, o representantes de distintas organizaciones…",
+                        "Es fundamental conseguir un Patrocinador, que apoye estas ideas iniciales. Con éste, puedes completar esta etapa y pasar a la siguiente."
+                      ]
+                    },
+                    {
+                      "pregunta": "¿Qué necesitamos para que la comunidad pudiese funcionar de forma adecuada?",
+                      "enunciado": "",
+                      "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
+                      "ejemplos": [
+                        "Que recursos hacen falta para que la COP y sus integrantes puedan lograr su propósito:",
+                        "<strong>Por ejemplo:</strong> apoyo directivo (patrocinador), tiempo y cargas de trabajo necesarias, permisos o información a las jefaturas, disponibilidad de un espacio físico para las sesiones, recursos tecnológicos, dinero para traslados u otros, acceso a expertos, etc."
+                      ]
+                    }
+                  ]
+                }
               },
-              "showArrows": true,
-              "items": [
-                {
-                  "label": "<img src='src/img/m1_s4_icono_deteccion.svg'>Etapa 1 <br><strong class='title-body-secondary'>DETECCIÓN</strong>",
-                  "contenido": "<p>En esta primera etapa, el objetivo consiste en identificar aquellos casos en que una COP puede resultar la respuesta adecuada para una serie de personas que buscan la oportunidad de trabajar y aprender colaborativamente.<br><br>Para ello, proponemos responder estas 3 preguntas, de manera flexible ya que cada caso reúne sus propias peculiaridades:</p>",
-                  "actividad": {
-                    "tipo": "openquestion",
-                    "preguntas": [
-                      {
-                        "pregunta":"¿Para qué te ayudaría crear una COP?",
-                        "enunciado": "",
-                        "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
-                        "ejemplos": [
-                          "Buscas un espacio para reflexionar en el que puedan participar profesionales distribuidos geograficamente.",
-                          "Quieres crear una instancia para que personas que realizan tareas similares puedan compartir sus experiencias y conocimientos.",
-                          "Un equipo o un área necesita elaborar un producto, resolver una problemática, consensuar una mejor manera de hacer las cosas o lograr un resultado.",
-                          "Personas con intereses comunes -<strong><i>de diferentes organizaciones</i></strong>- queremos aprender más de loque sabemos sobre algo."
-                        ]
-                      },
-                      {
-                        "pregunta": "¿Quiénes son las personas que debieran formar parte de la comunidad?",
-                        "enunciado": "",
-                        "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
-                        "ejemplos": [
-                          "Se trata de los participantes que van a contribuir a que la COP logre su propósito.",
-                          "<strong>Por ejemplo:</strong> Integrantes de un área o de un equipo, o pares que desempeñan el mismo trabajo en lugares diferentes, o representantes de distintas organizaciones…",
-                          "Es fundamental conseguir un Patrocinador, que apoye estas ideas iniciales. Con éste, puedes completar esta etapa y pasar a la siguiente."
-                        ]
-                      },
-                      {
-                        "pregunta": "¿Qué necesitamos para que la comunidad pudiese funcionar de forma adecuada?",
-                        "enunciado": "",
-                        "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
-                        "ejemplos": [
-                          "Que recursos hacen falta para que la COP y sus integrantes puedan lograr su propósito:",
-                          "<strong>Por ejemplo:</strong> apoyo directivo (patrocinador), tiempo y cargas de trabajo necesarias, permisos o información a las jefaturas, disponibilidad de un espacio físico para las sesiones, recursos tecnológicos, dinero para traslados u otros, acceso a expertos, etc."
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "label": "<img src='src/img/m1_s4_icono_diseno.svg'>Etapa 2 <br><strong class='title-body-secondary'>DISEÑO</strong>",
-                  "contenido": "<p class='mb-5'>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestasobtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
-                  "actividad": {
-                    "tipo": "collapse",
-                    "bloques": [
-                      {
-                        "titulo": "1°. - Conformar un Equipo Impulsor:",
-                        "parrafo": "son las personas que sienten la necesidad de crear la COP como espacio de colaboración y aprendizaje y/o participan en estas instancias iniciales con el objetivo de crear la COP.",
-                        "opciones": [
-                          {
-                            "boton": "▼",
-                            "contenido": {
-                              "tipo": "lista",
-                              "estilo": "nodot",
-                              "items": [
-                                { "texto": "<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):" },
-                                { "texto": "<strong>Un patrocinador</strong><br>(representante de la alta gerencia de la empresa) que entiende el valor que aporta la COP, la apoya con los recursos a su alcance, aunque no participa en su operativa." },
-                                { "texto": "<strong>Un “líder”</strong><br>interesado y/o conocedor del tema o propósito propuesto para la CoP, que podrá representar inicialmente a los participantes en la COP." },
-                                { "texto": "<strong>Un par de posibles participantes</strong><br>que supongan un claro aporte al cumplimiento del propósito que se ha delineado." },
-                                { "texto": "Si es factible,<strong>un “futuro facilitador”</strong><br>que dinamizará las actividades de la comunidad, promoverá la participación y sistematizará los avances." },
-                                { "texto": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>" }
-                              ]
-                            }
+              {
+                "label": "<img src='src/img/m1_s4_icono_diseno.svg'>Etapa 2 <br><strong class='title-body-secondary'>DISEÑO</strong>",
+                "contenido": "<p class='mb-5'>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestasobtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
+                "actividad": {
+                  "tipo": "collapse",
+                  "bloques": [
+                    {
+                      "titulo": "1°. - Conformar un Equipo Impulsor:",
+                      "parrafo": "son las personas que sienten la necesidad de crear la COP como espacio de colaboración y aprendizaje y/o participan en estas instancias iniciales con el objetivo de crear la COP.",
+                      "opciones": [
+                        {
+                          "boton": "▼",
+                          "contenido": {
+                            "tipo": "lista",
+                            "estilo": "nodot",
+                            "items": [
+                              {
+                                "texto": "<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):"
+                              },
+                              {
+                                "texto": "<strong>Un patrocinador</strong><br>(representante de la alta gerencia de la empresa) que entiende el valor que aporta la COP, la apoya con los recursos a su alcance, aunque no participa en su operativa."
+                              },
+                              {
+                                "texto": "<strong>Un “líder”</strong><br>interesado y/o conocedor del tema o propósito propuesto para la CoP, que podrá representar inicialmente a los participantes en la COP."
+                              },
+                              {
+                                "texto": "<strong>Un par de posibles participantes</strong><br>que supongan un claro aporte al cumplimiento del propósito que se ha delineado."
+                              },
+                              {
+                                "texto": "Si es factible,<strong>un “futuro facilitador”</strong><br>que dinamizará las actividades de la comunidad, promoverá la participación y sistematizará los avances."
+                              },
+                              {
+                                "texto": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>"
+                              }
+                            ]
                           }
-                        ]
-                      },
-                      {
-                        "titulo": "2°. - Delinear el Marco de Trabajo:",
-                        "parrafo": "son las primeras definiciones que el equipo impulsor va a concretar como paso previo a la convocatoria a los participantes al taller de lanzamiento.",
-                        "opciones": [
-                          {
-                            "boton": "▼",
-                            "contenido": {
-                              "tipo": "lista",
-                              "estilo": "nodot",
-                              "items": [
-                                { "texto": "<strong>Elementos del Marco de Trabajo:</strong><br>(no es obligatorio que el equipo impulsor defina todos elementos para comenzar la CoP)" },
-                                { "texto": "<strong>Propósito:</strong> la razón por la que se crea la COP y lo que desea alcanzar." },
-                                { "texto": "<strong>Participantes:</strong> las personas (con nombres y apellidos) a quienes se propone invitar a formar parte de la COP." },
-                                { "texto": "<strong>Roles:</strong><br> los roles que harán falta para que la COP pueda avanzar a conseguir su propósito: Líder y facilitador. También puede hacer falta apoyo por parte de TI, del área de comunicaciones, de expertos o académicos externos, especialistas, etc." },
-                                { "texto": "Una propuesta de <strong>compromisos</strong> (principios de trabajo) que regirán el funcionamiento de la COP, como transparencia, compartir información, respeto por todas las opiniones, cumplimiento de los compromisos, etc." },
-                                { "texto": "<strong>Recursos</strong> necesarios como asignación de tiempo, espacio físico, apoyo institucional, permiso de las jefaturas, tecnología, presupuesto, etc." },
-                                { "texto": "<strong>Planificación del taller de lanzamiento</strong> e invitación a los participantes. Reflexione y complete algunas ideas respecto de los elementos del marco de trabajo y reúna a su equipo impulsor para profundizar en ellas." }
-                              ]
-                            }
+                        }
+                      ]
+                    },
+                    {
+                      "titulo": "2°. - Delinear el Marco de Trabajo:",
+                      "parrafo": "son las primeras definiciones que el equipo impulsor va a concretar como paso previo a la convocatoria a los participantes al taller de lanzamiento.",
+                      "opciones": [
+                        {
+                          "boton": "▼",
+                          "contenido": {
+                            "tipo": "lista",
+                            "estilo": "nodot",
+                            "items": [
+                              {
+                                "texto": "<strong>Elementos del Marco de Trabajo:</strong><br>(no es obligatorio que el equipo impulsor defina todos elementos para comenzar la CoP)"
+                              },
+                              {
+                                "texto": "<strong>Propósito:</strong> la razón por la que se crea la COP y lo que desea alcanzar."
+                              },
+                              {
+                                "texto": "<strong>Participantes:</strong> las personas (con nombres y apellidos) a quienes se propone invitar a formar parte de la COP."
+                              },
+                              {
+                                "texto": "<strong>Roles:</strong><br> los roles que harán falta para que la COP pueda avanzar a conseguir su propósito: Líder y facilitador. También puede hacer falta apoyo por parte de TI, del área de comunicaciones, de expertos o académicos externos, especialistas, etc."
+                              },
+                              {
+                                "texto": "Una propuesta de <strong>compromisos</strong> (principios de trabajo) que regirán el funcionamiento de la COP, como transparencia, compartir información, respeto por todas las opiniones, cumplimiento de los compromisos, etc."
+                              },
+                              {
+                                "texto": "<strong>Recursos</strong> necesarios como asignación de tiempo, espacio físico, apoyo institucional, permiso de las jefaturas, tecnología, presupuesto, etc."
+                              },
+                              {
+                                "texto": "<strong>Planificación del taller de lanzamiento</strong> e invitación a los participantes. Reflexione y complete algunas ideas respecto de los elementos del marco de trabajo y reúna a su equipo impulsor para profundizar en ellas."
+                              }
+                            ]
                           }
-                        ]
-                      },
-                      {
-                        "titulo": "",
-                        "parrafo": "",
-                        "opciones": [
-                          {
-                            "boton": "<img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong>",
-                            "contenido": {
-                              "tipo": "lista",
-                              "estilo": "nodot",
-                              "items": [
-                                { "texto": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>" },
-                                { "texto": "<strong>Propósito:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>" },
-                                { "texto": "<strong>Participantes:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>" },
-                                { "texto": "<strong>Roles:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>" },
-                                { "texto": "<strong>Compromisos o Principios de Trabajo:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>" },
-                                { "texto": "<strong>Recursos necesarios:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>" },
-                                { "texto": "<strong>Planificación de taller de lanzamiento:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>" }
-                              ]
-                            }
+                        }
+                      ]
+                    },
+                    {
+                      "titulo": "",
+                      "parrafo": "",
+                      "opciones": [
+                        {
+                          "boton": "<img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong>",
+                          "contenido": {
+                            "tipo": "lista",
+                            "estilo": "nodot",
+                            "items": [
+                              {
+                                "texto": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>"
+                              },
+                              {
+                                "texto": "<strong>Propósito:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                              },
+                              {
+                                "texto": "<strong>Participantes:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                              },
+                              {
+                                "texto": "<strong>Roles:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                              },
+                              {
+                                "texto": "<strong>Compromisos o Principios de Trabajo:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                              },
+                              {
+                                "texto": "<strong>Recursos necesarios:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                              },
+                              {
+                                "texto": "<strong>Planificación de taller de lanzamiento:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                              }
+                            ]
                           }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "label": "<img src='src/img/m1_s4_icono_lanzamiento.svg'>Etapa 3 <br><strong class='title-body-secondary'>LANZAMIENTO</strong>",
-                  "contenido": "<p class='mb-5'>Esta tercera etapa consiste en reunir a los participantes propuestos en la etapa previa para explicarles lo que es una CoP y presentarles el marco general de trabajo con el objeto de que estos –si aceptan participar- lo complementen y concreten en su propio plan de trabajo.<br><br>Se espera abarcar todos los aspectos delineados en la etapa anterior, más lo que este grupo considere necesario para el cumplimiento del propósito; ejercicio que también contribuye poderosamente al sentimiento de propiedad que las personas han de tener sobre el propósito, naturaleza y características de la comunidad a la que pertenecerán.<br><br><span style='color: var(--color-primario-2);'>Consideraciones sobre algunos elementos del Plan de Trabajo de la CoP</span> (no es indispensable abarcarlos todos durante el primer taller. De no alcanzar a cubrirlo todo, es posible completar los temas necesarios durante las primeras sesiones de funcionamiento de la comunidad).</p>",
-                  "actividad": {
-                    "tipo": "tabsSimple",
-                    "items": [
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_proposito.svg'><strong>Propósito</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Propósito:</span> complementar el propósito planteado en etapas anteriores, de acuerdo a la experiencia e intereses del grupo, en relación a lo que se desea alcanzar.</p></div>" },
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_objetivos.svg'><strong>Objetivos</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Objetivos:</span> es posible que se puedan visualizar algunos objetivos intermedios o más específicos, que el conjunto cree necesario o posibles de cumplir.</p></div>" },
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_roles.svg'><strong>Roles</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Roles:</span> los participantes podrán distribuirse roles, asumiendo compromisos diferenciados para cumplir con ciertas tareas u objetivos. Desde luego elegirán un delegado o líder de la comunidad para que los represente y agilice la comunicación entre la CoP y la organización u otro ente.</p></div>" },
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_principios.svg'><strong>Principios del trabajo</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Principios del trabajo:</span> se propondrá elaborar una propuesta de “Reglas de funcionamiento de la CoP”, que regirán el comportamiento esperado en relación al trabajo en la CoP, como, por ejemplo: qué información compartir (o no), confidencialidad, transparencia, respeto por todas las opiniones, rotación de cargos, cumplimiento de los compromisos, condiciones de ingreso de nuevos participantes, causales de egreso, u otros que se consideren importantes por la comunidad.</p></div>" },
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_recursos.svg'><strong>Recursos</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Recursos</span> asignación de tiempo, espacio físico, apoyo institucional, tecnología, presupuesto, permisos, etc.</p></div>" },
-                      { "label": "<img src='src/img/m1_s4_icono_lanzamiento_gantt.svg'><strong>Gantt</strong>", "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Gantt</span> Establecer una carta Gantt y socializarla con todos los actores e interesados.</p></div>" }
-                    ]
-                  }
-                },
-                {
-                  "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 4 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
-                  "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080) translateY(45px); position: relative; z-index: -1;'>"
-                },
-                {
-                  "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 5 <br><strong class='title-body-secondary'>CIERRE</strong>",
-                  "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/m1_s5_f1.svg' alt='Modulo1' class='img-fluid' style='padding: 0 10%;'><div class='row m-0 p-3'><div><h2 class='pb-4 fw-bold'>Actividades para asegurar el aprendizaje en la organización</h2><ul id='lista_u_unidad1_4-lista1' class='list-unstyled'><li><p><strong class='title-body-secondary'>Comunicar la intención de cerrar</strong> a todos los miembros de la CoP, agradeciendo los logros obtenidos y reconociendo las contribuciones de los miembros.</p></li><li><p><strong class='title-body-secondary'>Realizar Taller de cierre</strong>, para lo cual se propone la utilización de la metodología de Retrospectiva (descrita en el documento de metodología de CoPs).</p></li><li><p><strong class='title-body-secondary'>Recopilación/archivo de los documentos y artefactos de conocimiento</strong> generados por la CoP para ponerlos a disposición de la organización en el formato o canales que permitan su localización y uso.</p></li><li><p><strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras.</p></li></ul></div></div><img src='src/img/m1_s6_f1.jpg' alt='Modulo1' class='img-fluid' style='transform: translateY(33px);'>"
+                        }
+                      ]
+                    }
+                  ]
                 }
-              ]
-            }
-          },          
-          {
-            "id": "1.5",
-            "titulo": "Evaluación",
-            "contenido": "<h2 class='fw-bold'>Evaluación</h2>",
-            "actividad": {
-                "tipo": "tablaVF",
-                "preguntas": [
-                  {
-                    "pregunta": "Una CoP es una manera sistematizar la colaboración por parte de un grupo de personas",
-                    "respuestaCorrecta": "V",
-                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
-                    "retroIncorrecta": "Respuesta incorrecta: Es fundamental que el grupo de personas que conforman una CoP, comparta un interés o práctica común y sistematice sus hallazgos."
-                  },
-                  {
-                    "pregunta": "La etapa de “Gestión” se refiere al momento en que las personas convocadas conocen el marco de trabajo y lo ajustan",
-                    "respuestaCorrecta": "F",
-                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
-                    "retroIncorrecta": "Respuesta incorrecta: La etapa referida, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el taller de lanzamiento."
-                  },
-                  {
-                    "pregunta": "La CoP siempre debe tener y responder a un propósito",
-                    "respuestaCorrecta": "V",
-                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
-                    "retroIncorrecta": "Respuesta incorrecta: Una CoP, ciertamente necesita un propósito que le dé sentido y dirija su quehacer."
-                  },
-                  {
-                    "pregunta": "Las CoPs siempre surgen por la necesidad de la alta gerencia, por iniciativa de alguna gerencia",
-                    "respuestaCorrecta": "F",
-                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
-                    "retroIncorrecta": "Respuesta incorrecta: También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia."
-                  },
-                  {
-                    "pregunta": "Una vez que la CoP cumple su objetivo debe cerrarse",
-                    "respuestaCorrecta": "F",
-                    "retroCorrecta": "Felicitaciones, respuesta correcta.",
-                    "retroIncorrecta": "Respuesta incorrecta: Una CoP también tiene como opción transformarse, cambiar su propósito u objetivos."
-                  }
-                ]
+              },
+              {
+                "label": "<img src='src/img/m1_s4_icono_lanzamiento.svg'>Etapa 3 <br><strong class='title-body-secondary'>LANZAMIENTO</strong>",
+                "contenido": "<p class='mb-5'>Esta tercera etapa consiste en reunir a los participantes propuestos en la etapa previa para explicarles lo que es una CoP y presentarles el marco general de trabajo con el objeto de que estos –si aceptan participar- lo complementen y concreten en su propio plan de trabajo.<br><br>Se espera abarcar todos los aspectos delineados en la etapa anterior, más lo que este grupo considere necesario para el cumplimiento del propósito; ejercicio que también contribuye poderosamente al sentimiento de propiedad que las personas han de tener sobre el propósito, naturaleza y características de la comunidad a la que pertenecerán.<br><br><span style='color: var(--color-primario-2);'>Consideraciones sobre algunos elementos del Plan de Trabajo de la CoP</span> (no es indispensable abarcarlos todos durante el primer taller. De no alcanzar a cubrirlo todo, es posible completar los temas necesarios durante las primeras sesiones de funcionamiento de la comunidad).</p>",
+                "actividad": {
+                  "tipo": "tabsSimple",
+                  "items": [
+                    {
+                      "label": "<img src='src/img/m1_s4_icono_lanzamiento_proposito.svg'><strong>Propósito</strong>",
+                      "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Propósito:</span> complementar el propósito planteado en etapas anteriores, de acuerdo a la experiencia e intereses del grupo, en relación a lo que se desea alcanzar.</p></div>"
+                    },
+                    {
+                      "label": "<img src='src/img/m1_s4_icono_lanzamiento_objetivos.svg'><strong>Objetivos</strong>",
+                      "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Objetivos:</span> es posible que se puedan visualizar algunos objetivos intermedios o más específicos, que el conjunto cree necesario o posibles de cumplir.</p></div>"
+                    },
+                    {
+                      "label": "<img src='src/img/m1_s4_icono_lanzamiento_roles.svg'><strong>Roles</strong>",
+                      "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Roles:</span> los participantes podrán distribuirse roles, asumiendo compromisos diferenciados para cumplir con ciertas tareas u objetivos. Desde luego elegirán un delegado o líder de la comunidad para que los represente y agilice la comunicación entre la CoP y la organización u otro ente.</p></div>"
+                    },
+                    {
+                      "label": "<img src='src/img/m1_s4_icono_lanzamiento_principios.svg'><strong>Principios del trabajo</strong>",
+                      "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Principios del trabajo:</span> se propondrá elaborar una propuesta de “Reglas de funcionamiento de la CoP”, que regirán el comportamiento esperado en relación al trabajo en la CoP, como, por ejemplo: qué información compartir (o no), confidencialidad, transparencia, respeto por todas las opiniones, rotación de cargos, cumplimiento de los compromisos, condiciones de ingreso de nuevos participantes, causales de egreso, u otros que se consideren importantes por la comunidad.</p></div>"
+                    },
+                    {
+                      "label": "<img src='src/img/m1_s4_icono_lanzamiento_recursos.svg'><strong>Recursos</strong>",
+                      "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Recursos</span> asignación de tiempo, espacio físico, apoyo institucional, tecnología, presupuesto, permisos, etc.</p></div>"
+                    },
+                    {
+                      "label": "<img src='src/img/m1_s4_icono_lanzamiento_gantt.svg'><strong>Gantt</strong>",
+                      "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Gantt</span> Establecer una carta Gantt y socializarla con todos los actores e interesados.</p></div>"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 4 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
+                "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080) translateY(45px); position: relative; z-index: -1;'>"
+              },
+              {
+                "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 5 <br><strong class='title-body-secondary'>CIERRE</strong>",
+                "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/m1_s5_f1.svg' alt='Modulo1' class='img-fluid' style='padding: 0 10%;'><div class='row m-0 p-3'><div><h2 class='pb-4 fw-bold'>Actividades para asegurar el aprendizaje en la organización</h2><ul id='lista_u_unidad1_4-lista1' class='list-unstyled'><li><p><strong class='title-body-secondary'>Comunicar la intención de cerrar</strong> a todos los miembros de la CoP, agradeciendo los logros obtenidos y reconociendo las contribuciones de los miembros.</p></li><li><p><strong class='title-body-secondary'>Realizar Taller de cierre</strong>, para lo cual se propone la utilización de la metodología de Retrospectiva (descrita en el documento de metodología de CoPs).</p></li><li><p><strong class='title-body-secondary'>Recopilación/archivo de los documentos y artefactos de conocimiento</strong> generados por la CoP para ponerlos a disposición de la organización en el formato o canales que permitan su localización y uso.</p></li><li><p><strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras.</p></li></ul></div></div><img src='src/img/m1_s6_f1.jpg' alt='Modulo1' class='img-fluid' style='transform: translateY(33px);'>"
               }
+            ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "titulo": "Roles claves de la comunidad",
-        "img": "src/img/Modulo1.jpg",
-        "subtemas": [
-          {
-            "id": "2.1",
-            "titulo": "Líder y facilitador",
-            "contenido": "<p>El líder orienta el trabajo de la comunidad, mientras que el facilitador promueve la participación.</p>",
-            "actividad": {
-              "tipo": "openquestion",
-              "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de Práctica?",
-              "placeholder": "Escribe tu respuesta aquí..."
+        },
+        {
+          "id": "1.5",
+          "titulo": "Evaluación",
+          "contenido": "<h2 class='fw-bold'>Evaluación</h2>",
+          "actividad": {
+            "tipo": "tablaVF",
+            "preguntas": [
+              {
+                "pregunta": "Una CoP es una manera sistematizar la colaboración por parte de un grupo de personas",
+                "respuestaCorrecta": "V",
+                "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                "retroIncorrecta": "Respuesta incorrecta: Es fundamental que el grupo de personas que conforman una CoP, comparta un interés o práctica común y sistematice sus hallazgos."
+              },
+              {
+                "pregunta": "La etapa de “Gestión” se refiere al momento en que las personas convocadas conocen el marco de trabajo y lo ajustan",
+                "respuestaCorrecta": "F",
+                "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                "retroIncorrecta": "Respuesta incorrecta: La etapa referida, el momento en que las personas convocadas conocen el marco de trabajo y lo ajustan, es el taller de lanzamiento."
+              },
+              {
+                "pregunta": "La CoP siempre debe tener y responder a un propósito",
+                "respuestaCorrecta": "V",
+                "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                "retroIncorrecta": "Respuesta incorrecta: Una CoP, ciertamente necesita un propósito que le dé sentido y dirija su quehacer."
+              },
+              {
+                "pregunta": "Las CoPs siempre surgen por la necesidad de la alta gerencia, por iniciativa de alguna gerencia",
+                "respuestaCorrecta": "F",
+                "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                "retroIncorrecta": "Respuesta incorrecta: También hay CoPs que surgen de manera natural (existen instancias de intercambio y aprendizaje espontáneo), las cuales pueden ser apoyadas por la alta gerencia."
+              },
+              {
+                "pregunta": "Una vez que la CoP cumple su objetivo debe cerrarse",
+                "respuestaCorrecta": "F",
+                "retroCorrecta": "Felicitaciones, respuesta correcta.",
+                "retroIncorrecta": "Respuesta incorrecta: Una CoP también tiene como opción transformarse, cambiar su propósito u objetivos."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Roles claves de la comunidad",
+      "img": "src/img/Modulo1.jpg",
+      "subtemas": [
+        {
+          "id": "2.1",
+          "titulo": "Líder y facilitador",
+          "contenido": "<p>El líder orienta el trabajo de la comunidad, mientras que el facilitador promueve la participación.</p>",
+          "actividad": {
+            "tipo": "openquestion",
+            "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de Práctica?",
+            "placeholder": "Escribe tu respuesta aquí..."
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Habilidades del Facilitador",
+      "img": "src/img/m4_inicio.jpg",
+      "subtemas": [
+        {
+          "id": "4.1",
+          "titulo": "Habilidades de Facilitación",
+          "contenido": "<h2 class='pb-4 fw-bold'>Habilidades de Facilitación</h2> ",
+          "imagen": "<img src='src/img/m4_s1_f1.jpg' alt='Modulo1' class='img-fluid'>"
+        },
+        {
+          "id": "4-2",
+          "titulo": "Habilidades Interpersonales",
+          "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+          "subtemas": [
+            {
+              "id": "4-2-1",
+              "titulo": "Escucha activa",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "actividad": {
+                 "tipo": "lista",
+                        "estilo": "nodot",
+                        "items": [
+                          {
+                            "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
+                          }
+                        ]
+              }, 
+              "slides": [
+                {
+                  "grupo": "Escucha activa",
+                  "items": [
+                    {
+                      "titulo": "",
+                      "contenido": {
+                        "tipo": "lista",
+                        "estilo": "nodot",
+                        "items": [
+                          {
+                            "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
+                          },
+                          {
+                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "titulo": "Escucha activa",
+                      "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
+                    },
+                    {
+                      "titulo": "Consejos para demostrar escucha activa",
+                      "contenido": {
+                        "tipo": "lista",
+                        "estilo": "dot",
+                        "items": [
+                          {
+                            "texto": "<strong>Establece contacto visual sincero (sin invadir)</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Mira a los ojos de quien habla con atención y calma, sin forzar la mirada."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Asiente con la cabeza de forma natural</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Usa pequeños gestos para mostrar que estás siguiendo el mensaje (sin exagerar)."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Evita interrupciones</strong>",
+                            "hijos": [
+                              {
+                                "texto": "No completes frases, no corrijas, ni des consejos mientras la otra persona expone su punto."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Mantén una postura abierta y receptiva</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Inclina ligeramente el cuerpo hacia adelante, brazos relajados, sin cruzarlos."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Usa breves verbalizaciones de seguimiento</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Expresiones como: “sí“, “entiendo“, “claro“, “mmm“, ayudan a mantener el flujo comunicativo."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Refleja emocionalmente lo que escuchas</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Muestra empatía con frases como: “eso suena difícil“, “parece que eso te impactó mucho“."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Parafrasea para confirmar comprensión</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Resume con tus palabras lo que entendiste: “Entonces, lo que estás diciendo es que...“."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Haz preguntas abiertas, no invasivas</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Estimula la profundización sin desviar el foco: “¿Cómo te sentiste en ese momento?“ o “¿Qué crees que necesitas ahora?“."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>No te distraigas (ni física ni mentalmente)</strong>",
+                            "hijos": [
+                              {
+                                "texto": "Guarda el celular, cierra el computador, y enfoca tu atención completa en la persona."
+                              }
+                            ]
+                          },
+                          {
+                            "texto": "<strong>Respeta los silencios</strong>",
+                            "hijos": [
+                              {
+                                "texto": "No llenes cada pausa; permite que la otra persona piense o sienta sin presión"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "titulo": "Prueba tus habilidades de Escucha Activa",
+                      "contenido": "",
+                      "actividad": {
+                        "tipo": "skillquiz",
+                        "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
+                        "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
+                        "opciones": [
+                          {
+                            "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
+                            "correcta": false,
+                            "feedback": "No refleja escucha activa."
+                          },
+                          {
+                            "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
+                            "correcta": false,
+                            "feedback": "No refleja escucha activa."
+                          },
+                          {
+                            "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
+                            "correcta": true,
+                            "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
+                          },
+                          {
+                            "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
+                            "correcta": false,
+                            "feedback": "No refleja escucha activa."
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "titulo": "Reflexiona sobre la comunicación",
+                      "contenido": "",
+                      "actividad": {
+                        "tipo": "openquiz",
+                        "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
+                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
+                        "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
+                        "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                      }
+                    }
+                  ]
+                }
+              ]
             }
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "titulo": "Habilidades del Facilitador",
-        "img": "src/img/m4_inicio.jpg",
-        "subtemas": [
-          {
-            "id": "4.1",
-            "titulo": "Habilidades de Facilitación",
-            "contenido": "<h2 class='pb-4 fw-bold'>Habilidades de Facilitación</h2> ",
-            "imagen": "<img src='src/img/m4_s1_f1.jpg' alt='Modulo1' class='img-fluid'>"
-          },
-          {
-            "id": "4_2",
-            "titulo": "Habilidades Interpersonales",
-            "contenido": "<h2 class='fw-bold'>Habilidades Interpersonales</h2>",
-            "slides": [
-                {
-                  "grupo": "Escucha activa",
-                  "items": [
-                    {
-                      "titulo": "",
-                      "contenido": {
-                              "tipo": "lista",
-                              "estilo": "nodot",
-                              "items": [
-                                { "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>" }
-                              ]
-                            }
-                    },
-                    {
-                      "titulo": "Escucha activa",
-                      "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
-                    },
-                    {
-                      "titulo": "Consejos para demostrar escucha activa",
-                      "contenido": {
-                                        "tipo": "lista",
-                                        "estilo": "dot",
-                                        "items": [
-                                          {
-                                            "texto": "<strong>Establece contacto visual sincero (sin invadir)</strong>",
-                                            "hijos": [
-                                              {
-                                                "texto": "Mira a los ojos de quien habla con atención y calma, sin forzar la mirada."
-                                              }
-                                            ]
-                                          },
-                                          {
-                                            "texto": "<strong>Asiente con la cabeza de forma natural</strong>",
-                                            "hijos": [
-                                              { "texto": "Usa pequeños gestos para mostrar que estás siguiendo el mensaje (sin exagerar)." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Evita interrupciones</strong>",
-                                            "hijos": [
-                                              { "texto": "No completes frases, no corrijas, ni des consejos mientras la otra persona expone su punto." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Mantén una postura abierta y receptiva</strong>",
-                                            "hijos": [
-                                              { "texto": "Inclina ligeramente el cuerpo hacia adelante, brazos relajados, sin cruzarlos." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Usa breves verbalizaciones de seguimiento</strong>",
-                                            "hijos": [
-                                              { "texto": "Expresiones como: “sí“, “entiendo“, “claro“, “mmm“, ayudan a mantener el flujo comunicativo." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Refleja emocionalmente lo que escuchas</strong>",
-                                            "hijos": [
-                                              { "texto": "Muestra empatía con frases como: “eso suena difícil“, “parece que eso te impactó mucho“." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Parafrasea para confirmar comprensión</strong>",
-                                            "hijos": [
-                                              { "texto": "Resume con tus palabras lo que entendiste: “Entonces, lo que estás diciendo es que...“." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Haz preguntas abiertas, no invasivas</strong>",
-                                            "hijos": [
-                                              { "texto": "Estimula la profundización sin desviar el foco: “¿Cómo te sentiste en ese momento?“ o “¿Qué crees que necesitas ahora?“." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>No te distraigas (ni física ni mentalmente)</strong>",
-                                            "hijos": [
-                                              { "texto": "Guarda el celular, cierra el computador, y enfoca tu atención completa en la persona." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Respeta los silencios</strong>",
-                                            "hijos": [
-                                              { "texto": "No llenes cada pausa; permite que la otra persona piense o sienta sin presión" }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                    },
-                    {
-                      "titulo": "Prueba tus habilidades de Escucha Activa",
-                      "contenido": "",
-                      "actividad": {
-                        "tipo": "skillquiz",
-                        "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
-                        "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
-                        "opciones": [
-                          {
-                            "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
-                            "correcta": true,
-                            "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "titulo": "Reflexiona sobre la comunicación",
-                      "contenido": "",
-                      "actividad": {
-                        "tipo": "openquiz",
-                        "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
-                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
-                        "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
-                        "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
-                      }
-                    }
-                  ]
-                }
-              ]
-          },
-          {
-            "id": "4_3",
-            "titulo": "Habilidades Interpersonales test de sub navegación",
-            "contenido": "<h2 class='fw-bold'>Habilidades Interpersonales</h2>",
-            "subtemas": [
-              
-            ],
-            "slides": [
-                {
-                  "grupo": "Escucha activa",
-                  "items": [
-                    {
-                      "titulo": "",
-                      "contenido": {
-                              "tipo": "lista",
-                              "estilo": "nodot",
-                              "items": [
-                                { "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>" },
-                                { "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>" }
-                              ]
-                            }
-                    },
-                    {
-                      "titulo": "Escucha activa",
-                      "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
-                    },
-                    {
-                      "titulo": "Consejos para demostrar escucha activa",
-                      "contenido": {
-                                        "tipo": "lista",
-                                        "estilo": "dot",
-                                        "items": [
-                                          {
-                                            "texto": "<strong>Establece contacto visual sincero (sin invadir)</strong>",
-                                            "hijos": [
-                                              {
-                                                "texto": "Mira a los ojos de quien habla con atención y calma, sin forzar la mirada."
-                                              }
-                                            ]
-                                          },
-                                          {
-                                            "texto": "<strong>Asiente con la cabeza de forma natural</strong>",
-                                            "hijos": [
-                                              { "texto": "Usa pequeños gestos para mostrar que estás siguiendo el mensaje (sin exagerar)." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Evita interrupciones</strong>",
-                                            "hijos": [
-                                              { "texto": "No completes frases, no corrijas, ni des consejos mientras la otra persona expone su punto." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Mantén una postura abierta y receptiva</strong>",
-                                            "hijos": [
-                                              { "texto": "Inclina ligeramente el cuerpo hacia adelante, brazos relajados, sin cruzarlos." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Usa breves verbalizaciones de seguimiento</strong>",
-                                            "hijos": [
-                                              { "texto": "Expresiones como: “sí“, “entiendo“, “claro“, “mmm“, ayudan a mantener el flujo comunicativo." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Refleja emocionalmente lo que escuchas</strong>",
-                                            "hijos": [
-                                              { "texto": "Muestra empatía con frases como: “eso suena difícil“, “parece que eso te impactó mucho“." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Parafrasea para confirmar comprensión</strong>",
-                                            "hijos": [
-                                              { "texto": "Resume con tus palabras lo que entendiste: “Entonces, lo que estás diciendo es que...“." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Haz preguntas abiertas, no invasivas</strong>",
-                                            "hijos": [
-                                              { "texto": "Estimula la profundización sin desviar el foco: “¿Cómo te sentiste en ese momento?“ o “¿Qué crees que necesitas ahora?“." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>No te distraigas (ni física ni mentalmente)</strong>",
-                                            "hijos": [
-                                              { "texto": "Guarda el celular, cierra el computador, y enfoca tu atención completa en la persona." }
-                                            ]
-                                          },
-                                                                                    {
-                                            "texto": "<strong>Respeta los silencios</strong>",
-                                            "hijos": [
-                                              { "texto": "No llenes cada pausa; permite que la otra persona piense o sienta sin presión" }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                    },
-                    {
-                      "titulo": "Prueba tus habilidades de Escucha Activa",
-                      "contenido": "",
-                      "actividad": {
-                        "tipo": "skillquiz",
-                        "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
-                        "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
-                        "opciones": [
-                          {
-                            "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
-                            "correcta": true,
-                            "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "titulo": "Reflexiona sobre la comunicación",
-                      "contenido": "",
-                      "actividad": {
-                        "tipo": "openquiz",
-                        "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
-                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
-                        "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
-                        "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
-                      }
-                    }
-                  ]
-                }
-              ]
-          }
-        ]
-      }
-    ]
-  }
-  
+          ]
+        }
+      ]
+    }
+  ]
+}

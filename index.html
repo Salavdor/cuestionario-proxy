@@ -103,7 +103,7 @@
       display: none !important;
     }
 
-    /* Subtemas */
+        /* Subtemas */
     .subtema-lista li {
       position: relative;
       padding-left: 1.2rem;
@@ -112,26 +112,35 @@
       transition: all 0.2s ease-in-out;
       font-weight: 400;
     }
+   /* Solo el primer nivel de li en subtema-lista */
+.subtema-lista > li::before {
+  content: "•";
+  color: var(--color-secundario-3);
+  position: absolute;
+  left: 0;
+  font-size: 2.5rem;
+  line-height: 0.4;
+}
 
-    .subtema-lista li::before {
-      content: "•";
-      color: var(--color-secundario-3);
-      /* púrpura */
-      position: absolute;
-      left: 0;
-      font-size: 2.5rem;
-      line-height: 0.4;
-    }
+/* Mantener hover y active en primer nivel */
+.subtema-lista > li:hover,
+.subtema-lista > li.active {
+  font-weight: 700;
+  color: var(--color-negro);
+}
 
-    .subtema-lista li:hover {
-      font-weight: 700;
-      color: var(--color-negro);
-    }
+/* Quitar bullets de los li anidados */
+.subtema-lista li ul li::before {
+  content: none;
+}
 
-    .subtema-lista li.active {
-      font-weight: 700;
-      color: var(--color-negro);
-    }
+/* Opcional: los li anidados también pueden tener su hover si quieres */
+.subtema-lista li ul li:hover,
+.subtema-lista li ul li.active {
+  font-weight: 700;
+  color: var(--color-negro);
+}
+
 
     /* Botones del acordeón */
     .accordion-button {
@@ -597,6 +606,7 @@
 }
 
 .btn-lista {
+  min-width: 140px;
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;

@@ -12,67 +12,76 @@ fetch("curso.json")
     renderMenu(modulosData, "menuModulosMobile");
   });
 
+
 function renderMenu(modulos, containerId) {
   const menu = document.getElementById(containerId);
-  menu.innerHTML = ""; // limpiar
+  menu.innerHTML = ""; // limpiar contenedor
+
+  function generarSubtemas(subtemas, parentId) {
+    if (!subtemas || subtemas.length === 0) return "";
+    return `
+      <ul class="list-unstyled subtema-lista m-0">
+        ${subtemas.map((st, i) => {
+          const hasChildren = st.subtemas && st.subtemas.length > 0;
+          const collapseId = `${parentId}_sub${i}`;
+          return `
+            <li class="subtema ${hasChildren ? "has-children" : ""}" data-id="${st.id}">
+              <div class="d-flex align-items-center gap-2" ${hasChildren ? `data-bs-toggle="collapse" data-bs-target="#${collapseId}"` : ""}>
+                ${st.titulo}
+              </div>
+              ${
+                hasChildren
+                  ? `<div class="collapse p-3" id="${collapseId}">
+                       ${generarSubtemas(st.subtemas, collapseId)}
+                     </div>`
+                  : ""
+              }
+            </li>
+          `;
+        }).join("")}
+      </ul>
+    `;
+  }
 
   modulos.forEach((modulo, index) => {
     const moduloId = `modulo${modulo.id}_${containerId}`;
     const collapseId = `collapse${modulo.id}_${containerId}`;
+    const isInicio = modulo.id === 0;
+
+    const subtemasHTML = !isInicio ? generarSubtemas(modulo.subtemas, collapseId) : "";
 
     const moduloItem = document.createElement("div");
     moduloItem.classList.add("accordion-item");
 
-    // Condición especial para "Inicio"
-    const isInicio = modulo.id === 0;
-
-    // Render de subtemas solo si existen
-    let subtemasHTML = "";
-    if (modulo.subtemas && modulo.subtemas.length > 0 && !isInicio) {
-      subtemasHTML = `
-        <div class="accordion-body">
-          <ul class="list-unstyled subtema-lista">
-            ${modulo.subtemas.map(st => `<li class="subtema" data-id="${st.id}">${st.titulo}</li>`).join("")}
-          </ul>
-        </div>
-      `;
-    }
-
     moduloItem.innerHTML = `
       <h2 class="accordion-header" id="${moduloId}">
-        <button class="accordion-button ${index > 0 ? 'collapsed' : ''}" 
+        <button class="accordion-button ${index > 0 ? "collapsed" : ""}" 
                 type="button" 
                 data-bs-toggle="collapse" 
                 data-bs-target="#${collapseId}">
           <div class="d-flex flex-column flex-lg-row w-100 text-start gap-2">
             ${
               isInicio 
-                ? `<div class="fw-bold flex-grow-1" style="font-family: 'Montserrat', sans-serif; font-weight:700;">
-                    ${modulo.titulo}
-                  </div>`
-                : `<div class="fw-bold me-md-2 flex-shrink-0" style="font-family: 'Montserrat', sans-serif; font-weight:700;">
-                    Módulo ${modulo.id}:
-                  </div>
-                  <div class="fw-light flex-grow-1" style="font-family: 'Montserrat', sans-serif; font-weight:300;">
-                    ${modulo.titulo}
-                  </div>`
+                ? `<div class="fw-bold flex-grow-1">${modulo.titulo}</div>`
+                : `<div class="fw-bold me-md-2 flex-shrink-0">Módulo ${modulo.id}:</div>
+                   <div class="fw-light flex-grow-1">${modulo.titulo}</div>`
             }
           </div>
         </button>
       </h2>
-      <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}">
-        ${subtemasHTML}
+      <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? "show" : ""}">
+        <div class="accordion-body">
+          ${subtemasHTML}
+        </div>
       </div>
     `;
 
     menu.appendChild(moduloItem);
 
-    // ------------------- Evento del botón del módulo -------------------
     const btnModulo = moduloItem.querySelector(".accordion-button");
     const collapse = new bootstrap.Collapse(document.getElementById(collapseId), { toggle: false });
 
     btnModulo.addEventListener("click", () => {
-      // Cerrar todos los demás collapse
       modulos.forEach(m => {
         if (m.id !== modulo.id) {
           const otherCollapseEl = document.getElementById(`collapse${m.id}_${containerId}`);
@@ -80,49 +89,58 @@ function renderMenu(modulos, containerId) {
           if (otherCollapse) otherCollapse.hide();
         }
       });
-
-      // Abrir el collapse del módulo actual
       collapse.show();
-
-      // Quitar estado "active" de todos los subtemas
       menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
 
-      // Portada
       const portada = {
         id: `${modulo.id}.0`,
         titulo: modulo.titulo,
-        contenido: `
-          <div class="row m-0 p-3 encabezado">
-            <div class="d-flex flex-row-reverse">
-              <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" class="img-fluid">
-            </div>
-            <h2>
-              <span class="fw-bold display-2">${isInicio ? "" : "Módulo " + modulo.id}</span><br>
-              <span class="fw-bold title-body-secondary">${modulo.titulo}</span>
-            </h2>
-          </div>
-          ${modulo.img ? `<img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid">` : ""}
-        `,
+        contenido: `<div class="row m-0 p-3 encabezado">
+                      <div class="d-flex flex-row-reverse">
+                        <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" class="img-fluid" style="height:30px;">
+                      </div>
+                      <h2><span class="fw-bold display-2">${isInicio ? "" : "Módulo " + modulo.id}</span><br>
+                      <span class="fw-bold title-body-secondary">${modulo.titulo}</span></h2>
+                    </div>
+                    ${modulo.img ? `<img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid">` : ""}`,
         imagen: ""
       };
 
-      // Llamada correcta a cargarContenido con portada temporal
-      const moduloTemp = { ...modulo, subtemas: [portada, ...(modulo.subtemas || [])] };
       cargarContenido(portada.id, modulosData);
     });
 
     // ------------------- Eventos de subtemas -------------------
     const menuList = moduloItem.querySelectorAll(".subtema");
     menuList.forEach(item => {
-      item.addEventListener("click", () => {
-        // limpiar estados anteriores
+      const div = item.querySelector("div");
+      const collapseDiv = item.querySelector(".collapse");
+      const bsCollapse = collapseDiv ? new bootstrap.Collapse(collapseDiv, { toggle: false }) : null;
+
+      div.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        // Activar solo el item actual
         menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
         item.classList.add("active");
 
+        // Cargar contenido
         const id = item.dataset.id;
         cargarContenido(id, modulosData);
 
-        // cerrar offcanvas en móvil
+        // ------------------- Cerrar todos los colapsables excepto los ancestros -------------------
+        menu.querySelectorAll(".collapse").forEach(c => {
+          if (!c.contains(item) && c !== collapseDiv) {
+            const inst = bootstrap.Collapse.getInstance(c);
+            if (inst) inst.hide();
+          }
+        });
+
+        // Toggle collapse actual si tiene hijos
+        if (bsCollapse) {
+          bsCollapse.toggle();
+        }
+
+        // Cerrar offcanvas si aplica
         const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById("offcanvasMenu"));
         if (offcanvas) offcanvas.hide();
       });
@@ -130,231 +148,171 @@ function renderMenu(modulos, containerId) {
   });
 }
 
-  
 
-  function cargarContenido(subtemaId, modulos) {
-    const content = document.getElementById("content");
-  
-    // Mostrar spinner
-    content.innerHTML = `<div class="d-flex justify-content-center align-items-center h-100 w-100"><div class="text-center p-5"><div class="spinner-border" role="status"></div><p>Cargando...</p></div></div>`;
-  
-    setTimeout(() => {
-      // ---------------- Caso especial: Inicio ----------------
-      if (subtemaId === "0.0") {
-        const inicioModulo = modulos.find(m => m.id === 0);
-        if (!inicioModulo) return;
-      
-        const listaModulosHTML = modulos
-          .filter(m => m.id !== 0 && m.subtemas?.length > 0)
-          .map(m => `
-            <li>
-              <h5 class="fw-bold mb-3" style="color: var(--color-secundario-3);">
-                Módulo ${m.id}: <span class="fw-light">${m.titulo}</span>
-              </h5>
-            </li>
-          `)
-          .join("");
-      
-        content.innerHTML = `
-          <div class="row m-0 p-3">
-            <div class="col-12 mb-3">
-              <img src="${inicioModulo.img}" alt="Inicio" class="img-fluid">
-            </div>
-            <div class="col-12 mb-3">
-              ${inicioModulo.contenido}
-            </div>
-            <div class="col-12 mb-3">
-              <ul class="list-unstyled">
-                ${listaModulosHTML}
-              </ul>
-              <img src="src/img/vineta.png" alt="Inicio" class="img-fluid">
-            </div>
-          </div>
-        `;
-      
-        content.querySelectorAll(".inicio-modulo-link").forEach(link => {
-          link.addEventListener("click", e => {
-            e.preventDefault();
-            const id = link.dataset.id;
-            cargarContenido(id, modulos);
-          });
-        });
-      
-        mostrarToast("Inicio cargado");
-        return;
-      }
-  
-      // ---------------- Caso portada/portadilla ----------------
-      if (subtemaId.endsWith(".0")) {
-        const numModulo = subtemaId.split(".")[0];
-        const modulo = modulos.find(m => m.id == numModulo);
-        if (!modulo) return;
-  
-        content.innerHTML = `
-        <div class="d-flex flex-column h-100">
-          <div class="row m-0 p-3 encabezado">
-            <div class="d-flex flex-row-reverse">
-              <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" 
-                  style="height:30px; width:auto; display:block; padding-right: 19px; margin-top: 12px;" 
-                  class="img-fluid">
-            </div>
-            <h2>
-              <span class="fw-bold display-2">Módulo ${modulo.id}</span><br>
-              <span class="fw-bold title-body-secondary">${modulo.titulo}</span>
-            </h2>
-          </div>
-          <div class="img-container flex-grow-1">
-            <img src="${modulo.img}" alt="Modulo ${modulo.id}" class="p-0">
-          </div>
-        </div>  
-        `;
-  
-        mostrarToast("Portada cargada");
-        return;
-      }
-  
-      // ---------------- Buscar subtema normal ----------------
-      const result = findSubtemaById(modulos, subtemaId);
-      if (!result) return;
-  
-      const { subtema, path } = result;
-      const numModulo = subtemaId.split('.')[0];
-      const breadcrumbPath = [`Módulo ${numModulo}`, ...path];
+function cargarContenido(subtemaId, modulos) {
+  const content = document.getElementById("content");
+  content.innerHTML = `<div class="d-flex justify-content-center align-items-center h-100 w-100">
+    <div class="text-center p-5">
+      <div class="spinner-border" role="status"></div>
+      <p>Cargando...</p>
+    </div>
+  </div>`;
 
-      // ---------------- Detectar subtema slides ----------------
-      if (subtema.slides && Array.isArray(subtema.slides)) {
-        content.innerHTML = renderSlides(subtema, path);
-        return;
-      }
-  
-      // ---------------- Render contenido principal ----------------
-      let contenidoHTML = "";
-  
-      if (typeof subtema.contenido === "string") {
-        contenidoHTML = subtema.contenido;
-      }
-  
-      if (Array.isArray(subtema.contenido)) {
-        contenidoHTML = subtema.contenido.map((bloque, idx) => {
-          if (bloque.tipo === "texto") return `<p>${bloque.texto}</p>`;
-          if (bloque.tipo === "lista") {
-            return renderLista(
-              bloque.items,
-              bloque.estilo || "dot",
-              0,
-              `unidad${subtema.id}-lista${idx}`
-            );
-          }
-          return "";
-        }).join("");
-      }
-  
-      if (subtema.lista) {
-        contenidoHTML += renderLista(
-          subtema.lista,
-          subtema.tipoLista || "dot",
-          0,
-          `unidad${subtema.id}-lista0`
-        );
-      }
+  setTimeout(() => {
 
-  
+    // ---------- Caso especial: inicio ----------
+    if (subtemaId === "0.0") {
+      const inicioModulo = modulos.find(m => m.id === 0);
+      if (!inicioModulo) return;
+      const listaModulosHTML = modulos.filter(m => m.id !== 0 && m.subtemas?.length)
+        .map(m => `<li><h5 class="fw-bold mb-3" style="color: var(--color-secundario-3);">Módulo ${m.id}: <span class="fw-light">${m.titulo}</span></h5></li>`).join("");
+      content.innerHTML = `<div class="row m-0 p-3">
+        <div class="col-12 mb-3"><img src="${inicioModulo.img}" alt="Inicio" class="img-fluid"></div>
+        <div class="col-12 mb-3">${inicioModulo.contenido}</div>
+        <div class="col-12 mb-3"><ul class="list-unstyled">${listaModulosHTML}</ul><img src="src/img/vineta.png" alt="Inicio" class="img-fluid"></div>
+      </div>`;
+      mostrarToast("Inicio cargado");
+      return;
+    }
+
+    // ---------- Portada ----------
+    if (subtemaId.endsWith(".0")) {
+      const numModulo = subtemaId.split(".")[0];
+      const modulo = modulos.find(m => m.id == numModulo);
+      if (!modulo) return;
       content.innerHTML = `
+      <div class="d-flex flex-column h-100">
         <div class="row m-0 p-3 encabezado">
-          <h3>
-            <span class="fw-bold">Módulo ${numModulo}:</span>
-            <span class="fw-light">${path[0]}</span>
-          </h3>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              ${breadcrumbPath.map((p, i) => 
-                `<li class="breadcrumb-item ${i === breadcrumbPath.length-1 ? 'active' : ''}">
-                  <small class="fw-bold">${p}</small>
-                </li>`
-              ).join("")}
-            </ol>
-          </nav>
+          <div class="d-flex flex-row-reverse">
+            <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" style="height:30px; width:auto; padding-right: 19px; margin-top: 12px;" class="img-fluid">
+          </div>
+          <h2><span class="fw-bold display-2">Módulo ${modulo.id}</span><br><span class="fw-bold title-body-secondary">${modulo.titulo}</span></h2>
         </div>
-        <div class="row m-0 p-3">
-          <div>${contenidoHTML}</div>
-        </div>
-        ${subtema.imagen || ""}
-      `;
-  
-
-// ---------------- Actividades ----------------
-if (subtema) {
-  console.log("Subtema recibido:", subtema);
-
-  // 1️⃣ Actividad directa en el subtema
-  if (subtema.actividad) {
-    let actividadHTML = "";
-    let skillContainerId = `skillQuiz_${subtema.id}_${Date.now()}`;
-
-    if (subtema.actividad.tipo === "skillquiz") {
-      actividadHTML += renderSkillQuiz(subtema.actividad, skillContainerId);
-    } else {
-      actividadHTML += renderActividad(subtema.actividad);
+        <div class="img-container flex-grow-1"><img src="${modulo.img}" alt="Modulo ${modulo.id}" class="p-0"></div>
+      </div>`;
+      return;
     }
 
-    // Insertamos directamente en content
-    content.insertAdjacentHTML("beforeend", actividadHTML);
+    // ---------- Subtema ----------
+    const result = findSubtemaRecursivo(modulos, subtemaId);
+    if (!result) return;
 
-    // 🔹 Inicializadores según el tipo
-    if (subtema.actividad.tipo === "skillquiz") {
-      const skillContainer = document.getElementById(skillContainerId);
-      if (skillContainer) handleSkillQuizAuto(subtema.actividad, skillContainer);
-    }
+    const { subtema, path } = result;
+    const numModulo = subtemaId.split(/[-_.]/)[0];
 
-    if (subtema.actividad.tipo === "tablaVF") {
-      const tabla = content.querySelector("table.table");
-      if (tabla) handleTablaVF(subtema.actividad, tabla);
-    }
-  }
+    // Contenido base
+    let contenidoHTML = "";
+    if (typeof subtema.contenido === "string") contenidoHTML = subtema.contenido;
+    else if (Array.isArray(subtema.contenido)) contenidoHTML = subtema.contenido.map((b,i)=>{
+      if(b.tipo==="texto") return `<p>${b.texto}</p>`;
+      if(b.tipo==="lista") return renderLista(b.items,b.estilo||"dot",0,`unidad${subtema.id}-lista${i}`);
+      return "";
+    }).join("");
 
-  // 2️⃣ Actividades dentro de slides.items
-  if (subtema.slides) {
-    subtema.slides.forEach((slide, i) => {
-      if (slide.items) {
-        slide.items.forEach((item, j) => {
-          if (item.actividad) {
-            let actividadHTML = "";
-            const skillContainerId = `skillQuiz_${subtema.id}_${i}_${j}_${Date.now()}`;
+    if(subtema.lista) contenidoHTML += renderLista(subtema.lista, subtema.tipoLista||"dot",0,`unidad${subtema.id}-lista0`);
 
-            if (item.actividad.tipo === "skillquiz") {
-              actividadHTML += renderSkillQuiz(item.actividad, skillContainerId);
-            } else {
-              actividadHTML += renderActividad(item.actividad);
-            }
+    // Render principal
+    content.innerHTML = `
+    <div class="row m-0 p-3 encabezado">
+      <h3><span class="fw-bold">Módulo ${numModulo}:</span> <span class="fw-light">${path[0]}</span></h3>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">${path.map((p,i)=>`<li class="breadcrumb-item ${i===path.length-1?'active':''}"><small class="fw-bold">${p}</small></li>`).join("")}</ol>
+      </nav>
+    </div>
+    <div class="row m-0 p-3"><div>${contenidoHTML}</div></div>
+    ${subtema.imagen||""}`;
 
-            // Insertamos directamente en content
-            content.insertAdjacentHTML("beforeend", actividadHTML);
+    // ---------------- Procesar actividades y slides ----------------
+    function procesarActividades(obj, parentId = "", isSlideItem = false) {
+      if (!obj) return;
 
-            // 🔹 Inicializadores según el tipo
-            if (item.actividad.tipo === "skillquiz") {
-              const skillContainer = document.getElementById(skillContainerId);
-              if (skillContainer) handleSkillQuizAuto(item.actividad, skillContainer);
-            }
+      const esGrupo = !!subtema.slides && subtema.slides.length > 0;
 
-            if (item.actividad.tipo === "tablaVF") {
-              const tabla = content.querySelector("table.table:last-child");
-              if (tabla) handleTablaVF(item.actividad, tabla);
-            }
+      // --- Actividad normal ---
+      if (!isSlideItem && obj.actividad && !esGrupo) {
+        const skillId = `skillQuiz_${subtema.id}_${parentId}_${Date.now()}`;
+        let html = "";
+        if (obj.actividad.tipo === "skillquiz") html = renderSkillQuiz(obj.actividad, skillId);
+        else if (obj.actividad.tipo === "lista") html = renderLista(obj.actividad.items, obj.actividad.estilo || "dot", 0, `unidad${subtema.id}-lista${Date.now()}`);
+        else html = renderActividad(obj.actividad);
+
+        content.insertAdjacentHTML("beforeend", html);
+
+        if (obj.actividad.tipo === "skillquiz") handleSkillQuizAuto(obj.actividad, document.getElementById(skillId));
+        if (obj.actividad.tipo === "tablaVF") handleTablaVF(obj.actividad, content.querySelector("table.table:last-child"));
+      }
+
+      // --- Slides: solo si es grupo y estamos en el subtema principal ---
+      if (esGrupo && obj === subtema && obj.slides?.length) {
+        // Crear contenedor principal para slides
+        let slideContainer = document.getElementById("slideContentWrapper");
+        if (!slideContainer) {
+          content.insertAdjacentHTML("beforeend", `
+            <div id="slides_${subtema.id}" class="d-flex flex-column h-100">
+              <div id="slideEncabezado" class="px-3 pb-3"></div>
+              <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
+                <div id="slideContent" class="px-3 h-100"></div>
+              </div>
+              <div id="navButtons" class="d-flex justify-content-between p-3">
+                <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver"><span>◂</span> Volver</button>
+                <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente <span>▸</span></button>
+              </div>
+            </div>
+          `);
+          slideContainer = document.getElementById("slideContentWrapper");
+        }
+
+        const slideContentDiv = slideContainer.querySelector("#slideContent");
+        slideContentDiv.innerHTML = ""; // limpiar mensaje de "No hay slides disponibles"
+
+        obj.slides.forEach((slide, i) => {
+          const slideHTML = renderSlides({
+            titulo: slide.grupo,
+            items: slide.items || []
+          });
+          slideContentDiv.insertAdjacentHTML("beforeend", slideHTML);
+
+          // Procesar actividades dentro de los items del slide
+          if (slide.items && slide.items.length) {
+            slide.items.forEach((item, j) => procesarActividades(item, `${parentId}_slide${i}_${j}`, true));
           }
         });
       }
-    });
-  }
+
+      // --- Subtemas hijos ---
+      if (obj.subtemas) obj.subtemas.forEach(st => procesarActividades(st, parentId));
+    }
+
+    procesarActividades(subtema);
+
+    mostrarToast("Contenido y actividades cargados");
+  }, 800);
 }
 
 
 
 
-  
-      mostrarToast("Contenido actualizado");
-    }, 800);
+
+// -------------------- Búsqueda recursiva --------------------
+function findSubtemaRecursivo(modulos, subtemaId) {
+  for(const modulo of modulos){
+    if(modulo.subtemas){
+      const result = findSubtemaEnLista(modulo.subtemas, subtemaId);
+      if(result) return result;
+    }
   }
-  
+  return null;
+}
+function findSubtemaEnLista(lista, subtemaId, path=[]){
+  for(const sub of lista){
+    if(sub.id===subtemaId) return { subtema: sub, path: [...path, sub.titulo] };
+    if(sub.subtemas){
+      const res = findSubtemaEnLista(sub.subtemas, subtemaId, [...path, sub.titulo]);
+      if(res) return res;
+    }
+  }
+  return null;
+}
   
   // ---------------- Función auxiliar para listas ----------------
   function renderLista(items, estilo = "dot", nivel = 0, listaId = null) {
@@ -364,7 +322,7 @@ if (subtema) {
     const ulClass = estilo === "dot" ? "list-unstyled ms-3" : "list-unstyled";
   
     return `
-      <ul class="${ulClass}"${ulAttrs}>
+      <ul class="${ulClass} "${ulAttrs}>
         ${items.map(item => `
           <li>
             ${item.texto || ""}
@@ -635,13 +593,6 @@ function renderSlides(subtema, path = []) {
     grupo.items.map(item => ({ ...item, grupo: grupo.grupo }))
   ) || [];
 
-  function getCurrentBreadcrumb(index) {
-    const numModulo = subtema.id.split(".")[0];
-    const base = [`Módulo ${numModulo}`, ...path];
-    const currentGrupo = flatSlides[index]?.grupo || "";
-    return [...base, currentGrupo];
-  }
-
   const navButtons = `
   <div id="navButtons" class="d-flex justify-content-between p-3">
     <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">
@@ -653,9 +604,9 @@ function renderSlides(subtema, path = []) {
   </div>
 `;
 
-const container = `
+  const container = `
   <div id="${slideId}" class="d-flex flex-column h-100">
-    <div id="slideEncabezado"></div>
+    <div id="slideEncabezado" class="px-3 pb-3"></div> <!-- 🔹 aquí solo título -->
     <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
       <div id="slideContent" class="px-3 h-100"></div>
     </div>
@@ -671,36 +622,17 @@ const container = `
       const current = flatSlides[activeSlideIndex];
       if (!current) {
         slideContent.innerHTML = "<p>No hay slides disponibles.</p>";
+        slideEncabezado.innerHTML = "";
         return;
       }
 
-      const numModulo = subtema.id[0];
-      const breadcrumbPath = getCurrentBreadcrumb(activeSlideIndex);
+      // 🔹 Solo título del slide
+      slideEncabezado.innerHTML = current.grupo
+        ? `<h2 class="fw-bold m-0 px-3 title-body-secondary">${current.grupo}</h2>`
+        : "";
 
-      slideEncabezado.innerHTML = `
-        <div class="row m-0 p-3 encabezado">
-          <h3>
-            <span class="fw-bold">Módulo ${numModulo}:</span>
-            <span class="fw-light">${path[0] || ""}</span>
-          </h3>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              ${breadcrumbPath.map((p, i) => 
-                `<li class="breadcrumb-item ${i === breadcrumbPath.length-1 ? 'active' : ''}">
-                  <small class="${i === breadcrumbPath.length-1 ? 'fw-bold' : ''}">${p}</small>
-                </li>`
-              ).join("")}
-            </ol>
-          </nav>
-        </div>
-        <div class="row m-0 p-3">
-          <div><h2 class="m-0 fw-bold">${subtema.titulo || ""}</h2></div>
-        </div>
-      `;
-
+      // 🔹 Contenido del slide
       let html = "";
-      if (current.titulo) html += `<h3 class="fw-bold mb-3 title-body-secondary">${current.titulo}</h3>`;
-
       if (typeof current.contenido === "string") {
         html += current.contenido;
       } else if (current.contenido?.tipo === "lista") {
@@ -770,6 +702,7 @@ const container = `
 
   return container;
 }
+
 
 
 
