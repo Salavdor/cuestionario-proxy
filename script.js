@@ -233,7 +233,23 @@ function procesarActividades(obj, parentId = "", isSlideItem = false) {
     const skillId = `skillQuiz_${subtema.id}_${parentId}_${Date.now()}`;
     let html = "";
     if (obj.actividad.tipo === "skillquiz") html = renderSkillQuiz(obj.actividad, skillId);
-    else if (obj.actividad.tipo === "lista") html = renderLista(obj.actividad.items, obj.actividad.estilo || "dot", 0, `unidad${subtema.id}-lista${Date.now()}`);
+    else if (obj.actividad.tipo === "lista") {
+  let listaHTML = renderLista(obj.actividad.items, obj.actividad.estilo || "dot", 0, `unidad${subtema.id}-lista${Date.now()}`);
+
+  // --- Solo si este subtema es el que se muestra en la página ---
+  if (obj === subtema) {  // aquí se usa la referencia del subtema activo en la página
+    html = `
+      <div class="row m-0 p-3">
+        <div class="col-12">
+          ${listaHTML}
+        </div>
+      </div>
+    `;
+  } else {
+    html = listaHTML;
+  }
+}
+
     else html = renderActividad(obj.actividad);
 
     content.insertAdjacentHTML("beforeend", html);

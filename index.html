@@ -630,13 +630,15 @@
 }
 
 /* Contenedor principal del UL */
-#lista_subtema4-2-1-slides_slideLista1 {
+#lista_subtema4-2-1-slides_slideLista1,
+#lista_subtema4-2-2-slides_slideLista1 {
   height: 100%;
   position: relative; /* necesario para que el ::before se ancle a este contenedor */
 }
 
 /* Imagen de fondo decorativa */
-#lista_subtema4-2-1-slides_slideLista1::before {
+#lista_subtema4-2-1-slides_slideLista1::before,
+#lista_subtema4-2-2-slides_slideLista1::before  {
   content: "";
   position: absolute;
   bottom: 0;
@@ -652,18 +654,21 @@
 }
 
 /* UL raíz sin bullets */
+#lista_subtema4-2-1-slides_slideLista1,
 #lista_subtema4-2-1-slides_slideLista1 {
   list-style: none;
   padding-left: 1.5em;
 }
 
 /* LI de primer nivel con estrella */
-#lista_subtema4-2-1-slides_slideLista1 > li {
+#lista_subtema4-2-1-slides_slideLista1 > li,
+#lista_subtema4-2-2-slides_slideLista1 > li {
   position: relative;
   padding-left: 1.5em;
 }
 
-#lista_subtema4-2-1-slides_slideLista1 > li::before {
+#lista_subtema4-2-1-slides_slideLista1 > li::before,
+#lista_subtema4-2-2-slides_slideLista1 > li::before {
   content: "★";
   position: absolute;
   left: 0;
@@ -673,14 +678,16 @@
 }
 
 /* UL anidados (segundo nivel en adelante) sin bullets */
-#lista_subtema4-2-1-slides_slideLista1 ul {
+#lista_subtema4-2-1-slides_slideLista1 ul,
+#lista_subtema4-2-2-slides_slideLista1 ul {
   list-style: none;  /* quita los dots */
   padding-left: 1.5em;
   margin-bottom: 15px;
 }
 
 /* Asegura que los LI anidados no hereden la estrella */
-#lista_subtema4-2-1-slides_slideLista1 ul li::before {
+#lista_subtema4-2-1-slides_slideLista1 ul li::before,
+#lista_subtema4-2-2-slides_slideLista1 ul li::before {
   content: none;
 }
 

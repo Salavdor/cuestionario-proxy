@@ -1,25 +1,21 @@
 {
-  "modulos": [
-    {
+  "modulos": [{
       "id": 0,
       "titulo": "Inicio",
       "img": "src/img/inicio_curso.jpg",
       "contenido": "<h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto \"Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs)\", tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidad de Práctica.<br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p>",
-      "subtemas": [
-        {
-          "id": "0.0",
-          "titulo": "",
-          "contenido": "",
-          "imagen": ""
-        }
-      ]
+      "subtemas": [{
+        "id": "0.0",
+        "titulo": "",
+        "contenido": "",
+        "imagen": ""
+      }]
     },
     {
       "id": 1,
       "titulo": "Las Comunidades de Práctica (CoP)",
       "img": "src/img/Modulo1.jpg",
-      "subtemas": [
-        {
+      "subtemas": [{
           "id": "1.1",
           "titulo": "¿Qué es una Comunidad de Práctica?",
           "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
@@ -43,14 +39,12 @@
               "contenido": "<img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'>"
             },
             "showArrows": true,
-            "items": [
-              {
+            "items": [{
                 "label": "<img src='src/img/m1_s4_icono_deteccion.svg'>Etapa 1 <br><strong class='title-body-secondary'>DETECCIÓN</strong>",
                 "contenido": "<p>En esta primera etapa, el objetivo consiste en identificar aquellos casos en que una COP puede resultar la respuesta adecuada para una serie de personas que buscan la oportunidad de trabajar y aprender colaborativamente.<br><br>Para ello, proponemos responder estas 3 preguntas, de manera flexible ya que cada caso reúne sus propias peculiaridades:</p>",
                 "actividad": {
                   "tipo": "openquestion",
-                  "preguntas": [
-                    {
+                  "preguntas": [{
                       "pregunta": "¿Para qué te ayudaría crear una COP?",
                       "enunciado": "",
                       "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
@@ -88,111 +82,101 @@
                 "contenido": "<p class='mb-5'>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestasobtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
                 "actividad": {
                   "tipo": "collapse",
-                  "bloques": [
-                    {
+                  "bloques": [{
                       "titulo": "1°. - Conformar un Equipo Impulsor:",
                       "parrafo": "son las personas que sienten la necesidad de crear la COP como espacio de colaboración y aprendizaje y/o participan en estas instancias iniciales con el objetivo de crear la COP.",
-                      "opciones": [
-                        {
-                          "boton": "▼",
-                          "contenido": {
-                            "tipo": "lista",
-                            "estilo": "nodot",
-                            "items": [
-                              {
-                                "texto": "<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):"
-                              },
-                              {
-                                "texto": "<strong>Un patrocinador</strong><br>(representante de la alta gerencia de la empresa) que entiende el valor que aporta la COP, la apoya con los recursos a su alcance, aunque no participa en su operativa."
-                              },
-                              {
-                                "texto": "<strong>Un “líder”</strong><br>interesado y/o conocedor del tema o propósito propuesto para la CoP, que podrá representar inicialmente a los participantes en la COP."
-                              },
-                              {
-                                "texto": "<strong>Un par de posibles participantes</strong><br>que supongan un claro aporte al cumplimiento del propósito que se ha delineado."
-                              },
-                              {
-                                "texto": "Si es factible,<strong>un “futuro facilitador”</strong><br>que dinamizará las actividades de la comunidad, promoverá la participación y sistematizará los avances."
-                              },
-                              {
-                                "texto": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>"
-                              }
-                            ]
-                          }
+                      "opciones": [{
+                        "boton": "▼",
+                        "contenido": {
+                          "tipo": "lista",
+                          "estilo": "nodot",
+                          "items": [{
+                              "texto": "<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):"
+                            },
+                            {
+                              "texto": "<strong>Un patrocinador</strong><br>(representante de la alta gerencia de la empresa) que entiende el valor que aporta la COP, la apoya con los recursos a su alcance, aunque no participa en su operativa."
+                            },
+                            {
+                              "texto": "<strong>Un “líder”</strong><br>interesado y/o conocedor del tema o propósito propuesto para la CoP, que podrá representar inicialmente a los participantes en la COP."
+                            },
+                            {
+                              "texto": "<strong>Un par de posibles participantes</strong><br>que supongan un claro aporte al cumplimiento del propósito que se ha delineado."
+                            },
+                            {
+                              "texto": "Si es factible,<strong>un “futuro facilitador”</strong><br>que dinamizará las actividades de la comunidad, promoverá la participación y sistematizará los avances."
+                            },
+                            {
+                              "texto": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>"
+                            }
+                          ]
                         }
-                      ]
+                      }]
                     },
                     {
                       "titulo": "2°. - Delinear el Marco de Trabajo:",
                       "parrafo": "son las primeras definiciones que el equipo impulsor va a concretar como paso previo a la convocatoria a los participantes al taller de lanzamiento.",
-                      "opciones": [
-                        {
-                          "boton": "▼",
-                          "contenido": {
-                            "tipo": "lista",
-                            "estilo": "nodot",
-                            "items": [
-                              {
-                                "texto": "<strong>Elementos del Marco de Trabajo:</strong><br>(no es obligatorio que el equipo impulsor defina todos elementos para comenzar la CoP)"
-                              },
-                              {
-                                "texto": "<strong>Propósito:</strong> la razón por la que se crea la COP y lo que desea alcanzar."
-                              },
-                              {
-                                "texto": "<strong>Participantes:</strong> las personas (con nombres y apellidos) a quienes se propone invitar a formar parte de la COP."
-                              },
-                              {
-                                "texto": "<strong>Roles:</strong><br> los roles que harán falta para que la COP pueda avanzar a conseguir su propósito: Líder y facilitador. También puede hacer falta apoyo por parte de TI, del área de comunicaciones, de expertos o académicos externos, especialistas, etc."
-                              },
-                              {
-                                "texto": "Una propuesta de <strong>compromisos</strong> (principios de trabajo) que regirán el funcionamiento de la COP, como transparencia, compartir información, respeto por todas las opiniones, cumplimiento de los compromisos, etc."
-                              },
-                              {
-                                "texto": "<strong>Recursos</strong> necesarios como asignación de tiempo, espacio físico, apoyo institucional, permiso de las jefaturas, tecnología, presupuesto, etc."
-                              },
-                              {
-                                "texto": "<strong>Planificación del taller de lanzamiento</strong> e invitación a los participantes. Reflexione y complete algunas ideas respecto de los elementos del marco de trabajo y reúna a su equipo impulsor para profundizar en ellas."
-                              }
-                            ]
-                          }
+                      "opciones": [{
+                        "boton": "▼",
+                        "contenido": {
+                          "tipo": "lista",
+                          "estilo": "nodot",
+                          "items": [{
+                              "texto": "<strong>Elementos del Marco de Trabajo:</strong><br>(no es obligatorio que el equipo impulsor defina todos elementos para comenzar la CoP)"
+                            },
+                            {
+                              "texto": "<strong>Propósito:</strong> la razón por la que se crea la COP y lo que desea alcanzar."
+                            },
+                            {
+                              "texto": "<strong>Participantes:</strong> las personas (con nombres y apellidos) a quienes se propone invitar a formar parte de la COP."
+                            },
+                            {
+                              "texto": "<strong>Roles:</strong><br> los roles que harán falta para que la COP pueda avanzar a conseguir su propósito: Líder y facilitador. También puede hacer falta apoyo por parte de TI, del área de comunicaciones, de expertos o académicos externos, especialistas, etc."
+                            },
+                            {
+                              "texto": "Una propuesta de <strong>compromisos</strong> (principios de trabajo) que regirán el funcionamiento de la COP, como transparencia, compartir información, respeto por todas las opiniones, cumplimiento de los compromisos, etc."
+                            },
+                            {
+                              "texto": "<strong>Recursos</strong> necesarios como asignación de tiempo, espacio físico, apoyo institucional, permiso de las jefaturas, tecnología, presupuesto, etc."
+                            },
+                            {
+                              "texto": "<strong>Planificación del taller de lanzamiento</strong> e invitación a los participantes. Reflexione y complete algunas ideas respecto de los elementos del marco de trabajo y reúna a su equipo impulsor para profundizar en ellas."
+                            }
+                          ]
                         }
-                      ]
+                      }]
                     },
                     {
                       "titulo": "",
                       "parrafo": "",
-                      "opciones": [
-                        {
-                          "boton": "<img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong>",
-                          "contenido": {
-                            "tipo": "lista",
-                            "estilo": "nodot",
-                            "items": [
-                              {
-                                "texto": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>"
-                              },
-                              {
-                                "texto": "<strong>Propósito:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
-                              },
-                              {
-                                "texto": "<strong>Participantes:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
-                              },
-                              {
-                                "texto": "<strong>Roles:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
-                              },
-                              {
-                                "texto": "<strong>Compromisos o Principios de Trabajo:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
-                              },
-                              {
-                                "texto": "<strong>Recursos necesarios:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
-                              },
-                              {
-                                "texto": "<strong>Planificación de taller de lanzamiento:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
-                              }
-                            ]
-                          }
+                      "opciones": [{
+                        "boton": "<img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong>",
+                        "contenido": {
+                          "tipo": "lista",
+                          "estilo": "nodot",
+                          "items": [{
+                              "texto": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>"
+                            },
+                            {
+                              "texto": "<strong>Propósito:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                            },
+                            {
+                              "texto": "<strong>Participantes:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                            },
+                            {
+                              "texto": "<strong>Roles:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                            },
+                            {
+                              "texto": "<strong>Compromisos o Principios de Trabajo:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                            },
+                            {
+                              "texto": "<strong>Recursos necesarios:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                            },
+                            {
+                              "texto": "<strong>Planificación de taller de lanzamiento:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                            }
+                          ]
                         }
-                      ]
+                      }]
                     }
                   ]
                 }
@@ -202,8 +186,7 @@
                 "contenido": "<p class='mb-5'>Esta tercera etapa consiste en reunir a los participantes propuestos en la etapa previa para explicarles lo que es una CoP y presentarles el marco general de trabajo con el objeto de que estos –si aceptan participar- lo complementen y concreten en su propio plan de trabajo.<br><br>Se espera abarcar todos los aspectos delineados en la etapa anterior, más lo que este grupo considere necesario para el cumplimiento del propósito; ejercicio que también contribuye poderosamente al sentimiento de propiedad que las personas han de tener sobre el propósito, naturaleza y características de la comunidad a la que pertenecerán.<br><br><span style='color: var(--color-primario-2);'>Consideraciones sobre algunos elementos del Plan de Trabajo de la CoP</span> (no es indispensable abarcarlos todos durante el primer taller. De no alcanzar a cubrirlo todo, es posible completar los temas necesarios durante las primeras sesiones de funcionamiento de la comunidad).</p>",
                 "actividad": {
                   "tipo": "tabsSimple",
-                  "items": [
-                    {
+                  "items": [{
                       "label": "<img src='src/img/m1_s4_icono_lanzamiento_proposito.svg'><strong>Propósito</strong>",
                       "contenido": "<div class='lanzamientoTAB p-3'><p class='m-0'><span class='fw-bold'>Propósito:</span> complementar el propósito planteado en etapas anteriores, de acuerdo a la experiencia e intereses del grupo, en relación a lo que se desea alcanzar.</p></div>"
                     },
@@ -247,8 +230,7 @@
           "contenido": "<h2 class='fw-bold'>Evaluación</h2>",
           "actividad": {
             "tipo": "tablaVF",
-            "preguntas": [
-              {
+            "preguntas": [{
                 "pregunta": "Una CoP es una manera sistematizar la colaboración por parte de un grupo de personas",
                 "respuestaCorrecta": "V",
                 "retroCorrecta": "Felicitaciones, respuesta correcta.",
@@ -287,25 +269,22 @@
       "id": 2,
       "titulo": "Roles claves de la comunidad",
       "img": "src/img/Modulo1.jpg",
-      "subtemas": [
-        {
-          "id": "2.1",
-          "titulo": "Líder y facilitador",
-          "contenido": "<p>El líder orienta el trabajo de la comunidad, mientras que el facilitador promueve la participación.</p>",
-          "actividad": {
-            "tipo": "openquestion",
-            "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de Práctica?",
-            "placeholder": "Escribe tu respuesta aquí..."
-          }
+      "subtemas": [{
+        "id": "2.1",
+        "titulo": "Líder y facilitador",
+        "contenido": "<p>El líder orienta el trabajo de la comunidad, mientras que el facilitador promueve la participación.</p>",
+        "actividad": {
+          "tipo": "openquestion",
+          "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de Práctica?",
+          "placeholder": "Escribe tu respuesta aquí..."
         }
-      ]
+      }]
     },
     {
       "id": 4,
       "titulo": "Habilidades del Facilitador",
       "img": "src/img/m4_inicio.jpg",
-      "subtemas": [
-        {
+      "subtemas": [{
           "id": "4.1",
           "titulo": "Habilidades de Facilitación",
           "contenido": "<h2 class='pb-4 fw-bold'>Habilidades de Facilitación</h2> ",
@@ -316,177 +295,628 @@
           "titulo": "Habilidades Interpersonales",
           "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
           "actividad": {
-                 "tipo": "lista",
-                        "estilo": "nodot",
-                        "items": [
-                          {
-                            "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
-                          },
-                          {
-                            "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
-                          }
-                        ]
-              }, 
+            "tipo": "lista",
+            "estilo": "nodot",
+            "items": [{
+                "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
+              }
+            ]
+          },
           "subtemas": [
             {
               "id": "4-2-1",
               "titulo": "Escucha activa",
               "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
-              "slides": [
-                {
-                  "grupo": "Escucha activa",
-                  "items": [
-                    {
-                      "titulo": "Escucha activa",
-                      "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
-                    },
-                    {
-                      "titulo": "Consejos para demostrar escucha activa",
-                      "contenido": {
-                        "tipo": "lista",
-                        "estilo": "dot",
-                        "items": [
-                          {
-                            "texto": "<strong>Establece contacto visual sincero (sin invadir)</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Mira a los ojos de quien habla con atención y calma, sin forzar la mirada."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Asiente con la cabeza de forma natural</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Usa pequeños gestos para mostrar que estás siguiendo el mensaje (sin exagerar)."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Evita interrupciones</strong>",
-                            "hijos": [
-                              {
-                                "texto": "No completes frases, no corrijas, ni des consejos mientras la otra persona expone su punto."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Mantén una postura abierta y receptiva</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Inclina ligeramente el cuerpo hacia adelante, brazos relajados, sin cruzarlos."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Usa breves verbalizaciones de seguimiento</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Expresiones como: “sí“, “entiendo“, “claro“, “mmm“, ayudan a mantener el flujo comunicativo."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Refleja emocionalmente lo que escuchas</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Muestra empatía con frases como: “eso suena difícil“, “parece que eso te impactó mucho“."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Parafrasea para confirmar comprensión</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Resume con tus palabras lo que entendiste: “Entonces, lo que estás diciendo es que...“."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Haz preguntas abiertas, no invasivas</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Estimula la profundización sin desviar el foco: “¿Cómo te sentiste en ese momento?“ o “¿Qué crees que necesitas ahora?“."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>No te distraigas (ni física ni mentalmente)</strong>",
-                            "hijos": [
-                              {
-                                "texto": "Guarda el celular, cierra el computador, y enfoca tu atención completa en la persona."
-                              }
-                            ]
-                          },
-                          {
-                            "texto": "<strong>Respeta los silencios</strong>",
-                            "hijos": [
-                              {
-                                "texto": "No llenes cada pausa; permite que la otra persona piense o sienta sin presión"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "titulo": "Prueba tus habilidades de Escucha Activa",
-                      "contenido": "",
-                      "actividad": {
-                        "tipo": "skillquiz",
-                        "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
-                        "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
-                        "opciones": [
-                          {
-                            "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
-                            "correcta": true,
-                            "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
-                          },
-                          {
-                            "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
-                            "correcta": false,
-                            "feedback": "No refleja escucha activa."
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "titulo": "Reflexiona sobre la comunicación",
-                      "contenido": "",
-                      "actividad": {
-                        "tipo": "openquiz",
-                        "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
-                        "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
-                        "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
-                        "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
-                      }
+              "slides": [{
+                "grupo": "Escucha activa",
+                "items": [{
+                    "titulo": "Escucha activa",
+                    "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
+                  },
+                  {
+                    "titulo": "Consejos para demostrar escucha activa",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Establece contacto visual sincero (sin invadir)</strong>",
+                          "hijos": [{
+                            "texto": "Mira a los ojos de quien habla con atención y calma, sin forzar la mirada."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Asiente con la cabeza de forma natural</strong>",
+                          "hijos": [{
+                            "texto": "Usa pequeños gestos para mostrar que estás siguiendo el mensaje (sin exagerar)."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Evita interrupciones</strong>",
+                          "hijos": [{
+                            "texto": "No completes frases, no corrijas, ni des consejos mientras la otra persona expone su punto."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Mantén una postura abierta y receptiva</strong>",
+                          "hijos": [{
+                            "texto": "Inclina ligeramente el cuerpo hacia adelante, brazos relajados, sin cruzarlos."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Usa breves verbalizaciones de seguimiento</strong>",
+                          "hijos": [{
+                            "texto": "Expresiones como: “sí“, “entiendo“, “claro“, “mmm“, ayudan a mantener el flujo comunicativo."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Refleja emocionalmente lo que escuchas</strong>",
+                          "hijos": [{
+                            "texto": "Muestra empatía con frases como: “eso suena difícil“, “parece que eso te impactó mucho“."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Parafrasea para confirmar comprensión</strong>",
+                          "hijos": [{
+                            "texto": "Resume con tus palabras lo que entendiste: “Entonces, lo que estás diciendo es que...“."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Haz preguntas abiertas, no invasivas</strong>",
+                          "hijos": [{
+                            "texto": "Estimula la profundización sin desviar el foco: “¿Cómo te sentiste en ese momento?“ o “¿Qué crees que necesitas ahora?“."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>No te distraigas (ni física ni mentalmente)</strong>",
+                          "hijos": [{
+                            "texto": "Guarda el celular, cierra el computador, y enfoca tu atención completa en la persona."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Respeta los silencios</strong>",
+                          "hijos": [{
+                            "texto": "No llenes cada pausa; permite que la otra persona piense o sienta sin presión"
+                          }]
+                        }
+                      ]
                     }
-                  ]
-                }
-              ]
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
+                      "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
+                          "correcta": true,
+                          "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Conflicto entre miembros</span><br>Carla expresa frustración con otro miembro::<br><i>\"Cada vez que propongo algo, Luis me interrumpe. Me hace sentir invisible.\"</i>",
+                      "pregunta": "¿Cuál es la mejor forma de responder desde la escucha activa?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> \"¿Y tú has pensado por qué él podría hacer eso?\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> \"Quizá es tu percepción, Luis es así con todos.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> \"Puedo ver que eso te molesta. ¿Quieres que te acompañe a hablar con él?\"",
+                          "correcta": true,
+                          "feedback": "Porque reconoce la emoción, sin minimizar ni justificar, y ofrece apoyo."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> \"Yo nunca he notado eso. Tal vez lo estás exagerando.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Miembro comparte experiencia personal</span><br>Durante una conversación informal, Ana dice:<br><i>\"Me cuesta mucho hablar en público. A veces me paralizo y no puedo ni empezar.\"</i>",
+                      "pregunta": "¿Qué respuesta demuestra mejor escucha activa?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> \"Ah, yo antes era igual, pero luego hice un curso y se me pasó.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> \"¡Uy! Pues entonces no presentes la próxima reunión.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> \"¿Te ha pasado muchas veces? ¿Cómo lo vives en esos momentos?\"",
+                          "correcta": true,
+                          "feedback": "Porque evita centrarse en uno mismo y permite que Ana explore y exprese su experiencia."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> \"No te preocupes, seguro lo haces bien.\"",
+                          "correcta": false,
+                          "feedback": "No refleja escucha activa."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Silencio prolongado de un miembro</span><br>Lucía ha estado callada toda la sesión. Al final, alguien le pregunta cómo se sintió, y ella dice:<br><i>\"No sé… me costó seguir el ritmo y no estaba segura de si tenía algo valioso que decir.\"</i>",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+                ]
+              }]
+            },
+            {
+              "id": "4-2-2",
+              "titulo": "Flexibilidad",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "slides": [{
+                "grupo": "Flexibilidad",
+                "items": [{
+                    "titulo": "Flexibilidad",
+                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Es la capacidad de adaptarse de manera ágil y constructiva a cambios en las circunstancias, necesidades del grupo o plan de trabajo, manteniendo el foco en los objetivos de la comunidad.<br><br>Implica apertura a nuevas ideas, disposición a ajustar métodos y actitudes, y habilidad para manejar imprevistos sin perder la conexión con las personas ni la calidad del proceso.</p></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_flexibilidad.jpg'></div>"
+                  },
+                  {
+                    "titulo": "Consejos para desarrollar flexibilidad.",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Acepta que el plan es una guía, no una cárcel.</strong>",
+                          "hijos": [{
+                            "texto": "Diseña agendas con márgenes para adaptarte a imprevistos, priorizando el propósito de la sesión sobre la rigidez del formato."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Entrena tu tolerancia a la incertidumbre</strong>",
+                          "hijos": [{
+                            "texto": "Asume que no siempre tendrás toda la información o control. Mantener la calma en la ambigüedad refuerza tu capacidad de respuesta."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Integra pausas de diagnóstico.</strong>",
+                          "hijos": [{
+                            "texto": "En reuniones largas, detente brevemente para evaluar energía, participación y necesidades emergentes del grupo, y ajusta en consecuencia."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Aprende a improvisar con estructura</strong>",
+                          "hijos": [{
+                            "texto": "Desarrolla “recursos de bolsillo” (dinámicas, preguntas, ejercicios cortos) que puedas usar si la sesión cambia de rumbo."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Cambia de perspectiva</strong>",
+                          "hijos": [{
+                            "texto": "Cuando surja un imprevisto, pregúntate: <i>¿Qué oportunidad hay aquí?</i> Esto fomenta una mentalidad proactiva ante cambios."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Gestiona tu propia emocionalidad</strong>",
+                          "hijos": [{
+                            "texto": "Un facilitador que mantiene la calma transmite seguridad y facilita que el grupo también se adapte sin estrés excesivo."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Mantén opciones múltiples</strong>",
+                          "hijos": [{
+                            "texto": "Antes de una sesión, prepara al menos dos enfoques o secuencias posibles para alcanzar los objetivos, de modo que puedas alternar si algo no funciona."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Practica el “sí, y…”</strong>",
+                          "hijos": [{
+                            "texto": "En lugar de rechazar ideas o cambios, intégralos construyendo sobre ellos. Esto fomenta apertura y colaboración."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Desarrolla curiosidad genuina</strong>",
+                          "hijos": [{
+                            "texto": "Interésate por las ideas y experiencias de los demás, incluso si difieren de tu plan inicial; la flexibilidad nace de la apertura mental."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Evalúa y ajusta rápido</strong>",
+                          "hijos": [{
+                            "texto": "Aprende a identificar pronto lo que no está funcionando y modifica la dinámica sin miedo a “salirte del libreto”."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Entrena con escenarios simulados</strong>",
+                          "hijos": [{
+                            "texto": "Participa en ejercicios de role-play con cambios inesperados para practicar la adaptación en entornos seguros antes de hacerlo en situaciones reales."
+                          }]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Cambio inesperado de temática</span><br>Estás facilitando una sesión sobre “Buenas prácticas en atención al cliente”<br>A los 20 minutos, varios miembros plantean dudas urgentes sobre un nuevo software recién implementado.",
+                      "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Mantener estrictamente el plan original para cumplir el objetivo declarado.",
+                          "correcta": false,
+                          "feedback": "No refleja flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Escuchar las dudas y acordar otra sesión, manteniendo hoy la agenda inicial.",
+                          "correcta": false,
+                          "feedback": "No refleja flexibilidad"
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Explorar rápidamente el nuevo tema para vincularlo con el objetivo actual.",
+                          "correcta": false,
+                          "feedback": "No refleja flexibilidad"
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Abrir un espacio intermedio donde el grupo identifique cómo el software impacta en la atención al cliente, y luego decidir juntos si continuar o no con ese enfoque.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> La flexibilidad no es solo cambiar, sino decidir con el grupo cómo adaptarse. Esta opción combina escucha, conexión con el propósito inicial y participación compartida en la decisión, lo que fortalece el compromiso y la relevancia."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Fallo tecnológico en plena reunión virtual</span><br>Estás en un intercambio de experiencias en línea y la plataforma falla:<br>sin video ni pantalla compartida.",
+                      "pregunta": "Alternativas:",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Cambiar de plataforma en el momento, avisando por correo o chat.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Pasar a audio únicamente y reorganizar la dinámica para mantener participación.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Activar un canal paralelo de mensajería para apoyo visual y seguir por audio.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Consultar rápidamente al grupo qué alternativa prefieren y ejecutar la elegida.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> La flexibilidad implica co-crear la solución, no imponerla. Involucrar al grupo en la elección aumenta la viabilidad y aceptación de la alternativa, y permite adaptar la dinámica a las capacidades y preferencias reales en ese momento."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Conflicto de prioridades</span><br>La dirección pide que en la próxima reunión de la CoP presentes un informe formal en vez de la actividad colaborativa prevista, para la cual el grupo estaba motivado.",
+                      "pregunta": "Alternativas:",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Cumplir íntegramente con la petición, postergando la actividad.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Presentar el informe primero y, si sobra tiempo, hacer la actividad.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Transformar la presentación del informe en un ejercicio participativo que sirva como insumo para la actividad prevista.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Negociar con la dirección para entregar el informe por escrito y mantener la sesión tal como estaba planificada.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> La flexibilidad se demuestra integrando intereses y evitando que uno anule al otro. Convertir el informe en un recurso participativo conecta con las expectativas de la dirección y preserva el dinamismo y el sentido de la actividad para el grupo."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Cambio repentino de asistentes</span><br>En una sesión, Ricardo dice:<br>En tu taller, la mitad de los asistentes previstos no llega y se suman personas nuevas sin el mismo contexto previo.",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Flexibilidad</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Resultados inesperados</span><br>Durante una dinámica, el grupo produce conclusiones que no encajan con los lineamientos oficiales de la organización.",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Flexibilidad</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+                ]
+              }]
+            },
+            {
+              "id": "4-2-3",
+              "titulo": "Empatía",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "slides": [{
+                "grupo": "Empatía",
+                "items": [{
+                    "titulo": "Empatía",
+                    "contenido": "<div class='row m-0'><div class='col-md-6 col-12 p-0'><p class='p-0 fw-bold'>Es la habilidad para reconocer, comprender y apreciar los sentimientos de los otros.<br><br>La empatía es la capacidad de conectarse emocionalmente con las demás personas, permite reconocer, compartir y entender los sentimientos y los estados de ánimo de otros seres humanos.<br><br>En otras palabras, ser empáticos es el ser capaces de \"leer\" emocionalmente a las personas y actuar en consecuencia.</p></div><div class='col-md-6 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_empatia.jpg'></div></div>"
+                  },
+                  {
+                    "titulo": "Consejos para desarrollar flexibilidad.",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Acepta que el plan es una guía, no una cárcel.</strong>",
+                          "hijos": [{
+                            "texto": "Diseña agendas con márgenes para adaptarte a imprevistos, priorizando el propósito de la sesión sobre la rigidez del formato."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Escucha sin juzgar</strong>",
+                          "hijos": [{
+                            "texto": "Suspende tus juicios o interpretaciones personales mientras el otro expresa su experiencia."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Valida la experiencia del otro</strong>",
+                          "hijos": [{
+                            "texto": "Reconoce lo que la persona está sintiendo, aunque no estés de acuerdo: <i>“Tiene sentido que te sientas así dadas las circunstancias”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Nombra la emoción que observas</strong>",
+                          "hijos": [{
+                            "texto": "Ayuda al otro a poner en palabras su estado emocional: <i>“Parece que esto te generó mucha frustración”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Usa un tono de voz calmado y cálido</strong>",
+                          "hijos": [{
+                            "texto": "La entonación transmite tanto como las palabras; evita un tono brusco o distante."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Adopta una postura corporal abierta</strong>",
+                          "hijos": [{
+                            "texto": "Orienta tu cuerpo hacia la persona, evita gestos de cierre como brazos cruzados o mirar hacia otro lado."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Muestra comprensión sin apropiarte de la experiencia</strong>",
+                          "hijos": [{
+                            "texto": "Evita responder con “a mí también me pasó” si desvía la atención del otro; enfócate en su vivencia."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Haz preguntas que inviten a profundizar en lo emocional</strong>",
+                          "hijos": [{
+                            "texto": "Por ejemplo: <i>“¿Cómo fue eso para ti?”</i>, <i>“¿Qué es lo que más te afectó?”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Ofrece apoyo emocional, no soluciones prematuras</strong>",
+                          "hijos": [{
+                            "texto": "A veces basta con decir: <i>“Estoy aquí para escucharte”</i>, en lugar de intentar resolver el problema."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Reconoce el valor de lo compartido</strong>",
+                          "hijos": [{
+                            "texto": "Frases como: <i>“Gracias por confiar y compartir eso</i> ayudan a construir confianza y seguridad."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Acompaña con presencia plena</strong>",
+                          "hijos": [{
+                            "texto": "Estar realmente presente, incluso en silencio, puede ser una forma poderosa de empatía."
+                          }]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Empatía",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Agotamiento emocional en una compañera</span><br>Durante una reunión, Lucía dice:<br><i>\"Estoy agotada. He estado cuidando a mi madre enferma y no me queda energía para nada.\"</i>",
+                      "pregunta": "¿Cuál es la respuesta más empática?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> “Imagino que eso debe ser muy difícil para tí. Si necesitas algo, acá estoy.”",
+                          "correcta": false,
+                          "feedback": "No presupone cómo se siente."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> “Te admiro mucho por todo lo que estás haciendo, es valioso lo que haces.”",
+                          "correcta": false,
+                          "feedback": "No dirige la atención a una evaluación externa"
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> “¿Quieres contarnos cómo estás viviendo eso? A veces compartir alivia.”",
+                          "correcta": true,
+                          "feedback": "Aunque todas las respuestas muestran respeto y buenas intenciones, <strong>la opción C es la más empática<strong>, porque abre espacio genuino para que ella pueda expresarse, <strong>centrando la escucha en su experiencia emocional actual</strong>."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> “Si quieres puedes tomarte unos días, lo entendemos.”",
+                          "correcta": false,
+                          "feedback": "No se adelanta a soluciones."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Fallo tecnológico en plena reunión virtual</span><br>Estás en un intercambio de experiencias en línea y la plataforma falla:<br>sin video ni pantalla compartida.",
+                      "pregunta": "Alternativas:",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Cambiar de plataforma en el momento, avisando por correo o chat.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Pasar a audio únicamente y reorganizar la dinámica para mantener participación.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Activar un canal paralelo de mensajería para apoyo visual y seguir por audio.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Consultar rápidamente al grupo qué alternativa prefieren y ejecutar la elegida.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> La flexibilidad implica co-crear la solución, no imponerla. Involucrar al grupo en la elección aumenta la viabilidad y aceptación de la alternativa, y permite adaptar la dinámica a las capacidades y preferencias reales en ese momento."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Conflicto de prioridades</span><br>La dirección pide que en la próxima reunión de la CoP presentes un informe formal en vez de la actividad colaborativa prevista, para la cual el grupo estaba motivado.",
+                      "pregunta": "Alternativas:",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Cumplir íntegramente con la petición, postergando la actividad.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Presentar el informe primero y, si sobra tiempo, hacer la actividad.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Transformar la presentación del informe en un ejercicio participativo que sirva como insumo para la actividad prevista.",
+                          "correcta": false,
+                          "feedback": "No refleja Flexibilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Negociar con la dirección para entregar el informe por escrito y mantener la sesión tal como estaba planificada.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> La flexibilidad se demuestra integrando intereses y evitando que uno anule al otro. Convertir el informe en un recurso participativo conecta con las expectativas de la dirección y preserva el dinamismo y el sentido de la actividad para el grupo."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Cambio repentino de asistentes</span><br>En una sesión, Ricardo dice:<br>En tu taller, la mitad de los asistentes previstos no llega y se suman personas nuevas sin el mismo contexto previo.",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Flexibilidad</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Resultados inesperados</span><br>Durante una dinámica, el grupo produce conclusiones que no encajan con los lineamientos oficiales de la organización.",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Flexibilidad</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+                ]
+              }]
             }
           ]
         }
