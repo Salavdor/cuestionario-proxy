@@ -629,41 +629,42 @@
     transform: scale(1.1);
 }
 
-#lista_subtema4_2_slideLista0 {
+/* Contenedor principal del UL */
+#lista_subtema4-2-1-slides_slideLista1 {
   height: 100%;
   position: relative; /* necesario para que el ::before se ancle a este contenedor */
 }
 
-#lista_subtema4_2_slideLista0::before {
+/* Imagen de fondo decorativa */
+#lista_subtema4-2-1-slides_slideLista1::before {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 500px;     /* ajusta el tamaño según necesites */
+  width: 500px;
   height: 500px;
   background-image: url("src/img/m4_s3_f1.jpg");
-  background-size: contain;  /* o cover según el efecto que quieras */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
-  z-index: -1; /* lo manda detrás del contenido */
-  opacity: 1; /* opcional, para un efecto sutil */
+  z-index: -1;
+  opacity: 0; /* opcional */
 }
 
-/* Quita bullets en UL raíz */
-ul#lista_subtema4_2_slideLista2 {
+/* UL raíz sin bullets */
+#lista_subtema4-2-1-slides_slideLista1 {
   list-style: none;
   padding-left: 1.5em;
 }
 
-/* Solo aplica a los LI hijos directos de ese UL */
-ul#lista_subtema4_2_slideLista2 > li {
+/* LI de primer nivel con estrella */
+#lista_subtema4-2-1-slides_slideLista1 > li {
   position: relative;
   padding-left: 1.5em;
 }
 
-/* Agregar estrella solo al primer nivel */
-ul#lista_subtema4_2_slideLista2 > li::before {
-  content: "★"; /* o url("src/img/estrella.png") */
+#lista_subtema4-2-1-slides_slideLista1 > li::before {
+  content: "★";
   position: absolute;
   left: 0;
   top: 0.1em;
@@ -671,16 +672,18 @@ ul#lista_subtema4_2_slideLista2 > li::before {
   font-size: 15px;
 }
 
-/* Los UL anidados mantienen su estilo normal */
-ul#lista_subtema4_2_slideLista2 ul {
-  list-style: none;   /* o lo que quieras */
+/* UL anidados (segundo nivel en adelante) sin bullets */
+#lista_subtema4-2-1-slides_slideLista1 ul {
+  list-style: none;  /* quita los dots */
   padding-left: 1.5em;
   margin-bottom: 15px;
 }
 
-ul#lista_subtema4_2_slideLista2 ul li::before {
-  content: none; /* asegura que no se hereden las estrellas */
+/* Asegura que los LI anidados no hereden la estrella */
+#lista_subtema4-2-1-slides_slideLista1 ul li::before {
+  content: none;
 }
+
 
 .skillQuizContainer{
 background-color: var(--color-secundario-6);
