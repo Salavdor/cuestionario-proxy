@@ -1318,6 +1318,684 @@
               }]
             }
           ]
+        },
+        {
+          "id": "4-3",
+          "titulo": "Habilidades de Facilitación y Metodológicas",
+          "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+          "actividad": {
+            "tipo": "lista",
+            "estilo": "nodot",
+            "items": [{
+                "texto": "<p>Permiten conducir sesiones, promover la colaboración y el aprendizaje compartido.</p>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Dinamizar de reuniones y talleres:</span> <br>activar espacios presenciales y virtuales (foros, chats o plataformas colaborativas) para que sean productivos y motivantes.</p></div>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Diseño de procesos participativos:</span> <br>estructurar actividades que fomenten la confianza y el intercambio de conocimientos.</p></div>"
+              },
+              {
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Curaduría de contenidos:</span> <br>capturar los aprendizajes de la CoP, a la vez que seleccionar y presentar recursos útiles para ésta.</p></div>"
+              }
+            ]
+          },
+          "subtemas": [
+            {
+              "id": "4-3-1",
+              "titulo": "Dinamizar reuniones y talleres",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades de Facilitación y Metodológicas</h2>",
+              "slides": [{
+                "grupo": "Dinamizar reuniones y talleres",
+                "items": [{
+                    "titulo": "Dinamizar reuniones y talleres",
+                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Dinamizar una reunión significa aplicar técnicas, recursos o estrategias para hacer que la reunión sea más activa, participativa y productiva. Esto evita que la reunión sea monótona o ineficaz, fomentando la interacción, la colaboración y apoyo entre los participantes, manteniendo –en lo posible- el enfoque en los objetivos.</p></div><img class='img-fluid' src='src/img/m4_dinamizar.jpg'>"
+                  },
+                  {
+                    "titulo": "Consejos para dinamizar reuniones y talleres",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Inicia con una bienvenida cálida y clara</strong>",
+                          "hijos": [{
+                            "texto": "Saluda, agradece la presencia del grupo, y comunica de forma breve los objetivos del encuentro."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Genera un ambiente seguro desde el inicio</strong>",
+                          "hijos": [{
+                            "texto": "Propón reglas de convivencia básicas (escucha, respeto, turnos de palabra) y modela ese comportamiento."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Utiliza preguntas abiertas para activar la participación</strong>",
+                          "hijos": [{
+                            "texto": "Ejemplo: <i>“¿Qué opinan sobre esto?”</i>, <i>“¿Cómo lo ven desde su experiencia?</i>"
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Alterna formatos para mantener la energía</strong>",
+                          "hijos": [{
+                            "texto": "Combina momentos plenarios con trabajo en grupos pequeños, actividades individuales y discusiones dirigidas."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Muestra entusiasmo y presencia activa</strong>",
+                          "hijos": [{
+                            "texto": "Usa el tono de voz, lenguaje corporal y expresiones faciales para transmitir energía y motivación."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Valida continuamente las participaciones</strong>",
+                          "hijos": [{
+                            "texto": "Agradece, rescata ideas clave y muestra que el aporte de cada persona es valioso."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Facilita sin dominar</strong>",
+                          "hijos": [{
+                            "texto": "Interviene para orientar, aclarar o enfocar, pero sin ocupar demasiado espacio ni imponer tu visión."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Usa dinámicas breves para movilizar al grupo</strong>",
+                          "hijos": [{
+                            "texto": "Rompehielos, mapas de ideas, encuestas rápidas o juegos de roles pueden activar el cuerpo y la mente."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Gestiona los tiempos con flexibilidad</strong>",
+                          "hijos": [{
+                            "texto": "Sé claro con la agenda, pero adapta el ritmo según el flujo del grupo sin perder el foco."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Rescata acuerdos, avances o aprendizajes en voz alta</strong>",
+                          "hijos": [{
+                            "texto": "Cierra cada bloque o actividad con una síntesis que dé sentido y cohesión al proceso."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Monitorea el nivel de energía del grupo</strong>",
+                          "hijos": [{
+                            "texto": "Observa signos de fatiga, dispersión o desmotivación, y actúa: propone pausas activas, cambia de actividad o da espacio a comentarios."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Fomenta el co-liderazgo y la participación distribuida</strong>",
+                          "hijos": [{
+                            "texto": "Invita a otros a facilitar momentos, moderar rondas o proponer ideas."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Finaliza con una síntesis positiva y orientada a lo próximo</strong>",
+                          "hijos": [{
+                            "texto": "Refuerza logros, reconoce el aporte del grupo y explica los próximos pasos."
+                          }]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para Dinamizar",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Participación desigual</span><br>Durante una reunión virtual de tu CoP, observas que solo tres personas (de las quince presentes) están participando activamente. El resto se mantiene en silencio o con la cámara apagada.",
+                      "pregunta": "¿Qué haces como dinamizador/a?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Intervienes para señalar directamente que el resto del grupo no está participando y pides que todos hablen.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Rediriges la conversación con una pregunta abierta, asignando turnos de participación para asegurar que todos hablen.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Realizas una pausa y propones una dinámica rompehielos para reactivar la energía del grupo.",
+                          "correcta": true,
+                          "feedback": "Justificación: Aunque B parece adecuada por su intención de inclusión, puede resultar forzada o intimidante si los participantes no están comprometidos o se sienten expuestos.  La opción C propone una pausa estratégica que reengancha desde la emocionalidad y el vínculo grupal, un recurso clave en la dinamización. Facilita la reconexión sin presionar directamente a los más callados."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Continúas con la reunión tal como va, priorizando a quienes están participando activamente.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para Dinamizar",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Dominancia de un participante</span><br>En una sesión presencial, uno de los miembros más experimentados habla constantemente, interrumpe y tiende a desacreditar indirectamente las ideas de los demás.",
+                      "pregunta": "¿Cómo manejas esta situación?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Le pides que permita hablar a los demás y le recuerdas las normas de convivencia.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Ignoras la actitud por el momento y luego le hablas en privado.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Cambias la metodología y aplicas una dinámica donde todos escriben sus ideas antes de compartirlas.",
+                          "correcta": true,
+                          "feedback": "Justificación: Aunque A y D parecen intervenciones válidas, pueden generar confrontación o reforzar su protagonismo. La opción C reestructura el flujo de participación de manera horizontal, sin hacer un llamado directo, disminuyendo el peso de la verbalización y permitiendo la expresión equitativa. Es una estrategia indirecta pero poderosa para equilibrar voces."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Le agradeces por su experiencia y lo invitas a resumir sus ideas para dar paso a otros.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para Dinamizar",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Falta de foco en la reunión</span><br>En una sesión virtual, el grupo comienza a dispersarse en temas no relacionados con el objetivo de la reunión. El ambiente es distendido pero improductivo.",
+                      "pregunta": "¿Qué haces como facilitador/a?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Reenfocas la conversación recordando el objetivo y el tiempo disponible.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Dejas que fluya la conversación para no cortar la espontaneidad.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Propones una votación para decidir si se sigue o se retoma el foco.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para Dinamizar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Propones agendar una sesión informal para continuar esas conversaciones y vuelves al tema actual.",
+                          "correcta": true,
+                          "feedback": "Justificación: La opción A es válida, pero puede percibirse como autoritaria. La D permite validar la energía espontánea del grupo sin perder de vista los objetivos, conteniendo la digresión de forma constructiva. Además, promueve la continuidad de los vínculos informales, importantes en una CoP."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para Dinamizar",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre tu <strong>abilidad para dinamizar</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Silencio ante una pregunta clave</span><br>Estás en sesión virtual. Formulas una pregunta clave para el avance del trabajo de la CoP, pero nadie responde, ni en cámara ni en el chat. El silencio es incómodo.",
+                      "pregunta": "Intenta una respuesta que <span class='title-body-secondary'>dinamice la situación</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para Dinamizar",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre tu <strong>abilidad para dinamizar</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Desacuerdo de opiniones</span><br>Durante una dinámica de co-creación, dos participantes entran en un desacuerdo evidente sobre cómo abordar un tema. La tensión se empieza a notar en el grupo.",
+                      "pregunta": "Intenta una respuesta que <span class='title-body-secondary'>dinamice la situación</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+                ]
+              }]
+            },
+            {
+              "id": "4-3-2",
+              "titulo": "Diseñar procesos participativos",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "slides": [{
+                "grupo": "Diseñar procesos participativos",
+                "items": [{
+                    "titulo": "Diseñar procesos participativos",
+                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Significa crear estructuras, metodologías o dinámicas que permitan que todas las personas involucradas en un proyecto, decisión o actividad puedan opinar, colaborar y construir colectivamente.<br><br>Esto implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Pensar <strong>cómo, cuándo y con qué herramientas</strong> que permitan que todas las personas involucradas en un proyecto, decisión o actividad <strong>puedan opinar, colaborar y construir colectivamente.</strong></li><li>Asegurarse de que <strong>todas las voces sean escuchadas,</strong> no solo las de quienes tienen más poder o experiencia.</li><li>Generar un entorno donde <strong>se fomente la confianza, la escucha activa y el respeto.</strong></li></ul></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_disenar.jpg'></div>"
+                  },
+                  {
+                    "titulo": "Consejos para diseñar procesos participativos",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Escucha activamente las necesidades del grupo desde el inicio</strong>",
+                          "hijos": [{
+                            "texto": "Realiza entrevistas, encuestas o diálogos abiertos para recoger intereses, expectativas y niveles de experiencia antes de diseñar."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Co-diseña con representantes del grupo</strong>",
+                          "hijos": [{
+                            "texto": "Involucra a algunos miembros desde la planificación inicial para asegurar pertinencia y sentido de apropiación."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Formula objetivos claros, compartidos y comprensibles</strong>",
+                          "hijos": [{
+                            "texto": "Evita tecnicismos y traduce los fines del proceso en metas significativas para los participantes."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Integra diversas voces y estilos de participación</strong>",
+                          "hijos": [{
+                            "texto": "Diseña actividades que consideren personas más expresivas, reflexivas, prácticas, etc. (ej. escritura individual, diálogo grupal, trabajo en parejas, visualizaciones)."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Facilita que las personas se expresen desde su experiencia</strong>",
+                          "hijos": [{
+                            "texto": "Crea espacios donde el saber práctico y vivencial tenga el mismo valor que el técnico o formal."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Propón estructuras claras pero flexibles</strong>",
+                          "hijos": [{
+                            "texto": "Diseña una secuencia con tiempos, roles y métodos definidos, pero abierta a ajustes según lo que surja en el grupo."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Incluye momentos de reflexión y síntesis colectiva</strong>",
+                          "hijos": [{
+                            "texto": "Agenda pausas para pensar juntos lo que se está aprendiendo y hacia dónde avanzar."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Genera acuerdos sobre la forma de colaborar</strong>",
+                          "hijos": [{
+                            "texto": "Inicia con normas o acuerdos participativos sobre cómo se dialoga, se decide y se actúa."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Distribuye el protagonismo</strong>",
+                          "hijos": [{
+                            "texto": "Alterna el liderazgo de actividades, motiva a que participantes faciliten, documenten o representen al grupo."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Haz visibles los aportes del grupo</strong>",
+                          "hijos": [{
+                            "texto": "Usa mapas mentales, pizarras, relatorías o soportes visuales para reflejar lo que las personas han dicho o creado."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Retroalimenta de forma continua</strong>",
+                          "hijos": [{
+                            "texto": "Revisa con el grupo cómo están funcionando las dinámicas, qué se podría mejorar y qué están valorando."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Cuida el ritmo emocional del proceso</strong>",
+                          "hijos": [{
+                            "texto": "Observa el ánimo del grupo y regula la intensidad: alterna momentos más cognitivos con otros más emocionales o lúdicos."
+                          }]
+                        },
+                                                {
+                          "texto": "<strong>Promueve resultados tangibles y aplicables</strong>",
+                          "hijos": [{
+                            "texto": "Asegúrate de que el proceso conduzca a productos, aprendizajes o acuerdos útiles para el grupo y su contexto."
+                          }]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para diseñar procesos participativos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> en relación al diseño de procesos participativos. Marca solo<strong>una opción por situación</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Selección de metodologías</span><br>Debes diseñar una sesión virtual para una CoP donde se analizarán experiencias prácticas. El grupo es diverso en edad, contexto y habilidades digitales. Deseas que todos participen activamente.",
+                      "pregunta": "¿Qué enfoque metodológico seleccionas?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Propicias un foro abierto con micrófono para que quien quiera, comparta su experiencia.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Usas una dinámica de trabajo en subgrupos con preguntas guía, y luego se comparten aprendizajes en plenario.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> B favorece la participación activa, permite mayor equidad (especialmente para quienes se inhiben en plenarios) y genera diálogo horizontal. Además, las preguntas guía alinean la conversación. A y D limitan espontaneidad o imponen estructura vertical. C anula la co-construcción en tiempo real."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Pides que envíen sus experiencias por correo antes del taller y tú las presentas.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Asignas turnos para compartir experiencias en orden alfabético.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para diseñar procesos participativos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> en relación al diseño de procesos participativos. Marca solo<strong>una opción por situación</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Sistematización participativa</span><br>Tras una serie de encuentros, necesitas diseñar una metodología para que la CoP sistematice sus aprendizajes colectivos. El grupo tiene poco tiempo y experiencia en sistematización.",
+                      "pregunta": "¿Qué diseño es más apropiado?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Tú sistematizas los aprendizajes y luego pides retroalimentación.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Propones una matriz sencilla para que los subgrupos registren hallazgos y luego los integren.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> La opción B permite la colectivización del proceso sin complejidad excesiva. La matriz guía el pensamiento sin restringir las ideas. A y C son centralizadas y debilitan el principio de apropiación colectiva. D es útil como activación, pero no sistematiza en términos relacionales o de patrones."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Haces una lluvia de ideas colectiva sobre aprendizajes y tú los sintetizas al final.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Pides a cada participante escribir individualmente su mayor aprendizaje y luego lo compartes tú.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para diseñar procesos participativos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> en relación al diseño de procesos participativos. Marca solo<strong>una opción por situación</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Diseño de acuerdos de convivencia</span><br>Estás diseñando un taller presencial para una CoP consolidada. Quieres revisar y actualizar los acuerdos de convivencia para fortalecer el compromiso. Algunos participantes no creen necesario cambiar nada.",
+                      "pregunta": "¿Qué diseño metodológico es más pertinente?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Haces una votación para saber si vale la pena revisar los acuerdos.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Divides al grupo en subgrupos y les pides revisar los acuerdos actuales para proponer ajustes.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Presentas los acuerdos actuales y haces una ronda para ver si alguien quiere proponer cambios.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para diseñar procesos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Partes de una actividad de identificación de tensiones o incomodidades recientes, antes de revisar los acuerdos.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> Iniciar desde las experiencias recientes conecta emocional y cognitivamente a los participantes con la necesidad de revisar los acuerdos, incluso a quienes no percibían necesidad de cambio. B es operativa, pero no necesariamente genera sentido de urgencia. A y C pueden validar el statu quo sin reflexión."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para diseñar procesos participativos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Inclusión de voces minoritarias</span><br>Estás facilitando un proceso de diseño participativo para mejorar una práctica organizacional. Un grupo pequeño (por rol, edad o experiencia) tiende a ser ignorado y por ello, a no tomar la palabra en plenarios.",
+                      "pregunta": "Intenta una respuesta que garantice que sus voces se <span class='title-body-secondary'>incluyan en el proceso</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para diseñar procesos participativos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Definición de objetivos participativos</span><br>Estás diseñando una sesión inicial para una CoP nueva. Tu meta es que los participantes definan conjuntamente los objetivos del grupo, pero sabes que muchos de ellos no se conocen ni tienen claridad sobre lo que es una CoP.",
+                      "pregunta": "¿Cómo estructurarías esta parte del proceso?",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+                ]
+              }]
+            },
+            {
+              "id": "4-3-3",
+              "titulo": "Curaduría de contenidos",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "slides": [{
+                "grupo": "Curaduría de contenidos",
+                "items": [{
+                    "titulo": "Curaduría de contenidos",
+                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>La curaduría de contenidos es el proceso de seleccionar, organizar, filtrar, contextualizar y compartir información relevante y de calidad sobre un tema específico, con el objetivo de aportar valor a una comunidad.<br><br>O sea, ante una gran cantidad de información disponible (como en internet, libros, documentos, etc.), la curaduría consiste en:</p><ol id='listaCuraduriaContenidos' class='list-disc ps-3'><li>Buscar contenidos relevantes.</li><li>Evaluar su calidad y pertinencia.</li><li>Seleccionar lo más útil o significativo.</li><li>Organizar la información de manera clara y coherente.</li><li>Aportar contexto o interpretación propia.</li><li>Compartirla con la audiencia.</li></ol></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_curaduria.jpg'></div>"
+                  },
+                  {
+                    "titulo": "Consejos para la curaduría de contenidos",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Conoce a tu audiencia y sus necesidades reales</strong>",
+                          "hijos": [{
+                            "texto": "Observa, escucha y dialoga con los miembros de la CoP para identificar qué tipo de información les resulta útil y en qué formato."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Selecciona contenido alineado con los objetivos y propósito de la comunidad</strong>",
+                          "hijos": [{
+                            "texto": "Filtra la información en función del foco temático, etapa de desarrollo del grupo y desafíos comunes."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Prioriza calidad por sobre cantidad</strong>",
+                          "hijos": [{
+                            "texto": "Comparte pocos recursos, pero altamente relevantes, actuales, confiables y bien fundamentados."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Agrega valor contextualizando el contenido</strong>",
+                          "hijos": [{
+                            "texto": "No compartas el enlace “a secas”; explica por qué es relevante, cómo se conecta con lo trabajado y qué se puede aprender de él."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Incluye variedad de formatos para distintos estilos de aprendizaje</strong>",
+                          "hijos": [{
+                            "texto": "Alterna entre artículos, videos, podcasts, mapas conceptuales, herramientas prácticas, infografías, etc."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Propón estructuras claras pero flexibles</strong>",
+                          "hijos": [{
+                            "texto": "Diseña una secuencia con tiempos, roles y métodos definidos, pero abierta a ajustes según lo que surja en el grupo."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Incluye momentos de reflexión y síntesis colectiva</strong>",
+                          "hijos": [{
+                            "texto": "Agenda pausas para pensar juntos lo que se está aprendiendo y hacia dónde avanzar."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Destaca ideas clave o fragmentos relevantes</strong>",
+                          "hijos": [{
+                            "texto": "Resalta puntos importantes o citas que ayuden al lector a captar lo esencial rápidamente."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Conecta el contenido con la práctica cotidiana del grupo</strong>",
+                          "hijos": [{
+                            "texto": "Facilita la transferencia del contenido a su realidad laboral:<br><i>“Esto puede ser útil para mejorar nuestras reuniones de evaluación”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Invita a la interacción con el contenido</strong>",
+                          "hijos": [{
+                            "texto": "Propón preguntas, retos o espacios de discusión a partir del material compartido:<br><i>¿Cómo aplicarías esta herramienta en tu contexto?”</i>"
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Organiza y categoriza los contenidos</strong>",
+                          "hijos": [{
+                            "texto": "Usa etiquetas temáticas, carpetas o herramientas digitales colaborativas para que los recursos sean fácilmente accesibles y navegables."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Atribuye las fuentes y respeta los derechos de autor</strong>",
+                          "hijos": [{
+                            "texto": "Cita correctamente a los autores y evita compartir materiales sin licencia o sin dar crédito."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Actualiza regularmente los contenidos</strong>",
+                          "hijos": [{
+                            "texto": "Revisa si la información sigue vigente y elimina lo obsoleto o repetido."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Fomenta la co-curaduría</strong>",
+                          "hijos": [{
+                            "texto": "Motiva a los miembros de la CoP a proponer y comentar contenidos, construyendo colectivamente el repositorio de saberes."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Evalúa el impacto del contenido curado</strong>",
+                          "hijos": [{
+                            "texto": "Observa si el material compartido genera conversación, reflexión o cambio en la práctica, y ajusta en función de eso."
+                          }]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para curar contenidos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> en relación a la cura de contenidos. Marca solo <strong>una opción por situación</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Relevancia vs. abundancia</span><br>Has recibido más de 30 artículos y recursos que los miembros de la CoP han compartido en el último mes sobre el tema de innovación educativa. Se te ha pedido curar este contenido para una próxima sesión.",
+                      "pregunta": "¿Qué enfoque adoptas?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Seleccionas los 10 artículos más compartidos en redes para asegurar interés general.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Clasificas todo el contenido según tipo de fuente (artículo, video, herramienta) y los subes a una carpeta compartida.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Filtras los contenidos en función del tema del próximo encuentro y seleccionas los más pertinentes, agregando una breve introducción sobre por qué se recomiendan.",
+                          "correcta": true,
+                          "feedback": "Justificación: Curar contenido no es acumular ni organizar por tipo, sino filtrar, seleccionar críticamente y contextualizar según el propósito. La opción C aplica criterios de pertinencia y sentido, e incluye un valor agregado (introducción curatorial) que orienta al lector. B solo clasifica, A se basa en popularidad, y D limita la diversidad de voces."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Eliges solo los materiales de autores reconocidos para garantizar calidad académica.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para curar contenidos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> en relación a la cura de contenidos. Marca solo <strong>una opción por situación</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Adaptación al público</span><br>Estás curando contenido para una CoP integrada por profesionales del sector salud que no están familiarizados con términos técnicos de gestión del conocimiento. Tienes materiales muy valiosos pero complejos.",
+                      "pregunta": "¿Qué haces?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Compartes los contenidos originales, aclarando que son exigentes pero necesarios.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Creas una infografía con los conceptos principales y adjuntas los documentos completos como recursos complementarios.",
+                          "correcta": true,
+                          "feedback": "<strong>Justificación:</strong> La opción B equilibra profundidad con accesibilidad. Resumir o adaptar visualmente permite que el grupo acceda a lo esencial, sin perder la riqueza del contenido, y deja disponible el material completo para quien quiera profundizar. A es excluyente; C no resuelve el problema de complejidad; D puede sacrificar rigor innecesariamente."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Haces un resumen técnico de cada documento sin modificar el lenguaje original.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Buscas versiones más simples o divulgativas de los mismos temas para reemplazar los documentos originales.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para curar contenidos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> en relación a la cura de contenidos. Marca solo <strong>una opción por situación</strong>.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Contextualización cultural</span><br>Estás curando contenidos sobre liderazgo comunitario para una CoP conformada por personas de distintos países de América Latina. Algunos contenidos son de contextos europeos o anglosajones.",
+                      "pregunta": "¿Qué enfoque tomas?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> Solo incluyes contenidos producidos en América Latina para asegurar pertinencia.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Incluyes los contenidos internacionales y pides que el grupo analice sus diferencias culturales.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Seleccionas contenidos internacionales, pero acompañados por ejemplos locales o notas de contexto.",
+                          "correcta": true,
+                          "feedback": "Justificación: Incluir contenidos diversos es valioso, pero la clave es contextualizarlos. La opción C permite incorporar visiones externas sin imponerlas, y las ancla en realidades locales. B puede ser enriquecedor, pero requiere más madurez grupal para análisis crítico; A restringe la mirada y D es casi imposible, ya que todo contenido tiene carga cultural."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Eliges únicamente materiales neutros, que no hagan referencia a ninguna cultura específica.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para curar contenidos."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para curar contenidos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Validez vs. diversidad</span><br>Una participante de la CoP ha compartido un blog personal con reflexiones muy provocadoras y creativas sobre la práctica profesional, pero no tiene respaldo académico. Te piden decidir si lo incluyes como parte de los contenidos curados.",
+                      "pregunta": "¿Lo incluyes o no?, ¿Por qué?",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades para curar contenidos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Actualización de contenidos</span><br>En una CoP sobre tecnología educativa, estás curando recursos de hace 2 años que aún circulan. Sin embargo, las herramientas mencionadas ya no existen o han cambiado significativamente.",
+                      "pregunta": "¿Qué haces con estos recursos?, ¿por qué?",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+                ]
+              }]
+            }
+          ]
         }
       ]
     }
