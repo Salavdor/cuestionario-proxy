@@ -917,6 +917,405 @@
                   }
                 ]
               }]
+            },
+            {
+              "id": "4-2-4",
+              "titulo": "Asertividad",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "slides": [{
+                "grupo": "Asertividad",
+                "items": [{
+                    "titulo": "Asertividad",
+                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>La asertividad hace referencia a la capacidad de comunicar a las personas que nos rodean nuestros sentimientos y necesidades, evitando herir y ofender a los demás.<br><br>Es la habilidad para expresar ideas, sentimientos, opiniones, deseos o derechos:<br>-de manera adecuada y  directa <br>-sin amenazar o castigar a otros  y sin sobrepasar los derechos de terceras personas.<br><br>Estas conductas fortalecen la colaboración en CoPs porque permiten expresar desacuerdos, hacer propuestas y resolver tensiones sin dañar el vínculo, lo que es vital para sostener comunidades de aprendizaje a largo plazo.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_comunicacion_asertiva.jpg'></div></div>"
+                  },
+                  {
+                    "titulo": "Consejos para desarrollar Asertividad",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Expresa tus ideas de forma clara y directa</strong>",
+                          "hijos": [{
+                            "texto": "Di lo que piensas u opinas sin rodeos, pero cuidando el tono y el respeto por los demás.<br>Ej: “<i>Desde mi experiencia, creo que podríamos probar otra estrategia</i>”. "
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Usa el lenguaje en primera persona (“yo”)</strong>",
+                          "hijos": [{
+                            "texto": "Habla desde tu punto de vista sin generalizar ni culpar.<brEj: <i>“Yo siento que…”, “Yo necesito…”, “A mí me gustaría que…”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Muestra respeto por los otros, incluso al disentir</strong>",
+                          "hijos": [{
+                            "texto": "Valida otros puntos de vista antes de expresar tu desacuerdo.<br>Ej: “<i>Entiendo tu enfoque, y al mismo tiempo pienso diferente…</i>”."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Mantén un tono de voz firme pero amable</strong>",
+                          "hijos": [{
+                            "texto": "Ni pasivo ni agresivo; el tono debe transmitir seguridad sin hostilidad."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Cuida tu expresión facial y corporal</strong>",
+                          "hijos": [{
+                            "texto": "Evita gestos de confrontación (como señalar con el dedo o fruncir el ceño) y mantén una postura erguida, abierta y serena."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Sé honesto, pero oportuno</strong>",
+                          "hijos": [{
+                            "texto": "Elige bien el momento y lugar para decir lo que piensas, especialmente si el tema es delicado."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Establece y comunica tus límites con claridad</strong>",
+                          "hijos": [{
+                            "texto": "Por ejemplo: <i>“Prefiero no continuar esta conversación si se vuelve personal”</i> o <i>“No me siento cómodo con ese enfoque”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Aprende a decir “no” sin sentir culpa</strong>",
+                          "hijos": [{
+                            "texto": "Di que no de manera clara y amable, sin dar excusas innecesarias.<br>Ej: <i>“Gracias por la invitación, pero no podré participar esta vez”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Acepta las críticas con apertura, sin pasividad ni defensividad</strong>",
+                          "hijos": [{
+                            "texto": "Escucha, agradece el feedback y responde desde la reflexión.<br>Ej: <i>“Gracias por decírmelo. Lo voy a considerar”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Defiende tus derechos sin atacar los de otros</strong>",
+                          "hijos": [{
+                            "texto": "Asertividad no es ganar, es encontrar formas justas de relacionarse.<br>Ej: <i>“Quiero asegurarme de que todos tengamos oportunidad de participar”</i>."
+                          }]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Interrupciones constantes en una reunión</span><br>Durante una reunión, estás intentando exponer tu punto, pero un compañero te interrumpe repetidamente.",
+                      "pregunta": "¿Cuál es la respuesta más asertiva?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> “Perdón, ¿puedo terminar lo que estaba diciendo antes de que intervengas?”",
+                          "correcta": false,
+                          "feedback": "Es educada, pero suena subordinada."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> “Me molesta que me interrumpas. Por favor, respeta los turnos.”",
+                          "correcta": false,
+                          "feedback": "Es directa, pero con tono confrontativo."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> “Sé que quieres aportar, pero me gustaría terminar mi idea primero.”",
+                          "correcta": true,
+                          "feedback": "Expresa el mensaje de forma clara, firme y respetuosa. Usa lenguaje “yo”, sin acusaciones, e incluye reconocimiento del otro."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> “Ya veo que no me estás escuchando, como siempre…”",
+                          "correcta": false,
+                          "feedback": "Es pasivo-agresiva."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Crítica indirecta frente a otros</span><br>Un colega dice en voz alta durante una reunión:<br><i>\"Algunos no están haciendo su parte y eso retrasa al grupo.\"… Sabes que se refiere a ti.</i>",
+                      "pregunta": "¿Qué responderías con asertividad?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> “Si crees que me falta aportar algo, prefiero que me lo digas directamente.”",
+                          "correcta": false,
+                          "feedback": "Es frontal, pero puede sonar a reproche."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> “¿Puedes aclarar a quién te refieres?”",
+                          "correcta": false,
+                          "feedback": "Pone al otro en evidencia."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> “Me gustaría saber si eso va dirigido a mí, para poder responder con claridad.”",
+                          "correcta": true,
+                          "feedback": "Refleja madurez y apertura, sin entrar en confrontación, y promueve una conversación directa."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> “Si piensas eso de mí, podrías decirlo en privado.”",
+                          "correcta": false,
+                          "feedback": "Pone límites, pero se enfoca más en la forma que en el contenido del mensaje."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Sobrecarga de trabajo</span><br>Tu coordinador te asigna otra tarea, pero ya estás al límite con tus responsabilidades.",
+                      "pregunta": "¿Cuál sería la forma más asertiva de responder?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> “No puedo hacer más, ya tengo demasiado.”",
+                          "correcta": false,
+                          "feedback": "Es clara, pero puede sonar cerrada."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> “Estoy al tope ahora. Si esta tarea es urgente, necesito reorganizar otras prioridades contigo.”",
+                          "correcta": true,
+                          "feedback": "Expresa con claridad los límites y propone una solución conjunta, sin queja ni resignación."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> “Siempre me están cargando con más cosas, esto no es justo.”",
+                          "correcta": false,
+                          "feedback": "Es reactiva y victimiza."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> “Voy a intentarlo, aunque estoy con mucho encima.”",
+                          "correcta": false,
+                          "feedback": "Suena complaciente, pero oculta sobrecarga."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la comunicación asertiva.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Crítica injusta de un colega</span><br>Tu compañero dice:<br> <i>“No entiendo por qué hiciste la exposición así, está llena de impresiciones.”</i><br>Tú sabes que la crítica no es justificada.",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad.</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la comunicación asertiva.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Te interpelan en público sin previo aviso</span><br>En plena reunión, te piden una opinión sobre un tema y estabas distraído, no pusiste atención y no sabes de que se trata …",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad.</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+
+                ]
+              }]
+            },
+            {
+              "id": "4-2-5",
+              "titulo": "Gestión de Conflictos",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "slides": [{
+                "grupo": "Gestión de Conflictos",
+                "items": [{
+                    "titulo": "Gestión de Conflictos",
+                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>Consiste en identificar los aspectos que separan a las partes, a la vez que se desarrollan e implementan soluciones que sean aceptables para las partes primarias que intervienen en el conflicto.<br><br>Esta práctica, de identificar y manejar conflictos de manera sensata, justa y eficiente ayuda a prevenir escaladas innecesarias, mantener la confianza dentro del grupo y fomentar una cultura de colaboración consciente y madura.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestion_conflicto.jpg'></div></div>"
+                  },
+                  {
+                    "titulo": "Consejos para gestionar Conflictos",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Mantén la calma y regula tus emociones</strong>",
+                          "hijos": [{
+                            "texto": "Antes de intervenir, respira y observa tu estado emocional. Evita actuar impulsivamente."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Escucha activamente a todas las partes</strong>",
+                          "hijos": [{
+                            "texto": "Presta atención sin interrumpir, valida los distintos puntos de vista y muestra interés genuino."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Muestra imparcialidad y evita tomar partido</strong>",
+                          "hijos": [{
+                            "texto": "Focalízate en los hechos y necesidades, no en juicios personales."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Utiliza lenguaje neutral y no acusatorio</strong>",
+                          "hijos": [{
+                            "texto": "Evita generalizaciones o frases que culpabilicen.<br>Ej: Cambia <i>“Tú siempre ignoras mis ideas”</i> por <i>“Me gustaría que mis aportes también fueran considerados”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Identifica intereses comunes, no solo posiciones</strong>",
+                          "hijos": [{
+                            "texto": "Pregunta: <i>“¿Qué es importante para ti en esto?”</i>, para ir más allá del desacuerdo superficial."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Facilita el diálogo entre las partes involucradas</strong>",
+                          "hijos": [{
+                            "texto": "Promueve conversaciones cara a cara, en un contexto contenido, en vez de discusiones indirectas o pasivas."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Parafrasea y clarifica para evitar malentendidos</strong>",
+                          "hijos": [{
+                            "texto": "Resume lo que se dijo y verifica comprensión:<br><i>“Entonces, lo que necesitas es…”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Fomenta acuerdos colaborativos</strong>",
+                          "hijos": [{
+                            "texto": "Busca que las soluciones surjan de los propios involucrados, no impuestas desde fuera."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Reenfoca en los objetivos del grupo o comunidad</strong>",
+                          "hijos": [{
+                            "texto": "Recuerda a los participantes los propósitos compartidos de la CoP:<br><i>“¿Cómo podemos resolver esto sin perder el foco de nuestro trabajo conjunto?”</i>."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Haz seguimiento del conflicto una vez resuelto</strong>",
+                          "hijos": [{
+                            "texto": "Verifica que el acuerdo se cumpla y que no queden resentimientos no abordados."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Actúa como modelo de comunicación respetuosa</strong>",
+                          "hijos": [{
+                            "texto": "Tu propia forma de comunicar y resolver tensiones es un ejemplo que influye en el clima de la CoP."
+                          }]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Diferencias de enfoque en un proyecto</span><br>Tú y otra persona de la comunidad no se ponen de acuerdo sobre cómo presentar un trabajo. Ya llevan varios intercambios tensos.",
+                      "pregunta": "¿Qué harías para gestionar el conflicto?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> “Creo que nuestras ideas son distintas, podríamos llevar ambas a la reunión y que el grupo decida.”",
+                          "correcta": true,
+                          "feedback": "Reconoce la diferencia sin descalificar, propone una vía participativa y evita que el conflicto escale."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> “Si seguimos así no vamos a avanzar. Mejor lo dejo en tus manos.”",
+                          "correcta": false,
+                          "feedback": "Suena a retirada pasiva."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> “Pido que alguien más lo resuelva porque no llegaremos a ningún lado.”",
+                          "correcta": false,
+                          "feedback": "Evade la responsabilidad."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> “Respondo que está bien… hagámoslo como tu dices. Yo no quiero pelear por esto.”",
+                          "correcta": false,
+                          "feedback": "Cede completamente sin resolver el desacuerdo, lo que puede acumular resentimiento."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Comportamiento pasivo-agresivo</span><br>Un compañero deja de hablarte directamente y empieza a enviarte mensajes indirectos o por otros colegas, sin explicarte el motivo.",
+                      "pregunta": "¿Cómo gestionas el conflicto?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> “Le escribo para decirle que noto distancia y me gustaría hablarlo directamente cuando se sienta listo.”",
+                          "correcta": true,
+                          "feedback": "Inicia la conversación con apertura, sin confrontar ni suponer, y deja espacio para que el otro también pueda expresar."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> “Ignoro su actitud. Si tiene algo que decir, que lo diga de frente.”",
+                          "correcta": false,
+                          "feedback": "Ignora el conflicto y lo deja crecer."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> “Lo confronto en público para que aclare lo que está haciendo.”",
+                          "correcta": false,
+                          "feedback": "Puede generar una escalada."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> “Hablo con otras personas del equipo para ver si también lo han notado.”",
+                          "correcta": false,
+                          "feedback": "Promueve rumores o triangulación."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "skillquiz",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Un miembro de la comunidad no cumple con su parte</span><br>En un trabajo, una persona no entregó lo que había prometido y esto afectó el resultado. Todos están molestos.",
+                      "pregunta": "¿Qué harías para abordar el conflicto de forma constructiva?",
+                      "opciones": [{
+                          "texto": "<span class='title-body-secondary'>A.</span> “Le digo que fue irresponsable y que su actitud perjudicó al grupo.”",
+                          "correcta": false,
+                          "feedback": "Es frontal pero con tono acusatorio."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> “Propongo una conversación grupal para revisar qué pasó y cómo organizarnos mejor a futuro.”",
+                          "correcta": true,
+                          "feedback": "Evita personalizar el conflicto y lo lleva al plano de lo colectivo y preventivo, promoviendo corresponsabilidad y mejora continua."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> “Le envío un mensaje recordándole su parte y diciendo que no vuelva a pasar.”",
+                          "correcta": false,
+                          "feedback": "Es más control que solución."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> “Lo hablo con el facilitador para que le llame la atención.”",
+                          "correcta": false,
+                          "feedback": "Delega el conflicto sin abordarlo directamente."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> para solucionar la situación de conflicto.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Diferencias de comunicación intercultural</span><br>Un integrante del grupo, de otra cultura, ha hecho algunos comentarios que otros consideran inapropiados. Él no parece notarlo y el ambiente se tensa…",
+                      "pregunta": "Intenta una respuesta que descomprima la <span class='title-body-secondary'>situación de conflicto.</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  },
+                  {
+                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "contenido": "",
+                    "actividad": {
+                      "tipo": "openquiz",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> para solucionar la situación de conflicto.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>T Avances tecnologicos</span><br>Algunos miembros de la comunidad insisten en utilizar aplicaciones tecnológicas, que el resto del grupo encuentra compleja e innecesaria…",
+                      "pregunta": "Intenta una respuesta que descomprima la <span class='title-body-secondary'>situación de conflicto.</span>.",
+                      "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
+                    }
+                  }
+                ]
+              }]
             }
           ]
         }
