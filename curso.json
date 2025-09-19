@@ -2336,117 +2336,117 @@
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "titulo": "Prueba tus habilidades para motivar e inspirar",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Cambio inesperado de temática</span><br>Estás facilitando una sesión sobre “Buenas prácticas en atención al cliente”<br>A los 20 minutos, varios miembros plantean dudas urgentes sobre un nuevo software recién implementado.",
-                      "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Participación en declive</span><br>En los últimos tres encuentros de la CoP, ha bajado considerablemente la asistencia y la participación activa. Algunos partícipantes dicen estar desmotivados porque sienten que no se avanza con claridad.",
+                      "pregunta": "¿Qué haces para motivar al grupo sin forzar la participación?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> Mantener estrictamente el plan original para cumplir el objetivo declarado.",
+                          "texto": "<span class='title-body-secondary'>A.</span> En el próximo encuentro, presentas un resumen con los logros alcanzados para mostrar avances concretos.",
                           "correcta": false,
-                          "feedback": "No refleja flexibilidad."
+                          "feedback": "No refleja motivación e inspiración."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> Escuchar las dudas y acordar otra sesión, manteniendo hoy la agenda inicial.",
-                          "correcta": false,
-                          "feedback": "No refleja flexibilidad"
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> Explorar rápidamente el nuevo tema para vincularlo con el objetivo actual.",
-                          "correcta": false,
-                          "feedback": "No refleja flexibilidad"
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> Abrir un espacio intermedio donde el grupo identifique cómo el software impacta en la atención al cliente, y luego decidir juntos si continuar o no con ese enfoque.",
+                          "texto": "<span class='title-body-secondary'>B.</span> Realizas una actividad emocional de reconexión grupal para recordar por qué se unieron a la CoP.",
                           "correcta": true,
-                          "feedback": "<strong>Justificación:</strong> La flexibilidad no es solo cambiar, sino decidir con el grupo cómo adaptarse. Esta opción combina escucha, conexión con el propósito inicial y participación compartida en la decisión, lo que fortalece el compromiso y la relevancia."
+                          "feedback": "Justificación: La opción B apunta al reencuentro con el propósito emocional y colectivo, elemento clave para inspirar. No se trata solo de mostrar resultados (A) ni de confrontar ausencias (C), sino de regenerar el vínculo afectivo y sentido de pertenencia. D podría cortar el proceso sin explorar su dimensión relacional."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Pides que quienes no participen con frecuencia expliquen sus motivos para mejorar el proceso.",
+                          "correcta": false,
+                          "feedback": "No refleja motivación e inspiración."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Propones que el grupo vote si vale la pena continuar o pausar la CoP.",
+                          "correcta": true,
+                          "feedback": "No refleja motivación e inspiración."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "titulo": "Prueba tus habilidades para motivar e inspirar",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Fallo tecnológico en plena reunión virtual</span><br>Estás en un intercambio de experiencias en línea y la plataforma falla:<br>sin video ni pantalla compartida.",
-                      "pregunta": "Alternativas:",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Clima negativo en la sesión</span><br>Durante una sesión virtual, notas un ambiente tenso y desganado. Las cámaras están apagadas, el chat está en silencio, y no hay respuestas a tus preguntas. Parecen conectados, pero no presentes.",
+                      "pregunta": "¿Qué haces para inspirar y levantar el ánimo del grupo?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> Cambiar de plataforma en el momento, avisando por correo o chat.",
+                          "texto": "<span class='title-body-secondary'>A.</span> Nombras directamente lo que observas y pides que se activen más.",
                           "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
+                          "feedback": "No refleja motivación e inspiración."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> Pasar a audio únicamente y reorganizar la dinámica para mantener participación.",
-                          "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> Activar un canal paralelo de mensajería para apoyo visual y seguir por audio.",
-                          "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> Consultar rápidamente al grupo qué alternativa prefieren y ejecutar la elegida.",
+                          "texto": "<span class='title-body-secondary'>B.</span> Introduces una dinámica lúdica breve que rompa el hielo y permita expresar emociones.",
                           "correcta": true,
-                          "feedback": "<strong>Justificación:</strong> La flexibilidad implica co-crear la solución, no imponerla. Involucrar al grupo en la elección aumenta la viabilidad y aceptación de la alternativa, y permite adaptar la dinámica a las capacidades y preferencias reales en ese momento."
+                          "feedback": "Justificación: Las dinámicas lúdicas - emotivas (B) son herramientas poderosas para reactivar el vínculo grupal y motivar sin imponer. A puede generar incomodidad o culpa; C perpetúa el desánimo; D evita enfrentar el problema. Inspirar implica crear condiciones para reconectarse desde lo humano."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Decides continuar con el contenido como estaba planificado, esperando que mejore solo.",
+                          "correcta": false,
+                          "feedback": "No refleja motivación e inspiración."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Terminas la sesión antes, reconociendo que no es el mejor momento para continuar.",
+                          "correcta": false,
+                          "feedback": "No refleja motivación e inspiración."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "titulo": "Prueba tus habilidades para motivar e inspirar",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Conflicto de prioridades</span><br>La dirección pide que en la próxima reunión de la CoP presentes un informe formal en vez de la actividad colaborativa prevista, para la cual el grupo estaba motivado.",
-                      "pregunta": "Alternativas:",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Nuevas personas en la CoP</span><br>Se han sumado nuevos miembros a la CoP, y se percibe una baja energía general, con dudas sobre el rumbo. El grupo está entre reconfigurarse o volver a empezar.",
+                      "pregunta": "¿Cómo motivas a integrar a los nuevos sin perder la identidad construida?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> Cumplir íntegramente con la petición, postergando la actividad.",
-                          "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>B.</span> Presentar el informe primero y, si sobra tiempo, hacer la actividad.",
-                          "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> Transformar la presentación del informe en un ejercicio participativo que sirva como insumo para la actividad prevista.",
-                          "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> Negociar con la dirección para entregar el informe por escrito y mantener la sesión tal como estaba planificada.",
+                          "texto": "<span class='title-body-secondary'>A.</span> Realizas una actividad en la que los nuevos entrevisten a antiguos miembros sobre la historia y sentido de la CoP.",
                           "correcta": true,
-                          "feedback": "<strong>Justificación:</strong> La flexibilidad se demuestra integrando intereses y evitando que uno anule al otro. Convertir el informe en un recurso participativo conecta con las expectativas de la dirección y preserva el dinamismo y el sentido de la actividad para el grupo."
+                          "feedback": "Justificación: A promueve integración significativa y conexión emocional, tanto con la historia como con las personas. Además, empodera a los antiguos como portadores del sentido del grupo. B es informativo pero pasivo; C puede desdibujar la identidad si no hay base; D puede ser excluyente."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Das la bienvenida con una presentación formal sobre los objetivos y funcionamiento actual del grupo.",
+                          "correcta": false,
+                          "feedback": "No refleja motivación e inspiración."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Propones una lluvia de ideas conjunta para redefinir el rumbo entre todos.",
+                          "correcta": false,
+                          "feedback": "No refleja motivación e inspiración."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Solicitas a los nuevos una carta de motivación para entender su interés antes de integrarlos completamente.",
+                          "correcta": false,
+                          "feedback": "No refleja motivación e inspiración."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "titulo": "Prueba tus habilidades para motivar e inspirar",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Cambio repentino de asistentes</span><br>En una sesión, Ricardo dice:<br>En tu taller, la mitad de los asistentes previstos no llega y se suman personas nuevas sin el mismo contexto previo.",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Flexibilidad</span>.",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Logro colectivo invisibilizado</span><br>La CoP logró una mejora concreta en su entorno de práctica, pero el grupo no lo reconoce como un gran logro. Parecen minimizar el impacto.",
+                      "pregunta": "¿Cómo ayudas a resignificar esta experiencia para motivar desde lo alcanzado?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Flexibilidad",
+                    "titulo": "Prueba tus habilidades para motivar e inspirar",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>flexible</strong>.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Resultados inesperados</span><br>Durante una dinámica, el grupo produce conclusiones que no encajan con los lineamientos oficiales de la organización.",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Flexibilidad</span>.",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Fatiga de participación</span><br>Después de varios meses de trabajo intenso, notas que los participantes muestran signos de fatiga. Están menos proactivos y hay menos entusiasmo. Sabes que aún falta una etapa clave del proceso.",
+                      "pregunta": "¿Qué haces para sostener la motivación sin sobre exigir al grupo?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
@@ -2454,190 +2454,196 @@
               }]
             },
             {
-              "id": "4-2-3",
-              "titulo": "Empatía",
+              "id": "4-4-3",
+              "titulo": "Colaboración y Compromiso",
               "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
               "slides": [{
-                "grupo": "Empatía",
+                "grupo": "Colaboración y Compromiso",
                 "items": [{
-                    "titulo": "Empatía",
-                    "contenido": "<div class='row m-0'><div class='col-md-6 col-12 p-0'><p class='p-0 fw-bold'>Es la habilidad para reconocer, comprender y apreciar los sentimientos de los otros.<br><br>La empatía es la capacidad de conectarse emocionalmente con las demás personas, permite reconocer, compartir y entender los sentimientos y los estados de ánimo de otros seres humanos.<br><br>En otras palabras, ser empáticos es el ser capaces de \"leer\" emocionalmente a las personas y actuar en consecuencia.</p></div><div class='col-md-6 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_empatia.jpg'></div></div>"
+                    "titulo": "Colaboración y Compromiso",
+                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>En conjunto, significan crear y mantener un entorno donde todos aportan, asumen responsabilidades y se sienten corresponsables de los logros, lo que favorece la sostenibilidad y efectividad de la comunidad.<br><br><strong class='title-body-secondary'>Colaboración</strong><br>Es la disposición y capacidad de trabajar conjuntamente con otros miembros para alcanzar objetivos comunes, compartiendo conocimientos, experiencias y recursos.<br>Implica construir confianza,  aportar activamente ideas, retroalimentación y soluciones e integrar y coordinar esfuerzos. <br><br><strong class='title-body-secondary'>Compromiso</strong><br>Es el grado de implicación y responsabilidad que cada miembro asume con la misión, los acuerdos y los resultados de la CoP.<br>En la práctica se traduce en participación constante en actividades, Cumplimiento de acuerdos y cuidado del propósito común.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_colaboracion.jpg'></div></div>"
                   },
                   {
-                    "titulo": "Consejos para desarrollar flexibilidad.",
+                    "titulo": "Consejos para la lograr Colaboración y Compromiso",
                     "contenido": {
                       "tipo": "lista",
                       "estilo": "dot",
                       "items": [{
-                          "texto": "<strong>Acepta que el plan es una guía, no una cárcel.</strong>",
+                          "texto": "<strong>Definir un propósito compartido y significativo</strong>",
                           "hijos": [{
-                            "texto": "Diseña agendas con márgenes para adaptarte a imprevistos, priorizando el propósito de la sesión sobre la rigidez del formato."
+                            "texto": "Asegura que todos comprendan y se identifiquen con el “para qué” de la CoP."
                           }]
                         },
                         {
-                          "texto": "<strong>Escucha sin juzgar</strong>",
+                          "texto": "<strong>Construir confianza desde el inicio</strong>",
                           "hijos": [{
-                            "texto": "Suspende tus juicios o interpretaciones personales mientras el otro expresa su experiencia."
+                            "texto": "Fomenta la transparencia, la coherencia entre lo que se dice y lo que se hace, y la seguridad psicológica para opinar."
                           }]
                         },
                         {
-                          "texto": "<strong>Valida la experiencia del otro</strong>",
+                          "texto": "<strong>Establecer acuerdos de convivencia y colaboración</strong>",
                           "hijos": [{
-                            "texto": "Reconoce lo que la persona está sintiendo, aunque no estés de acuerdo: <i>“Tiene sentido que te sientas así dadas las circunstancias”</i>."
+                            "texto": "Definir colectivamente normas de interacción y respeto mutuo."
                           }]
                         },
                         {
-                          "texto": "<strong>Nombra la emoción que observas</strong>",
+                          "texto": "<strong>Promover la participación activa y distribuida</strong>",
                           "hijos": [{
-                            "texto": "Ayuda al otro a poner en palabras su estado emocional: <i>“Parece que esto te generó mucha frustración”</i>."
+                            "texto": "Evitar que solo unos pocos lideren las conversaciones; dar voz a todos."
                           }]
                         },
                         {
-                          "texto": "<strong>Usa un tono de voz calmado y cálido</strong>",
+                          "texto": "<strong>Reconocer y valorar los aportes individuales y colectivos</strong>",
                           "hijos": [{
-                            "texto": "La entonación transmite tanto como las palabras; evita un tono brusco o distante."
+                            "texto": "Hacer visible quién contribuye y cómo eso ayuda al grupo."
                           }]
                         },
                         {
-                          "texto": "<strong>Adopta una postura corporal abierta</strong>",
+                          "texto": "<strong>Facilitar espacios de co-creación de soluciones</strong>",
                           "hijos": [{
-                            "texto": "Orienta tu cuerpo hacia la persona, evita gestos de cierre como brazos cruzados o mirar hacia otro lado."
+                            "texto": "Diseñar actividades donde las decisiones y resultados sean producto de trabajo conjunto."
                           }]
                         },
                         {
-                          "texto": "<strong>Muestra comprensión sin apropiarte de la experiencia</strong>",
+                          "texto": "<strong>Garantizar la equidad en el acceso a la información y recursos</strong>",
                           "hijos": [{
-                            "texto": "Evita responder con “a mí también me pasó” si desvía la atención del otro; enfócate en su vivencia."
+                            "texto": "Evitar brechas de conocimiento o acceso a herramientas entre miembros."
                           }]
                         },
                         {
-                          "texto": "<strong>Haz preguntas que inviten a profundizar en lo emocional</strong>",
+                          "texto": "<strong>Fomentar el sentido de corresponsabilidad.</strong>",
                           "hijos": [{
-                            "texto": "Por ejemplo: <i>“¿Cómo fue eso para ti?”</i>, <i>“¿Qué es lo que más te afectó?”</i>."
+                            "texto": "Repartir tareas y responsabilidades de forma equilibrada y clara."
                           }]
                         },
                         {
-                          "texto": "<strong>Ofrece apoyo emocional, no soluciones prematuras</strong>",
+                          "texto": "<strong>Cuidar el clima emocional del grupo</strong>",
                           "hijos": [{
-                            "texto": "A veces basta con decir: <i>“Estoy aquí para escucharte”</i>, en lugar de intentar resolver el problema."
+                            "texto": "Detectar tensiones a tiempo y abordarlas de forma constructiva."
                           }]
                         },
                         {
-                          "texto": "<strong>Reconoce el valor de lo compartido</strong>",
+                          "texto": "<strong>Mantener la comunicación fluida y bidireccional</strong>",
                           "hijos": [{
-                            "texto": "Frases como: <i>“Gracias por confiar y compartir eso</i> ayudan a construir confianza y seguridad."
+                            "texto": "Usar canales claros y accesibles, abiertos a retroalimentación."
                           }]
                         },
                         {
-                          "texto": "<strong>Acompaña con presencia plena</strong>",
+                          "texto": "<strong>Celebrar hitos y logros colectivos</strong>",
                           "hijos": [{
-                            "texto": "Estar realmente presente, incluso en silencio, puede ser una forma poderosa de empatía."
+                            "texto": "Reforzar el orgullo de pertenencia con momentos de reconocimiento grupal."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Dar seguimiento a compromisos asumidos</strong>",
+                          "hijos": [{
+                            "texto": "Revisar periódicamente acuerdos y avances para mantener la coherencia."
                           }]
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Empatía",
+                    "titulo": "Prueba tus habilidades de Colaboración y compromiso",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Agotamiento emocional en una compañera</span><br>Durante una reunión, Lucía dice:<br><i>\"Estoy agotada. He estado cuidando a mi madre enferma y no me queda energía para nada.\"</i>",
-                      "pregunta": "¿Cuál es la respuesta más empática?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una opción por situación.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Participación desigual</span><br>En una reunión de la CoP, notas que tres personas acaparan casi toda la conversación y el resto se mantiene en silencio, aunque el tema les afecta a todos.",
+                      "pregunta": "Alternativas:",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “Imagino que eso debe ser muy difícil para tí. Si necesitas algo, acá estoy.”",
-                          "correcta": false,
-                          "feedback": "No presupone cómo se siente."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>B.</span> “Te admiro mucho por todo lo que estás haciendo, es valioso lo que haces.”",
-                          "correcta": false,
-                          "feedback": "No dirige la atención a una evaluación externa"
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> “¿Quieres contarnos cómo estás viviendo eso? A veces compartir alivia.”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Plantear una actividad en pequeños grupos para que todos aporten antes de volver al plenario.",
                           "correcta": true,
-                          "feedback": "Aunque todas las respuestas muestran respeto y buenas intenciones, <strong>la opción C es la más empática<strong>, porque abre espacio genuino para que ella pueda expresarse, <strong>centrando la escucha en su experiencia emocional actual</strong>."
+                          "feedback": "Justificación: La colaboración real requiere que todos puedan aportar sin presión excesiva. Los grupos pequeños facilitan la participación de personas menos activas y aumentan el sentido de compromiso colectivo"
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Si quieres puedes tomarte unos días, lo entendemos.”",
+                          "texto": "<span class='title-body-secondary'>B.</span> Reformular la pregunta y hacerla de forma dirigida a quienes no han hablado.",
                           "correcta": false,
-                          "feedback": "No se adelanta a soluciones."
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Pedir directamente a los que hablan más que cedan la palabra.",
+                          "correcta": false,
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Continuar con la discusión, ya que quienes no participan quizá no tengan nada relevante que decir.",
+                          "correcta": false,
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Empatía",
+                    "titulo": "Prueba tus habilidades de Colaboración y compromiso",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Frustración profesional</span><br>En una conversación informal, Martín dice:<br><i>\"Estoy pensando en dejar este trabajo. Me siento estancado y sin motivación.\"</i>",
-                      "pregunta": "¿Cuál es la respuesta más empática?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una opción por situación.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Tarea pendiente</span><br>El equipo de la CoP tenía que entregar un documento colaborativo, pero dos miembros clave no cumplieron su parte. La fecha de entrega es mañana.",
+                      "pregunta": "Alternativas:",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “Es entendible que te sientas así. ¿Desde cuándo estás sintiendo esto?”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Reasignar las tareas a otros miembros para cumplir el plazo.",
+                          "correcta": false,
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Contactar a los miembros incumplidores para pedir una entrega inmediata, aunque sea incompleta.",
+                          "correcta": false,
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Proponer una reunión urgente para redistribuir las tareas y terminar el documento juntos.",
                           "correcta": true,
-                          "feedback": "Se enfoca en su experiencia emocional, valida lo que siente y abre la puerta a profundizar."
+                          "feedback": "Justificación: La colaboración y el compromiso no solo buscan cumplir plazos, sino mantener la corresponsabilidad. La opción C refuerza la acción conjunta, distribuye la carga y preserva la cultura colaborativa."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> “Tal vez es momento de que busques un nuevo desafío.”",
+                          "texto": "<span class='title-body-secondary'>D.</span> Completar tú mismo la parte faltante para no poner en riesgo el resultado final.",
                           "correcta": false,
-                          "feedback": "Se adelanta a una solución"
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Yo pasé por algo parecido. Si quieres te cuento cómo lo manejé.”",
-                          "correcta": false,
-                          "feedback": "Traslada el foco a la propia experiencia del interlocutor."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Seguro no es tan grave como parece, pero si lo sientes así, te apoyo.”",
-                          "correcta": false,
-                          "feedback": "Sugiere que quizá está exagerando (“no es tan grave”) y eso puede invalidar su emoción."
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Empatía",
+                    "titulo": "Prueba tus habilidades de Colaboración y Compromiso",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Miedo a exponer en público</span><br>Durante una capacitación, Carla dice:<br>“Me da mucha ansiedad tener que presentar. Siento que voy a trabarme o decir algo tonto.”",
-                      "pregunta": "¿Cuál es la respuesta más empática?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una opción por situación.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Diferencias en el nivel de compromiso</span><br>Algunos miembros de la CoP participan intensamente en todas las actividades, mientras que otros apenas cumplen con lo mínimo. El grupo empieza a resentirse.",
+                      "pregunta": "Alternativas:",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “No te preocupes, todos nos ponemos nerviosos. Te va a salir bien.”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Reconocer públicamente a los más comprometidos para incentivar a los demás.",
                           "correcta": false,
-                          "feedback": "Tranquiliza, pero minimiza el miedo concreto."
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> “¿Quieres que practiquemos juntas antes? Capaz que te sientas más segura.”",
+                          "texto": "<span class='title-body-secondary'>B.</span> Mantener el ritmo de trabajo y esperar que los menos activos se adapten.",
                           "correcta": false,
-                          "feedback": "Ofrece una ayuda práctica (positiva), pero sin conectar primero con la emoción."
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Gracias por compartir lo que sientes. ¿Qué es lo que más te incomoda?”",
+                          "texto": "<span class='title-body-secondary'>C.</span> Delegar más responsabilidades a los más activos para avanzar más rápido.",
+                          "correcta": false,
+                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Generar una conversación abierta sobre expectativas y barreras de participación.",
                           "correcta": true,
-                          "feedback": "Valida el coraje de expresar la emoción y se queda en la escucha y exploración."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Yo también solía sentirme así, pero con el tiempo se pasa.”",
-                          "correcta": false,
-                          "feedback": "Intenta generar identificación, pero no se centra en ella, sino en la experiencia propia."
+                          "feedback": "Justificación: La colaboración sostenible requiere abordar las diferencias de compromiso sin confrontación, buscando comprender causas y encontrar soluciones colectivas que fortalezcan la participación equitativa."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Empatía",
+                    "titulo": "Prueba tus habilidades de Colaboración y Compromiso",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Sensación de exclusión</span><br>Mariano dice en una reunión de equipo:<br> “A veces siento que no soy parte del grupo, como si mis ideas no contaran tanto.”",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Empatía</span>.",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Conflicto de enfoques</span><br>En una sesión, dos miembros con alta influencia proponen enfoques opuestos para resolver un problema. El resto del grupo se divide y la discusión se estanca.",
+                      "pregunta": "¿Qué harías en favor de la <span class='title-body-secondary'>colaboración y el compromiso</span>?.",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -2646,9 +2652,9 @@
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Cometió un error y se siente culpable</span><br>Andrea cometió un error que afectó al equipo. Dice:<br> “Me siento muy avergonzada, no puedo creer que me equivoqué así.”",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Empatía</span>.",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Falta de seguimiento</span><br>Después de varias sesiones, las acciones acordadas en la CoP no se han implementado, aunque en las reuniones todos se muestran entusiastas.",
+                      "pregunta": "¿Qué harías en favor de la <span class='title-body-secondary'>colaboración y el compromiso</span>?.",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
@@ -2656,14 +2662,14 @@
               }]
             },
             {
-              "id": "4-2-4",
-              "titulo": "Asertividad",
+              "id": "4-4-4",
+              "titulo": "Gestión del tiempo y recursos",
               "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
               "slides": [{
-                "grupo": "Asertividad",
+                "grupo": "Gestión del tiempo y recursos",
                 "items": [{
-                    "titulo": "Asertividad",
-                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>La asertividad hace referencia a la capacidad de comunicar a las personas que nos rodean nuestros sentimientos y necesidades, evitando herir y ofender a los demás.<br><br>Es la habilidad para expresar ideas, sentimientos, opiniones, deseos o derechos:<br>-de manera adecuada y  directa <br>-sin amenazar o castigar a otros  y sin sobrepasar los derechos de terceras personas.<br><br>Estas conductas fortalecen la colaboración en CoPs porque permiten expresar desacuerdos, hacer propuestas y resolver tensiones sin dañar el vínculo, lo que es vital para sostener comunidades de aprendizaje a largo plazo.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_comunicacion_asertiva.jpg'></div></div>"
+                    "titulo": "Gestión del tiempo y recursos",
+                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Significa crear estructuras, metodologías o dinámicas que permitan que todas las personas involucradas en un proyecto, decisión o actividad puedan opinar, colaborar y construir colectivamente.<br><br>Esto implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Pensar <strong>cómo, cuándo y con qué herramientas</strong> que permitan que todas las personas involucradas en un proyecto, decisión o actividad <strong>puedan opinar, colaborar y construir colectivamente.</strong></li><li>Asegurarse de que <strong>todas las voces sean escuchadas,</strong> no solo las de quienes tienen más poder o experiencia.</li><li>Generar un entorno donde <strong>se fomente la confianza, la escucha activa y el respeto.</strong></li></ul></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_disenar.jpg'></div>"
                   },
                   {
                     "titulo": "Consejos para desarrollar Asertividad",
