@@ -2033,165 +2033,171 @@
                 "grupo": "Visión Estratégica",
                 "items": [{
                     "titulo": "Visión Estratégica",
-                    "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
+                    "contenido": "<div class='row m-0'><div class='col-md-6 col-12 p-0'><p class='p-0 fw-bold'>Es la capacidad de imaginar, planificar y orientar acciones a largo plazo con un enfoque claro en los objetivos clave de una organización, proyecto o iniciativa. Implica ver más allá del presente, anticipar escenarios futuros y tomar decisiones alineadas con una meta global.<br><br>Esto significa:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Saber hacia dónde se quiere ir.</li><li>Entender el entorno y sus cambios (sociales, económicos, políticos, tecnológicos).</li><li>Definir metas claras y sostenibles.</li><li>Tomar decisiones coherentes con el objetivo final, no sólo con lo urgente.</li><li>Evaluar riesgos y oportunidades.</li><li>Saber priorizar y adaptar según el contexto.</li></ul></div><div class='col-md-6 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_plan.jpg'></div></div>"
                   },
                   {
-                    "titulo": "Consejos para demostrar escucha activa",
+                    "titulo": "Consejos para desarrollar una visión estratégica",
                     "contenido": {
                       "tipo": "lista",
                       "estilo": "dot",
                       "items": [{
-                          "texto": "<strong>Establece contacto visual sincero (sin invadir)</strong>",
+                          "texto": "<strong>Observa más allá de lo inmediato</strong>",
                           "hijos": [{
-                            "texto": "Mira a los ojos de quien habla con atención y calma, sin forzar la mirada."
+                            "texto": "Haz pausas para analizar patrones, tendencias o desafíos emergentes en la comunidad, evitando quedarte solo en lo operativo."
                           }]
                         },
                         {
-                          "texto": "<strong>Asiente con la cabeza de forma natural</strong>",
+                          "texto": "<strong>Conecta las acciones presentes con un propósito mayor</strong>",
                           "hijos": [{
-                            "texto": "Usa pequeños gestos para mostrar que estás siguiendo el mensaje (sin exagerar)."
+                            "texto": "Pregunta con frecuencia:<br> <i>¿Esto que hacemos hoy, nos acerca a lo que queremos lograr como comunidad?</i>"
                           }]
                         },
                         {
-                          "texto": "<strong>Evita interrupciones</strong>",
+                          "texto": "<strong>Escucha múltiples perspectivas antes de decidir</strong>",
                           "hijos": [{
-                            "texto": "No completes frases, no corrijas, ni des consejos mientras la otra persona expone su punto."
+                            "texto": "Recoge voces diversas para enriquecer la visión: lo estratégico no es unilateral, sino colaborativo."
                           }]
                         },
                         {
-                          "texto": "<strong>Mantén una postura abierta y receptiva</strong>",
+                          "texto": "<strong>Formula objetivos que equilibren ambición y realismo</strong>",
                           "hijos": [{
-                            "texto": "Inclina ligeramente el cuerpo hacia adelante, brazos relajados, sin cruzarlos."
+                            "texto": "Sé capaz de pensar en grande, pero con los pies en la tierra:<br>“<i>¿Qué es lo posible y necesario en este momento, para avanzar hacia lo deseado?</i>”"
                           }]
                         },
                         {
-                          "texto": "<strong>Usa breves verbalizaciones de seguimiento</strong>",
+                          "texto": "<strong>Analiza el entorno con mirada sistémica</strong>",
                           "hijos": [{
-                            "texto": "Expresiones como: “sí“, “entiendo“, “claro“, “mmm“, ayudan a mantener el flujo comunicativo."
+                            "texto": "Considera factores internos y externos (cultura, recursos, alianzas, resistencias) al diseñar estrategias o planes."
                           }]
                         },
                         {
-                          "texto": "<strong>Refleja emocionalmente lo que escuchas</strong>",
+                          "texto": "<strong>Facilita espacios para imaginar el futuro</strong>",
                           "hijos": [{
-                            "texto": "Muestra empatía con frases como: “eso suena difícil“, “parece que eso te impactó mucho“."
+                            "texto": "Crea momentos de visualización colectiva:<br><i>“¿Cómo nos gustaría que fuera esta comunidad en 1, 2 o 5 años?”</i>"
                           }]
                         },
                         {
-                          "texto": "<strong>Parafrasea para confirmar comprensión</strong>",
+                          "texto": "<strong>Prioriza iniciativas según impacto estratégico</strong>",
                           "hijos": [{
-                            "texto": "Resume con tus palabras lo que entendiste: “Entonces, lo que estás diciendo es que...“."
+                            "texto": "Evalúa continuamente si lo que se hace agrega valor al propósito o dispersa los esfuerzos."
                           }]
                         },
                         {
-                          "texto": "<strong>Haz preguntas abiertas, no invasivas</strong>",
+                          "texto": "<strong>Identifica y gestiona oportunidades de colaboración estratégica</strong>",
                           "hijos": [{
-                            "texto": "Estimula la profundización sin desviar el foco: “¿Cómo te sentiste en ese momento?“ o “¿Qué crees que necesitas ahora?“."
+                            "texto": "Explora alianzas con otros actores, redes o comunidades para fortalecer el camino hacia la visión."
                           }]
                         },
                         {
-                          "texto": "<strong>No te distraigas (ni física ni mentalmente)</strong>",
+                          "texto": "<strong>Modela una actitud propositiva y orientada al futuro</strong>",
                           "hijos": [{
-                            "texto": "Guarda el celular, cierra el computador, y enfoca tu atención completa en la persona."
+                            "texto": "En reuniones y conversaciones, trae el horizonte al presente:<br><i>“¿Cómo aporta esto a nuestra proyección como comunidad?”</i>"
                           }]
                         },
                         {
-                          "texto": "<strong>Respeta los silencios</strong>",
+                          "texto": "<strong>Documenta y visibiliza los avances hacia el cumplimiento del propósito.</strong>",
                           "hijos": [{
-                            "texto": "No llenes cada pausa; permite que la otra persona piense o sienta sin presión"
+                            "texto": "Usa indicadores, relatos o mapas visuales que ayuden al grupo a ver el progreso y sostener la motivación."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Motiva el compromiso colectivo con el propósito</strong>",
+                          "hijos": [{
+                            "texto": "No basta con tener o conocer el propósito de la CoP:<br> involucra al grupo en su  ejecución para que sea compartido y asimilado."
                           }]
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "titulo": "Prueba tus habilidades de visión estratégica",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Reunión de Comunidad</span><br>Durante una reunión, Marta comenta:<br><i>\"Siento que mis propuestas no se toman en cuenta. A veces me pregunto si tiene sentido seguir participando.\"</i>",
-                      "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> con la situación. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Definición de propósito común</span><br>Estás facilitando el segundo encuentro de una CoP emergente. Aún no hay claridad sobre su propósito a largo plazo, y la energía está dispersa entre intereses individuales y objetivos institucionales.",
+                      "pregunta": "¿Qué haces como facilitador/a para orientar estratégicamente al grupo?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
+                          "texto": "<span class='title-body-secondary'>A.</span> Propones una visión inspiradora basada en experiencias exitosas de otras CoPs.",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "No refleja habilidades de visión estratégica."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
+                          "texto": "<span class='title-body-secondary'>B.</span> Invitas a cada persona a expresar sus expectativas, para luego buscar puntos comunes.",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "No refleja habilidades de visión estratégica."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
+                          "texto": "<span class='title-body-secondary'>C.</span> Realizas una actividad de visualización del futuro deseado en 2 años, y a partir de ahí guías la co-construcción de visión compartida.",
                           "correcta": true,
-                          "feedback": "Porque refleja comprensión emocional y abre espacio para profundizar, sin juzgar."
+                          "feedback": "Justificación: La opción C conecta al grupo con un horizonte deseado y compartido, fomenta sentido de dirección y compromiso emocional, sin imponer ni forzar. B es importante pero centrado en el presente. A puede resultar impositivo o ajeno. D refleja una postura demasiado laxa para procesos estratégicos."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
+                          "texto": "<span class='title-body-secondary'>D.</span> Defiendes que el propósito emergerá naturalmente y evitas forzar su definición.",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "No refleja habilidades de visión estratégica."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "titulo": "Prueba tus habilidades de visión estratégica",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Conflicto entre miembros</span><br>Carla expresa frustración con otro miembro::<br><i>\"Cada vez que propongo algo, Luis me interrumpe. Me hace sentir invisible.\"</i>",
-                      "pregunta": "¿Cuál es la mejor forma de responder desde la escucha activa?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> con la situación. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Desalineación de intereses</span><br>Durante una sesión estratégica, emergen tensiones entre quienes quieren enfocarse en producir conocimiento práctico y quienes prefieren influir en políticas públicas. El debate se polariza.",
+                      "pregunta": "¿Cómo actúas para mantener una visión estratégica integradora?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> \"¿Y tú has pensado por qué él podría hacer eso?\"",
+                          "texto": "<span class='title-body-secondary'>A.</span> Propones dividir la CoP en dos subgrupos con objetivos distintos.",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "No refleja habilidades de visión estratégica."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> \"Quizá es tu percepción, Luis es así con todos.\"",
-                          "correcta": false,
-                          "feedback": "No refleja escucha activa."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> \"Puedo ver que eso te molesta. ¿Quieres que te acompañe a hablar con él?\"",
+                          "texto": "<span class='title-body-secondary'>B.</span> Invitas a mapear colectivamente los impactos deseados a corto, mediano y largo plazo, buscando convergencias.",
                           "correcta": true,
-                          "feedback": "Porque reconoce la emoción, sin minimizar ni justificar, y ofrece apoyo."
+                          "feedback": "Justificación: B permite hacer explícitas las interdependencias y posibles sinergias, integrando intereses en una visión más amplia. A puede fragmentar la comunidad; C impone una dirección; D deja el proceso sin conducción estratégica. Visionar implica construir puentes, no solo elegir caminos."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>D.</span> \"Yo nunca he notado eso. Tal vez lo estás exagerando.\"",
+                          "texto": "<span class='title-body-secondary'>C.</span> Tomas una decisión de facilitación para priorizar una de las líneas, y retomar la otra más adelante.",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "No refleja habilidades de visión estratégica."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Permites que el debate fluya sin intervención, para que el grupo resuelva solo.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades de visión estratégica."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Escucha Activa",
+                    "titulo": "Prueba tus habilidades de visión estratégica",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Miembro comparte experiencia personal</span><br>Durante una conversación informal, Ana dice:<br><i>\"Me cuesta mucho hablar en público. A veces me paralizo y no puedo ni empezar.\"</i>",
-                      "pregunta": "¿Qué respuesta demuestra mejor escucha activa?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> con la situación. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Falta de resultados tangibles</span><br>La CoP ha generado espacios muy valorados de encuentro y reflexión, pero no tiene resultados \"visibles\" luego de seis meses. Algunos actores externos cuestionan su utilidad y continuidad.",
+                      "pregunta": "¿Qué haces para sostener el valor estratégico del proceso?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> \"Ah, yo antes era igual, pero luego hice un curso y se me pasó.\"",
+                          "texto": "<span class='title-body-secondary'>A.</span> Planteas acelerar la producción de entregables concretos para justificar su continuidad.",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "No refleja habilidades de visión estratégica."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> \"¡Uy! Pues entonces no presentes la próxima reunión.\"",
-                          "correcta": false,
-                          "feedback": "No refleja escucha activa."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> \"¿Te ha pasado muchas veces? ¿Cómo lo vives en esos momentos?\"",
+                          "texto": "<span class='title-body-secondary'>B.</span> Propones una jornada de balance colectivo donde se identifiquen avances invisibles, aprendizajes y desafíos.",
                           "correcta": true,
-                          "feedback": "Porque evita centrarse en uno mismo y permite que Ana explore y exprese su experiencia."
+                          "feedback": "Justificación: La opción B permite valorar logros intangibles, fundamentales en procesos colectivos, y reposicionar estratégicamente la CoP desde una narrativa de transformación. A pone el foco solo en lo productivo; C es más instrumental; D desatiende la necesidad de legitimación. Visionar también es saber comunicar lo que se está construyendo, aunque no sea medible aún."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>D.</span> \"No te preocupes, seguro lo haces bien.\"",
+                          "texto": "<span class='title-body-secondary'>C.</span> Pides a los participantes que generen una memoria técnica con evidencias de avance.",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "No refleja habilidades de visión estratégica."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Sugieres enfocarse solo en los aspectos relacionales del grupo, y no preocuparse por resultados.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades de visión estratégica."
                         }
                       ]
                     }
@@ -2201,9 +2207,9 @@
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Participante expresa desacuerdo</span><br>En una sesión, Ricardo dice:<br><i>\"No estoy de acuerdo con cómo se están tomando las decisiones últimamente.\"</i>",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Escalamiento y sostenibilidad</span><br>Una CoP ha tenido impacto local positivo y te piden facilitar una reflexión sobre su posible expansión a otros territorios o sectores. El grupo se siente motivado, pero también teme perder su identidad.",
+                      "pregunta": "¿Cómo orientas el proceso?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -2212,9 +2218,9 @@
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la escucha activa.</p>",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Silencio prolongado de un miembro</span><br>Lucía ha estado callada toda la sesión. Al final, alguien le pregunta cómo se sintió, y ella dice:<br><i>\"No sé… me costó seguir el ritmo y no estaba segura de si tenía algo valioso que decir.\"</i>",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Escucha Activa</span>.",
+                      "pregunta": "¿Cómo planteas este proceso de escalamiento estratégico?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
@@ -2222,36 +2228,36 @@
               }]
             },
             {
-              "id": "4-2-2",
-              "titulo": "Flexibilidad",
+              "id": "4-4-2",
+              "titulo": "Motivación e inspiración",
               "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
               "slides": [{
-                "grupo": "Flexibilidad",
+                "grupo": "Motivación e inspiración",
                 "items": [{
-                    "titulo": "Flexibilidad",
-                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Es la capacidad de adaptarse de manera ágil y constructiva a cambios en las circunstancias, necesidades del grupo o plan de trabajo, manteniendo el foco en los objetivos de la comunidad.<br><br>Implica apertura a nuevas ideas, disposición a ajustar métodos y actitudes, y habilidad para manejar imprevistos sin perder la conexión con las personas ni la calidad del proceso.</p></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_flexibilidad.jpg'></div>"
+                    "titulo": "Motivación e inspiración",
+                    "contenido": "<div class='row m-0'><div class='col-md-6 col-12 p-0'><p class='p-0 fw-bold'>Motivar o inspirar a otros significa generar en las personas entusiasmo, compromiso o deseo de actuar, ya sea para alcanzar un objetivo, superar un desafío o desarrollarse personalmente. Es despertar en otros la alegría, el goce o energía interna que los mueve a hacer algo con ganas y propósito.<br><br>Motivar es:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Estimular la acción: provocar que alguien quiera hacer algo.</li><li>Conectar con deseos, valores o necesidades de la persona.</li><li>Acompañar y sostener el entusiasmo frente a obstáculos o dificultades.</li><li>Celebrar los éxitos</li></ul><p class='f'>Inspirar va un paso más allá:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Encender una idea, emoción o visión poderosa en otros.</li><li>Ser un ejemplo, transmitir pasión o mostrar un propósito que contagia.</li><li>No se impone: se transmite naturalmente por cómo se actúa o se comunica.</li></ul></div><div class='col-md-6 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_motivacion.jpg'></div></div>"
                   },
                   {
-                    "titulo": "Consejos para desarrollar flexibilidad.",
+                    "titulo": "Consejos para motivar e inspirar",
                     "contenido": {
                       "tipo": "lista",
                       "estilo": "dot",
                       "items": [{
-                          "texto": "<strong>Acepta que el plan es una guía, no una cárcel.</strong>",
+                          "texto": "<strong>Comunica con claridad y entusiasmo el propósito del grupo</strong>",
                           "hijos": [{
-                            "texto": "Diseña agendas con márgenes para adaptarte a imprevistos, priorizando el propósito de la sesión sobre la rigidez del formato."
+                            "texto": "Refuerza con frecuencia por qué existe la CoP y qué impacto puede tener su trabajo colectivo."
                           }]
                         },
                         {
-                          "texto": "<strong>Entrena tu tolerancia a la incertidumbre</strong>",
+                          "texto": "<strong>Reconoce los logros, pequeños y grandes</strong>",
                           "hijos": [{
-                            "texto": "Asume que no siempre tendrás toda la información o control. Mantener la calma en la ambigüedad refuerza tu capacidad de respuesta."
+                            "texto": "Celebra avances, hitos o esfuerzos individuales y grupales con expresiones genuinas de aprecio."
                           }]
                         },
                         {
-                          "texto": "<strong>Integra pausas de diagnóstico.</strong>",
+                          "texto": "<strong>Haz visibles las contribuciones de las personas</strong>",
                           "hijos": [{
-                            "texto": "En reuniones largas, detente brevemente para evaluar energía, participación y necesidades emergentes del grupo, y ajusta en consecuencia."
+                            "texto": "Menciona públicamente aportes valiosos:<br><i>“Quiero destacar el trabajo de…”, “Gracias a lo que propuso X, logramos…”.</i>"
                           }]
                         },
                         {
@@ -2261,45 +2267,69 @@
                           }]
                         },
                         {
-                          "texto": "<strong>Cambia de perspectiva</strong>",
+                          "texto": "<strong>Usa un lenguaje positivo y estimulante</strong>",
                           "hijos": [{
-                            "texto": "Cuando surja un imprevisto, pregúntate: <i>¿Qué oportunidad hay aquí?</i> Esto fomenta una mentalidad proactiva ante cambios."
+                            "texto": "Evita discursos quejumbrosos o centrados en la carencia. Reemplaza “no podemos” por “<i>¿cómo podríamos?</i>”."
                           }]
                         },
                         {
-                          "texto": "<strong>Gestiona tu propia emocionalidad</strong>",
+                          "texto": "<strong>Cuenta historias que conecten con lo emocional</strong>",
                           "hijos": [{
-                            "texto": "Un facilitador que mantiene la calma transmite seguridad y facilita que el grupo también se adapte sin estrés excesivo."
+                            "texto": "Usa relatos reales de impacto, transformación o sentido para fortalecer el compromiso del grupo."
                           }]
                         },
                         {
-                          "texto": "<strong>Mantén opciones múltiples</strong>",
+                          "texto": "<strong>Modela compromiso y pasión por el proceso</strong>",
                           "hijos": [{
-                            "texto": "Antes de una sesión, prepara al menos dos enfoques o secuencias posibles para alcanzar los objetivos, de modo que puedas alternar si algo no funciona."
+                            "texto": "Tu actitud influye directamente: muestra energía, implicación y coherencia con lo que promueves."
                           }]
                         },
                         {
-                          "texto": "<strong>Practica el “sí, y…”</strong>",
+                          "texto": "<strong>Crea un clima emocionalmente seguro</strong>",
                           "hijos": [{
-                            "texto": "En lugar de rechazar ideas o cambios, intégralos construyendo sobre ellos. Esto fomenta apertura y colaboración."
+                            "texto": "Fomenta el respeto, la escucha y la validación; las personas se motivan más cuando se sienten reconocidas y valoradas."
                           }]
                         },
                         {
-                          "texto": "<strong>Desarrolla curiosidad genuina</strong>",
+                          "texto": "<strong>Invita a la participación activa y voluntaria</strong>",
                           "hijos": [{
-                            "texto": "Interésate por las ideas y experiencias de los demás, incluso si difieren de tu plan inicial; la flexibilidad nace de la apertura mental."
+                            "texto": "Motiva desde la elección, no desde la imposición: <i>“¿Quién se anima a tomar este rol?”</i> en lugar de <i>“alguien tiene que...”</i>."
                           }]
                         },
                         {
-                          "texto": "<strong>Evalúa y ajusta rápido</strong>",
+                          "texto": "<strong>Relaciona las tareas con el impacto real</strong>",
                           "hijos": [{
-                            "texto": "Aprende a identificar pronto lo que no está funcionando y modifica la dinámica sin miedo a “salirte del libreto”."
+                            "texto": "Ayuda al grupo a ver cómo lo que hace contribuye a mejorar prácticas, comunidades o contextos reales."
                           }]
                         },
                         {
-                          "texto": "<strong>Entrena con escenarios simulados</strong>",
+                          "texto": "<strong>Ofrece desafíos alcanzables y estimulantes</strong>",
                           "hijos": [{
-                            "texto": "Participa en ejercicios de role-play con cambios inesperados para practicar la adaptación en entornos seguros antes de hacerlo en situaciones reales."
+                            "texto": "Plantea metas claras que impliquen crecimiento, sin ser inalcanzables o abrumadoras."
+                          }]
+                        },
+                                                {
+                          "texto": "<strong>Promueve espacios de creatividad y protagonismo</strong>",
+                          "hijos": [{
+                            "texto": "Abre momentos donde el grupo pueda proponer ideas, liderar iniciativas o explorar nuevas formas de hacer las cosas."
+                          }]
+                        },
+                                                {
+                          "texto": "<strong>Comparte tu propia inspiración</strong>",
+                          "hijos": [{
+                            "texto": "Expresa qué te mueve a ti en este proceso, qué sentido tiene para ti estar ahí, y por qué vale la pena seguir."
+                          }]
+                        },
+                                                {
+                          "texto": "<strong>Haz seguimiento y muestra avances</strong>",
+                          "hijos": [{
+                            "texto": "Visualiza con el grupo lo que se ha logrado, para fortalecer la percepción de progreso colectivo."
+                          }]
+                        },
+                                                {
+                          "texto": "<strong>Confía en las capacidades del grupo y exprésalo</strong>",
+                          "hijos": [{
+                            "texto": "Dilo en voz alta: <i>“Estoy seguro de que este equipo puede lograrlo”, “Confío en su criterio para resolver esto”</i>."
                           }]
                         }
                       ]
