@@ -2669,188 +2669,212 @@
                 "grupo": "Gestión del tiempo y recursos",
                 "items": [{
                     "titulo": "Gestión del tiempo y recursos",
-                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Significa crear estructuras, metodologías o dinámicas que permitan que todas las personas involucradas en un proyecto, decisión o actividad puedan opinar, colaborar y construir colectivamente.<br><br>Esto implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Pensar <strong>cómo, cuándo y con qué herramientas</strong> que permitan que todas las personas involucradas en un proyecto, decisión o actividad <strong>puedan opinar, colaborar y construir colectivamente.</strong></li><li>Asegurarse de que <strong>todas las voces sean escuchadas,</strong> no solo las de quienes tienen más poder o experiencia.</li><li>Generar un entorno donde <strong>se fomente la confianza, la escucha activa y el respeto.</strong></li></ul></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_disenar.jpg'></div>"
+                    "contenido": "<div class='row m-0'><div class='col-12 col-md-6 p-0'><p class='p-0 fw-bold'>Significa organizar, planificar y utilizar de forma eficiente el tiempo disponible y los medios que se tienen (humanos, materiales, financieros, tecnológicos, etc.) para lograr objetivos concretos de la mejor manera posible.<br><br>Gestionar el tiempo, es administrar las horas del día para cumplir con tareas y responsabilidades, evitando pérdidas de tiempo, retrasos o estrés innecesario. Implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Planificar actividades.</li><li>Priorizar lo importante sobre lo urgente.</li><li>Evitar distracciones.</li><li>Ser realista con lo que se puede hacer en un plazo.</li></ul> <p class='p-0 fw-bold'>Gestionar los recursos es aprovechar al máximo lo que se tiene para lograr resultados sin desperdicio ni sobrecarga. Recursos pueden ser:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Personas (equipo de trabajo, voluntarios, etc.)</li><li>Dinero o presupuesto.</li><li>Herramientas y materiales.</li><li>Información o tecnología.</li></ul></div><div class='col-12 col-md-6 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestiontiempo.jpg'></div></div>"
                   },
                   {
-                    "titulo": "Consejos para desarrollar Asertividad",
+                    "titulo": "Consejos para gestionar el tiempo y los recursos",
                     "contenido": {
                       "tipo": "lista",
                       "estilo": "dot",
                       "items": [{
-                          "texto": "<strong>Expresa tus ideas de forma clara y directa</strong>",
+                          "texto": "<strong>Define y comunica claramente los objetivos de cada reunión o actividad</strong>",
                           "hijos": [{
-                            "texto": "Di lo que piensas u opinas sin rodeos, pero cuidando el tono y el respeto por los demás.<br>Ej: “<i>Desde mi experiencia, creo que podríamos probar otra estrategia</i>”. "
+                            "texto": "Evita reuniones sin propósito claro. Comienza cada encuentro respondiendo: <i>¿Para qué estamos aquí hoy?</i>"
                           }]
                         },
                         {
-                          "texto": "<strong>Usa el lenguaje en primera persona (“yo”)</strong>",
+                          "texto": "Planifica con anticipación y comparte agendas breves",
                           "hijos": [{
-                            "texto": "Habla desde tu punto de vista sin generalizar ni culpar.<brEj: <i>“Yo siento que…”, “Yo necesito…”, “A mí me gustaría que…”</i>."
+                            "texto": "Envía una pauta clara con temas, tiempos estimados y responsables, para que todos lleguen preparados."
                           }]
                         },
                         {
-                          "texto": "<strong>Muestra respeto por los otros, incluso al disentir</strong>",
+                          "texto": "<strong>Respeta los tiempos acordados</strong>",
                           "hijos": [{
-                            "texto": "Valida otros puntos de vista antes de expresar tu desacuerdo.<br>Ej: “<i>Entiendo tu enfoque, y al mismo tiempo pienso diferente…</i>”."
+                            "texto": "Inicia y cierra puntualmente. Da el ejemplo de que el tiempo de todos vale lo mismo."
                           }]
                         },
                         {
-                          "texto": "<strong>Mantén un tono de voz firme pero amable</strong>",
+                          "texto": "<strong>Prioriza lo importante sobre lo urgente</strong>",
                           "hijos": [{
-                            "texto": "Ni pasivo ni agresivo; el tono debe transmitir seguridad sin hostilidad."
+                            "texto": "Ayuda al grupo a identificar qué temas requieren atención estratégica y cuáles pueden esperar."
                           }]
                         },
                         {
-                          "texto": "<strong>Cuida tu expresión facial y corporal</strong>",
+                          "texto": "<strong>Divide tareas grandes en pasos pequeños y asignables</strong>",
                           "hijos": [{
-                            "texto": "Evita gestos de confrontación (como señalar con el dedo o fruncir el ceño) y mantén una postura erguida, abierta y serena."
+                            "texto": "Facilita la gestión del tiempo y evita la parálisis grupal por sobredemanda."
                           }]
                         },
                         {
-                          "texto": "<strong>Sé honesto, pero oportuno</strong>",
+                          "texto": "<strong>Asigna roles y responsabilidades de forma clara</strong>",
                           "hijos": [{
-                            "texto": "Elige bien el momento y lugar para decir lo que piensas, especialmente si el tema es delicado."
+                            "texto": "Evita la sobrecarga de pocos participantes. Distribuye tareas según disponibilidad y fortalezas."
                           }]
                         },
                         {
-                          "texto": "<strong>Establece y comunica tus límites con claridad</strong>",
+                          "texto": "<strong>Haz pausas planificadas y cuida la energía del grupo</strong>",
                           "hijos": [{
-                            "texto": "Por ejemplo: <i>“Prefiero no continuar esta conversación si se vuelve personal”</i> o <i>“No me siento cómodo con ese enfoque”</i>."
+                            "texto": "Integra descansos breves o actividades livianas para evitar la fatiga cognitiva y emocional."
                           }]
                         },
                         {
-                          "texto": "<strong>Aprende a decir “no” sin sentir culpa</strong>",
+                          "texto": "<strong>Usa herramientas colaborativas para coordinar tareas</strong>",
                           "hijos": [{
-                            "texto": "Di que no de manera clara y amable, sin dar excusas innecesarias.<br>Ej: <i>“Gracias por la invitación, pero no podré participar esta vez”</i>."
+                            "texto": "Promueve el uso de calendarios compartidos, tableros visuales (como Trello o Miro), y documentos accesibles para todos."
                           }]
                         },
                         {
-                          "texto": "<strong>Acepta las críticas con apertura, sin pasividad ni defensividad</strong>",
+                          "texto": "<strong>Evalúa regularmente el uso del tiempo y los recursos</strong>",
                           "hijos": [{
-                            "texto": "Escucha, agradece el feedback y responde desde la reflexión.<br>Ej: <i>“Gracias por decírmelo. Lo voy a considerar”</i>."
+                            "texto": "Pregunta al grupo: <i>“¿Estamos usando bien nuestro tiempo?”</i>, <i>“¿Podemos simplificar o ajustar algo?”</i>"
                           }]
                         },
                         {
-                          "texto": "<strong>Defiende tus derechos sin atacar los de otros</strong>",
+                          "texto": "<strong>Cuida el equilibrio entre resultados y procesos</strong>",
                           "hijos": [{
-                            "texto": "Asertividad no es ganar, es encontrar formas justas de relacionarse.<br>Ej: <i>“Quiero asegurarme de que todos tengamos oportunidad de participar”</i>."
+                            "texto": "No sacrifiques la calidad del vínculo o del aprendizaje por avanzar rápido; ajusta el ritmo sin perder foco."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Aprovecha los recursos existentes antes de crear nuevos</strong>",
+                          "hijos": [{
+                            "texto": "Evita duplicar esfuerzos. Revisa materiales, contactos, experiencias previas del grupo o de otras CoPs."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Gestiona los recursos económicos y logísticos con transparencia</strong>",
+                          "hijos": [{
+                            "texto": "Informa con claridad sobre presupuestos, decisiones de gasto o uso de herramientas y materiales."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Adapta la planificación si cambian las condiciones</strong>",
+                          "hijos": [{
+                            "texto": "Flexibiliza cuando sea necesario, pero siempre comunicando los motivos y consensuando ajustes."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Cierra cada actividad con una revisión del avance</strong>",
+                          "hijos": [{
+                            "texto": "Resume qué se logró, qué queda pendiente y qué recursos serán necesarios para lo próximo."
                           }]
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "titulo": "Prueba tus habilidades para gestionar tiempo y recursos",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Interrupciones constantes en una reunión</span><br>Durante una reunión, estás intentando exponer tu punto, pero un compañero te interrumpe repetidamente.",
-                      "pregunta": "¿Cuál es la respuesta más asertiva?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que mejor gestione el tiempo o los recursos. Marca solo una opción por situación.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Ajuste en tiempo real durante una sesión</span><br>Estás facilitando un taller de la CoP y una dinámica participativa (prevista para 30 minutos) está generando mucho valor, pero ya pasaron 25 minutos y aún faltan otras actividades relevantes en la agenda.",
+                      "pregunta": "¿Qué haces?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “Perdón, ¿puedo terminar lo que estaba diciendo antes de que intervengas?”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Interrumpes la actividad, agradeces y pasas al siguiente bloque para cumplir la agenda.",
                           "correcta": false,
-                          "feedback": "Es educada, pero suena subordinada."
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> “Me molesta que me interrumpas. Por favor, respeta los turnos.”",
+                          "texto": "<span class='title-body-secondary'>B.</span> Dejas que fluya hasta que se agote, aunque se desplace el resto del contenido.",
                           "correcta": false,
-                          "feedback": "Es directa, pero con tono confrontativo."
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Sé que quieres aportar, pero me gustaría terminar mi idea primero.”",
+                          "texto": "<span class='title-body-secondary'>C.</span> Negocias con el grupo una extensión breve y reajustas la agenda en función del tiempo restante.",
                           "correcta": true,
-                          "feedback": "Expresa el mensaje de forma clara, firme y respetuosa. Usa lenguaje “yo”, sin acusaciones, e incluye reconocimiento del otro."
+                          "feedback": "Justificación: La opción C equilibra flexibilidad y foco, permite sostener el valor del momento sin sacrificar la planificación. Además, incluye al grupo en la decisión, fortaleciendo el compromiso colectivo. A es rígida, B es desorganizada, y D esta bien, pero puede romper la continuidad del proceso."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Ya veo que no me estás escuchando, como siempre…”",
+                          "texto": "<span class='title-body-secondary'>D.</span> Propones continuar la actividad de forma asincrónica después del taller.",
                           "correcta": false,
-                          "feedback": "Es pasivo-agresiva."
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "titulo": "Prueba tus habilidades para gestionar tiempo y recursos",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Crítica indirecta frente a otros</span><br>Un colega dice en voz alta durante una reunión:<br><i>\"Algunos no están haciendo su parte y eso retrasa al grupo.\"… Sabes que se refiere a ti.</i>",
-                      "pregunta": "¿Qué responderías con asertividad?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que mejor gestione el tiempo o los recursos. Marca solo una opción por situación.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Recursos limitados para una actividad</span><br>Vas a facilitar un taller con recursos reducidos: no hay proyector ni acceso a internet. Tenías planeado mostrar videos y usar herramientas digitales para el trabajo en grupo.",
+                      "pregunta": "¿Cómo resuelves la situación para no perder la esencia del taller?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “Si crees que me falta aportar algo, prefiero que me lo digas directamente.”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Cancelas los ejercicios tecnológicos y haces una exposición oral en su lugar.",
                           "correcta": false,
-                          "feedback": "Es frontal, pero puede sonar a reproche."
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> “¿Puedes aclarar a quién te refieres?”",
-                          "correcta": false,
-                          "feedback": "Pone al otro en evidencia."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Me gustaría saber si eso va dirigido a mí, para poder responder con claridad.”",
+                          "texto": "<span class='title-body-secondary'>B.</span> Adaptas las actividades al formato analógico usando papel, tarjetas y trabajo colaborativo manual.",
                           "correcta": true,
-                          "feedback": "Refleja madurez y apertura, sin entrar en confrontación, y promueve una conversación directa."
+                          "feedback": "Justificación: B representa una adaptación metodológica creativa y participativa, sin depender de recursos tecnológicos. No solo resuelve el problema logístico, sino que mantiene activa la participación. A y D reducen el valor de la experiencia, y C puede ser desigual o distraer."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Si piensas eso de mí, podrías decirlo en privado.”",
+                          "texto": "<span class='title-body-secondary'>C.</span> Pides a los participantes que usen sus propios teléfonos móviles para acceder al contenido en línea.",
                           "correcta": false,
-                          "feedback": "Pone límites, pero se enfoca más en la forma que en el contenido del mensaje."
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Pospones la actividad hasta que haya mejores condiciones técnicas.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "titulo": "Prueba tus habilidades para gestionar tiempo y recursos",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Sobrecarga de trabajo</span><br>Tu coordinador te asigna otra tarea, pero ya estás al límite con tus responsabilidades.",
-                      "pregunta": "¿Cuál sería la forma más asertiva de responder?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que mejor gestione el tiempo o los recursos. Marca solo una opción por situación.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Participación extendida en una actividad</span><br>Durante un encuentro presencial, una dinámica grupal que debía durar 20 minutos se extiende a 40 porque el grupo está entusiasmado. El resto de las actividades se ven comprometidas.",
+                      "pregunta": "¿Cómo gestionas esta situación?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “No puedo hacer más, ya tengo demasiado.”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Cancelas otras actividades para mantener el flujo actual.",
                           "correcta": false,
-                          "feedback": "Es clara, pero puede sonar cerrada."
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> “Estoy al tope ahora. Si esta tarea es urgente, necesito reorganizar otras prioridades contigo.”",
+                          "texto": "<span class='title-body-secondary'>B.</span> Anuncias el cierre inmediato de la actividad y pasas al siguiente bloque.",
+                          "correcta": false,
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>C.</span> Propones una síntesis rápida del trabajo actual y consultas al grupo sobre cómo utilizar o reordenar el tiempo restante.",
                           "correcta": true,
-                          "feedback": "Expresa con claridad los límites y propone una solución conjunta, sin queja ni resignación."
+                          "feedback": "Justificación: C permite dar cierre cuidando el entusiasmo, e involucra al grupo en decisiones sobre el tiempo. A sacrifica planificación; B puede frustrar; D evita intervenir, pero no responde a lo que está ocurriendo en el presente. La gestión del tiempo también es gestión del sentido colectivo."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Siempre me están cargando con más cosas, esto no es justo.”",
+                          "texto": "<span class='title-body-secondary'>D.</span> Tomas nota del entusiasmo y lo recoges para una próxima sesión, sin modificar la actual.",
                           "correcta": false,
-                          "feedback": "Es reactiva y victimiza."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Voy a intentarlo, aunque estoy con mucho encima.”",
-                          "correcta": false,
-                          "feedback": "Suena complaciente, pero oculta sobrecarga."
+                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "titulo": "Prueba tus habilidades para gestionar tiempo y recursos",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la comunicación asertiva.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Crítica injusta de un colega</span><br>Tu compañero dice:<br> <i>“No entiendo por qué hiciste la exposición así, está llena de impresiciones.”</i><br>Tú sabes que la crítica no es justificada.",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad.</span>.",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Distribución del tiempo en sesiones virtuales</span><br>Diseñas una sesión virtual de 90 minutos para la CoP. Quieres fomentar la participación, pero también necesitas presentar información clave.",
+                      "pregunta": "¿Cómo estructuras mejor el tiempo para <span class='title-body-secondary'>mantener atención y lograr los objetivos?</span>.",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Asertividad",
+                    "titulo": "Prueba tus habilidades para gestionar tiempo y recursos",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
-                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la comunicación asertiva.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Te interpelan en público sin previo aviso</span><br>En plena reunión, te piden una opinión sobre un tema y estabas distraído, no pusiste atención y no sabes de que se trata …",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad.</span>.",
+                      "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que demuestre esta habilidad.</p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Distribución de recursos humanos en una jornada</span><br>Facilitas un encuentro con más de 40 personas, pero cuentas solo con 2 co-facilitadores. Hay múltiples actividades grupales simultáneas.",
+                      "pregunta": "¿Qué estrategia aplicas para <span class='title-body-secondary'>gestionar bien estos recursos humanos?</span>.",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
@@ -2859,201 +2883,290 @@
               }]
             },
             {
-              "id": "4-2-5",
-              "titulo": "Gestión de Conflictos",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "id": "4-4-5",
+              "titulo": "Evaluación y mejora continua",
+              "contenido": "<h2 class='fw-bold m-0'>Habilidades de Liderazgo y Gestión</h2>",
               "slides": [{
-                "grupo": "Gestión de Conflictos",
+                "grupo": "Evaluación y mejora continua",
                 "items": [{
-                    "titulo": "Gestión de Conflictos",
-                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>Consiste en identificar los aspectos que separan a las partes, a la vez que se desarrollan e implementan soluciones que sean aceptables para las partes primarias que intervienen en el conflicto.<br><br>Esta práctica, de identificar y manejar conflictos de manera sensata, justa y eficiente ayuda a prevenir escaladas innecesarias, mantener la confianza dentro del grupo y fomentar una cultura de colaboración consciente y madura.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestion_conflicto.jpg'></div></div>"
+                    "titulo": "Evaluación y mejora continua",
+                    "contenido": "<div class='row m-0'><div class='col-12 col-md-6 p-0'><p class='p-0 fw-bold'>Evaluar y hacer mejora continua significa observar, analizar y reflexionar sobre lo que se ha hecho (un proyecto, actividad o proceso) para identificar lo que funciona bien, lo que no, y cómo se puede mejorar de forma constante.<br><br>Es un proceso cíclico que no termina cuando se logra un resultado, sino que busca crecer y aprender todo el tiempo.<br><br>Evaluar es:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Revisar resultados, procesos y métodos utilizados.</li><li>Comparar lo que se logró con lo que se esperaba.</li><li>Detectar errores, aciertos y áreas de mejora.</li><li>Puede hacerse con datos, opiniones, encuestas, indicadores, etc.</li></ul> <p class='p-0 fw-bold'>Mejora continua es:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Aprender de cada experiencia.</li><li>Ajustar lo necesario (ideas, métodos, recursos).</li><li>Buscar hacerlo mejor la próxima vez, incluso si ya salió bien.</li><li>Basarse en la lógica de no conformarse, sino evolucionar constantemente.</li></ul></div><div class='col-12 col-md-6 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_evaluacioncontinua.jpg'></div></div>"
                   },
                   {
-                    "titulo": "Consejos para gestionar Conflictos",
+                    "titulo": "Consejos para evaluar y hacer mejora continua",
                     "contenido": {
                       "tipo": "lista",
                       "estilo": "dot",
                       "items": [{
-                          "texto": "<strong>Mantén la calma y regula tus emociones</strong>",
+                          "texto": "<strong>Integra la evaluación como parte natural del proceso</strong>",
                           "hijos": [{
-                            "texto": "Antes de intervenir, respira y observa tu estado emocional. Evita actuar impulsivamente."
+                            "texto": "No la veas como un cierre o exigencia externa. Evalúa desde la curiosidad colectiva: <i>“¿Cómo lo estamos haciendo?”</i>."
                           }]
                         },
                         {
-                          "texto": "<strong>Escucha activamente a todas las partes</strong>",
+                          "texto": "<strong>Evalúa de forma participativa</strong>",
                           "hijos": [{
-                            "texto": "Presta atención sin interrumpir, valida los distintos puntos de vista y muestra interés genuino."
+                            "texto": "Involucra a los miembros en la reflexión, el diseño de instrumentos y la interpretación de los resultados."
                           }]
                         },
                         {
-                          "texto": "<strong>Muestra imparcialidad y evita tomar partido</strong>",
+                          "texto": "<strong>Combina evaluación cualitativa y cuantitativa</strong>",
                           "hijos": [{
-                            "texto": "Focalízate en los hechos y necesidades, no en juicios personales."
+                            "texto": "Usa tanto métricas como relatos, testimonios, mapas o dinámicas que permitan captar el \"clima\" y el aprendizaje del grupo."
                           }]
                         },
                         {
-                          "texto": "<strong>Utiliza lenguaje neutral y no acusatorio</strong>",
+                          "texto": "<strong>Crea momentos periódicos de revisión y ajuste</strong>",
                           "hijos": [{
-                            "texto": "Evita generalizaciones o frases que culpabilicen.<br>Ej: Cambia <i>“Tú siempre ignoras mis ideas”</i> por <i>“Me gustaría que mis aportes también fueran considerados”</i>."
+                            "texto": "Agenda espacios cada cierto tiempo (mensual, trimestral o semestral) para revisar avances, tensiones y oportunidades."
                           }]
                         },
                         {
-                          "texto": "<strong>Identifica intereses comunes, no solo posiciones</strong>",
+                          "texto": "<strong>Evalúa distintas dimensiones de la CoP</strong>",
                           "hijos": [{
-                            "texto": "Pregunta: <i>“¿Qué es importante para ti en esto?”</i>, para ir más allá del desacuerdo superficial."
+                            "texto": "No te centres solo en resultados. Considera también la participación, la colaboración, el aprendizaje, la gestión, el clima grupal, etc."
                           }]
                         },
                         {
-                          "texto": "<strong>Facilita el diálogo entre las partes involucradas</strong>",
+                          "texto": "<strong>Utiliza preguntas abiertas para la reflexión</strong>",
                           "hijos": [{
-                            "texto": "Promueve conversaciones cara a cara, en un contexto contenido, en vez de discusiones indirectas o pasivas."
+                            "texto": "Ejemplos: <i>¿Qué estamos haciendo bien y deberíamos sostener?</i>,  <i>¿Qué podríamos mejorar?</i>,  <i>¿Qué estamos dejando de ver?</i>"
                           }]
                         },
                         {
-                          "texto": "<strong>Parafrasea y clarifica para evitar malentendidos</strong>",
+                          "texto": "<strong>Establece indicadores simples, útiles y consensuados  (ver sugerencia de indicadores más adelante)</strong>",
                           "hijos": [{
-                            "texto": "Resume lo que se dijo y verifica comprensión:<br><i>“Entonces, lo que necesitas es…”</i>."
+                            "texto": "No uses indicadores sólo por formalidad. Define con el grupo qué es importante observar."
                           }]
                         },
                         {
-                          "texto": "<strong>Fomenta acuerdos colaborativos</strong>",
+                          "texto": "<strong>Comparte los resultados de la evaluación con el grupo</strong>",
                           "hijos": [{
-                            "texto": "Busca que las soluciones surjan de los propios involucrados, no impuestas desde fuera."
+                            "texto": "Usa recursos visuales o creativos para presentar los hallazgos y facilitar la comprensión."
                           }]
                         },
                         {
-                          "texto": "<strong>Reenfoca en los objetivos del grupo o comunidad</strong>",
+                          "texto": "<strong>Transforma los aprendizajes en acciones concretas</strong>",
                           "hijos": [{
-                            "texto": "Recuerda a los participantes los propósitos compartidos de la CoP:<br><i>“¿Cómo podemos resolver esto sin perder el foco de nuestro trabajo conjunto?”</i>."
+                            "texto": "No basta con saber qué mejorar; definan juntos cómo y quién lo implementará."
                           }]
                         },
                         {
-                          "texto": "<strong>Haz seguimiento del conflicto una vez resuelto</strong>",
+                          "texto": "<strong>Celebra los avances antes de corregir</strong>",
                           "hijos": [{
-                            "texto": "Verifica que el acuerdo se cumpla y que no queden resentimientos no abordados."
+                            "texto": "Comienza siempre desde lo que ha funcionado bien para motivar el cambio desde una base positiva."
                           }]
                         },
                         {
-                          "texto": "<strong>Actúa como modelo de comunicación respetuosa</strong>",
+                          "texto": "<strong>Evalúa también el rol de la facilitación</strong>",
                           "hijos": [{
-                            "texto": "Tu propia forma de comunicar y resolver tensiones es un ejemplo que influye en el clima de la CoP."
+                            "texto": "Abre espacios para recibir feedback sobre tu propio desempeño como facilitador/a."
+                          }]
+                        },
+                        {
+                          "texto": "<strong>Documenta el proceso de mejora</strong>",
+                          "hijos": [{
+                            "texto": "Registra acuerdos, cambios implementados y aprendizajes para dar continuidad y evitar repetir errores."
                           }]
                         }
                       ]
                     }
                   },
+                                    {
+                    "titulo": "Sugerencias de indicadores por dimensiones",
+                    "contenido": {
+                      "tipo": "lista",
+                      "estilo": "dot",
+                      "items": [{
+                          "texto": "<strong>Participación y compromiso</strong>",
+                          "hijos": [{
+                            "texto": "% de participación activa en reuniones"
+                          },
+                          {
+                            "texto": "N° de aportes o intervenciones significativas por miembro"
+                          },
+                          {
+                            "texto": "Nivel de asistencia y permanencia en el tiempo"
+                          },
+                          {
+                            "texto": "Nivel de compromiso declarado (encuesta breve)"
+                          }
+                        ]
+                        },
+                        {
+                          "texto": "<strong>Colaboración y clima relacional</strong>",
+                          "hijos": [{
+                            "texto": "Percepción de confianza entre los miembros (escala Likert)"
+                          },
+                          {
+                            "texto": "Nivel de equidad en la participación (observación facilitador/a)"
+                          },
+                          {
+                            "texto": "Presencia de apoyo mutuo y co-construcción"
+                          }
+                        ]
+                        },
+                        {
+                          "texto": "<strong>Aprendizaje individual y colectivo</strong>",
+                          "hijos": [{
+                            "texto": "N° de aprendizajes aplicados en la práctica laboral (autoinforme)"
+                          },
+                          {
+                            "texto": "Registro de buenas prácticas compartidas"
+                          },
+                          {
+                            "texto": "Producción colectiva de recursos o soluciones"
+                          },
+                          {
+                            "texto": "Percepción de utilidad del contenido abordado"
+                          }
+                        ]
+                        },
+                        {
+                          "texto": "<strong>Gestión y organización</strong>",
+                          "hijos": [{
+                            "texto": "Cumplimiento de los planes de acción"
+                          },
+                          {
+                            "texto": "Claridad en roles y responsabilidades"
+                          },
+                          {
+                            "texto": "Adecuación en uso de tiempo y recursos"
+                          },
+                          {
+                            "texto": "Efectividad de las herramientas utilizadas"
+                          }
+                        ]
+                        },
+                        {
+                          "texto": "<strong>Impacto y valor generado</strong>",
+                          "hijos": [{
+                            "texto": "Cambios observados en prácticas laborales"
+                          },
+                          {
+                            "texto": "Reconocimiento externo o apoyo institucional a la CoP"
+                          },
+                          {
+                            "texto": "Historias de impacto narradas por los miembros"
+                          }
+                        ]
+                        }
+
+                      ]
+                    }
+                  },
                   {
-                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "titulo": "Prueba tus habilidades para evaluar y hacer mejora continua.",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Diferencias de enfoque en un proyecto</span><br>Tú y otra persona de la comunidad no se ponen de acuerdo sobre cómo presentar un trabajo. Ya llevan varios intercambios tensos.",
-                      "pregunta": "¿Qué harías para gestionar el conflicto?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la mejor estrategia para evaluar o hacer mejora continua. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Medir la participación significativa en la CoP</span><br>Tu CoP ha mantenido un número constante de participantes en sus encuentros, pero no sabes si la participación es activa o superficial. Necesitas una estrategia para evaluar la calidad de la participación.",
+                      "pregunta": "¿Cuál estrategia e indicador usarías?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “Creo que nuestras ideas son distintas, podríamos llevar ambas a la reunión y que el grupo decida.”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Medir el número promedio de personas conectadas por sesión y su permanencia.",
+                          "correcta": false,
+                          "feedback": ""
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Aplicar una encuesta de autoevaluación sobre niveles de contribución, satisfacción y aprendizajes.",
                           "correcta": true,
-                          "feedback": "Reconoce la diferencia sin descalificar, propone una vía participativa y evita que el conflicto escale."
+                          "feedback": "Justificación: Aunque A y C ofrecen datos cuantitativos útiles, la participación significativa requiere una dimensión cualitativa, subjetiva y autorreferencial. La autoevaluación permite captar nivel de implicación, utilidad percibida y sentido de pertenencia, no solo presencia. D mide interés, pero no participación real."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> “Si seguimos así no vamos a avanzar. Mejor lo dejo en tus manos.”",
+                          "texto": "<span class='title-body-secondary'>C.</span> Registrar cuántas personas intervienen verbalmente o en el chat durante cada sesión.",
                           "correcta": false,
-                          "feedback": "Suena a retirada pasiva."
+                          "feedback": ""
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Pido que alguien más lo resuelva porque no llegaremos a ningún lado.”",
+                          "texto": "<span class='title-body-secondary'>D.</span> Contar la cantidad de personas que descargan los materiales y recursos compartidos.",
                           "correcta": false,
-                          "feedback": "Evade la responsabilidad."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Respondo que está bien… hagámoslo como tu dices. Yo no quiero pelear por esto.”",
-                          "correcta": false,
-                          "feedback": "Cede completamente sin resolver el desacuerdo, lo que puede acumular resentimiento."
+                          "feedback": ""
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "titulo": "Prueba tus habilidades para evaluar y hacer mejora continua.",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Comportamiento pasivo-agresivo</span><br>Un compañero deja de hablarte directamente y empieza a enviarte mensajes indirectos o por otros colegas, sin explicarte el motivo.",
-                      "pregunta": "¿Cómo gestionas el conflicto?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la mejor estrategia para evaluar o hacer mejora continua. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Evaluar impacto en la práctica profesional</span><br>La CoP lleva seis meses trabajando sobre buenas prácticas en intervención comunitaria. Quieres medir si los aprendizajes se están aplicando en la práctica de los miembros.",
+                      "pregunta": "¿Qué estrategia aplicas?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “Le escribo para decirle que noto distancia y me gustaría hablarlo directamente cuando se sienta listo.”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Pides a los participantes un informe individual sobre cambios aplicados en su trabajo.",
+                          "correcta": false,
+                          "feedback": ""
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>B.</span> Organizas grupos focales para explorar experiencias de aplicación de conocimientos compartidos.",
                           "correcta": true,
-                          "feedback": "Inicia la conversación con apertura, sin confrontar ni suponer, y deja espacio para que el otro también pueda expresar."
+                          "feedback": "Justificación: La opción B permite capturar impacto cualitativo, situado y colectivo, especialmente en áreas donde los efectos son complejos y no fácilmente mensurables. A requiere esfuerzo individual sin validación colectiva; C puede ser inconcluso si no hay conexión directa; D mide difusión, no aplicación."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>B.</span> “Ignoro su actitud. Si tiene algo que decir, que lo diga de frente.”",
+                          "texto": "<span class='title-body-secondary'>C.</span> Comparas los planes de trabajo institucional antes y después de la CoP.",
                           "correcta": false,
-                          "feedback": "Ignora el conflicto y lo deja crecer."
+                          "feedback": ""
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Lo confronto en público para que aclare lo que está haciendo.”",
+                          "texto": "<span class='title-body-secondary'>D.</span> Evalúas el número de veces que los recursos de la CoP han sido compartidos en redes.",
                           "correcta": false,
-                          "feedback": "Puede generar una escalada."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Hablo con otras personas del equipo para ver si también lo han notado.”",
-                          "correcta": false,
-                          "feedback": "Promueve rumores o triangulación."
+                          "feedback": ""
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "titulo": "Prueba tus habilidades para evaluar y hacer mejora continua.",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
-                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Un miembro de la comunidad no cumple con su parte</span><br>En un trabajo, una persona no entregó lo que había prometido y esto afectó el resultado. Todos están molestos.",
-                      "pregunta": "¿Qué harías para abordar el conflicto de forma constructiva?",
+                      "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la mejor estrategia para evaluar o hacer mejora continua. Marca solo una <strong>opción por situación.</strong></p>",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Evaluar la generación de conocimiento colectivo</span><br>La CoP ha desarrollado varios encuentros con intercambios muy ricos, pero aún no hay productos tangibles. El equipo promotor quiere saber si se está construyendo conocimiento colectivo.",
+                      "pregunta": "¿Qué estrategia usarías para medirlo?",
                       "opciones": [{
-                          "texto": "<span class='title-body-secondary'>A.</span> “Le digo que fue irresponsable y que su actitud perjudicó al grupo.”",
-                          "correcta": false,
-                          "feedback": "Es frontal pero con tono acusatorio."
-                        },
-                        {
-                          "texto": "<span class='title-body-secondary'>B.</span> “Propongo una conversación grupal para revisar qué pasó y cómo organizarnos mejor a futuro.”",
+                          "texto": "<span class='title-body-secondary'>A.</span> Analizar los registros de sesiones para identificar patrones de ideas emergentes y acuerdos.",
                           "correcta": true,
-                          "feedback": "Evita personalizar el conflicto y lo lleva al plano de lo colectivo y preventivo, promoviendo corresponsabilidad y mejora continua."
+                          "feedback": "Justificación: La generación de conocimiento colectivo puede ser invisible pero potente. A permite identificar procesos cognitivos compartidos, ideas clave que emergen y evolución del discurso, aunque aún no se hayan formalizado productos. B y C miden productos finales, pero no el proceso. D mide impacto externo, no necesariamente colectivo."
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>C.</span> “Le envío un mensaje recordándole su parte y diciendo que no vuelva a pasar.”",
+                          "texto": "<span class='title-body-secondary'>B.</span> Medir cuántos productos han sido generados (documentos, manuales, guías).",
                           "correcta": false,
-                          "feedback": "Es más control que solución."
+                          "feedback": ""
                         },
                         {
-                          "texto": "<span class='title-body-secondary'>D.</span> “Lo hablo con el facilitador para que le llame la atención.”",
+                          "texto": "<span class='title-body-secondary'>C.</span> Evaluar el número de publicaciones académicas derivadas de la CoP.",
                           "correcta": false,
-                          "feedback": "Delega el conflicto sin abordarlo directamente."
+                          "feedback": ""
+                        },
+                        {
+                          "texto": "<span class='title-body-secondary'>D.</span> Contar la cantidad de veces que se han citado ideas de la CoP en otros espacios.",
+                          "correcta": false,
+                          "feedback": ""
                         }
                       ]
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "titulo": "Prueba tus habilidades para evaluar y hacer mejora continua.",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> para solucionar la situación de conflicto.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Diferencias de comunicación intercultural</span><br>Un integrante del grupo, de otra cultura, ha hecho algunos comentarios que otros consideran inapropiados. Él no parece notarlo y el ambiente se tensa…",
-                      "pregunta": "Intenta una respuesta que descomprima la <span class='title-body-secondary'>situación de conflicto.</span>.",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Evaluar sostenibilidad de la CoP en el tiempo</span><br>La CoP está por cerrar su primer ciclo y quieres medir su nivel de sostenibilidad. ¿Se mantendrá viva sin el apoyo inicial? ¿Cuáles indicadores podrían prever eso?",
+                      "pregunta": "¿Qué estrategia aplicarías?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Gestión de Conflictos",
+                    "titulo": "Prueba tus habilidades para evaluar y hacer mejora continua.",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> para solucionar la situación de conflicto.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>T Avances tecnologicos</span><br>Algunos miembros de la comunidad insisten en utilizar aplicaciones tecnológicas, que el resto del grupo encuentra compleja e innecesaria…",
-                      "pregunta": "Intenta una respuesta que descomprima la <span class='title-body-secondary'>situación de conflicto.</span>.",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Medir la apropiación del propósito común</span><br>Durante los encuentros, notas que algunas personas participan activamente, pero cada una con objetivos distintos. El grupo promotor quiere saber si hay alineación con el propósito colectivo de la CoP.",
+                      "pregunta": "¿Qué estrategia aplicarías?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
@@ -3061,6 +3174,11 @@
               }]
             }
           ]
+        },
+                {
+          "id": "4-5",
+          "titulo": "Cierre del módulo",
+          "contenido": "<h2 class='fw-bold m-0'>¡Felicidades por haber llegado hasta aquí!</h2><br><div class='row m-0'><p class='p-0'>Finalizar esta etapa es un logro importante que demuestra tu compromiso, esfuerzo y dedicación. Has recorrido un camino de aprendizaje que te brinda herramientas valiosas para seguir creciendo.<br><br>Recuerda que todas las habilidades —especialmente aquellas que hoy están más débiles— pueden fortalecerse. La práctica constante, el estudio y la curiosidad son aliados poderosos. Puedes seguir aprendiendo a través de libros, experiencias, personas, cursos, talleres o incluso explorando nuevas formas de hacer las cosas.<br><br><strong>Sigue adelante, con confianza,<br> y nunca dejes de aprender.!!</strong></p></div><img class='img-fluid' src='src/img/m4_felicitaciones.jpg'>"
         }
       ]
     }
