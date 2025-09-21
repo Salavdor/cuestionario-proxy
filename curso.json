@@ -1322,7 +1322,8 @@
         {
           "id": "4-3",
           "titulo": "Habilidades de Facilitación y Metodológicas",
-          "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+          "tituloContext":"Habilidades Interpersonales",
+          "contenido": "",
           "actividad": {
             "tipo": "lista",
             "estilo": "nodot",
@@ -2000,7 +2001,8 @@
         {
           "id": "4-4",
           "titulo": "Habilidades de Liderazgo y Gestión",
-          "contenido": "<h2 class='fw-bold m-0'>Habilidades de Liderazgo y Gestión</h2>",
+          "tituloContext": "Habilidades de Liderazgo y Gestión",
+          "contenido": "",
           "actividad": {
             "tipo": "lista",
             "estilo": "nodot",
@@ -2028,7 +2030,8 @@
             {
               "id": "4-4-1",
               "titulo": "Visión Estratégica",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades de Liderazgo y Gestión",
+              "contenido": "",
               "slides": [{
                 "grupo": "Visión Estratégica",
                 "items": [{
@@ -2230,7 +2233,8 @@
             {
               "id": "4-4-2",
               "titulo": "Motivación e inspiración",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades de Liderazgo y Gestión",
+              "contenido": "",
               "slides": [{
                 "grupo": "Motivación e inspiración",
                 "items": [{
@@ -2456,7 +2460,8 @@
             {
               "id": "4-4-3",
               "titulo": "Colaboración y Compromiso",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades de Liderazgo y Gestión",
+              "contenido": "",
               "slides": [{
                 "grupo": "Colaboración y Compromiso",
                 "items": [{
@@ -2664,7 +2669,8 @@
             {
               "id": "4-4-4",
               "titulo": "Gestión del tiempo y recursos",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades de Liderazgo y Gestión",
+              "contenido": "",
               "slides": [{
                 "grupo": "Gestión del tiempo y recursos",
                 "items": [{
@@ -2885,12 +2891,13 @@
             {
               "id": "4-4-5",
               "titulo": "Evaluación y mejora continua",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades de Liderazgo y Gestión</h2>",
+              "tituloContext": "Habilidades de Liderazgo y Gestión",
+              "contenido": "",
               "slides": [{
                 "grupo": "Evaluación y mejora continua",
                 "items": [{
                     "titulo": "Evaluación y mejora continua",
-                    "contenido": "<div class='row m-0'><div class='col-12 col-md-6 p-0'><p class='p-0 fw-bold'>Evaluar y hacer mejora continua significa observar, analizar y reflexionar sobre lo que se ha hecho (un proyecto, actividad o proceso) para identificar lo que funciona bien, lo que no, y cómo se puede mejorar de forma constante.<br><br>Es un proceso cíclico que no termina cuando se logra un resultado, sino que busca crecer y aprender todo el tiempo.<br><br>Evaluar es:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Revisar resultados, procesos y métodos utilizados.</li><li>Comparar lo que se logró con lo que se esperaba.</li><li>Detectar errores, aciertos y áreas de mejora.</li><li>Puede hacerse con datos, opiniones, encuestas, indicadores, etc.</li></ul> <p class='p-0 fw-bold'>Mejora continua es:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Aprender de cada experiencia.</li><li>Ajustar lo necesario (ideas, métodos, recursos).</li><li>Buscar hacerlo mejor la próxima vez, incluso si ya salió bien.</li><li>Basarse en la lógica de no conformarse, sino evolucionar constantemente.</li></ul></div><div class='col-12 col-md-6 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_evaluacioncontinua.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-6 px-3'><p class='px-3'>Evaluar y hacer mejora continua significa observar, analizar y reflexionar sobre lo que se ha hecho (un proyecto, actividad o proceso) para identificar lo que funciona bien, lo que no, y cómo se puede mejorar de forma constante.<br><br>Es un proceso cíclico que no termina cuando se logra un resultado, sino que busca crecer y aprender todo el tiempo.<br><br><strong>Evaluar es:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Revisar resultados, procesos y métodos utilizados.</li><li>Comparar lo que se logró con lo que se esperaba.</li><li>Detectar errores, aciertos y áreas de mejora.</li><li>Puede hacerse con datos, opiniones, encuestas, indicadores, etc.</li></ul></div><p class='px-3 fw-bold'>Mejora continua es:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3' style='padding-bottom: 50px;'><li>Aprender de cada experiencia.</li><li>Ajustar lo necesario (ideas, métodos, recursos).</li><li>Buscar hacerlo mejor la próxima vez, incluso si ya salió bien.</li><li>Basarse en la lógica de no conformarse, sino evolucionar constantemente.</li></ul></div></div><div class='col-12 col-md-6 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' style='transform: translateX(31px);' src='src/img/m4_evaluacioncontinua.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para evaluar y hacer mejora continua",
@@ -3175,10 +3182,11 @@
             }
           ]
         },
-                {
+        {
           "id": "4-5",
           "titulo": "Cierre del módulo",
-          "contenido": "<h2 class='fw-bold m-0'>¡Felicidades por haber llegado hasta aquí!</h2><br><div class='row m-0'><p class='p-0'>Finalizar esta etapa es un logro importante que demuestra tu compromiso, esfuerzo y dedicación. Has recorrido un camino de aprendizaje que te brinda herramientas valiosas para seguir creciendo.<br><br>Recuerda que todas las habilidades —especialmente aquellas que hoy están más débiles— pueden fortalecerse. La práctica constante, el estudio y la curiosidad son aliados poderosos. Puedes seguir aprendiendo a través de libros, experiencias, personas, cursos, talleres o incluso explorando nuevas formas de hacer las cosas.<br><br><strong>Sigue adelante, con confianza,<br> y nunca dejes de aprender.!!</strong></p></div><img class='img-fluid' src='src/img/m4_felicitaciones.jpg'>"
+          "tituloContext": "¡Felicidades por haber llegado hasta aquí!",
+          "contenido": "<div class='row m-0'><p class='p-0'>Finalizar esta etapa es un logro importante que demuestra tu compromiso, esfuerzo y dedicación. Has recorrido un camino de aprendizaje que te brinda herramientas valiosas para seguir creciendo.<br><br>Recuerda que todas las habilidades —especialmente aquellas que hoy están más débiles— pueden fortalecerse. La práctica constante, el estudio y la curiosidad son aliados poderosos. Puedes seguir aprendiendo a través de libros, experiencias, personas, cursos, talleres o incluso explorando nuevas formas de hacer las cosas.<br><br><strong>Sigue adelante, con confianza,<br> y nunca dejes de aprender.!!</strong></p></div><div class='row m-0 p-0 d-flex flex-column h-100'><img class='img-fluid' src='src/img/m4_felicitaciones.jpg'></div>"
         }
       ]
     }

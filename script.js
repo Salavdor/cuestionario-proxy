@@ -151,26 +151,46 @@ function renderMenu(modulos, containerId) {
 
 function cargarContenido(subtemaId, modulos) {
   const content = document.getElementById("content");
-  content.innerHTML = `<div class="d-flex justify-content-center align-items-center h-100 w-100">
-    <div class="text-center p-5">
-      <div class="spinner-border" role="status"></div>
-      <p>Cargando...</p>
+
+  // --- 1. Eliminar navButtons antiguos ---
+  const oldNav = document.getElementById("navButtonsWrapper");
+  if (oldNav) oldNav.remove();
+
+  // Limpiar contenido previo y mostrar loader
+  content.innerHTML = `
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+      <div class="text-center p-5">
+        <div class="spinner-border" role="status"></div>
+        <p>Cargando...</p>
+      </div>
     </div>
-  </div>`;
+  `;
 
   setTimeout(() => {
+    // Crear contenedor interno scrollable
+    content.innerHTML = `<div id="contentInner" class="p-0 h-100 overflow-auto d-flex flex-column"></div>`;
+    const contentInner = document.getElementById("contentInner");
 
     // ---------- Caso especial: inicio ----------
     if (subtemaId === "0.0") {
       const inicioModulo = modulos.find(m => m.id === 0);
       if (!inicioModulo) return;
-      const listaModulosHTML = modulos.filter(m => m.id !== 0 && m.subtemas?.length)
-        .map(m => `<li><h5 class="fw-bold mb-3" style="color: var(--color-secundario-3);">Módulo ${m.id}: <span class="fw-light">${m.titulo}</span></h5></li>`).join("");
-      content.innerHTML = `<div class="row m-0 p-3">
-        <div class="col-12 mb-3"><img src="${inicioModulo.img}" alt="Inicio" class="img-fluid"></div>
-        <div class="col-12 mb-3">${inicioModulo.contenido}</div>
-        <div class="col-12 mb-3"><ul class="list-unstyled">${listaModulosHTML}</ul><img src="src/img/vineta.png" alt="Inicio" class="img-fluid"></div>
-      </div>`;
+
+      const listaModulosHTML = modulos
+        .filter(m => m.id !== 0 && m.subtemas?.length)
+        .map(m => `<li><h5 class="fw-bold mb-3" style="color: var(--color-secundario-3);">Módulo ${m.id}: <span class="fw-light">${m.titulo}</span></h5></li>`)
+        .join("");
+
+      contentInner.innerHTML = `
+        <div class="row m-0 p-3">
+          <div class="col-12 mb-3"><img src="${inicioModulo.img}" alt="Inicio" class="img-fluid"></div>
+          <div class="col-12 mb-3">${inicioModulo.contenido}</div>
+          <div class="col-12 mb-3">
+            <ul class="list-unstyled">${listaModulosHTML}</ul>
+            <img src="src/img/vineta.png" alt="Inicio" class="img-fluid">
+          </div>
+        </div>
+      `;
       mostrarToast("Inicio cargado");
       return;
     }
@@ -180,16 +200,18 @@ function cargarContenido(subtemaId, modulos) {
       const numModulo = subtemaId.split(".")[0];
       const modulo = modulos.find(m => m.id == numModulo);
       if (!modulo) return;
-      content.innerHTML = `
-      <div class="d-flex flex-column h-100">
-        <div class="row m-0 p-3 encabezado">
-          <div class="d-flex flex-row-reverse">
-            <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" style="height:30px; width:auto; padding-right: 19px; margin-top: 12px;" class="img-fluid">
+
+      contentInner.innerHTML = `
+        <div class="d-flex flex-column h-100">
+          <div class="row m-0 p-3 encabezado">
+            <div class="d-flex flex-row-reverse">
+              <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" style="height:30px; width:auto; padding-right: 19px; margin-top: 12px;" class="img-fluid">
+            </div>
+            <h2><span class="fw-bold display-2">Módulo ${modulo.id}</span><br><span class="fw-bold title-body-secondary">${modulo.titulo}</span></h2>
           </div>
-          <h2><span class="fw-bold display-2">Módulo ${modulo.id}</span><br><span class="fw-bold title-body-secondary">${modulo.titulo}</span></h2>
+          <div class="img-container flex-grow-1"><img src="${modulo.img}" alt="Modulo ${modulo.id}" class="p-0"></div>
         </div>
-        <div class="img-container flex-grow-1"><img src="${modulo.img}" alt="Modulo ${modulo.id}" class="p-0"></div>
-      </div>`;
+      `;
       return;
     }
 
@@ -203,93 +225,111 @@ function cargarContenido(subtemaId, modulos) {
     // Contenido base
     let contenidoHTML = "";
     if (typeof subtema.contenido === "string") contenidoHTML = subtema.contenido;
-    else if (Array.isArray(subtema.contenido)) contenidoHTML = subtema.contenido.map((b,i)=>{
-      if(b.tipo==="texto") return `<p>${b.texto}</p>`;
-      if(b.tipo==="lista") return renderLista(b.items,b.estilo||"dot",0,`unidad${subtema.id}-lista${i}`);
-      return "";
-    }).join("");
+    else if (Array.isArray(subtema.contenido)) {
+      contenidoHTML = subtema.contenido.map((b, i) => {
+        if (b.tipo === "texto") return `<p>${b.texto}</p>`;
+        if (b.tipo === "lista") return renderLista(b.items, b.estilo || "dot", 0, `unidad${subtema.id}-lista${i}`);
+        return "";
+      }).join("");
+    }
+    if (subtema.lista) contenidoHTML += renderLista(subtema.lista, subtema.tipoLista || "dot", 0, `unidad${subtema.id}-lista0`);
 
-    if(subtema.lista) contenidoHTML += renderLista(subtema.lista, subtema.tipoLista||"dot",0,`unidad${subtema.id}-lista0`);
 
-    // Render principal
-    content.innerHTML = `
-    <div class="row m-0 p-3 encabezado">
-      <h3><span class="fw-bold">Módulo ${numModulo}:</span> <span class="fw-light">${path[0]}</span></h3>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">${path.map((p,i)=>`<li class="breadcrumb-item ${i===path.length-1?'active':''}"><small class="fw-bold">${p}</small></li>`).join("")}</ol>
-      </nav>
-    </div>
-    <div class="row m-0 p-3"><div>${contenidoHTML}</div></div>
-    ${subtema.imagen||""}`;
-
-    // ---------------- Procesar actividades y slides ----------------
-function procesarActividades(obj, parentId = "", isSlideItem = false) {
-  if (!obj) return;
-
-  const esGrupo = !!subtema.slides && subtema.slides.length > 0;
-
-  // --- Actividad normal ---
-  if (!isSlideItem && obj.actividad && !esGrupo) {
-    const skillId = `skillQuiz_${subtema.id}_${parentId}_${Date.now()}`;
-    let html = "";
-    if (obj.actividad.tipo === "skillquiz") html = renderSkillQuiz(obj.actividad, skillId);
-    else if (obj.actividad.tipo === "lista") {
-  let listaHTML = renderLista(obj.actividad.items, obj.actividad.estilo || "dot", 0, `unidad${subtema.id}-lista${Date.now()}`);
-
-  // --- Solo si este subtema es el que se muestra en la página ---
-  if (obj === subtema) {  // aquí se usa la referencia del subtema activo en la página
-    html = `
-      <div class="row m-0 p-3">
-        <div class="col-12">
-          ${listaHTML}
-        </div>
-      </div>
-    `;
-  } else {
-    html = listaHTML;
-  }
+// Render principal
+let actividadHTML = "";
+if (subtema.actividad) {
+  actividadHTML = renderActividad(subtema.actividad);
 }
 
-    else html = renderActividad(obj.actividad);
+contentInner.innerHTML = `
+  <div class="row m-0 p-3 encabezado">
+    <h3><span class="fw-bold">Módulo ${numModulo}:</span> <span class="fw-light">${path[0]}</span></h3>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        ${path.map((p,i)=>`
+          <li class="breadcrumb-item ${i===path.length-1?'active':''}">
+            <small class="fw-bold">${p}</small>
+          </li>`).join("")}
+      </ol>
+    </nav>
+  </div>
+  <div class="row m-0 p-3"><h2 class='fw-bold m-0'>${subtema.tituloContext}</h2></div>
+  ${contenidoHTML.trim() !== "" 
+    ? `<div class="row m-0 p-3 d-flex flex-column h-100">
+         <div class="col-12 d-flex flex-column h-100">
+           ${contenidoHTML}
+         </div>
+       </div>`
+    : ""}
+  ${actividadHTML}
+  ${subtema.imagen || ""}
+`;
 
-    content.insertAdjacentHTML("beforeend", html);
 
-    if (obj.actividad.tipo === "skillquiz") handleSkillQuizAuto(obj.actividad, document.getElementById(skillId));
-    if (obj.actividad.tipo === "tablaVF") handleTablaVF(obj.actividad, content.querySelector("table.table:last-child"));
-  }
+// ---------------- Procesar actividades y slides ----------------
+function procesarActividades(obj) {
+  if (!obj) return;
 
-  // --- Slides: solo si es grupo y estamos en el subtema principal ---
-  if (esGrupo && obj === subtema && obj.slides?.length) {
-    // Crear contenedor principal para slides si no existe
+  const esSlideGroup = obj.slides?.length > 0;
+
+  // --- Caso 1: el subtema actual tiene slides con items ---
+  if (obj === subtema && esSlideGroup && obj.slides.some(slide => (slide.items || []).length > 0)) {
+    // Crear contenedor de slides
     let slideContainer = document.getElementById(`slides_${subtema.id}`);
     if (!slideContainer) {
-      content.insertAdjacentHTML("beforeend", `<div id="slides_${subtema.id}"></div>`);
+      contentInner.insertAdjacentHTML(
+        "beforeend",
+        `<div id="slides_${subtema.id}" class="d-flex flex-column h-100"></div>`
+      );
       slideContainer = document.getElementById(`slides_${subtema.id}`);
     }
 
-    // Preparamos objeto para renderSlides con la estructura correcta
+    // Renderizar slides
     const slideObj = {
       id: `${subtema.id}-slides`,
       titulo: subtema.titulo,
-      slides: subtema.slides.map(slide => ({
+      slides: obj.slides.map(slide => ({
         grupo: slide.grupo,
         items: slide.items || []
       }))
     };
-
-    // Renderizar todos los slides dentro del contenedor
     slideContainer.innerHTML = renderSlides(slideObj);
+
+    // Crear navButtons solo aquí
+    let navWrapper = document.getElementById("navButtonsWrapper");
+    if (!navWrapper) {
+      navWrapper = document.createElement("div");
+      navWrapper.id = "navButtonsWrapper";
+      navWrapper.className = "d-flex justify-content-between align-items-center position-relative w-100 px-3";
+      navWrapper.innerHTML = `
+        <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">◂ Volver</button>
+        <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente ▸</button>
+      `;
+      content.appendChild(navWrapper);
+    }
+  } 
+  // --- Caso 2: no hay slides (es actividad normal o contenido plano) ---
+  else {
+    // Eliminar botones si existen
+    const navWrapper = document.getElementById("navButtonsWrapper");
+    if (navWrapper) navWrapper.remove();
+    // Aquí NO se rompe el flujo: las actividades normales siguen renderizando
+    // porque ya las insertaste en contentInner antes de llamar a procesarActividades.
   }
 
   // --- Subtemas hijos ---
-  if (obj.subtemas) obj.subtemas.forEach(st => procesarActividades(st, parentId));
+  if (obj.subtemas) obj.subtemas.forEach(st => procesarActividades(st));
 }
+
 
     procesarActividades(subtema);
 
     mostrarToast("Contenido y actividades cargados");
+
   }, 800);
 }
+
+
 
 
 
@@ -423,6 +463,17 @@ function renderActividad(actividad) {
 
     case "skillquiz":
       return renderSkillQuiz(actividad);
+    
+    case "lista":
+      return `
+        <div class="actividad-lista ${actividad.estilo || ""}">
+          ${actividad.items.map(item => `
+            <div class="actividad-item mb-2">
+              ${item.texto}
+            </div>
+          `).join("")}
+        </div>
+      `;
 
     default:
       return `<p class="text-muted">[Actividad no soportada: ${actividad.tipo}]</p>`;
@@ -609,46 +660,41 @@ function renderSlides(subtema, path = []) {
 
   // Si no hay slides, retornamos un contenedor simple
   if (!flatSlides.length) {
-    return `
-      <div id="${slideId}" class="d-flex flex-column h-100">
-        <div id="slideEncabezado" class="px-3 pb-3"></div>
-        <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
-          <div id="slideContent" class="px-3 h-100">
-            <p>No hay slides disponibles.</p>
-          </div>
-        </div>
-      </div>
-    `;
+    return `<div id="slideEncabezado" class="px-3 pb-3"></div>
+            <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
+              <div id="slideContent" class="px-3 h-100">
+                <p>No hay slides disponibles.</p>
+              </div>
+            </div>`;
   }
 
-  const navButtons = `
-    <div id="navButtons" class="d-flex justify-content-between align-items-center p-3 w-100">
-      <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">◂ Volver</button>
-      <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente ▸</button>
-    </div>
-  `;
-
   const container = `
-    <div id="${slideId}" class="d-flex flex-column h-100">
-      <div id="slideEncabezado" class="px-3 pb-3"></div>
-      <div id="slideContentWrapper" class="flex-grow-1 overflow-auto px-3 py-0">
-        <div id="slideContent" class="px-3 h-100"></div>
-      </div>
-      ${navButtons}
-    </div>
-  `;
+    <div id="slideEncabezado" class="px-3 pb-3"></div>
+    <div id="slideContent" class="h-100"></div>`;
 
+  // Render slide después de un pequeño timeout para asegurar que el DOM exista
   setTimeout(() => {
     const slideContent = document.getElementById("slideContent");
     const slideEncabezado = document.getElementById("slideEncabezado");
+
+    // Crear navButtons **solo si no existe**
+    if (!document.getElementById("navButtonsWrapper")) {
+      const navWrapper = document.createElement("div");
+      navWrapper.id = "navButtonsWrapper";
+      navWrapper.className = "d-flex justify-content-between align-items-center w-100 px-3";
+      navWrapper.innerHTML = `
+        <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">◂ Volver</button>
+        <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente ▸</button>
+      `;
+      document.getElementById("content").appendChild(navWrapper);
+    }
+
     const btnPrev = document.getElementById("btnSlidePrev");
     const btnNext = document.getElementById("btnSlideNext");
-    const slideIndicator = document.getElementById("slideIndicator");
 
     function updateNav() {
- btnPrev.style.visibility = activeSlideIndex === 0 ? "hidden" : "visible";
-  btnNext.style.visibility = activeSlideIndex === flatSlides.length - 1 ? "hidden" : "visible";
-      // slideIndicator.textContent = `Slide ${activeSlideIndex + 1} de ${flatSlides.length}`;
+      btnPrev.style.visibility = activeSlideIndex === 0 ? "hidden" : "visible";
+      btnNext.style.visibility = activeSlideIndex === flatSlides.length - 1 ? "hidden" : "visible";
     }
 
     async function renderCurrentSlide() {
@@ -660,9 +706,7 @@ function renderSlides(subtema, path = []) {
         return;
       }
 
-      slideEncabezado.innerHTML = current.grupo
-        ? `<h2 class="fw-bold m-0 px-3 title-body-secondary">${current.grupo}</h2>`
-        : "";
+      slideEncabezado.innerHTML = current.grupo ? `<h2 class="fw-bold m-0 px-3 title-body-secondary">${current.grupo}</h2>` : "";
 
       let html = "";
       if (typeof current.contenido === "string") html += current.contenido;
@@ -695,12 +739,10 @@ function renderSlides(subtema, path = []) {
         const skillContainer = document.getElementById(containerId);
         if (skillContainer) handleSkillQuizAuto(current.actividad, skillContainer);
       }
-
       if (containerId && current.actividad?.tipo === "openquiz") {
         const openContainer = document.getElementById(containerId);
         if (openContainer) handleOpenQuiz(current.actividad, openContainer);
       }
-
       if (current.actividad?.tipo === "quiz") handleQuiz(current.actividad.preguntas);
       if (current.actividad?.tipo === "truefalse") handleTrueFalse(current.actividad.preguntas);
       if (current.actividad?.tipo === "tablaVF") {
@@ -730,6 +772,7 @@ function renderSlides(subtema, path = []) {
 
   return container;
 }
+
 
 
 
@@ -986,7 +1029,7 @@ function renderLista(lista, tipo = "dot", nivel = 0, parentId = "lista", unidad 
   if (!Array.isArray(lista)) return "";
 
   // Solo asignar id si es la lista raíz
-  const listaId = (nivel === 0) ? `lista_${unidad}_${parentId}` : "";
+  const listaId = (nivel === 0) ? `lista_subtema` : "";
 
   let claseLista = "";
   switch (tipo) {
@@ -997,6 +1040,7 @@ function renderLista(lista, tipo = "dot", nivel = 0, parentId = "lista", unidad 
   }
 
   return `
+  <div class="px-3">
     <ul ${listaId ? `id="${listaId}"` : ""} class="${claseLista}">
       ${lista.map((item) => {
         let childrenHTML = "";
@@ -1006,6 +1050,7 @@ function renderLista(lista, tipo = "dot", nivel = 0, parentId = "lista", unidad 
         return `<li>${item.texto || item}${childrenHTML}</li>`;
       }).join("")}
     </ul>
+  </div>
   `;
 }
 
@@ -1014,7 +1059,8 @@ function renderSkillQuiz(actividad, containerId) {
   const modalId = `modal_${containerId}`;
 
   return `
-    <div class="actividad my-4" id="${containerId}">
+  <div class="px-3">
+    <div class="actividad mb-4 px-3" id="${containerId}">
       <div class="m-0 d-flex justify-content-end">
         <button class="btn btn-sm btn-outline-secondary btn-instrucciones" data-bs-toggle="modal" data-bs-target="#${modalId}">
           <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones.svg"><strong>Instrucciones</strong>
@@ -1056,6 +1102,7 @@ function renderSkillQuiz(actividad, containerId) {
         </div>
       </div>
     </div>
+  </div>  
   `;
 }
 
@@ -1128,7 +1175,8 @@ function renderOpenQuiz(actividad, containerId) {
   const modalId = `modal_${containerId}`;
 
   return `
-    <div class="actividad my-4" id="${containerId}">
+  <div class="px-3">
+    <div class="actividad mb-4 px-3" id="${containerId}">
       <div class="m-0 d-flex justify-content-end">
         <button class="btn btn-sm btn-outline-secondary btn-instrucciones" data-bs-toggle="modal" data-bs-target="#${modalId}">
           <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones.svg"><strong>Instrucciones</strong>
@@ -1169,6 +1217,7 @@ function renderOpenQuiz(actividad, containerId) {
         <div class="openquiz-feedback mt-3 p-3 form-control" style=" position: relative; min-height: 60px;"></div>
       </div>
     </div>
+  </div>  
   `;
 }
 

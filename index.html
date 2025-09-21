@@ -593,18 +593,15 @@
     color: var(--color-secundario-2);
 }
 
-#slideContentWrapper {
-  height: 100%;
-  overflow-y: auto;     /* el scroll solo en el contenido */
-  padding-bottom: 60px; /* deja espacio para que no tape el contenido final */
-}
 
-#navButtons {
+#navButtonsWrapper {
   position: absolute;
+  height: 60px;
   bottom: 0;
   left: 0;
   right: 0;
-  background: none;     /* que tape el contenido detrás */
+  background: var(--color-blanco);
+  border-top: var(--color-primario-1) solid 1px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -630,15 +627,13 @@
 }
 
 /* Contenedor principal del UL */
-#lista_subtema4-2-1-slides_slideLista1,
-#lista_subtema4-2-2-slides_slideLista1 {
+#lista_subtema {
   height: 100%;
   position: relative; /* necesario para que el ::before se ancle a este contenedor */
 }
 
 /* Imagen de fondo decorativa */
-#lista_subtema4-2-1-slides_slideLista1::before,
-#lista_subtema4-2-2-slides_slideLista1::before  {
+#lista_subtema::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -654,21 +649,19 @@
 }
 
 /* UL raíz sin bullets */
-#lista_subtema4-2-1-slides_slideLista1,
-#lista_subtema4-2-1-slides_slideLista1 {
+#lista_subtema,
+#lista_subtema {
   list-style: none;
   padding-left: 1.5em;
 }
 
 /* LI de primer nivel con estrella */
-#lista_subtema4-2-1-slides_slideLista1 > li,
-#lista_subtema4-2-2-slides_slideLista1 > li {
+#lista_subtema > li {
   position: relative;
   padding-left: 1.5em;
 }
 
-#lista_subtema4-2-1-slides_slideLista1 > li::before,
-#lista_subtema4-2-2-slides_slideLista1 > li::before {
+#lista_subtema > li::before {
   content: "★";
   position: absolute;
   left: 0;
@@ -678,16 +671,14 @@
 }
 
 /* UL anidados (segundo nivel en adelante) sin bullets */
-#lista_subtema4-2-1-slides_slideLista1 ul,
-#lista_subtema4-2-2-slides_slideLista1 ul {
+#lista_subtema ul {
   list-style: none;  /* quita los dots */
   padding-left: 1.5em;
   margin-bottom: 15px;
 }
 
 /* Asegura que los LI anidados no hereden la estrella */
-#lista_subtema4-2-1-slides_slideLista1 ul li::before,
-#lista_subtema4-2-2-slides_slideLista1 ul li::before {
+#lista_subtema ul li::before {
   content: none;
 }
 
@@ -801,7 +792,7 @@ h5 {
       </div>
 
       <!-- Contenido principal -->
-      <div id="content" class="col-md-9 p-0 h-100 overflow-auto">
+      <div id="content" class="col-md-9 p-0 h-100 d-flex flex-column">
         
       </div>
     </div>
