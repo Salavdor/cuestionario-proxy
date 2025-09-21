@@ -626,11 +626,6 @@
     transform: scale(1.1);
 }
 
-/* Contenedor principal del UL */
-#lista_subtema {
-  height: 100%;
-  position: relative; /* necesario para que el ::before se ancle a este contenedor */
-}
 
 /* Imagen de fondo decorativa */
 #lista_subtema::before {
@@ -649,10 +644,12 @@
 }
 
 /* UL raíz sin bullets */
-#lista_subtema,
 #lista_subtema {
   list-style: none;
   padding-left: 1.5em;
+  padding-bottom: 10px;
+  height: 100%;
+  position: relative;
 }
 
 /* LI de primer nivel con estrella */

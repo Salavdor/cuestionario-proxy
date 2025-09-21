@@ -293,10 +293,12 @@
         {
           "id": "4-2",
           "titulo": "Habilidades Interpersonales",
-          "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+          "tituloContext": "Habilidades Interpersonales",
+          "contenido": "",
           "actividad": {
             "tipo": "lista",
             "estilo": "nodot",
+            "img":"src/img/m4_s3_f1.jpg",
             "items": [{
                 "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>"
               },
@@ -321,12 +323,13 @@
             {
               "id": "4-2-1",
               "titulo": "Escucha activa",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades Interpersonales",
+              "contenido": "",
               "slides": [{
                 "grupo": "Escucha activa",
                 "items": [{
                     "titulo": "Escucha activa",
-                    "contenido": "<img class='img-fluid' src='src/img/m4_s4_f1.jpg'><div class='row m-0'><p class='p-0 fw-bold'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
+                    "contenido": "<div class='row m-0 px-3'><img class='img-fluid' src='src/img/m4_s4_f1.jpg'></div><div class='row m-0 px-3'><p class='px-3'>Escuchar activamente a otro significa poner atención con la mente y con el cuerpo a lo que esa persona me está transmitiendo.<br><br>Es una herramienta del ámbito de la comunicación entre seres humanos que se caracteriza por la disposición a oír con atención e interés el mensaje verbal y corporal que está dando alguien.</p></div>"
                   },
                   {
                     "titulo": "Consejos para demostrar escucha activa",
@@ -517,12 +520,13 @@
             {
               "id": "4-2-2",
               "titulo": "Flexibilidad",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades Interpersonales",
+              "contenido": "",
               "slides": [{
                 "grupo": "Flexibilidad",
                 "items": [{
                     "titulo": "Flexibilidad",
-                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Es la capacidad de adaptarse de manera ágil y constructiva a cambios en las circunstancias, necesidades del grupo o plan de trabajo, manteniendo el foco en los objetivos de la comunidad.<br><br>Implica apertura a nuevas ideas, disposición a ajustar métodos y actitudes, y habilidad para manejar imprevistos sin perder la conexión con las personas ni la calidad del proceso.</p></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_flexibilidad.jpg'></div>"
+                    "contenido": "<div class='content p-0 h-100 flex-column'><div class='row m-0 px-3'><p class='px-3'>Es la capacidad de adaptarse de manera ágil y constructiva a cambios en las circunstancias, necesidades del grupo o plan de trabajo, manteniendo el foco en los objetivos de la comunidad.<br><br>Implica apertura a nuevas ideas, disposición a ajustar métodos y actitudes, y habilidad para manejar imprevistos sin perder la conexión con las personas ni la calidad del proceso.</p></div><div class='row m-0 flex-grow-1 d-flex align-items-end justify-content-center' style='padding: 0px 0px 0px 50%;'><img class='img-fluid' src='src/img/m4_flexibilidad.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para desarrollar flexibilidad.",
@@ -719,12 +723,13 @@
             {
               "id": "4-2-3",
               "titulo": "Empatía",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+          "tituloContext": "Habilidades Interpersonales",
+          "contenido": "",
               "slides": [{
                 "grupo": "Empatía",
                 "items": [{
                     "titulo": "Empatía",
-                    "contenido": "<div class='row m-0'><div class='col-md-6 col-12 p-0'><p class='p-0 fw-bold'>Es la habilidad para reconocer, comprender y apreciar los sentimientos de los otros.<br><br>La empatía es la capacidad de conectarse emocionalmente con las demás personas, permite reconocer, compartir y entender los sentimientos y los estados de ánimo de otros seres humanos.<br><br>En otras palabras, ser empáticos es el ser capaces de \"leer\" emocionalmente a las personas y actuar en consecuencia.</p></div><div class='col-md-6 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_empatia.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-7 px-3'><p class='px-3'>Es la habilidad para reconocer, comprender y apreciar los sentimientos de los otros.<br><br>La empatía es la capacidad de conectarse emocionalmente con las demás personas, permite reconocer, compartir y entender los sentimientos y los estados de ánimo de otros seres humanos.<br><br>En otras palabras, ser empáticos es el ser capaces de \"leer\" emocionalmente a las personas y actuar en consecuencia.</p></div><div class='col-12 col-md-5 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' style='transform: translateX(31px);' src='src/img/m4_empatia.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para desarrollar flexibilidad.",
@@ -921,12 +926,13 @@
             {
               "id": "4-2-4",
               "titulo": "Asertividad",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+          "tituloContext": "Habilidades Interpersonales",
+          "contenido": "",
               "slides": [{
                 "grupo": "Asertividad",
                 "items": [{
                     "titulo": "Asertividad",
-                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>La asertividad hace referencia a la capacidad de comunicar a las personas que nos rodean nuestros sentimientos y necesidades, evitando herir y ofender a los demás.<br><br>Es la habilidad para expresar ideas, sentimientos, opiniones, deseos o derechos:<br>-de manera adecuada y  directa <br>-sin amenazar o castigar a otros  y sin sobrepasar los derechos de terceras personas.<br><br>Estas conductas fortalecen la colaboración en CoPs porque permiten expresar desacuerdos, hacer propuestas y resolver tensiones sin dañar el vínculo, lo que es vital para sostener comunidades de aprendizaje a largo plazo.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_comunicacion_asertiva.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><p class='px-3'>La asertividad hace referencia a la capacidad de comunicar a las personas que nos rodean nuestros sentimientos y necesidades, evitando herir y ofender a los demás.<br><br>Es la habilidad para expresar ideas, sentimientos, opiniones, deseos o derechos:<br>-de manera adecuada y  directa <br>-sin amenazar o castigar a otros  y sin sobrepasar los derechos de terceras personas.<br><br>Estas conductas fortalecen la colaboración en CoPs porque permiten expresar desacuerdos, hacer propuestas y resolver tensiones sin dañar el vínculo, lo que es vital para sostener comunidades de aprendizaje a largo plazo.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' src='src/img/m4_comunicacion_asertiva.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para desarrollar Asertividad",
@@ -1118,12 +1124,13 @@
             {
               "id": "4-2-5",
               "titulo": "Gestión de Conflictos",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+          "tituloContext": "Habilidades Interpersonales",
+          "contenido": "",
               "slides": [{
                 "grupo": "Gestión de Conflictos",
                 "items": [{
                     "titulo": "Gestión de Conflictos",
-                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>Consiste en identificar los aspectos que separan a las partes, a la vez que se desarrollan e implementan soluciones que sean aceptables para las partes primarias que intervienen en el conflicto.<br><br>Esta práctica, de identificar y manejar conflictos de manera sensata, justa y eficiente ayuda a prevenir escaladas innecesarias, mantener la confianza dentro del grupo y fomentar una cultura de colaboración consciente y madura.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestion_conflicto.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><p class='px-3'>Consiste en identificar los aspectos que separan a las partes, a la vez que se desarrollan e implementan soluciones que sean aceptables para las partes primarias que intervienen en el conflicto.<br><br>Esta práctica, de identificar y manejar conflictos de manera sensata, justa y eficiente ayuda a prevenir escaladas innecesarias, mantener la confianza dentro del grupo y fomentar una cultura de colaboración consciente y madura.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' src='src/img/m4_gestion_conflicto.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para gestionar Conflictos",
@@ -1322,11 +1329,12 @@
         {
           "id": "4-3",
           "titulo": "Habilidades de Facilitación y Metodológicas",
-          "tituloContext":"Habilidades Interpersonales",
+          "tituloContext":"Habilidades de Facilitación y Metodológicas",
           "contenido": "",
           "actividad": {
             "tipo": "lista",
             "estilo": "nodot",
+            "img": "src/img/m4_Portadilla_habilidadesfacilitador.jpg",
             "items": [{
                 "texto": "<p>Permiten conducir sesiones, promover la colaboración y el aprendizaje compartido.</p>"
               },
@@ -1345,12 +1353,13 @@
             {
               "id": "4-3-1",
               "titulo": "Dinamizar reuniones y talleres",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades de Facilitación y Metodológicas</h2>",
+              "tituloContext": "Habilidades de Facilitación y Metodológicas",
+              "contenido": "",
               "slides": [{
                 "grupo": "Dinamizar reuniones y talleres",
                 "items": [{
                     "titulo": "Dinamizar reuniones y talleres",
-                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Dinamizar una reunión significa aplicar técnicas, recursos o estrategias para hacer que la reunión sea más activa, participativa y productiva. Esto evita que la reunión sea monótona o ineficaz, fomentando la interacción, la colaboración y apoyo entre los participantes, manteniendo –en lo posible- el enfoque en los objetivos.</p></div><img class='img-fluid' src='src/img/m4_dinamizar.jpg'>"
+                    "contenido": "<div class='content m-0 p-0 h-100 flex-column'><div class='row px-3 m-0'><p class='px-3'>Dinamizar una reunión significa aplicar técnicas, recursos o estrategias para hacer que la reunión sea más activa, participativa y productiva. Esto evita que la reunión sea monótona o ineficaz, fomentando la interacción, la colaboración y apoyo entre los participantes, manteniendo –en lo posible- el enfoque en los objetivos.</p></div><img class='img-fluid' src='src/img/m4_dinamizar.jpg'></div>"
                   },
                   {
                     "titulo": "Consejos para dinamizar reuniones y talleres",
@@ -1559,12 +1568,13 @@
             {
               "id": "4-3-2",
               "titulo": "Diseñar procesos participativos",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades de Facilitación y Metodológicas",
+              "contenido": "",
               "slides": [{
                 "grupo": "Diseñar procesos participativos",
                 "items": [{
                     "titulo": "Diseñar procesos participativos",
-                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>Significa crear estructuras, metodologías o dinámicas que permitan que todas las personas involucradas en un proyecto, decisión o actividad puedan opinar, colaborar y construir colectivamente.<br><br>Esto implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Pensar <strong>cómo, cuándo y con qué herramientas</strong> que permitan que todas las personas involucradas en un proyecto, decisión o actividad <strong>puedan opinar, colaborar y construir colectivamente.</strong></li><li>Asegurarse de que <strong>todas las voces sean escuchadas,</strong> no solo las de quienes tienen más poder o experiencia.</li><li>Generar un entorno donde <strong>se fomente la confianza, la escucha activa y el respeto.</strong></li></ul></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_disenar.jpg'></div>"
+                    "contenido": "<div class='content m-0 p-0 h-100 flex-column'><div class='row m-0 px-3'><p class='px-3'>Significa crear estructuras, metodologías o dinámicas que permitan que todas las personas involucradas en un proyecto, decisión o actividad puedan opinar, colaborar y construir colectivamente.<br><br>Esto implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-4 mx-3'><li>Pensar <strong>cómo, cuándo y con qué herramientas</strong> que permitan que todas las personas involucradas en un proyecto, decisión o actividad <strong>puedan opinar, colaborar y construir colectivamente.</strong></li><li>Asegurarse de que <strong>todas las voces sean escuchadas,</strong> no solo las de quienes tienen más poder o experiencia.</li><li>Generar un entorno donde <strong>se fomente la confianza, la escucha activa y el respeto.</strong></li></ul></div><div class='flex-grow-1 d-flex align-items-end justify-content-center'><img class='img-fluid' src='src/img/m4_disenar.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para diseñar procesos participativos",
@@ -1773,12 +1783,13 @@
             {
               "id": "4-3-3",
               "titulo": "Curaduría de contenidos",
-              "contenido": "<h2 class='fw-bold m-0'>Habilidades Interpersonales</h2>",
+              "tituloContext": "Habilidades de Facilitación y Metodológicas",
+              "contenido": "",
               "slides": [{
                 "grupo": "Curaduría de contenidos",
                 "items": [{
                     "titulo": "Curaduría de contenidos",
-                    "contenido": "<div class='row m-0'><p class='p-0 fw-bold'>La curaduría de contenidos es el proceso de seleccionar, organizar, filtrar, contextualizar y compartir información relevante y de calidad sobre un tema específico, con el objetivo de aportar valor a una comunidad.<br><br>O sea, ante una gran cantidad de información disponible (como en internet, libros, documentos, etc.), la curaduría consiste en:</p><ol id='listaCuraduriaContenidos' class='list-disc ps-3'><li>Buscar contenidos relevantes.</li><li>Evaluar su calidad y pertinencia.</li><li>Seleccionar lo más útil o significativo.</li><li>Organizar la información de manera clara y coherente.</li><li>Aportar contexto o interpretación propia.</li><li>Compartirla con la audiencia.</li></ol></div><div class='row m-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_curaduria.jpg'></div>"
+                    "contenido": "<div class='content m-0 p-0 h-100 flex-column'><div class='row m-0 px-3'><p class='px-3'>La curaduría de contenidos es el proceso de seleccionar, organizar, filtrar, contextualizar y compartir información relevante y de calidad sobre un tema específico, con el objetivo de aportar valor a una comunidad.<br><br>O sea, ante una gran cantidad de información disponible (como en internet, libros, documentos, etc.), la curaduría consiste en:</p></div><div class='row m-0 p-0'><div class='col-12 col-sm-6'><ol id='listaCuraduriaContenidos' class='list-disc ps-4 mx-3'><li>Buscar contenidos relevantes.</li><li>Evaluar su calidad y pertinencia.</li><li>Seleccionar lo más útil o significativo.</li><li>Organizar la información de manera clara y coherente.</li><li>Aportar contexto o interpretación propia.</li><li>Compartirla con la audiencia.</li></ol></div><div class='col-12 col-sm-6 d-flex align-items-end justify-content-end p-0'><img class='img-fluid' src='src/img/m4_curaduria.jpg'></div></div></div>"
                   },
                   {
                     "titulo": "Consejos para la curaduría de contenidos",
@@ -2006,23 +2017,24 @@
           "actividad": {
             "tipo": "lista",
             "estilo": "nodot",
+            "img": "src/img/m4_Portadilla_habilidadesliderazgo.jpg",
             "items": [{
                 "texto": "<p>Permiten mantener viva la comunidad y alineada con sus propósitos.</p>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Visión estratégica:</span> <br>apoyar al líder a conectar los objetivos de la CoP con los de la organización o red y mantener una orientación al logro de resultados.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Visión estratégica:</span> apoyar al líder a conectar los objetivos de la CoP con los de la organización o red y mantener una orientación al logro de resultados.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Motivación e inspiración:</span> <br> impulsar el buen ánimo, el sentido de propósito y de pertenencia.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Motivación e inspiración:</span> impulsar el buen ánimo, el sentido de propósito y de pertenencia.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Colaboración y compromiso:</span> <br> se refiere a trabajar juntos para encontrar la mejor solución al problema, a la vez que las partes respetan los acuerdos  alcanzados (haciendo concesiones).</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Colaboración y compromiso:</span> se refiere a trabajar juntos para encontrar la mejor solución al problema, a la vez que las partes respetan los acuerdos  alcanzados (haciendo concesiones).</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión del tiempo y recursos:</span> <br> organizar cronogramas, espacios, y coordinar apoyos.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Gestión del tiempo y recursos:</span> organizar cronogramas, espacios, y coordinar apoyos.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Evaluación y mejora continua:</span> <br> recoger retroalimentación y ajustar la dinámica del grupo.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Evaluación y mejora continua:</span> recoger retroalimentación y ajustar la dinámica del grupo.</p></div>"
               }
             ]
           },
@@ -2036,7 +2048,7 @@
                 "grupo": "Visión Estratégica",
                 "items": [{
                     "titulo": "Visión Estratégica",
-                    "contenido": "<div class='row m-0'><div class='col-md-6 col-12 p-0'><p class='p-0 fw-bold'>Es la capacidad de imaginar, planificar y orientar acciones a largo plazo con un enfoque claro en los objetivos clave de una organización, proyecto o iniciativa. Implica ver más allá del presente, anticipar escenarios futuros y tomar decisiones alineadas con una meta global.<br><br>Esto significa:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Saber hacia dónde se quiere ir.</li><li>Entender el entorno y sus cambios (sociales, económicos, políticos, tecnológicos).</li><li>Definir metas claras y sostenibles.</li><li>Tomar decisiones coherentes con el objetivo final, no sólo con lo urgente.</li><li>Evaluar riesgos y oportunidades.</li><li>Saber priorizar y adaptar según el contexto.</li></ul></div><div class='col-md-6 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_plan.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><p class='px-3'>Es la capacidad de imaginar, planificar y orientar acciones a largo plazo con un enfoque claro en los objetivos clave de una organización, proyecto o iniciativa. Implica ver más allá del presente, anticipar escenarios futuros y tomar decisiones alineadas con una meta global.<br><br><strong>Esto significa:</strong></p><div class='px-3'><ol class='ps-3'><li>Saber hacia dónde se quiere ir.</li><li>Entender el entorno y sus cambios (sociales, económicos, políticos, tecnológicos).</li><li>Definir metas claras y sostenibles.</li><li>Tomar decisiones coherentes con el objetivo final, no sólo con lo urgente.</li><li>Evaluar riesgos y oportunidades.</li><li>Saber priorizar y adaptar según el contexto.</li></ol></div></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_plan.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para desarrollar una visión estratégica",
@@ -2239,7 +2251,7 @@
                 "grupo": "Motivación e inspiración",
                 "items": [{
                     "titulo": "Motivación e inspiración",
-                    "contenido": "<div class='row m-0'><div class='col-md-6 col-12 p-0'><p class='p-0 fw-bold'>Motivar o inspirar a otros significa generar en las personas entusiasmo, compromiso o deseo de actuar, ya sea para alcanzar un objetivo, superar un desafío o desarrollarse personalmente. Es despertar en otros la alegría, el goce o energía interna que los mueve a hacer algo con ganas y propósito.<br><br>Motivar es:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Estimular la acción: provocar que alguien quiera hacer algo.</li><li>Conectar con deseos, valores o necesidades de la persona.</li><li>Acompañar y sostener el entusiasmo frente a obstáculos o dificultades.</li><li>Celebrar los éxitos</li></ul><p class='f'>Inspirar va un paso más allá:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Encender una idea, emoción o visión poderosa en otros.</li><li>Ser un ejemplo, transmitir pasión o mostrar un propósito que contagia.</li><li>No se impone: se transmite naturalmente por cómo se actúa o se comunica.</li></ul></div><div class='col-md-6 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_motivacion.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-md-9 col-12 px-3'><p class='px-3'>Motivar o inspirar a otros significa generar en las personas entusiasmo, compromiso o deseo de actuar, ya sea para alcanzar un objetivo, superar un desafío o desarrollarse personalmente. Es despertar en otros la alegría, el goce o energía interna que los mueve a hacer algo con ganas y propósito.<br><br><strong>Motivar es:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-unstyled ps-3'><li>Estimular la acción: provocar que alguien quiera hacer algo.</li><li>Conectar con deseos, valores o necesidades de la persona.</li><li>Acompañar y sostener el entusiasmo frente a obstáculos o dificultades.</li><li>Celebrar los éxitos</li></ul></div><p class='px-3'><strong>Inspirar va un paso más allá:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-unstyled ps-3'><li>Encender una idea, emoción o visión poderosa en otros.</li><li>Ser un ejemplo, transmitir pasión o mostrar un propósito que contagia.</li><li>No se impone: se transmite naturalmente por cómo se actúa o se comunica.</li></ul></div></div><div class='col-md-3 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_motivacion.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para motivar e inspirar",
@@ -2466,7 +2478,7 @@
                 "grupo": "Colaboración y Compromiso",
                 "items": [{
                     "titulo": "Colaboración y Compromiso",
-                    "contenido": "<div class='row m-0'><div class='col-12 p-0'><p class='p-0 fw-bold'>En conjunto, significan crear y mantener un entorno donde todos aportan, asumen responsabilidades y se sienten corresponsables de los logros, lo que favorece la sostenibilidad y efectividad de la comunidad.<br><br><strong class='title-body-secondary'>Colaboración</strong><br>Es la disposición y capacidad de trabajar conjuntamente con otros miembros para alcanzar objetivos comunes, compartiendo conocimientos, experiencias y recursos.<br>Implica construir confianza,  aportar activamente ideas, retroalimentación y soluciones e integrar y coordinar esfuerzos. <br><br><strong class='title-body-secondary'>Compromiso</strong><br>Es el grado de implicación y responsabilidad que cada miembro asume con la misión, los acuerdos y los resultados de la CoP.<br>En la práctica se traduce en participación constante en actividades, Cumplimiento de acuerdos y cuidado del propósito común.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_colaboracion.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><p class='px-3'><strong>En conjunto</strong>, significan <strong>crear y mantener un entorno donde todos aportan, asumen responsabilidades y se sienten corresponsables de los logros</strong>, lo que favorece la sostenibilidad y efectividad de la comunidad.<br><br><strong class='title-body-secondary'>Colaboración</strong><br>Es la disposición y capacidad de <strong>trabajar conjuntamente</strong> con otros miembros para alcanzar objetivos comunes, compartiendo conocimientos, experiencias y recursos.<br><br>Implica construir confianza,  aportar activamente ideas, retroalimentación y soluciones e integrar y coordinar esfuerzos. <br><br><strong class='title-body-secondary'>Compromiso</strong><br>Es el <strong>grado de implicación y responsabilidad</strong> que cada miembro asume con la misión, los acuerdos y los resultados de la CoP.<br><br>En la práctica se traduce en participación constante en actividades, Cumplimiento de acuerdos y cuidado del propósito común.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_colaboracion.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para la lograr Colaboración y Compromiso",
@@ -2675,7 +2687,7 @@
                 "grupo": "Gestión del tiempo y recursos",
                 "items": [{
                     "titulo": "Gestión del tiempo y recursos",
-                    "contenido": "<div class='row m-0'><div class='col-12 col-md-6 p-0'><p class='p-0 fw-bold'>Significa organizar, planificar y utilizar de forma eficiente el tiempo disponible y los medios que se tienen (humanos, materiales, financieros, tecnológicos, etc.) para lograr objetivos concretos de la mejor manera posible.<br><br>Gestionar el tiempo, es administrar las horas del día para cumplir con tareas y responsabilidades, evitando pérdidas de tiempo, retrasos o estrés innecesario. Implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Planificar actividades.</li><li>Priorizar lo importante sobre lo urgente.</li><li>Evitar distracciones.</li><li>Ser realista con lo que se puede hacer en un plazo.</li></ul> <p class='p-0 fw-bold'>Gestionar los recursos es aprovechar al máximo lo que se tiene para lograr resultados sin desperdicio ni sobrecarga. Recursos pueden ser:</p><ul id='listaProcesoParticipativos' class='list-disc ps-3'><li>Personas (equipo de trabajo, voluntarios, etc.)</li><li>Dinero o presupuesto.</li><li>Herramientas y materiales.</li><li>Información o tecnología.</li></ul></div><div class='col-12 col-md-6 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestiontiempo.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-8 px-3'><p class='px-3'>Significa organizar, planificar y utilizar de forma eficiente el tiempo disponible y los medios que se tienen (humanos, materiales, financieros, tecnológicos, etc.) para lograr objetivos concretos de la mejor manera posible.<br><br><strong>Gestionar el tiempo</strong>, es administrar las horas del día para cumplir con tareas y responsabilidades, evitando pérdidas de tiempo, retrasos o estrés innecesario. Implica:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Planificar actividades.</li><li>Priorizar lo importante sobre lo urgente.</li><li>Evitar distracciones.</li><li>Ser realista con lo que se puede hacer en un plazo.</li></ul></div> <p class='px-3'><strong>Gestionar los recursos</strong> es aprovechar al máximo lo que se tiene para lograr resultados sin desperdicio ni sobrecarga. Recursos pueden ser:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Personas (equipo de trabajo, voluntarios, etc.)</li><li>Dinero o presupuesto.</li><li>Herramientas y materiales.</li><li>Información o tecnología.</li></ul></div></div><div class='col-12 col-md-4 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestiontiempo.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para gestionar el tiempo y los recursos",
@@ -2689,7 +2701,7 @@
                           }]
                         },
                         {
-                          "texto": "Planifica con anticipación y comparte agendas breves",
+                          "texto": "<strong>Planifica con anticipación y comparte agendas breves</strong>",
                           "hijos": [{
                             "texto": "Envía una pauta clara con temas, tiempos estimados y responsables, para que todos lleguen preparados."
                           }]
@@ -2897,7 +2909,7 @@
                 "grupo": "Evaluación y mejora continua",
                 "items": [{
                     "titulo": "Evaluación y mejora continua",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-6 px-3'><p class='px-3'>Evaluar y hacer mejora continua significa observar, analizar y reflexionar sobre lo que se ha hecho (un proyecto, actividad o proceso) para identificar lo que funciona bien, lo que no, y cómo se puede mejorar de forma constante.<br><br>Es un proceso cíclico que no termina cuando se logra un resultado, sino que busca crecer y aprender todo el tiempo.<br><br><strong>Evaluar es:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Revisar resultados, procesos y métodos utilizados.</li><li>Comparar lo que se logró con lo que se esperaba.</li><li>Detectar errores, aciertos y áreas de mejora.</li><li>Puede hacerse con datos, opiniones, encuestas, indicadores, etc.</li></ul></div><p class='px-3 fw-bold'>Mejora continua es:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3' style='padding-bottom: 50px;'><li>Aprender de cada experiencia.</li><li>Ajustar lo necesario (ideas, métodos, recursos).</li><li>Buscar hacerlo mejor la próxima vez, incluso si ya salió bien.</li><li>Basarse en la lógica de no conformarse, sino evolucionar constantemente.</li></ul></div></div><div class='col-12 col-md-6 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' style='transform: translateX(31px);' src='src/img/m4_evaluacioncontinua.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-7 px-3'><p class='px-3'>Evaluar y hacer mejora continua significa observar, analizar y reflexionar sobre lo que se ha hecho (un proyecto, actividad o proceso) para identificar lo que funciona bien, lo que no, y cómo se puede mejorar de forma constante.<br><br>Es un proceso cíclico que no termina cuando se logra un resultado, sino que busca crecer y aprender todo el tiempo.<br><br><strong>Evaluar es:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Revisar resultados, procesos y métodos utilizados.</li><li>Comparar lo que se logró con lo que se esperaba.</li><li>Detectar errores, aciertos y áreas de mejora.</li><li>Puede hacerse con datos, opiniones, encuestas, indicadores, etc.</li></ul></div><p class='px-3 fw-bold'>Mejora continua es:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3' ><li>Aprender de cada experiencia.</li><li>Ajustar lo necesario (ideas, métodos, recursos).</li><li>Buscar hacerlo mejor la próxima vez, incluso si ya salió bien.</li><li>Basarse en la lógica de no conformarse, sino evolucionar constantemente.</li></ul></div></div><div class='col-12 col-md-5 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' style='transform: translateX(31px);' src='src/img/m4_evaluacioncontinua.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para evaluar y hacer mejora continua",

@@ -466,14 +466,22 @@ function renderActividad(actividad) {
     
     case "lista":
       return `
-        <div class="actividad-lista ${actividad.estilo || ""}">
+      <div class='row m-0 px-3 h-100 flex-column'>
+        <div class="px-3 lista ${actividad.estilo || ""}">          
           ${actividad.items.map(item => `
             <div class="actividad-item mb-2">
               ${item.texto}
             </div>
           `).join("")}
         </div>
+        ${actividad.img ? `
+              <div class="flex-grow-1 d-flex align-items-end justify-content-center" style="padding: 0px 25%;">
+                <img src="${actividad.img}" class="img-fluid" alt="actividad imagen">
+              </div>
+          ` : ""}
+        </div>
       `;
+
 
     default:
       return `<p class="text-muted">[Actividad no soportada: ${actividad.tipo}]</p>`;
