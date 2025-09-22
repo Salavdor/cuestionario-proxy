@@ -18,19 +18,22 @@
       "subtemas": [{
           "id": "1.1",
           "titulo": "¿Qué es una Comunidad de Práctica?",
-          "contenido": "<h2 class='pb-4 fw-bold'>¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
+          "tituloContext": "¿Qué es una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span>",
+          "contenido": "<p>Es una manera de formalizar y sistematizar la colaboración por parte de un grupo de personas que comparten un interés, una profesión o una pasión común y buscan mejorar su conocimiento o desempeño, a través de la interacción regular y el intercambio de experiencias y conocimientos.<br><br>Son grupos donde los individuos trabajan colaborativamente, intercambian sus experiencias y buscan resolver problemas y aprender unos de otros.<br><br>Las <span class='fw-bold'>CoPs</span> emergen en las organizaciones de manera natural (existen instancias de intercambio y aprendizaje espontáneo) o por iniciativa de alguna gerencia que promueve estos encuentros. Las comunidades son vehículos importantes para la gestión del conocimiento, el aprendizaje organizacional, la innovación y la mejora continua.</p>",
           "imagen": "<div class='row m-0 py-4 px-3'><div class='col-6'><img src='src/img/m1_s2_f1.jpg' alt='Modulo1' class='img-fluid rounded-5'></div><div class='col-6'><img src='src/img/m1_s2_f2.jpg' alt='' class='img-fluid rounded-5'></div></div>"
         },
         {
           "id": "1.2",
           "titulo": "¿Por qué una Comunidad de Práctica?",
-          "contenido": "<h2 class='pb-4 fw-bold'>¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span></h2><p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
+          "tituloContext": "¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span>",
+          "contenido": "<p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
           "imagen": "<img src='src/img/m1_s3_f1.jpg' alt='Modulo1' class='img-fluid'>"
         },
         {
           "id": "1.3",
           "titulo": "Metodología para el desarrollo y la gestión de una CoP",
-          "contenido": "<h2 class='pb-4 fw-bold'>Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span></h2>",
+          "tituloContext":"Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span>",
+          "contenido": "",
           "imagen": "",
           "actividad": {
             "tipo": "tabs",
@@ -227,7 +230,8 @@
         {
           "id": "1.5",
           "titulo": "Evaluación",
-          "contenido": "<h2 class='fw-bold'>Evaluación</h2>",
+          "tituloContext":"Evaluación",
+          "contenido": "",
           "actividad": {
             "tipo": "tablaVF",
             "preguntas": [{
@@ -268,16 +272,12 @@
     {
       "id": 2,
       "titulo": "Roles claves de la comunidad",
-      "img": "src/img/Modulo1.jpg",
+      "img": "src/img/Modulo2.jpg",
       "subtemas": [{
-        "id": "2.1",
-        "titulo": "Líder y facilitador",
-        "contenido": "<p>El líder orienta el trabajo de la comunidad, mientras que el facilitador promueve la participación.</p>",
-        "actividad": {
-          "tipo": "openquestion",
-          "pregunta": "¿En tu experiencia, cómo has visto surgir comunidades de Práctica?",
-          "placeholder": "Escribe tu respuesta aquí..."
-        }
+        "id": "2-1",
+        "titulo": "Roles básicos de una CoP",
+        "tituloContext": "Roles básicos de una CoP",
+        "contenido": "<p><b>Esta relación de roles es meramente orientativa. </b></br> No es necesario realizar todos estos roles en casos de comunidades pequeñas. Por el contario, en comunidades numerosas pueden incorporarse otros roles, como sub lideres, coordinadores, etc.</p> <div class='col-12'> <img style='width:100%; height:auto; ' src='src/img/modulo2_item2_fondo.jpg'><a style='cursor:pointer'class='botonmano'> <img  class='img-fluid' src='src/img/patrocinador.png' style=' margin-top:-50%; left:32% ; width:3.5vw; height:3.5vw; position:relative '></a> <a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalEjemplos0'> <img class='card-img-overlay img-fluid' src='src/img/participantes.png' style=' margin-top: -49%; left:48% ; width:3.5vw;height:3.5vw;position:relative'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalEjemplos0'> <img class=' img-fluid' src='src/img/lider.png' style=' margin-top:-33%;margin-left:35% ;width:3.5vw;height:3.5vw;postion:relative'></a><a style='cursor:pointer'class='botonmano'> <img  class='img-fluid' src='src/img/facilitador.png' style=' margin-top:-33%; left:10.5% ; width:3.5vw; height:3.5vw; position:relative '></a><a style='cursor:pointer'class='botonmano'> <img  class='img-fluid' src='src/img/comunidades.png' style=' margin-top:-18%; left:-3% ; width:3.5vw; height:3.5vw; position:relative '></a></div><p><b>En este módulo revisaremos los roles claves para el funcionamiento de una <span class='title-body-secondary'>(CoP)</span>, el papel del Líder y del Facilitador.</b></br> </p>"
       }]
     },
     {
@@ -285,9 +285,10 @@
       "titulo": "Habilidades del Facilitador",
       "img": "src/img/m4_inicio.jpg",
       "subtemas": [{
-          "id": "4.1",
+          "id": "4-1",
           "titulo": "Habilidades de Facilitación",
-          "contenido": "<h2 class='pb-4 fw-bold'>Habilidades de Facilitación</h2> ",
+          "tituloContext": "Habilidades Interpersonales",
+          "contenido": "",
           "imagen": "<img src='src/img/m4_s1_f1.jpg' alt='Modulo1' class='img-fluid'>"
         },
         {

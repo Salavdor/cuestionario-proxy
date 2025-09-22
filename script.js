@@ -235,6 +235,13 @@ function cargarContenido(subtemaId, modulos) {
     if (subtema.lista) contenidoHTML += renderLista(subtema.lista, subtema.tipoLista || "dot", 0, `unidad${subtema.id}-lista0`);
 
 
+if (subtema.actividad && subtema.actividad.tipo === "tablaVF") {
+  const tabla = contentInner.querySelector('.tabla-vf table');
+  if (tabla) {
+    handleTablaVF(subtema.actividad, tabla);
+  }
+}
+
 // Render principal
 let actividadHTML = "";
 if (subtema.actividad) {
@@ -517,7 +524,7 @@ function renderTabs(config) {
 
   const contenedor = `
     <div class="row m-0 p-3 actividad">
-      <div class="d-flex align-items-center justify-content-between flex-wrap">${botones}</div>
+      <div class="d-flex align-items-center justify-content-between flex-wrap pt-5">${botones}</div>
       <div id="actividadContenido" class="mt-3 p-3">
         ${initialContent}
       </div>
@@ -925,8 +932,8 @@ function renderTablaVF(actividad) {
     tablaHTML += `
       <tr data-index="${idx}">
         <td class="text-start">${p.pregunta}</td>
-        <td><input type="checkbox" class="vf-checkbox" data-value="V"></td>
-        <td><input type="checkbox" class="vf-checkbox" data-value="F"></td>
+        <td><input type="radio" name="vf_${idx}" class="vf-input" data-value="V"></td>
+        <td><input type="radio" name="vf_${idx}" class="vf-input" data-value="F"></td>
         <td class="retro"></td>
       </tr>
     `;
@@ -937,31 +944,34 @@ function renderTablaVF(actividad) {
 }
 
 
-function handleTablaVF(actividad, container) {
-  const rows = container.querySelectorAll("tbody tr");
 
-  rows.forEach(row => {
-    const checkboxes = row.querySelectorAll(".vf-checkbox");
-    const retro = row.querySelector(".retro");
-    const idx = parseInt(row.dataset.index);
+function handleTablaVF(actividad, tabla) {
+  // Selecciona todos los inputs V/F
+  const inputs = tabla.querySelectorAll(".vf-input");
 
-    checkboxes.forEach(chk => {
-      chk.addEventListener("change", () => {
-        // Desmarcar el otro checkbox en la misma fila
-        checkboxes.forEach(c => { if (c !== chk) c.checked = false; });
+  inputs.forEach(input => {
+    input.addEventListener("change", () => {
+      const row = input.closest("tr");       // fila actual
+      const idx = parseInt(row.dataset.index, 10); // índice de la pregunta
+      const retro = row.querySelector(".retro");   // celda de retroalimentación
+      const valor = input.dataset.value;     // "V" o "F"
+      const pregunta = actividad.preguntas[idx];  // pregunta correspondiente
 
-        const valor = chk.dataset.value;
-        const pregunta = actividad.preguntas[idx];
-
-        if (valor === pregunta.respuestaCorrecta) {
-          retro.innerHTML = `<span class="fw-bold">${pregunta.retroCorrecta}</span>`;
-        } else {
-          retro.innerHTML = `<span class="fw-bold">${pregunta.retroIncorrecta}</span>`;
-        }
-      });
+      // Mostrar retroalimentación
+      if (valor === pregunta.respuestaCorrecta) {
+        retro.innerHTML = `<span class="text-success fw-bold">✔ ${pregunta.retroCorrecta}</span>`;
+      } else {
+        retro.innerHTML = `<span class="text-danger fw-bold">✘ ${pregunta.retroIncorrecta}</span>`;
+      }
     });
   });
 }
+
+
+
+
+
+
 
 
 /* ---------------------- STEPS ---------------------- */
