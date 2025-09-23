@@ -235,13 +235,6 @@ function cargarContenido(subtemaId, modulos) {
     if (subtema.lista) contenidoHTML += renderLista(subtema.lista, subtema.tipoLista || "dot", 0, `unidad${subtema.id}-lista0`);
 
 
-if (subtema.actividad && subtema.actividad.tipo === "tablaVF") {
-  const tabla = contentInner.querySelector('.tabla-vf table');
-  if (tabla) {
-    handleTablaVF(subtema.actividad, tabla);
-  }
-}
-
 // Render principal
 let actividadHTML = "";
 if (subtema.actividad) {
@@ -272,6 +265,13 @@ contentInner.innerHTML = `
   ${subtema.imagen || ""}
 `;
 
+if (subtema.actividad && subtema.actividad.tipo === "tablaVF") {
+  const tabla = contentInner.querySelector('.tabla-vf');
+  console.log(tabla);
+  if (tabla) {
+    handleTablaVF(subtema.actividad, tabla);
+  }
+}
 
 // ---------------- Procesar actividades y slides ----------------
 function procesarActividades(obj) {
@@ -1287,6 +1287,21 @@ function handleOpenQuiz(actividad, container) {
   });
 }
 
+const content = document.getElementById("content");
+
+content.addEventListener("click", (e) => {
+  const btn = e.target.closest(".btn-lista"); // busca si el clic fue en un botón
+  console.log(btn);
+  if (!btn) return;
+
+  const targetId = btn.getAttribute("data-target");
+  const targetSubtema = document.querySelector(`.subtema[data-id="${targetId}"]`);
+
+  if (targetSubtema) {
+    targetSubtema.click(); // simula el clic en el navmenu
+    targetSubtema.scrollIntoView({ behavior: "smooth", block: "center" }); // opcional
+  }
+});
 
 
 

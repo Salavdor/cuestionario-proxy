@@ -50,12 +50,14 @@
     }
 
     nav.brand {
-  flex-shrink: 0; /* navbar no crece ni suma al espacio restante */
-}
+      flex-shrink: 0;
+      /* navbar no crece ni suma al espacio restante */
+    }
 
-.row.flex-grow-1 {
-  min-height: 0; /* 🔑 permite scroll en los hijos */
-}
+    .row.flex-grow-1 {
+      min-height: 0;
+      /* 🔑 permite scroll en los hijos */
+    }
 
     h2 {
       color: var(--color-primario-2);
@@ -92,23 +94,25 @@
     }
 
     .img-container {
-  flex-grow: 1;   /* ocupa lo que sobra */
-  position: relative;
-  min-height: 0;  /* 🔑 para que flex calcule bien */
-}
+      flex-grow: 1;
+      /* ocupa lo que sobra */
+      position: relative;
+      min-height: 0;
+      /* 🔑 para que flex calcule bien */
+    }
 
-.img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center bottom;
-}
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+    }
 
     .accordion-button::after {
       display: none !important;
     }
 
-        /* Subtemas */
+    /* Subtemas */
     .subtema-lista li {
       position: relative;
       padding-left: 1.2rem;
@@ -117,34 +121,35 @@
       transition: all 0.2s ease-in-out;
       font-weight: 400;
     }
-   /* Solo el primer nivel de li en subtema-lista */
-.subtema-lista > li::before {
-  content: "•";
-  color: var(--color-secundario-3);
-  position: absolute;
-  left: 0;
-  font-size: 2.5rem;
-  line-height: 0.4;
-}
 
-/* Mantener hover y active en primer nivel */
-.subtema-lista > li:hover,
-.subtema-lista > li.active {
-  font-weight: 700;
-  color: var(--color-negro);
-}
+    /* Solo el primer nivel de li en subtema-lista */
+    .subtema-lista>li::before {
+      content: "•";
+      color: var(--color-secundario-3);
+      position: absolute;
+      left: 0;
+      font-size: 2.5rem;
+      line-height: 0.4;
+    }
 
-/* Quitar bullets de los li anidados */
-.subtema-lista li ul li::before {
-  content: none;
-}
+    /* Mantener hover y active en primer nivel */
+    .subtema-lista>li:hover,
+    .subtema-lista>li.active {
+      font-weight: 700;
+      color: var(--color-negro);
+    }
 
-/* Opcional: los li anidados también pueden tener su hover si quieres */
-.subtema-lista li ul li:hover,
-.subtema-lista li ul li.active {
-  font-weight: 700;
-  color: var(--color-negro);
-}
+    /* Quitar bullets de los li anidados */
+    .subtema-lista li ul li::before {
+      content: none;
+    }
+
+    /* Opcional: los li anidados también pueden tener su hover si quieres */
+    .subtema-lista li ul li:hover,
+    .subtema-lista li ul li.active {
+      font-weight: 700;
+      color: var(--color-negro);
+    }
 
 
     /* Botones del acordeón */
@@ -276,7 +281,8 @@
       margin-left: 5px;
     }
 
-    .btn-ejemplos , .btn-instrucciones {
+    .btn-ejemplos,
+    .btn-instrucciones {
       position: relative;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
@@ -288,14 +294,16 @@
       margin-top: 50px;
     }
 
-    .btn-ejemplos:hover , .btn-instrucciones:hover {
+    .btn-ejemplos:hover,
+    .btn-instrucciones:hover {
       background-color: transparent;
       border-color: transparent;
       color: var(--color-negro);
       transform: scale(1.1);
     }
 
-    .btn-ejemplos img , .btn-instrucciones img {
+    .btn-ejemplos img,
+    .btn-instrucciones img {
       position: absolute;
       width: 50px;
       height: 50px;
@@ -382,7 +390,8 @@
       border-radius: 0% 0% 40px 0%;
     }
 
-    textarea.form-control, textarea.openquiz-textarea {
+    textarea.form-control,
+    textarea.openquiz-textarea {
       resize: vertical;
       /* permitir redimensionar solo verticalmente */
       font-family: 'Montserrat', sans-serif;
@@ -414,7 +423,7 @@
       border-radius: 5px;
     }
 
-    .feedback-modal { 
+    .feedback-modal {
       position: absolute;
       color: var(--color-blanco);
       top: 0;
@@ -445,9 +454,9 @@
     .feedback-text {
       text-align: center;
       display: flex;
-      justify-content: center;   
-      align-items: center;       
-      flex-direction: column;   
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
 
     .feedback-close {
@@ -462,105 +471,87 @@
     }
 
     /* ===================== */
-    /* Tabla VF personalizada */
-    /* ===================== */
+/* Tabla VF personalizada */
+/* ===================== */
 
-    table.tabla-vf {
-      border: 2px solid var(--color-primario-4) !important;
-      /* borde externo */
-      border-collapse: collapse !important;
-      /* colapsar bordes */
-      table-layout: fixed !important;
-      /* ancho fijo */
-      width: 100% !important;
-    }
+table.tabla-vf {
+  border: 2px solid var(--color-primario-4) !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  width: 100% !important;
+}
 
-    /* Encabezado azul forzado */
-    table.tabla-vf thead tr th {
-      background-color: var(--color-primario-2) !important;
-      /* azul */
-      color: var(--color-blanco) !important;
-      font-weight: bold !important;
-      text-align: center !important;
-    }
+/* Encabezado azul */
+table.tabla-vf thead tr th {
+  background-color: var(--color-primario-2) !important;
+  color: var(--color-blanco) !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
 
+/* Ancho fijo de columnas */
+table.tabla-vf th:nth-child(1),
+table.tabla-vf td:nth-child(1) {
+  width: 50% !important; /* Pregunta */
+  text-align: left !important;
+}
 
-    /* Ancho fijo de columnas */
-    table.tabla-vf td th:nth-child(1),
-    table.tabla-vf td:nth-child(1) {
-      width: 50% !important;
-      /* Pregunta */
-    }
+table.tabla-vf th:nth-child(2),
+table.tabla-vf td:nth-child(2),
+table.tabla-vf th:nth-child(3),
+table.tabla-vf td:nth-child(3) {
+  width: 5% !important; /* V y F */
+}
 
-    table.tabla-vf th:nth-child(2),
-    table.tabla-vf td:nth-child(2),
-    table.tabla-vf th:nth-child(3),
-    table.tabla-vf td:nth-child(3) {
-      width: 5% !important;
-      /* V y F */
-    }
+table.tabla-vf th:nth-child(4),
+table.tabla-vf td:nth-child(4) {
+  width: 40% !important; /* Retroalimentación */
+}
 
-    table.tabla-vf th:nth-child(4),
-    table.tabla-vf td:nth-child(4) {
-      width: 40% !important;
-      /* Retroalimentación */
-    }
+/* Zebra */
+table.tabla-vf tbody tr:nth-child(odd) {
+  background-color: #ffffff !important;
+}
+table.tabla-vf tbody tr:nth-child(even) {
+  background-color: var(--color-secundario-5) !important;
+}
 
-    /* Filas intercaladas (zebra) */
-    table.tabla-vf tbody tr:nth-child(odd) {
-      background-color: #ffffff !important;
-      /* blanco */
-    }
+/* Bordes internos */
+table.tabla-vf td,
+table.tabla-vf th {
+  border: 2px solid var(--color-primario-4) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
 
-    table.tabla-vf tbody tr:nth-child(even) {
-      background-color: var(--color-secundario-5) !important;
-      /* gris claro */
-    }
+/* 🎯 Radios personalizados */
+table.tabla-vf .vf-input[type="radio"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  width: 1.2em !important;
+  height: 1.2em !important;
+  border: 0.15em solid #ccc !important;
+  border-radius: 50% !important; /* redondo */
+  cursor: pointer !important;
+  position: relative !important;
+  background-color: #fff !important;
+  margin: 0 auto; /* centrado en la celda */
+  display: block;
+}
 
-    /* Bordes internos verdes */
-    table.tabla-vf td,
-    table.tabla-vf th {
-      border: 2px solid var(--color-primario-4) !important;
-      vertical-align: middle !important;
-      text-align: center !important;
-    }
+/* 🔵 Punto al marcar */
+table.tabla-vf .vf-input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: var(--color-primario-1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
 
-    /* Pregunta alineada a la izquierda */
-    table.tabla-vf td.text-start {
-      text-align: left !important;
-    }
-
-    /* 🔲 Checkbox base en gris claro */
-    table.tabla-vf .vf-checkbox {
-      appearance: none !important;
-      -webkit-appearance: none !important;
-      width: 1.25em !important;
-      /* tamaño relativo */
-      height: 1.25em !important;
-      border: 0.125em solid #ccc !important;
-      border-radius: 50% !important;
-      /* esquinas ligeramente redondeadas */
-      cursor: pointer !important;
-      position: relative !important;
-      background-color: rgba(255, 255, 255, 0.23) !important;
-      vertical-align: middle;
-    }
-
-    /* 🔵 Punto azul al marcar */
-    table.tabla-vf .vf-checkbox:checked::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0.6em;
-      /* tamaño del punto relativo al checkbox */
-      height: 0.6em;
-      background-color: var(--color-primario-1);
-      /* azul preestablecido */
-      border-radius: 50%;
-      /* círculo perfecto */
-      transform: translate(-50%, -50%);
-    }
 
 
 
@@ -575,150 +566,163 @@
       --bs-table-bg-type: transparent;
     }
 
-.btn-volver,.btn-siguiente {
-  border: none;
-    font-weight: bold;
-    color: var(--color-negro);
-}
-.btn-volver:hover,.btn-siguiente:hover {
-    background-color: #00000000;
-    border: none;
-    font-weight: bold;
-    color: var(--color-negro);
-    transform: scale(1.1);
-}
+    .btn-volver,
+    .btn-siguiente {
+      border: none;
+      font-weight: bold;
+      color: var(--color-negro);
+    }
 
-.btn-volver span,.btn-siguiente span{
-  font-size: 23px;
-    color: var(--color-secundario-2);
-}
+    .btn-volver:hover,
+    .btn-siguiente:hover {
+      background-color: #00000000;
+      border: none;
+      font-weight: bold;
+      color: var(--color-negro);
+      transform: scale(1.1);
+    }
 
-
-#navButtonsWrapper {
-  position: absolute;
-  height: 60px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--color-blanco);
-  border-top: var(--color-primario-1) solid 1px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn-lista {
-  min-width: 140px;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    background-color: var(--color-primario-4);
-    border-color: var(--color-primario-4);
-    border-width: 2.5px;
-    color: var(--color-blanco);
-    justify-content: center !important;
-}
-.btn-lista:hover {
-  background-color: var(--color-primario-4);
-  border-color: var(--color-primario-4);
-  color: var(--color-blanco);
-    transform: scale(1.1);
-}
+    .btn-volver span,
+    .btn-siguiente span {
+      font-size: 23px;
+      color: var(--color-secundario-2);
+    }
 
 
-/* Imagen de fondo decorativa */
-#lista_subtema::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 500px;
-  height: 500px;
-  background-image: url("src/img/m4_s3_f1.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  z-index: -1;
-  opacity: 0; /* opcional */
-}
+    #navButtonsWrapper {
+      position: absolute;
+      height: 60px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--color-blanco);
+      border-top: var(--color-primario-1) solid 1px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
 
-/* UL raíz sin bullets */
-#lista_subtema {
-  list-style: none;
-  padding-left: 1.5em;
-  padding-bottom: 10px;
-  height: 100%;
-  position: relative;
-}
+    .btn-lista {
+      min-width: 140px;
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      background-color: var(--color-primario-4);
+      border-color: var(--color-primario-4);
+      border-width: 2.5px;
+      color: var(--color-blanco);
+      justify-content: center !important;
+    }
 
-/* LI de primer nivel con estrella */
-#lista_subtema > li {
-  position: relative;
-  padding-left: 1.5em;
-}
-
-#lista_subtema > li::before {
-  content: "★";
-  position: absolute;
-  left: 0;
-  top: 0.1em;
-  color: var(--color-primario-4);
-  font-size: 15px;
-}
-
-/* UL anidados (segundo nivel en adelante) sin bullets */
-#lista_subtema ul {
-  list-style: none;  /* quita los dots */
-  padding-left: 1.5em;
-  margin-bottom: 15px;
-}
-
-/* Asegura que los LI anidados no hereden la estrella */
-#lista_subtema ul li::before {
-  content: none;
-}
+    .btn-lista:hover {
+      background-color: var(--color-primario-4);
+      border-color: var(--color-primario-4);
+      color: var(--color-blanco);
+      transform: scale(1.1);
+    }
 
 
-.skillQuizContainer{
-background-color: var(--color-secundario-6);
-}
+    /* Imagen de fondo decorativa */
+    #lista_subtema::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 500px;
+      height: 500px;
+      background-image: url("src/img/m4_s3_f1.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      z-index: -1;
+      opacity: 0;
+      /* opcional */
+    }
 
-.quiz-skill {
-  border-style: solid;
-  border-radius: 25px;
-  border-color: var(--color-primario-2);
-  border-width: 2px;
-}
+    /* UL raíz sin bullets */
+    #lista_subtema {
+      list-style: none;
+      padding-left: 1.5em;
+      padding-bottom: 10px;
+      height: 100%;
+      position: relative;
+    }
 
-.quiz-skill-pregunta {
-  background-color: var(--color-primario-4);
-  color: var(--color-blanco);
-  border-radius: 23px 23px 0 0;
-}
+    /* LI de primer nivel con estrella */
+    #lista_subtema>li {
+      position: relative;
+      padding-left: 1.5em;
+    }
 
-.quiz-skill input[type="radio"].form-check-input {
- appearance: none;         /* quita el estilo nativo */
-  -webkit-appearance: none; /* quita el estilo nativo en Safari */
-  -moz-appearance: none;    /* quita el estilo nativo en Firefox */
+    #lista_subtema>li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      top: 0.1em;
+      color: var(--color-primario-4);
+      font-size: 15px;
+    }
 
-  width: 18px;       /* ajusta el tamaño si lo quieres más grande */
-  height: 18px;
-  border-radius: 0;  /* lo hace cuadrado */
-  border: 2px solid var(--color-primario-2); /* opcional: borde con tu color */
-  margin-right: 4px;
-  margin-top: 2px;
-}
+    /* UL anidados (segundo nivel en adelante) sin bullets */
+    #lista_subtema ul {
+      list-style: none;
+      /* quita los dots */
+      padding-left: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    /* Asegura que los LI anidados no hereden la estrella */
+    #lista_subtema ul li::before {
+      content: none;
+    }
+
+
+    .skillQuizContainer {
+      background-color: var(--color-secundario-6);
+    }
+
+    .quiz-skill {
+      border-style: solid;
+      border-radius: 25px;
+      border-color: var(--color-primario-2);
+      border-width: 2px;
+    }
+
+    .quiz-skill-pregunta {
+      background-color: var(--color-primario-4);
+      color: var(--color-blanco);
+      border-radius: 23px 23px 0 0;
+    }
+
+    .quiz-skill input[type="radio"].form-check-input {
+      appearance: none;
+      /* quita el estilo nativo */
+      -webkit-appearance: none;
+      /* quita el estilo nativo en Safari */
+      -moz-appearance: none;
+      /* quita el estilo nativo en Firefox */
+
+      width: 18px;
+      /* ajusta el tamaño si lo quieres más grande */
+      height: 18px;
+      border-radius: 0;
+      /* lo hace cuadrado */
+      border: 2px solid var(--color-primario-2);
+      /* opcional: borde con tu color */
+      margin-right: 4px;
+      margin-top: 2px;
+    }
 
 
 
-.quiz-skill form {
-  font-weight: bold;
-}
+    .quiz-skill form {
+      font-weight: bold;
+    }
 
-.form-check-label:hover {
-cursor: pointer;
-}
+    .form-check-label:hover {
+      cursor: pointer;
+    }
 
     /* @media (min-width: 1200px) {
 
@@ -790,7 +794,7 @@ h5 {
 
       <!-- Contenido principal -->
       <div id="content" class="col-md-9 p-0 h-100 d-flex flex-column">
-        
+
       </div>
     </div>
   </div>
@@ -821,4 +825,5 @@ h5 {
 </body>
 
 </html>
+
 
