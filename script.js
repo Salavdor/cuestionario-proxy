@@ -1290,18 +1290,42 @@ function handleOpenQuiz(actividad, container) {
 const content = document.getElementById("content");
 
 content.addEventListener("click", (e) => {
-  const btn = e.target.closest(".btn-lista"); // busca si el clic fue en un botón
-  console.log(btn);
+  const btn = e.target.closest(".btn-inter"); // busca si el clic fue en un botón
   if (!btn) return;
 
   const targetId = btn.getAttribute("data-target");
   const targetSubtema = document.querySelector(`.subtema[data-id="${targetId}"]`);
-
   if (targetSubtema) {
-    targetSubtema.click(); // simula el clic en el navmenu
-    targetSubtema.scrollIntoView({ behavior: "smooth", block: "center" }); // opcional
+    // Desactivar todos
+    document.querySelectorAll("#sidebar .subtema").forEach(st => st.classList.remove("active"));
+    targetSubtema.classList.add("active");
+
+    // Cargar contenido
+    const id = targetSubtema.dataset.id;
+    cargarContenido(id, modulosData);
+
+    // 👉 Abrir colapsables padres
+    let parentCollapse = targetSubtema.closest(".collapse");
+    while (parentCollapse) {
+      const inst = bootstrap.Collapse.getInstance(parentCollapse) 
+        || new bootstrap.Collapse(parentCollapse, { toggle: false });
+      inst.show();
+      parentCollapse = parentCollapse.parentElement.closest(".collapse");
+    }
+
+    // 👉 También abrir el módulo padre si está cerrado
+    const accordionBody = targetSubtema.closest(".accordion-collapse");
+    if (accordionBody) {
+      const inst = bootstrap.Collapse.getInstance(accordionBody) 
+        || new bootstrap.Collapse(accordionBody, { toggle: false });
+      inst.show();
+    }
+
+    // Hacer scroll
+    targetSubtema.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 });
+
 
 
 

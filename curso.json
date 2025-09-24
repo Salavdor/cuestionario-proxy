@@ -289,7 +289,7 @@
           "titulo": "Habilidades de Facilitación",
           "tituloContext": "Habilidades Interpersonales",
           "contenido": "",
-          "imagen": "<img src='src/img/m4_s1_f1.jpg' alt='Modulo1' class='img-fluid'>"
+          "imagen": "<div class='row'><img style='width:100%; height:auto;' src='src/img/m4_portada_habilidadesinterpersonalesSNBTN.svg'><a style='bottom: 30%;left: 66%;' class='btnH2 btn-inter' data-target='4-3'><h4 class='fw-bold m-0 px-3 title-body-secondary'>Habilidades de Facilitación y Metodológicas</h4></a><a style='bottom: 93%;left: 62%;' class='btnH2 btn-inter' data-target='4-2'><h4 class='fw-bold m-0 px-3 title-body-secondary'>Habilidades Interpersonales</h4></a><a style='bottom: 61%;left: -1%;' class='btnH2 btn-inter' data-target='4-4'><h4 class='fw-bold m-0 px-3 title-body-secondary'>Habilidades de Liderazgo y Gestión</h4></a></div>"
         },
         {
           "id": "4-2",
@@ -304,19 +304,19 @@
                 "texto": "<p>Son esenciales para crear confianza, cohesión y participación activa.</p>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0' data-target='4-2-1'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-1'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Escucha activa:</span> <br>comprender las necesidades, expectativas y preocupaciones de los miembros.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0' data-target='4-2-2'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-2'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Flexibilidad:</span> <br> capacidad para adaptarse y trabajar en distintas situaciones y con personas diversas.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0' data-target='4-2-3'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-3'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Empatía:</span> <br> conectar emocionalmente y adaptarse a diferentes estilos de participación.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0' data-target='4-2-4'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-4'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0' data-target='4-2-5'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-5'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
               }
             ]
           },
@@ -1340,13 +1340,13 @@
                 "texto": "<p>Permiten conducir sesiones, promover la colaboración y el aprendizaje compartido.</p>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Dinamizar de reuniones y talleres:</span> <br>activar espacios presenciales y virtuales (foros, chats o plataformas colaborativas) para que sean productivos y motivantes.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-3-1'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Dinamizar de reuniones y talleres:</span> <br>activar espacios presenciales y virtuales (foros, chats o plataformas colaborativas) para que sean productivos y motivantes.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Diseño de procesos participativos:</span> <br>estructurar actividades que fomenten la confianza y el intercambio de conocimientos.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-3-2'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Diseño de procesos participativos:</span> <br>estructurar actividades que fomenten la confianza y el intercambio de conocimientos.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Curaduría de contenidos:</span> <br>capturar los aprendizajes de la CoP, a la vez que seleccionar y presentar recursos útiles para ésta.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-3-3'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Curaduría de contenidos:</span> <br>capturar los aprendizajes de la CoP, a la vez que seleccionar y presentar recursos útiles para ésta.</p></div>"
               }
             ]
           },
@@ -2023,19 +2023,19 @@
                 "texto": "<p>Permiten mantener viva la comunidad y alineada con sus propósitos.</p>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Visión estratégica:</span> apoyar al líder a conectar los objetivos de la CoP con los de la organización o red y mantener una orientación al logro de resultados.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-4-1'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Visión estratégica:</span> apoyar al líder a conectar los objetivos de la CoP con los de la organización o red y mantener una orientación al logro de resultados.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Motivación e inspiración:</span> impulsar el buen ánimo, el sentido de propósito y de pertenencia.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-4-2'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Motivación e inspiración:</span> impulsar el buen ánimo, el sentido de propósito y de pertenencia.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Colaboración y compromiso:</span> se refiere a trabajar juntos para encontrar la mejor solución al problema, a la vez que las partes respetan los acuerdos  alcanzados (haciendo concesiones).</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-4-3'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Colaboración y compromiso:</span> se refiere a trabajar juntos para encontrar la mejor solución al problema, a la vez que las partes respetan los acuerdos  alcanzados (haciendo concesiones).</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Gestión del tiempo y recursos:</span> organizar cronogramas, espacios, y coordinar apoyos.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-4-4'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Gestión del tiempo y recursos:</span> organizar cronogramas, espacios, y coordinar apoyos.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista m-0'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Evaluación y mejora continua:</span> recoger retroalimentación y ajustar la dinámica del grupo.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-4-5'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-4);'>Evaluación y mejora continua:</span> recoger retroalimentación y ajustar la dinámica del grupo.</p></div>"
               }
             ]
           },
