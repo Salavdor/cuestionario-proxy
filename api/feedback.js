@@ -41,6 +41,38 @@ Mariano dice en una reunión de equipo:
 
 Respuesta del aprendiz:
 ${respuesta}
+
+---
+
+⚠️ Formatea SIEMPRE la salida en HTML con la siguiente estructura (no uses listas <ul>, <ol>, ni Markdown, SOLO este formato exacto):
+
+<h3>[Conclusión general sobre la respuesta del aprendiz]</h3> 
+
+<h4>Evaluación:</h4>
+<h5>
+  <strong style="color: #2670e0;">Claridad (X):</strong> [Explicación]</br>
+  <strong style="color: #2670e0;">Aplicación (X):</strong> [Explicación]</br> 
+  <strong style="color: #2670e0;">Profundidad de análisis (X):</strong> [Explicación]</br>
+  <strong style="color: #2670e0;">Retroalimentación breve y constructiva:</strong> [Texto]</br></br>
+</h5>
+
+<h4>Mejoras específicas:</h4>
+<h5>
+  <strong style="color: #2670e0;">1. [Título]:</strong> [Texto]</br>
+  <strong style="color: #2670e0;">2. [Título]:</strong> [Texto]</br>
+  <strong style="color: #2670e0;">3. [Título]:</strong> [Texto]</br>
+  <strong style="color: #2670e0;">4. [Título]:</strong> [Texto opcional]</br>
+  <strong style="color: #2670e0;">5. [Título]:</strong> [Texto opcional]</br></br>
+</h5>
+
+<h4>Corrección de errores:</h4>
+<h5>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</h5>
+
+⚠️ IMPORTANTE:
+- Usa siempre este formato HTML.
+- No agregues texto fuera de las etiquetas <h3>, <h4>, <h5>.
+- No uses listas (<ul>, <ol>) ni viñetas, solo <h5> con saltos de línea <br>.
+- No repitas el prompt ni des explicaciones adicionales.
 `;
 
   try {

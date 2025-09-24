@@ -1270,12 +1270,12 @@ function handleOpenQuiz(actividad, container) {
       if (!res.ok) throw new Error("Error en la respuesta del servidor");
 
       const data = await res.json();
-      feedbackDiv.innerHTML = `
-        <div class="d-flex justify-content-between align-items-start">
-          <div class="feedback-text flex-grow-1 me-2">${data.feedback || "No se recibió retroalimentación."}</div>
-          <button type="button" class="btn-close feedback-close"></button>
-        </div>
-      `;
+feedbackDiv.innerHTML = `
+  <div class="feedback-wrapper">
+    ${data.feedback || "<p>No se recibió retroalimentación.</p>"}
+    <button type="button" class="btn-close feedback-close"></button>
+  </div>
+`;
 
       const closeBtn = feedbackDiv.querySelector(".feedback-close");
       closeBtn.addEventListener("click", () => {
