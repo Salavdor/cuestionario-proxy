@@ -773,7 +773,7 @@ function renderSlides(subtema, path = []) {
 /* ---------------------- QUIZ ---------------------- */
 function renderQuiz(preguntas) {
   return `
-    <div class="actividad my-4">
+    <div class="actividad my-4 pb-3">
       ${preguntas.map((q, i) => `
         <div class="mb-3">
           <p><strong>${i+1}.</strong> ${q.enunciado}</p>
@@ -808,7 +808,7 @@ function handleQuiz(preguntas) {
 /* ---------------------- TRUE/FALSE ---------------------- */
 function renderTrueFalse(preguntas) {
   return `
-    <div class="actividad my-4">
+    <div class="actividad my-4 pb-3">
       ${preguntas.map((q, i) => `
         <div class="mb-3">
           <p><strong>${i+1}.</strong> ${q.enunciado}</p>
@@ -952,7 +952,7 @@ function handleTablaVF(actividad, tabla) {
 /* ---------------------- STEPS ---------------------- */
 function renderSteps(pasos, instruccion) {
   return `
-    <div class="actividad my-4">
+    <div class="actividad my-4 pb-3">
       <p class="fw-bold">${instruccion || ""}</p>
       <ol class="list-group list-group-numbered">
         ${pasos.map(p => `
@@ -1053,7 +1053,7 @@ function renderSkillQuiz(actividad, containerId) {
 
   return `
   <div class="px-3">
-    <div class="actividad mb-4 px-3" id="${containerId}">
+    <div class="actividad mb-4 px-3 pb-3" id="${containerId}">
       <div class="m-0 d-flex justify-content-end">
         <button class="btn btn-sm btn-outline-secondary btn-instrucciones" data-bs-toggle="modal" data-bs-target="#${modalId}">
           <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones.svg"><strong>Instrucciones</strong>
@@ -1169,7 +1169,7 @@ function renderOpenQuiz(actividad, containerId) {
 
   return `
   <div class="px-3">
-    <div class="actividad mb-4 px-3" id="${containerId}">
+    <div class="actividad mb-4 px-3 pb-3" id="${containerId}">
       <div class="m-0 d-flex justify-content-end">
         <button class="btn btn-sm btn-outline-secondary btn-instrucciones" data-bs-toggle="modal" data-bs-target="#${modalId}">
           <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones.svg"><strong>Instrucciones</strong>
