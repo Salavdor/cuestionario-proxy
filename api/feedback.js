@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   // ✅ prompt especializado
   const prompt = `
 Eres un experimentado facilitador de procesos grupales, en comunidades de práctica, 
-y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar ${concepto}.
+y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar <strong style="color: #2670e0;">${concepto}</strong>.
 
 Utilizando los siguientes criterios (basados en documentos validados de Google académico):
 
