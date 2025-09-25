@@ -54,6 +54,9 @@ ${respuesta}
 <h3><strong style="color: #2670e0;">${concepto}</strong></h3>
 <br>
 <br>
+<h5><strong>Planteamiento:</strong></h5>
+<p>${planteamiento}</p>
+<br>
 <h5><strong>Consigna:</strong></h5>
 <p>${consigna}</p>
 <br>
