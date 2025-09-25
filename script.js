@@ -1237,6 +1237,7 @@ function handleOpenQuiz(actividad, container, grupo) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          planteamiento: actividad.planteamiento,
           consigna: actividad.pregunta,
           respuesta,
           concepto: grupo // <-- aquí incluimos el grupo

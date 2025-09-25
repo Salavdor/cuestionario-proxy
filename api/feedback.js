@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Método no permitido" });
   }
 
-  const { respuesta, concepto, consigna } = req.body;
+  const { respuesta, concepto, consigna, planteamiento } = req.body;
 
   // ✅ prompt especializado
   const prompt = `
@@ -36,10 +36,13 @@ Luego realiza lo siguiente:
 - Si la respuesta contiene errores o conceptos imprecisos, corrígelos o acláralos brevemente.
 - Si hay errores o conceptos imprecisos, corrígelos o acláralos.
 
+Planteamiento de la situación:
+${planteamiento}
+
 Pregunta original o consigna:
 ${consigna}
 
-✅ Intenta una respuesta que demuestre Empatía.
+✅ Intenta una respuesta que demuestre ${concepto}.
 
 Respuesta del aprendiz:
 ${respuesta}
