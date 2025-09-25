@@ -241,6 +241,7 @@ if (subtema.actividad) {
   actividadHTML = renderActividad(subtema.actividad);
 }
 
+
 contentInner.innerHTML = `
   <div class="row m-0 p-3 encabezado">
     <h3><span class="fw-bold">Módulo ${numModulo}:</span> <span class="fw-light">${path[0]}</span></h3>
@@ -280,41 +281,43 @@ function procesarActividades(obj) {
   const esSlideGroup = obj.slides?.length > 0;
 
   // --- Caso 1: el subtema actual tiene slides con items ---
-  if (obj === subtema && esSlideGroup && obj.slides.some(slide => (slide.items || []).length > 0)) {
-    // Crear contenedor de slides
-    let slideContainer = document.getElementById(`slides_${subtema.id}`);
-    if (!slideContainer) {
-      contentInner.insertAdjacentHTML(
-        "beforeend",
-        `<div id="slides_${subtema.id}" class="d-flex flex-column h-100"></div>`
-      );
-      slideContainer = document.getElementById(`slides_${subtema.id}`);
-    }
+if (obj === subtema && esSlideGroup && obj.slides.some(slide => (slide.items || []).length > 0)) {
+  let slideContainer = document.getElementById(`slides_${subtema.id}`);
+  if (!slideContainer) {
+    contentInner.insertAdjacentHTML(
+      "beforeend",
+      `<div id="slides_${subtema.id}" class="d-flex flex-column h-100"></div>`
+    );
+    slideContainer = document.getElementById(`slides_${subtema.id}`);
+  }
 
-    // Renderizar slides
-    const slideObj = {
-      id: `${subtema.id}-slides`,
-      titulo: subtema.titulo,
-      slides: obj.slides.map(slide => ({
-        grupo: slide.grupo,
-        items: slide.items || []
-      }))
-    };
-    slideContainer.innerHTML = renderSlides(slideObj);
+  // Iterar cada slide y cada item
+  obj.slides.forEach(slide => {
+    slide.items.forEach(item => {
+      if (item.actividad) {
+        // Pasar grupo a renderActividad
+        slideContainer.innerHTML += renderActividad(item.actividad, slideContainer, slide.grupo);
+      } else if (item.contenido) {
+        // Si hay contenido estático
+        slideContainer.innerHTML += `<div class="slide-item">${item.contenido}</div>`;
+      }
+    });
+  });
 
-    // Crear navButtons solo aquí
-    let navWrapper = document.getElementById("navButtonsWrapper");
-    if (!navWrapper) {
-      navWrapper = document.createElement("div");
-      navWrapper.id = "navButtonsWrapper";
-      navWrapper.className = "d-flex justify-content-between align-items-center position-relative w-100 px-3";
-      navWrapper.innerHTML = `
-        <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">◂ Volver</button>
-        <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente ▸</button>
-      `;
-      content.appendChild(navWrapper);
-    }
-  } 
+  // Crear navButtons si no existen
+  let navWrapper = document.getElementById("navButtonsWrapper");
+  if (!navWrapper) {
+    navWrapper = document.createElement("div");
+    navWrapper.id = "navButtonsWrapper";
+    navWrapper.className = "d-flex justify-content-between align-items-center position-relative w-100 px-3";
+    navWrapper.innerHTML = `
+      <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">◂ Volver</button>
+      <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente ▸</button>
+    `;
+    content.appendChild(navWrapper);
+  }
+}
+
   // --- Caso 2: no hay slides (es actividad normal o contenido plano) ---
   else {
     // Eliminar botones si existen
@@ -331,7 +334,7 @@ function procesarActividades(obj) {
 
     procesarActividades(subtema);
 
-    mostrarToast("Contenido y actividades cargados");
+    // mostrarToast("Contenido y actividades cargados");
 
   }, 800);
 }
@@ -347,11 +350,12 @@ function findSubtemaRecursivo(modulos, subtemaId) {
     if (modulo.subtemas) {
       const result = findSubtemaEnLista(modulo.subtemas, subtemaId);
       if (result) {
-        console.log("✅ Subtema encontrado en módulo:", modulo.titulo);
-        console.log("   📌 Path:", result.path);
-        console.log("   🔎 Subtema completo:", result.subtema);
-        console.log("   📑 Slides detectados:", result.subtema.slides);
-        console.log("   📑 Actividad detectada:", result.subtema.actividad);
+        // console.log("✅ Subtema encontrado en módulo:", modulo.titulo);
+        // console.log("   📌 Path:", result.path);
+        // console.log("   🔎 Subtema completo:", result.subtema);
+        // console.log("   📑 Slides detectados:", result.subtema.slides);
+        // console.log("   📑 Nombre del Grupo detectados:", result.subtema.slides.grupo);
+        // console.log("   📑 Actividad detectada:", result.subtema.actividad);
         return result;
       }
     }
@@ -431,7 +435,7 @@ function mostrarToast(msg) {
   const toastBody = document.getElementById("toastMsg");
   toastBody.textContent = msg;
   const toast = new bootstrap.Toast(toastEl);
-  toast.show();
+  // toast.show();
 }
 
 function marcarCompletado(subtemaId) {
@@ -440,7 +444,7 @@ function marcarCompletado(subtemaId) {
   localStorage.setItem("progreso", JSON.stringify(progreso));
   mostrarToast(`Subtema ${subtemaId} completado ✅`);
 }
-function renderActividad(actividad) {
+function renderActividad(actividad, container, grupo) {
   if (!actividad || !actividad.tipo) return "";
 
   switch (actividad.tipo) {
@@ -457,7 +461,7 @@ function renderActividad(actividad) {
       return renderTrueFalse(actividad.preguntas);
 
     case "openquestion":
-      return renderOpenQuestion(actividad);
+      return renderOpenQuestion(actividad, grupo);
 
     case "steps":
       return renderSteps(actividad.pasos, actividad.instruccion);
@@ -754,10 +758,14 @@ function renderSlides(subtema, path = []) {
         const skillContainer = document.getElementById(containerId);
         if (skillContainer) handleSkillQuizAuto(current.actividad, skillContainer);
       }
-      if (containerId && current.actividad?.tipo === "openquiz") {
-        const openContainer = document.getElementById(containerId);
-        if (openContainer) handleOpenQuiz(current.actividad, openContainer);
+    if (containerId && current.actividad?.tipo === "openquiz") {
+      const openContainer = document.getElementById(containerId);
+      if (openContainer) {
+        // Suponiendo que 'current' está dentro de un slide y tiene la propiedad grupo
+        const grupo = current.grupo || "Sin grupo";
+        handleOpenQuiz(current.actividad, openContainer, grupo);
       }
+    }
       if (current.actividad?.tipo === "quiz") handleQuiz(current.actividad.preguntas);
       if (current.actividad?.tipo === "truefalse") handleTrueFalse(current.actividad.preguntas);
       if (current.actividad?.tipo === "tablaVF") {
@@ -1240,7 +1248,7 @@ function renderOpenQuiz(actividad, containerId) {
 }
 
 
-function handleOpenQuiz(actividad, container) {
+function handleOpenQuiz(actividad, container, grupo) {
   if (!actividad || !container) return;
 
   const form = container.querySelector(".openquiz-form");
@@ -1257,25 +1265,26 @@ function handleOpenQuiz(actividad, container) {
     feedbackDiv.textContent = "Enviando...";
 
     try {
-      // Adaptar URL a tu servicio
+      // Enviar al proxy incluyendo el grupo
       const res = await fetch("https://cuestionario-proxy.vercel.app/api/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          pregunta: actividad.pregunta,
-          respuesta
+          consigna: actividad.pregunta,
+          respuesta,
+          concepto: grupo // <-- aquí incluimos el grupo
         })
       });
 
       if (!res.ok) throw new Error("Error en la respuesta del servidor");
 
       const data = await res.json();
-feedbackDiv.innerHTML = `
-  <div class="feedback-wrapper">
-    ${data.feedback || "<p>No se recibió retroalimentación.</p>"}
-    <button type="button" class="btn-close feedback-close"></button>
-  </div>
-`;
+      feedbackDiv.innerHTML = `
+        <div class="feedback-wrapper">
+          ${data.feedback || "<p>No se recibió retroalimentación.</p>"}
+          <button type="button" class="btn-close feedback-close"></button>
+        </div>
+      `;
 
       const closeBtn = feedbackDiv.querySelector(".feedback-close");
       closeBtn.addEventListener("click", () => {
@@ -1286,6 +1295,7 @@ feedbackDiv.innerHTML = `
     }
   });
 }
+
 
 const content = document.getElementById("content");
 

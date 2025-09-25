@@ -15,27 +15,29 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Método no permitido" });
   }
 
-  const { respuesta } = req.body;
+  const { respuesta, concepto, consigna } = req.body;
 
-  // ✅ Aquí va el nuevo prompt especializado en empatía
+  // ✅ prompt especializado
   const prompt = `
-Eres un experimentado facilitador de procesos grupales en comunidades de práctica.
-Debes evaluar la respuesta de un aprendiz a una situación que debe demostrar EMPATÍA.
+Eres un experimentado facilitador de procesos grupales, en comunidades de práctica, 
+y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar ${concepto}.
 
-Criterios de evaluación (puntaje de 2 a 7, basado en documentos validados en Google Académico):
-1. Claridad: ¿La respuesta está bien redactada y es fácil de entender?
-2. Aplicación: ¿La respuesta se mantiene enfocada, demuestra manejo y conocimiento en línea con el tema y la pregunta inicial?
-3. Profundidad de análisis: ¿La respuesta demuestra comprensión, reflexión o análisis del tema?
+Utilizando los siguientes criterios (basados en documentos validados de Google académico):
+
+(2= incorrecto; 3= insuficiente; 4= regular; 5= bien, 6= Muy bien; 7= excelente)
+
+1. Claridad: ¿La respuesta está bien redactada y es fácil de entender? (Puntúa desde 2 a 7).
+2. Aplicación: ¿la respuesta se mantiene enfocada, demuestra manejo y conocimiento en línea con el tema y la pregunta inicial? (Puntúa desde 2 a 7).
+3. Profundidad de análisis: ¿La respuesta demuestra comprensión, reflexión o análisis del tema? ((Puntúa desde 2 a 7).
 
 Luego realiza lo siguiente:
-- Asigna puntaje a cada criterio (2 a 7).
-- Escribe una retroalimentación breve y constructiva.
-- Sugiere de 3 a 5 mejoras específicas, dependiendo de la evaluación obtenida (a menor puntaje, más mejoras).
+- Escribe una retroalimentación breve y constructiva para el aprendiz.
+- Sugiere 3 a 5 mejoras específicas que podría implementar, dependiendo de la evaluación obtenida (a menor evaluación, mayor número de mejoras).
+- Si la respuesta contiene errores o conceptos imprecisos, corrígelos o acláralos brevemente.
 - Si hay errores o conceptos imprecisos, corrígelos o acláralos.
 
-Pregunta original:
-Mariano dice en una reunión de equipo:
-"A veces siento que no soy parte del grupo, como si mis ideas no contaran tanto."
+Pregunta original o consigna:
+${consigna}
 
 ✅ Intenta una respuesta que demuestre Empatía.
 
@@ -47,26 +49,26 @@ ${respuesta}
 ⚠️ Formatea SIEMPRE la salida en HTML con la siguiente estructura (no uses listas <ul>, <ol>, ni Markdown, SOLO este formato exacto):
 
 <h3>[Conclusión general sobre la respuesta del aprendiz]</h3> 
-
-<h4>Evaluación:</h4>
-<h5>
-  <strong style="color: #2670e0;">Claridad (X):</strong> [Explicación]</br>
-  <strong style="color: #2670e0;">Aplicación (X):</strong> [Explicación]</br> 
-  <strong style="color: #2670e0;">Profundidad de análisis (X):</strong> [Explicación]</br>
+</br>
+<h5><strong>Evaluación:</strong></h5>
+<p>
+  <strong style="color: #2670e0;">Claridad (X):</strong> [Explicación]</br></br>
+  <strong style="color: #2670e0;">Aplicación (X):</strong> [Explicación]</br></br> 
+  <strong style="color: #2670e0;">Profundidad de análisis (X):</strong> [Explicación]</br></br>
   <strong style="color: #2670e0;">Retroalimentación breve y constructiva:</strong> [Texto]</br></br>
-</h5>
+</p>
 
-<h4>Mejoras específicas:</h4>
-<h5>
-  <strong style="color: #2670e0;">1. [Título]:</strong> [Texto]</br>
-  <strong style="color: #2670e0;">2. [Título]:</strong> [Texto]</br>
-  <strong style="color: #2670e0;">3. [Título]:</strong> [Texto]</br>
-  <strong style="color: #2670e0;">4. [Título]:</strong> [Texto opcional]</br>
+<h5><strong>Mejoras específicas:</strong></h5>
+<p>
+  <strong style="color: #2670e0;">1. [Título]:</strong> [Texto]</br></br>
+  <strong style="color: #2670e0;">2. [Título]:</strong> [Texto]</br></br>
+  <strong style="color: #2670e0;">3. [Título]:</strong> [Texto]</br></br>
+  <strong style="color: #2670e0;">4. [Título]:</strong> [Texto opcional]</br></br>
   <strong style="color: #2670e0;">5. [Título]:</strong> [Texto opcional]</br></br>
-</h5>
+</p>
 
-<h4>Corrección de errores:</h4>
-<h5>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</h5>
+<h5><strong>Corrección de errores:</strong></h5>
+<p>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</p>
 
 ⚠️ IMPORTANTE:
 - Usa siempre este formato HTML.
