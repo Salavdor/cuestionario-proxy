@@ -280,42 +280,9 @@ function procesarActividades(obj) {
 
   const esSlideGroup = obj.slides?.length > 0;
 
-  // --- Caso 1: el subtema actual tiene slides con items ---
-if (obj === subtema && esSlideGroup && obj.slides.some(slide => (slide.items || []).length > 0)) {
-  let slideContainer = document.getElementById(`slides_${subtema.id}`);
-  if (!slideContainer) {
-    contentInner.insertAdjacentHTML(
-      "beforeend",
-      `<div id="slides_${subtema.id}" class="d-flex flex-column h-100"></div>`
-    );
-    slideContainer = document.getElementById(`slides_${subtema.id}`);
-  }
-
-  // Iterar cada slide y cada item
-  obj.slides.forEach(slide => {
-    slide.items.forEach(item => {
-      if (item.actividad) {
-        // Pasar grupo a renderActividad
-        slideContainer.innerHTML += renderActividad(item.actividad, slideContainer, slide.grupo);
-      } else if (item.contenido) {
-        // Si hay contenido estático
-        slideContainer.innerHTML += `<div class="slide-item">${item.contenido}</div>`;
-      }
-    });
-  });
-
-  // Crear navButtons si no existen
-  let navWrapper = document.getElementById("navButtonsWrapper");
-  if (!navWrapper) {
-    navWrapper = document.createElement("div");
-    navWrapper.id = "navButtonsWrapper";
-    navWrapper.className = "d-flex justify-content-between align-items-center position-relative w-100 px-3";
-    navWrapper.innerHTML = `
-      <button id="btnSlidePrev" class="btn btn-outline-secondary btn-volver">◂ Volver</button>
-      <button id="btnSlideNext" class="btn btn-outline-secondary btn-siguiente">Siguiente ▸</button>
-    `;
-    content.appendChild(navWrapper);
-  }
+if (obj === subtema && esSlideGroup) {
+  const slidesHTML = renderSlides(subtema, path);
+  contentInner.insertAdjacentHTML("beforeend", slidesHTML);
 }
 
   // --- Caso 2: no hay slides (es actividad normal o contenido plano) ---
