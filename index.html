@@ -104,7 +104,7 @@
     .img-container img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
       object-position: center bottom;
     }
 
@@ -570,7 +570,7 @@ table.tabla-vf .vf-input[type="radio"]:checked::after {
     .btn-siguiente {
       border: none;
       font-weight: bold;
-      color: var(--color-negro);
+      color: var(--color-blanco);
     }
 
     .btn-volver:hover,
@@ -578,9 +578,16 @@ table.tabla-vf .vf-input[type="radio"]:checked::after {
       background-color: #00000000;
       border: none;
       font-weight: bold;
-      color: var(--color-negro);
+      color: var(--color-blanco);
       transform: scale(1.1);
     }
+
+    .btn-volver:active,
+    .btn-siguiente:active {
+      color: var(--color-blanco) !important;
+    background-color: transparent !important;
+    border-color: transparent;
+}
 
     .btn-volver span,
     .btn-siguiente span {
@@ -595,8 +602,8 @@ table.tabla-vf .vf-input[type="radio"]:checked::after {
       bottom: 0;
       left: 0;
       right: 0;
-      background: var(--color-blanco);
-      border-top: var(--color-primario-1) solid 1px;
+      background: var(--color-primario-4);
+      border-top: var(--color-secundario-1) solid 2px; 
       padding: 10px;
       display: flex;
       justify-content: space-between;
