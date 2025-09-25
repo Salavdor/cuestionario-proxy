@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   // ✅ prompt especializado
   const prompt = `
 Eres un experimentado facilitador de procesos grupales, en comunidades de práctica, 
-y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar <strong style="color: #2670e0;">${concepto}</strong>.
+y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar ${concepto}.
 
 Utilizando los siguientes criterios (basados en documentos validados de Google académico):
 
@@ -48,7 +48,11 @@ ${respuesta}
 
 ⚠️ Formatea SIEMPRE la salida en HTML con la siguiente estructura (no uses listas <ul>, <ol>, ni Markdown, SOLO este formato exacto):
 
-<h3>[Conclusión general sobre la respuesta del aprendiz]</h3> 
+<h3><strong style="color: #2670e0;">${concepto}</strong></h3>
+<br>
+<br>
+<h5><strong>Respuesta del aprendiz:</strong></h5>
+<p>${respuesta}</p>
 </br>
 <h5><strong>Evaluación:</strong></h5>
 <p>
@@ -68,6 +72,7 @@ ${respuesta}
 </p>
 
 <h5><strong>Corrección de errores:</strong></h5>
+<p>[Conclusión general sobre la respuesta del aprendiz]</p> 
 <p>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</p>
 
 ⚠️ IMPORTANTE:
