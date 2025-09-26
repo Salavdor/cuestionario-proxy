@@ -748,6 +748,29 @@ table.tabla-vf .vf-input[type="radio"]:checked::after {
       min-width: 275px;
     }
 
+    /* tablastyle */
+
+      .tabla-interactiva {
+    display: none;
+    background: #ffffff;
+  }
+  .tabla-interactiva.open {
+    display: table-row;
+  }
+  .collapse-row td {
+    cursor: pointer;
+    padding: 8px;
+  }
+  .collapse-row:hover {
+    background: #eee;
+  }
+  tr.tabla-interactiva {
+    background-color: #1fb0ee3d;
+  }
+  .collapse-row.active {
+    background-color: #1fb0eee8;
+  }
+
     /* @media (min-width: 1200px) {
 
       p,

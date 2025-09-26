@@ -264,6 +264,11 @@ contentInner.innerHTML = `
     : ""}
   ${actividadHTML}
   ${subtema.imagen || ""}
+
+    <!-- Si hay modales los pintamos -->
+  ${subtema.modal && Array.isArray(subtema.modal) && subtema.modal.length > 0
+    ? subtema.modal.map(m => m.modalitem).join("")
+    : ""}
 `;
 
 if (subtema.actividad && subtema.actividad.tipo === "tablaVF") {
@@ -1305,6 +1310,18 @@ content.addEventListener("click", (e) => {
 });
 
 
+// ---------------- abre y cierra la tabla ----------------
+  // Delegación de eventos sobre el contenedor dinámico
+  document.getElementById("content").addEventListener("click", (e) => {
+    const row = e.target.closest(".collapse-row");
+    if (!row) return; // no clickeaste una fila colapsable
+    
+    const contentRow = row.nextElementSibling;
+    if (contentRow && contentRow.classList.contains("tabla-interactiva")) {
+      contentRow.classList.toggle("open");
+      row.classList.toggle("active");
+    }
+  });
 
 
 

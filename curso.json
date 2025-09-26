@@ -276,9 +276,124 @@
       "subtemas": [{
         "id": "2-1",
         "titulo": "Roles básicos de una CoP",
-        "tituloContext": "Roles básicos de una CoP",
-        "contenido": "<p><b>Esta relación de roles es meramente orientativa. </b></br> No es necesario realizar todos estos roles en casos de comunidades pequeñas. Por el contario, en comunidades numerosas pueden incorporarse otros roles, como sub lideres, coordinadores, etc.</p> <div class='col-12'> <img style='width:100%; height:auto; ' src='src/img/modulo2_item2_fondo.jpg'><a style='cursor:pointer'class='botonmano'> <img  class='img-fluid' src='src/img/patrocinador.png' style=' margin-top:-50%; left:32% ; width:3.5vw; height:3.5vw; position:relative '></a> <a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalEjemplos0'> <img class='card-img-overlay img-fluid' src='src/img/participantes.png' style=' margin-top: -49%; left:48% ; width:3.5vw;height:3.5vw;position:relative'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalEjemplos0'> <img class=' img-fluid' src='src/img/lider.png' style=' margin-top:-33%;margin-left:35% ;width:3.5vw;height:3.5vw;postion:relative'></a><a style='cursor:pointer'class='botonmano'> <img  class='img-fluid' src='src/img/facilitador.png' style=' margin-top:-33%; left:10.5% ; width:3.5vw; height:3.5vw; position:relative '></a><a style='cursor:pointer'class='botonmano'> <img  class='img-fluid' src='src/img/comunidades.png' style=' margin-top:-18%; left:-3% ; width:3.5vw; height:3.5vw; position:relative '></a></div><p><b>En este módulo revisaremos los roles claves para el funcionamiento de una <span class='title-body-secondary'>(CoP)</span>, el papel del Líder y del Facilitador.</b></br> </p>"
-      }]
+        "tituloContext": "",
+        "contenido": "<h2 class='pb-4 fw-bold'>Roles básicos de una <span class='title-body-secondary'>(CoP)</span></h2><p><b>Esta relación de roles es meramente orientativa.</b><br/> No es necesario realizar todos estos roles en casos de comunidades pequeñas. Por el contrario, en comunidades numerosas pueden incorporarse otros roles, como sub-líderes, coordinadores, etc.</p><div class='col-12 ' ><img style='width:100%; height:auto; padding-left:20vw; padding-right:20vw' src='src/img/modulo2_item2_fondo.jpg' alt='fondo'><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalPatrocinador'><img class='img-fluid' src='src/img/patrocinador.png' style='margin-top:-46%; left:29%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalParticipantes'><img class='card-img-overlay img-fluid' src='src/img/participantes.png' style='margin-top:-43%; left:49.3%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalLider'><img class='img-fluid' src='src/img/lider.png' style='margin-top:-26.5%; margin-left:36%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalFacilitador'><img class='img-fluid' src='src/img/facilitador.png' style='margin-top:-26.5%;; left:12.5%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalComunidades'><img class='img-fluid' src='src/img/comunidades.png' style='margin-top:-12%; margin-left:54.3%; width:3.5vw; height:3.5vw; position:relative;'></a></div><p><b>En este módulo revisaremos los roles claves para el funcionamiento de una <span class='title-body-secondary'>(CoP)</span>, el papel del Líder y del Facilitador.</b><br/></p>",
+         "modal": [
+              {
+                "modalitem": "<div class='modal fade' id='ModalPatrocinador' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content '><div class='modal-body'><h5>Patrocinador</h5> Se trata de la persona con autoridad suficiente dentro de la organización que valida su creación y asigna los recursos necesarios para asegurar su correcto funcionamiento. No participa directamente en ella.</div></div></div></div>"
+            },
+                  {
+                "modalitem": "<div class='modal fade' id='ModalLider' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Líder / Representante de la CoP</h5>Se trata de una persona, con una cierta ascendencia y reconocimiento entre sus pares y compañeros de la COP. Su función principal es la de ser un tractor de la Comunidad, asegurando el cumplimiento de los objetivos establecidos. Se relaciona con el patrocinador.</div></div></div></div>"
+            },
+            {
+                "modalitem": "<div class='modal fade' id='ModalParticipantes' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Participantes</h5> Participantes. Son todas las personas miembros de la CoP. Han asumido el compromiso de aportar su esfuerzo y conocimiento para que la CoP alcance los objetivos establecidos.</div></div></div></div>"
+            },
+                {
+                "modalitem": "<div class='modal fade' id='ModalFacilitador' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Facilitador</h5> Se trata de la persona que vela por el clima de la CoP y por fomentar la participación de todos sus miembros.  Se ocupa de la comunicación y de registrar los acuerdos tomados, las tareas, etc. </div></div></div></div>"
+            },
+                {
+                "modalitem": "<div class='modal fade' id='ModalComunidades' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Comunidad extendida</h5> Formada por miembros ocasionales que participan en la CoP de manera esporádica. Pueden ser expertos externos, especialistas en TI, responsables de comunicación para difundir los avances de la CoP en la organización, etc.</div></div></div></div>"
+            }]
+      },
+      {
+        "id": "2-2",
+        "titulo": "Roles claves de la comunidad",
+        "tituloContext": "",
+        "contenido": "<div><h2 class='pb-4 fw-bold'>Roles claves de la comunidad: líder y facilitador</h2><p>La función esencial de estos roles es mantener activa la comunidad, atender las necesidades de sus participantes y velar por el cumplimiento de los objetivos fijados.<br><br>A continuación, se describen 5 tareas fundamentales que deben realizarse durante el desarrollo de una CoP, las cuales serán asumidas principalmente por el líder y el facilitador:</p><table border='1' width='100%' style='border-collapse: collapse; font-family: sans-serif;'> <thead style='background:#2670e0; color:white; border: 3px solid #1fb0ee;'> <tr> <th>Tarea</th> <th>Lider</th> <th>Facilitador</th> </tr> </thead> <tbody style='border: 3px solid #1fb0ee;'> <!-- Fila 1 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>1. PLANIFICAR – ORGANIZAR EL TRABAJO DE LA COMUNIDAD</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Velar por que los esfuerzos realizados por los participantes apunten hacia el cumplimiento de los objetivos y el propósito. Así como, en la medida que surjan nuevos puntos de interés, evaluar la factibilidad de abarcar, postergar o desechar su abordaje.</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal<br>(estratégica)</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal<br>(operativa)</p></td> </tr> <!-- Fila 2 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>2. FOMENTAR LA PARTICIPACIÓN.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Motivar a los miembros a participar activamente en la Comunidad, compartiendo su experiencias, proponiendo temas de debate; conectando a quien tiene necesidad con quien tiene soluciones y contribuyendo con sus conocimientos e inquietudes.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 3 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>3. ADMINISTRAR y SISTEMATIZAR CONTENIDOS.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Buscar, seleccionar y distribuir recursos relevantes, como artículos, estudios de caso y herramientas, que puedan ayudar a los miembros a mejorar sus habilidades y conocimientos. Generar contenido a partir del trabajo de la propia CoP.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 4 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>4. SEGUIMIENTO Y EVALUACIÓN DE LA CoP PARA LA MEJORA CONTINUA.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Monitorear el progreso de la Comunidad y recoger feedback de los miembros para identificar áreas de mejora y ajustar las estrategias de gestión en consecuencia.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 5 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>5. MANTENER INFORMADA A LA ORGANIZACIÓN SOBRE EL ESTADO DEL ARTE DE LA COMUNIDAD.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>La información sobre los avances de la CoP es esencial para asegurar su éxito y sostenibilidad a largo plazo, así como para maximizar el impacto positivo en la organización.</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> </tr> </tbody> </table>"
+      },
+            {
+        "id": "2-3",
+        "titulo": "La participación del líder",
+        "tituloContext": "",
+        "contenido": "<h2 class='pb-4 fw-bold'>La participación del Líder</h2> <p>Se basa en su conocimiento del tema o bien, en su capacidad para orientar, coordinar y representar el trabajo que se realiza en la CoP.</br></br> <b>Su rol supone:</b></p><div class='col-12'><img src='src/img/modulo2_item3_fondo.jpg' alt='Modulo2' class='img-fluid ' style='z-index:-10; margin-top:5%'><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalRelacionarse'> <img class='card-img-overlay img-fluid' src='src/img/m2_i3_2relacionarse.svg' style=' margin-top: -68%; left:30% ; width:12vw;height:auto;position:relative; z-index:1'></a><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalDesafiar'> <img  class='img-fluid' src='src/img/m2_i3_3desafiar.svg' style=' margin-top:-68%; left:28% ; width:12vw; height:auto; position:relative'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalProponer'> <img class=' img-fluid' src='src/img/m2_i3_1proponer.svg' style=' margin-top:-90%;margin-left:3.5% ;width:12vw;height:auto;position:relative; z-index:3'></a> </div>",
+         "modal": [
+                  {
+                    "modalitem": "<div class='modal fade' id='ModalProponer' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_proponer.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                },
+                      {
+                    "modalitem": "<div class='modal fade' id='ModalRelacionarse' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_relacionarse.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                },
+                {
+                    "modalitem": "<div class='modal fade' id='ModalDesafiar' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_desafiar.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                }]
+      },
+            {
+        "id": "2-4",
+        "titulo": "La participación del facilitador",
+        "tituloContext": "",
+        "contenido": "<h2 class='pb-4 fw-bold'>La participación del facilitador</h2> <p>Se basa en la motivación, el apoyo y el intercambio comunicacional entre los participantes.</br></br> <b>Su rol supone:</b></p><div class='col-12'><img src='src/img/modulo2_item4_fondo.jpg' alt='Modulo2' class='img-fluid ' style='z-index:-10; margin-top:20%'><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalFacilitar'> <img class='card-img-overlay img-fluid' src='src/img/m2_i4_1facilitar.svg' style=' margin-top: -90%; left:35% ; width:12vw;height:auto;position:relative; z-index:4'></a><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalAdministrar'> <img  class='img-fluid' src='src/img/m2_i4_2administrar.svg' style=' margin-top:-90%; left:32% ; width:12vw; height:auto; position:relative; z-index:3'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalCrear'> <img class=' img-fluid' src='src/img/m2_i4_3crear.svg' style=' margin-top:-68%;left:1% ;width:12vw;height:auto;position:relative; z-index:3'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalModerar'> <img class=' img-fluid' src='src/img/m2_i4_4moderar.svg' style=' margin-top:-68%;left:-1% ;width:12vw;height:auto;position:relative; z-index:1'></a> </div>",
+        "modal": [
+                  {
+                    "modalitem": "<div class='modal fade' id='ModalFacilitar' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_1Facilitar.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                },
+                      {
+                    "modalitem": "<div class='modal fade' id='ModalAdministrar' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_2Administrar.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                },
+                {
+                    "modalitem": "<div class='modal fade' id='ModalCrear' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_3Crear.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                },
+                    {
+                    "modalitem": "<div class='modal fade' id='ModalModerar' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_4Moderar.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                }]
+      },
+       {
+        "id": "2-5",
+        "titulo": "Características para el ejercicio del rol de facilitador",
+        "tituloContext": "",
+        "contenido": "<h2 class='pb-4 fw-bold'>Características para el ejercicio del rol de facilitador</h2> <p>A diferencia del líder, que es elegido por sus pares a partir de su experiencia, sus conocimientos o cierta capacidad de coordinar acciones y representar al grupo, el facilitador debe contar con ciertas características personales que le proporcionen una base desde la cual desarrollar su labor. </br></br> <b>Estas principales habilidades, vitales para el éxito de cualquier equipo de trabajo, serían:</b></p> <div class='col-12'> <img style='width:100%; height:auto; ' src='src/img/modulo2_item5_fondo.jpg'><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalInterpersonales'> <img  class='img-fluid' src='src/img/m2_i5_1Interpersonales.png' style=' margin-top:-83%; left:59% ; width:12vw; height:auto; position:relative '></a> <a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalLiderazgo'> <img class='card-img-overlay img-fluid' src='src/img/m2_i5_2Liderazgo.png' style=' margin-top: -7%; left:50% ; width:12vw;height:auto;position:relative'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalFacilitacion'> <img class=' img-fluid' src='src/img/m2_i5_3Facilitacion.png' style=' margin-top:-43%;margin-left:-10% ;width:12vw;height:auto;postion:relative'></a></div>",
+        "modal": [
+                  {
+                    "modalitem": "<div class='modal fade' id='ModalInterpersonales' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_1Interpersonales.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                },
+                      {
+                    "modalitem": "<div class='modal fade' id='ModalLiderazgo' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_2Liderazgo.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                },
+                {
+                    "modalitem": "<div class='modal fade' id='ModalFacilitacion' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_3Facilitacion.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                }]
+      },
+       {
+            "id": "2.6",
+            "titulo": "Evaluación",
+            "tituloContext":"Evaluación",
+            "contenido": "",
+            "actividad": {
+                "tipo": "tablaVF",
+                "preguntas": [
+                  {
+                    "pregunta": "La tarea fundamental del facilitador es proponer las metas de la CoP",
+                    "respuestaCorrecta": "F",
+                    "retroCorrecta": "Es tarea fundamental del líder",
+                    "retroIncorrecta": "No es correcto"
+                  },
+                  {
+                    "pregunta": "Retroalimentar al grupo, se relaciona con el objetivo de generar confianza",
+                    "respuestaCorrecta": "V",
+                    "retroCorrecta": "¡Bien!",
+                    "retroIncorrecta": "No es correcto"
+                  },
+                  {
+                    "pregunta": "El facilitador debe mantener el foco de la conversación, evitando la dispersión del grupo",
+                    "respuestaCorrecta": "V",
+                    "retroCorrecta": "¡Bien!",
+                    "retroIncorrecta": "No es correcto"
+                  },
+                  {
+                    "pregunta": "El facilitador debe dar cuenta del estado de avance de la CoP a las autoridades de la organización",
+                    "respuestaCorrecta": "F",
+                    "retroCorrecta": "Es tarea fundamental del líder",
+                    "retroIncorrecta": "No es correcto"
+                  },
+                  {
+                    "pregunta": "El líder debe sistematizar los contenidos y aprendizajes de la CoP",
+                    "respuestaCorrecta": "F",
+                    "retroCorrecta": "Es tarea fundamental del facilitador",
+                    "retroIncorrecta": "No es correcto"
+                  }
+                ]
+              }
+          } 
+    ]
     },
     {
       "id": 4,
