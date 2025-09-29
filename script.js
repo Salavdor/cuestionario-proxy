@@ -1223,17 +1223,26 @@ function handleOpenQuiz(actividad, container, grupo) {
   const textarea = container.querySelector(".openquiz-textarea");
   const feedbackDiv = container.querySelector(".openquiz-feedback");
 
+  let isSubmitting = false; // 🚫 evita envíos múltiples
+
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    if (isSubmitting) return; 
+    isSubmitting = true;
+
     const respuesta = textarea.value.trim();
-    if (!respuesta) return;
+    if (!respuesta) {
+      feedbackDiv.style.display = "block";
+      feedbackDiv.textContent = "⚠️ Debes escribir una respuesta.";
+      isSubmitting = false;
+      return;
+    }
 
     feedbackDiv.style.display = "block";
     feedbackDiv.textContent = "Enviando...";
 
     try {
-      // Enviar al proxy incluyendo el grupo
       const res = await fetch("https://cuestionario-proxy.vercel.app/api/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -1241,13 +1250,18 @@ function handleOpenQuiz(actividad, container, grupo) {
           planteamiento: actividad.planteamiento,
           consigna: actividad.pregunta,
           respuesta,
-          concepto: grupo // <-- aquí incluimos el grupo
+          concepto: grupo
         })
       });
 
-      if (!res.ok) throw new Error("Error en la respuesta del servidor");
+      // 📌 Log más claro en caso de error
+      if (!res.ok) {
+        const errorText = await res.text();
+        throw new Error(`Servidor respondió ${res.status}: ${errorText}`);
+      }
 
       const data = await res.json();
+
       feedbackDiv.innerHTML = `
         <div class="feedback-wrapper">
           ${data.feedback || "<p>No se recibió retroalimentación.</p>"}
@@ -1260,10 +1274,14 @@ function handleOpenQuiz(actividad, container, grupo) {
         feedbackDiv.style.display = "none";
       });
     } catch (err) {
+      console.error("Error en handleOpenQuiz:", err);
       feedbackDiv.textContent = "Ocurrió un error: " + err.message;
+    } finally {
+      isSubmitting = false; // ✅ libera el bloqueo
     }
   });
 }
+
 
 
 const content = document.getElementById("content");
