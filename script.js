@@ -1273,10 +1273,12 @@ function handleOpenQuiz(actividad, container, grupo) {
       closeBtn.addEventListener("click", () => {
         feedbackDiv.style.display = "none";
       });
-    } catch (err) {
-      console.error("Error en handleOpenQuiz:", err);
-      feedbackDiv.textContent = "Ocurrió un error: " + err.message;
-    } finally {
+    }  catch (error) {
+  console.error("Error en el servidor Gemini:", error?.message || error);
+  res.status(500).json({ 
+    error: error?.message || "Error generando retroalimentación" 
+  });
+} finally {
       isSubmitting = false; // ✅ libera el bloqueo
     }
   });
