@@ -1,17 +1,13 @@
 // 💡 CAMBIO 1: Importar la clase del nuevo SDK unificado (@google/genai)
-import { GoogleGenAI } from "@google/genai";
+// import { GoogleGenAI } from "@google/genai";
 
 export default async function handler(req, res) {
   // Headers CORS
-  // res.setHeader('Access-Control-Allow-Origin', '*');
-  // res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  // res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Origin', '*'); // <--- Asegura el encabezado
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
     return res.status(200).end();
   }
 
@@ -78,6 +74,7 @@ ${respuesta}
 `;
 
   try {
+    const { GoogleGenAI } = await import("@google/genai"); 
     // ... (Tu lógica de Gemini)
     const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }); 
     
