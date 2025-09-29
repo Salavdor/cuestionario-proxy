@@ -75,21 +75,16 @@ ${respuesta}
 
   try {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "text-bison-001" });
+    const model = genAI.getGenerativeModel({ model: "models/gemini-1.5" });
 
     // ✅ Llamada al modelo usando contents
-    const result = await model.generateContent({
-      contents: [
-        {
-          role: "user",
-          parts: [{ text: prompt }]
-        }
-      ]
+  const result = await model.generateContent({
+      contents: [{ role: "user", parts: [{ text: prompt }] }]
     });
 
     const text = result.response.text();
-
     res.status(200).json({ feedback: text });
+
   } catch (error) {
     console.error("❌ Error en el servidor Gemini:", error);
 
