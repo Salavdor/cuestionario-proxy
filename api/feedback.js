@@ -1,4 +1,5 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+// 💡 CAMBIO 1: Importar la clase del nuevo SDK unificado (@google/genai)
+import { GoogleGenAI } from "@google/genai";
 
 export default async function handler(req, res) {
   // Headers CORS
@@ -74,15 +75,17 @@ ${respuesta}
 `;
 
   try {
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-    // ✅ Llamada al modelo usando contents
-  const result = await model.generateContent({
+    // 💡 CAMBIO 2: Usar la nueva clase de inicialización
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    
+    // 💡 CAMBIO 3: Llamada directa al método 'models.generateContent'
+    const result = await ai.models.generateContent({
+      model: "gemini-1.5-flash",
       contents: [{ role: "user", parts: [{ text: prompt }] }]
     });
 
-    const text = result.response.text();
+    // 💡 CAMBIO 4: Acceder a la respuesta de forma directa (sin paréntesis)
+    const text = result.response.text;
     res.status(200).json({ feedback: text });
 
   } catch (error) {
@@ -95,4 +98,3 @@ ${respuesta}
     });
   }
 }
-

@@ -1225,6 +1225,11 @@ function handleOpenQuiz(actividad, container, grupo) {
 
   let isSubmitting = false; // 🚫 evita envíos múltiples
 
+  if (!form || !textarea || !feedbackDiv) {
+    console.error("Faltan elementos HTML para el quiz (form, textarea o feedbackDiv).");
+    return;
+  }
+    
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -1241,6 +1246,7 @@ function handleOpenQuiz(actividad, container, grupo) {
 
     feedbackDiv.style.display = "block";
     feedbackDiv.textContent = "Enviando...";
+    feedbackDiv.classList.remove('error'); // Limpia cualquier estilo de error previo
 
     try {
       const res = await fetch("https://cuestionario-proxy.vercel.app/api/feedback", {
@@ -1254,18 +1260,29 @@ function handleOpenQuiz(actividad, container, grupo) {
         })
       });
 
-      // 📌 Log más claro en caso de error
+      // 📌 Manejo de errores HTTP (incluye tu Error 500 del proxy)
       if (!res.ok) {
-        const errorText = await res.text();
-        throw new Error(`Servidor respondió ${res.status}: ${errorText}`);
+        // Intentamos obtener el error en formato JSON o texto si falla
+        let errorContent = await res.text();
+        try {
+            const errorJson = JSON.parse(errorContent);
+            errorContent = errorJson.error || errorContent;
+        } catch (e) {
+            // Si no es JSON, usamos el texto plano
+        }
+        
+        // Lanzamos el error para que caiga en el bloque catch
+        throw new Error(`Servidor respondió ${res.status}: ${errorContent}`);
       }
 
+      // Procesa la respuesta exitosa
       const data = await res.json();
+      textarea.value = ''; // Opcional: limpiar la caja de texto
 
       feedbackDiv.innerHTML = `
         <div class="feedback-wrapper">
           ${data.feedback || "<p>No se recibió retroalimentación.</p>"}
-          <button type="button" class="btn-close feedback-close"></button>
+          <button type="button" class="btn-close feedback-close">Cerrar</button>
         </div>
       `;
 
@@ -1273,12 +1290,16 @@ function handleOpenQuiz(actividad, container, grupo) {
       closeBtn.addEventListener("click", () => {
         feedbackDiv.style.display = "none";
       });
-    }  catch (error) {
-  console.error("Error en el servidor Gemini:", error?.message || error);
-  res.status(500).json({ 
-    error: error?.message || "Error generando retroalimentación" 
-  });
-} finally {
+      
+    } catch (error) {
+        // ✅ CORRECCIÓN: Manejo del error en el frontend
+        console.error("Error en el servidor Gemini:", error?.message || error);
+        
+        // Muestra el mensaje de error al usuario
+        feedbackDiv.textContent = `❌ Error: ${error?.message || "No se pudo contactar al servidor."}`;
+        feedbackDiv.classList.add('error'); // Añade una clase para estilizar el mensaje de error
+
+    } finally {
       isSubmitting = false; // ✅ libera el bloqueo
     }
   });
@@ -1347,3 +1368,5 @@ content.addEventListener("click", (e) => {
           //   "contenido": "<h2 class='pb-4 fw-bold'>Actividades para asegurar el aprendizaje en la organización</h2><ul id='lista_u_unidad1_4-lista1' class='list-unstyled'><li><p><strong class='title-body-secondary'>Comunicar la intención de cerrar</strong> a todos los miembros de la CoP, agradeciendo los logros obtenidos y reconociendo las contribuciones de los miembros.</p></li><li><p><strong class='title-body-secondary'>Realizar Taller de cierre</strong>, para lo cual se propone la utilización de la metodología de Retrospectiva (descrita en el documento de metodología de CoPs).</p></li><li><p><strong class='title-body-secondary'>Recopilación/archivo de los documentos y artefactos de conocimiento</strong> generados por la CoP para ponerlos a disposición de la organización en el formato o canales que permitan su localización y uso.</p></li><li><p><strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras.</li></ul>",
           //   "imagen": "<img src='src/img/m1_s6_f1.jpg' alt='Modulo1' class='img-fluid'>"
           // },
+
+  
