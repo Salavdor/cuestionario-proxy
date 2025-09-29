@@ -26,16 +26,14 @@ function renderMenu(modulos, containerId) {
           const collapseId = `${parentId}_sub${i}`;
           return `
             <li class="subtema ${hasChildren ? "has-children" : ""}" data-id="${st.id}">
-              <div class="d-flex align-items-center gap-2" ${hasChildren ? `data-bs-toggle="collapse" data-bs-target="#${collapseId}"` : ""}>
+              <div class="d-flex align-items-center gap-2" ${hasChildren ? `data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false"` : ""}>
                 ${st.titulo}
               </div>
-              ${
-                hasChildren
-                  ? `<div class="collapse p-3" id="${collapseId}">
-                       ${generarSubtemas(st.subtemas, collapseId)}
-                     </div>`
-                  : ""
-              }
+              ${hasChildren
+                ? `<div class="collapse p-3" id="${collapseId}">
+                     ${generarSubtemas(st.subtemas, collapseId)}
+                   </div>`
+                : ""}
             </li>
           `;
         }).join("")}
@@ -46,105 +44,87 @@ function renderMenu(modulos, containerId) {
   modulos.forEach((modulo, index) => {
     const moduloId = `modulo${modulo.id}_${containerId}`;
     const collapseId = `collapse${modulo.id}_${containerId}`;
-    const isInicio = modulo.id === 0;
-
-    const subtemasHTML = !isInicio ? generarSubtemas(modulo.subtemas, collapseId) : "";
+    const isPortada = modulo.id === 0 || modulo.id === 6; // casos especiales
+    const hasSubtemas = modulo.subtemas && modulo.subtemas.length > 0;
 
     const moduloItem = document.createElement("div");
     moduloItem.classList.add("accordion-item");
 
+    // Dibujar botón
     moduloItem.innerHTML = `
       <h2 class="accordion-header" id="${moduloId}">
-        <button class="accordion-button ${index > 0 ? "collapsed" : ""}" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#${collapseId}">
+        <button class="accordion-button ${index === 0 ? "active" : hasSubtemas ? "collapsed" : ""}" 
+                type="button"
+                ${hasSubtemas ? `data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${index === 0 ? "true" : "false"}"` : ""}>
           <div class="d-flex flex-column flex-lg-row w-100 text-start gap-2">
-            ${
-              isInicio 
-                ? `<div class="fw-bold flex-grow-1">${modulo.titulo}</div>`
-                : `<div class="fw-bold me-md-2 flex-shrink-0">Módulo ${modulo.id}:</div>
-                   <div class="fw-light flex-grow-1">${modulo.titulo}</div>`
-            }
+            <div class="fw-bold me-md-2 flex-shrink-0">${!isPortada ? `Módulo ${modulo.id}:` : ""}</div>
+            <div class="fw-light flex-grow-1">${modulo.titulo}</div>
           </div>
         </button>
       </h2>
-      <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? "show" : ""}">
-        <div class="accordion-body">
-          ${subtemasHTML}
-        </div>
-      </div>
+      ${hasSubtemas
+        ? `<div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? "show" : ""}">
+             <div class="accordion-body">
+               ${generarSubtemas(modulo.subtemas, collapseId)}
+             </div>
+           </div>`
+        : ""}
     `;
 
     menu.appendChild(moduloItem);
 
     const btnModulo = moduloItem.querySelector(".accordion-button");
-    const collapse = new bootstrap.Collapse(document.getElementById(collapseId), { toggle: false });
+    const collapseInstance = hasSubtemas ? new bootstrap.Collapse(document.getElementById(collapseId), { toggle: false }) : null;
 
+    // Evento click del módulo
     btnModulo.addEventListener("click", () => {
-      modulos.forEach(m => {
-        if (m.id !== modulo.id) {
-          const otherCollapseEl = document.getElementById(`collapse${m.id}_${containerId}`);
-          const otherCollapse = bootstrap.Collapse.getInstance(otherCollapseEl);
-          if (otherCollapse) otherCollapse.hide();
+      menu.querySelectorAll(".accordion-button, .subtema").forEach(el => el.classList.remove("active"));
+      btnModulo.classList.add("active");
+
+      // Cerrar otros colapsables
+      menu.querySelectorAll(".accordion-collapse").forEach(c => {
+        if (c.id !== collapseId) {
+          const inst = bootstrap.Collapse.getInstance(c);
+          if (inst) inst.hide();
         }
       });
-      collapse.show();
-      menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
 
-      const portada = {
-        id: `${modulo.id}.0`,
-        titulo: modulo.titulo,
-        contenido: `<div class="row m-0 p-3 encabezado">
-                      <div class="d-flex flex-row-reverse">
-                        <img src="src/img/logoKWORKS.svg" alt="Modulo${modulo.id}" class="img-fluid" style="height:30px;">
-                      </div>
-                      <h2><span class="fw-bold display-2">${isInicio ? "" : "Módulo " + modulo.id}</span><br>
-                      <span class="fw-bold title-body-secondary">${modulo.titulo}</span></h2>
-                    </div>
-                    ${modulo.img ? `<img src="${modulo.img}" alt="Modulo ${modulo.id}" class="img-fluid">` : ""}`,
-        imagen: ""
-      };
+      // Mostrar collapse del módulo actual si tiene subtemas
+      if (collapseInstance) collapseInstance.toggle();
 
-      cargarContenido(portada.id, modulosData);
+      // Cargar contenido
+      cargarContenido(`${modulo.id}.0`, modulosData);
     });
 
-    // ------------------- Eventos de subtemas -------------------
-    const menuList = moduloItem.querySelectorAll(".subtema");
-    menuList.forEach(item => {
-      const div = item.querySelector("div");
-      const collapseDiv = item.querySelector(".collapse");
-      const bsCollapse = collapseDiv ? new bootstrap.Collapse(collapseDiv, { toggle: false }) : null;
+    // Subtemas
+    if (hasSubtemas) {
+      const menuList = moduloItem.querySelectorAll(".subtema");
+      menuList.forEach(item => {
+        const div = item.querySelector("div");
+        const collapseDiv = item.querySelector(".collapse");
+        const bsCollapse = collapseDiv ? new bootstrap.Collapse(collapseDiv, { toggle: false }) : null;
 
-      div.addEventListener("click", (e) => {
-        e.stopPropagation();
+        div.addEventListener("click", e => {
+          e.stopPropagation();
+          menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
+          item.classList.add("active");
 
-        // Activar solo el item actual
-        menu.querySelectorAll(".subtema").forEach(st => st.classList.remove("active"));
-        item.classList.add("active");
+          cargarContenido(item.dataset.id, modulosData);
 
-        // Cargar contenido
-        const id = item.dataset.id;
-        cargarContenido(id, modulosData);
+          menu.querySelectorAll(".collapse").forEach(c => {
+            if (!c.contains(item) && c !== collapseDiv) {
+              const inst = bootstrap.Collapse.getInstance(c);
+              if (inst) inst.hide();
+            }
+          });
 
-        // ------------------- Cerrar todos los colapsables excepto los ancestros -------------------
-        menu.querySelectorAll(".collapse").forEach(c => {
-          if (!c.contains(item) && c !== collapseDiv) {
-            const inst = bootstrap.Collapse.getInstance(c);
-            if (inst) inst.hide();
-          }
+          if (bsCollapse) bsCollapse.toggle();
+
+          const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById("offcanvasMenu"));
+          if (offcanvas) offcanvas.hide();
         });
-
-        // Toggle collapse actual si tiene hijos
-        if (bsCollapse) {
-          bsCollapse.toggle();
-        }
-
-        // Cerrar offcanvas si aplica
-        const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById("offcanvasMenu"));
-        if (offcanvas) offcanvas.hide();
       });
-    });
+    }
   });
 }
 
@@ -172,28 +152,44 @@ function cargarContenido(subtemaId, modulos) {
     const contentInner = document.getElementById("contentInner");
 
     // ---------- Caso especial: inicio ----------
-    if (subtemaId === "0.0") {
-      const inicioModulo = modulos.find(m => m.id === 0);
-      if (!inicioModulo) return;
+const casosEspeciales = {
+  "0.0": 0, 
+  "6.0": 6    
+};
 
-      const listaModulosHTML = modulos
-        .filter(m => m.id !== 0 && m.subtemas?.length)
-        .map(m => `<li><h5 class="fw-bold mb-3" style="color: var(--color-secundario-3);">Módulo ${m.id}: <span class="fw-light">${m.titulo}</span></h5></li>`)
-        .join("");
+if (casosEspeciales[subtemaId] !== undefined) {
+  const moduloId = casosEspeciales[subtemaId];
+  const inicioModulo = modulos.find(m => m.id === moduloId);
+  if (!inicioModulo) return;
 
-      contentInner.innerHTML = `
-        <div class="row m-0 p-3">
-          <div class="col-12 mb-3"><img src="${inicioModulo.img}" alt="Inicio" class="img-fluid"></div>
-          <div class="col-12 mb-3">${inicioModulo.contenido}</div>
-          <div class="col-12 mb-3">
-            <ul class="list-unstyled">${listaModulosHTML}</ul>
-            <img src="src/img/vineta.png" alt="Inicio" class="img-fluid">
-          </div>
-        </div>
-      `;
-      mostrarToast("Inicio cargado");
-      return;
-    }
+  let listaModulosHTML = "";
+  // Solo mostramos la lista si NO es el módulo 6
+  if (moduloId !== 6) {
+    listaModulosHTML = `
+    <div class="col-12 mb-3">
+      <ul class="list-unstyled">
+        ${modulos
+          .filter(m => m.id !== moduloId && m.subtemas?.length)
+          .map(m => `<li><h5 class="fw-bold mb-3" style="color: var(--color-secundario-3);">Módulo ${m.id}: <span class="fw-light">${m.titulo}</span></h5></li>`)
+          .join("")}
+      </ul>
+      <img src="src/img/vineta.png" alt="Inicio" class="img-fluid">
+    </div>
+    `;
+  }
+
+  contentInner.innerHTML = `
+  
+      <div class="row m-0 p-3"><img src="${inicioModulo.img}" alt="Inicio" class="img-fluid"></div>
+  <div class='row m-0 h-100 px-3'>
+      ${inicioModulo.contenido}
+        ${listaModulosHTML}
+  </div>
+  `;
+  return;
+}
+
+
 
     // ---------- Portada ----------
     if (subtemaId.endsWith(".0")) {
