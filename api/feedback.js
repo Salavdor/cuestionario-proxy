@@ -1,7 +1,7 @@
 // api/feedback.js
 import { GoogleGenAI } from "@google/genai";
 
-const MODEL_NAME = "gemini-1.5-flash"; // 👈 usa un modelo válido
+const MODEL_NAME = "gemini-2.5-flash"; // ✅ Modelo actualizado
 const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export default async function handler(req, res) {
@@ -10,13 +10,8 @@ export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  if (req.method === "OPTIONS") {
-    return res.status(200).end();
-  }
-
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Método no permitido" });
-  }
+  if (req.method === "OPTIONS") return res.status(200).end();
+  if (req.method !== "POST") return res.status(405).json({ error: "Método no permitido" });
 
   try {
     const { planteamiento, consigna, respuesta, concepto } = req.body;
@@ -25,7 +20,6 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Faltan campos requeridos en el body" });
     }
 
-    // 🔹 Aquí armamos el prompt
     const prompt = `
 Eres un experimentado facilitador de procesos grupales, en comunidades de práctica, 
 y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar ${concepto}.
@@ -81,15 +75,29 @@ ${respuesta}
 <p>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</p>
 `;
 
-    // 🔹 Llamada a la API
+    // Llamada a la API
     const result = await client.models.generateContent({
       model: MODEL_NAME,
       contents: [{ role: "user", parts: [{ text: prompt }] }],
     });
 
-    // 🔹 El texto generado está en result.response.candidates[0].content.parts[0].text
-    const feedback =
-      result.response?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    // Extraer el texto de la estructura actual
+    const candidates = result?.response?.candidates || [];
+    let feedback = "";
+
+    if (candidates.length > 0) {
+      const content = candidates[0].content;
+      if (Array.isArray(content?.parts)) {
+        feedback = content.parts.map(p => p.text || "").join("\n");
+      } else if (typeof content?.text === "string") {
+        feedback = content.text;
+      }
+    }
+
+    if (!feedback) {
+      console.warn("⚠️ No se encontró texto en la respuesta:", result);
+      feedback = "No se pudo generar retroalimentación.";
+    }
 
     return res.status(200).json({ feedback });
   } catch (error) {
