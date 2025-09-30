@@ -1223,17 +1223,16 @@ function handleOpenQuiz(actividad, container, grupo) {
   const textarea = container.querySelector(".openquiz-textarea");
   const feedbackDiv = container.querySelector(".openquiz-feedback");
 
-  let isSubmitting = false; // 🚫 evita envíos múltiples
+  let isSubmitting = false;
 
   if (!form || !textarea || !feedbackDiv) {
     console.error("Faltan elementos HTML para el quiz (form, textarea o feedbackDiv).");
     return;
   }
-    
+
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-
-    if (isSubmitting) return; 
+    if (isSubmitting) return;
     isSubmitting = true;
 
     const respuesta = textarea.value.trim();
@@ -1246,7 +1245,7 @@ function handleOpenQuiz(actividad, container, grupo) {
 
     feedbackDiv.style.display = "block";
     feedbackDiv.textContent = "Enviando...";
-    feedbackDiv.classList.remove('error'); // Limpia cualquier estilo de error previo
+    feedbackDiv.classList.remove("error");
 
     try {
       const res = await fetch("https://cuestionario-proxy.vercel.app/api/feedback", {
@@ -1260,50 +1259,47 @@ function handleOpenQuiz(actividad, container, grupo) {
         })
       });
 
-      // 📌 Manejo de errores HTTP (incluye tu Error 500 del proxy)
       if (!res.ok) {
-        // Intentamos obtener el error en formato JSON o texto si falla
         let errorContent = await res.text();
         try {
-            const errorJson = JSON.parse(errorContent);
-            errorContent = errorJson.error || errorContent;
-        } catch (e) {
-            // Si no es JSON, usamos el texto plano
-        }
-        
-        // Lanzamos el error para que caiga en el bloque catch
+          const errorJson = JSON.parse(errorContent);
+          errorContent = errorJson.error || errorContent;
+        } catch {}
         throw new Error(`Servidor respondió ${res.status}: ${errorContent}`);
       }
 
-      // Procesa la respuesta exitosa
       const data = await res.json();
-      textarea.value = ''; // Opcional: limpiar la caja de texto
+      textarea.value = "";
+
+      // ✅ Manejo seguro de feedback
+      const feedbackHTML = typeof data.feedback === "string" && data.feedback.trim() !== ""
+        ? data.feedback
+        : "<p>No se recibió retroalimentación.</p>";
 
       feedbackDiv.innerHTML = `
         <div class="feedback-wrapper">
-          ${data.feedback || "<p>No se recibió retroalimentación.</p>"}
+          ${feedbackHTML}
           <button type="button" class="btn-close feedback-close">Cerrar</button>
         </div>
       `;
 
       const closeBtn = feedbackDiv.querySelector(".feedback-close");
-      closeBtn.addEventListener("click", () => {
-        feedbackDiv.style.display = "none";
-      });
-      
-    } catch (error) {
-        // ✅ CORRECCIÓN: Manejo del error en el frontend
-        console.error("Error en el servidor Gemini:", error?.message || error);
-        
-        // Muestra el mensaje de error al usuario
-        feedbackDiv.textContent = `❌ Error: ${error?.message || "No se pudo contactar al servidor."}`;
-        feedbackDiv.classList.add('error'); // Añade una clase para estilizar el mensaje de error
+      if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+          feedbackDiv.style.display = "none";
+        });
+      }
 
+    } catch (error) {
+      console.error("Error en el servidor Gemini:", error?.message || error);
+      feedbackDiv.textContent = `❌ Error: ${error?.message || "No se pudo contactar al servidor."}`;
+      feedbackDiv.classList.add("error");
     } finally {
-      isSubmitting = false; // ✅ libera el bloqueo
+      isSubmitting = false;
     }
   });
 }
+
 
 
 
