@@ -79,7 +79,7 @@ ${respuesta}
     const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }); 
     
     const result = await ai.models.generateContent({
-        model: "gemini-flash", 
+        model: "gemini-2.5-flash",  
         contents: [{ role: "user", parts: [{ text: prompt }] }]
     });
 
