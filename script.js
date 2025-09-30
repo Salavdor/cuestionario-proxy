@@ -318,12 +318,6 @@ function findSubtemaRecursivo(modulos, subtemaId) {
     if (modulo.subtemas) {
       const result = findSubtemaEnLista(modulo.subtemas, subtemaId);
       if (result) {
-        // console.log("✅ Subtema encontrado en módulo:", modulo.titulo);
-        // console.log("   📌 Path:", result.path);
-        // console.log("   🔎 Subtema completo:", result.subtema);
-        // console.log("   📑 Slides detectados:", result.subtema.slides);
-        // console.log("   📑 Nombre del Grupo detectados:", result.subtema.slides.grupo);
-        // console.log("   📑 Actividad detectada:", result.subtema.actividad);
         return result;
       }
     }
@@ -334,9 +328,7 @@ function findSubtemaRecursivo(modulos, subtemaId) {
 
 function findSubtemaEnLista(lista, subtemaId, path = []) {
   for (const sub of lista) {
-    console.log("👀 Revisando subtema:", sub.titulo, "| ID:", sub.id);
     if (sub.id === subtemaId) {
-      console.log("🎯 ¡Match encontrado!");
       return { subtema: sub, path: [...path, sub.titulo] };
     }
     if (sub.subtemas) {

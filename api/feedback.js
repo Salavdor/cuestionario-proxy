@@ -99,26 +99,35 @@ ${respuesta}
 
     // 🔹 Extraer el texto de manera segura
     let feedback = "";
-    const candidates = result.candidates || result.response?.candidates || [];
+const candidates = result.candidates || result.response?.candidates || [];
 
-    if (candidates.length > 0) {
-      for (const candidate of candidates) {
-        const contentArray = candidate.content;
-        if (Array.isArray(contentArray)) {
-          for (const contentItem of contentArray) {
-            if (contentItem.parts) {
-              for (const part of contentItem.parts) {
-                if (part.text) feedback += part.text;
-              }
-            } else if (contentItem.text) {
-              feedback += contentItem.text;
-            }
-          }
+if (candidates.length > 0) {
+  const content = candidates[0].content;
+
+  if (Array.isArray(content)) {
+    // content es array de objetos
+    for (const item of content) {
+      if (item.parts) {
+        for (const part of item.parts) {
+          if (part.text) feedback += part.text;
         }
+      } else if (item.text) {
+        feedback += item.text;
       }
     }
+  } else if (content?.parts) {
+    // content es objeto con parts
+    for (const part of content.parts) {
+      if (part.text) feedback += part.text;
+    }
+  } else if (content?.text) {
+    // content es objeto con text directo
+    feedback += content.text;
+  }
+}
 
-    if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
+if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
+
 
     // 🔹 Imprime el texto extraído
     console.log("=== Texto extraído de la respuesta ===");
