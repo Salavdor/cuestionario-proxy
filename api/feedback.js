@@ -1,13 +1,16 @@
-// 💡 CAMBIO 1: Importar la clase del nuevo SDK unificado (@google/genai)
-// import { GoogleGenAI } from "@google/genai";
+// api/feedback.js
+import { GoogleGenAI } from "@google/genai";
+
+const MODEL_NAME = "gemini-1.5-flash"; // 👈 usa un modelo válido
+const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export default async function handler(req, res) {
-  // Headers CORS
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  // CORS
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  if (req.method === 'OPTIONS') {
+  if (req.method === "OPTIONS") {
     return res.status(200).end();
   }
 
@@ -15,10 +18,15 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Método no permitido" });
   }
 
-  const { respuesta, concepto, consigna, planteamiento } = req.body;
+  try {
+    const { planteamiento, consigna, respuesta, concepto } = req.body;
 
-  // Prompt completo con formato HTML
-  const prompt = `
+    if (!planteamiento || !consigna || !respuesta || !concepto) {
+      return res.status(400).json({ error: "Faltan campos requeridos en el body" });
+    }
+
+    // 🔹 Aquí armamos el prompt
+    const prompt = `
 Eres un experimentado facilitador de procesos grupales, en comunidades de práctica, 
 y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar ${concepto}.
 
@@ -73,31 +81,19 @@ ${respuesta}
 <p>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</p>
 `;
 
-  try {
-    const { GoogleGenAI } = await import("@google/genai"); 
-    // ... (Tu lógica de Gemini)
-    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }); 
-    
-    const result = await ai.models.generateContent({
-        model: "gemini-2.5-flash",  
-        contents: [{ role: "user", parts: [{ text: prompt }] }]
+    // 🔹 Llamada a la API
+    const result = await client.models.generateContent({
+      model: MODEL_NAME,
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
     });
 
-    const text = result.response.text; 
-    
-    res.status(200).json({ feedback: text });
+    // 🔹 El texto generado está en result.response.candidates[0].content.parts[0].text
+    const feedback =
+      result.response?.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
+    return res.status(200).json({ feedback });
   } catch (error) {
     console.error("❌ Error en el servidor Gemini:", error);
-
-    let errorMessage = "Error generando retroalimentación";
-    if (error && error.message) {
-        errorMessage = error.message; 
-    }
-
-    res.status(500).json({
-      error: errorMessage,
-      details: error
-    });
+    return res.status(500).json({ error: "Error procesando la solicitud" });
   }
 }

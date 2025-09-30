@@ -2,7 +2,7 @@
     "name": "cuestionario-proxy",
     "version": "1.0.0",
     "description": "Proxy for Gemini API calls.",
-    "type": "module", 
+    "type": "module",
     "dependencies": {
         "@google/genai": "^1.21.0"
     }
