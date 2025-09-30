@@ -88,21 +88,27 @@ ${respuesta}
     });
 
     // 🔹 Extraer el texto de manera segura
-    let feedback = "";
+let feedback = "";
+const candidates = result.candidates || result.response?.candidates || [];
 
-    const candidate = result.response?.candidates?.[0];
-    if (candidate?.content) {
-      for (const c of candidate.content) {
-        if (c.parts) {
-          for (const p of c.parts) {
-            if (p.text) feedback += p.text;
+if (candidates.length > 0) {
+  for (const candidate of candidates) {
+    const contentArray = candidate.content;
+    if (Array.isArray(contentArray)) {
+      for (const contentItem of contentArray) {
+        if (contentItem.parts) {
+          for (const part of contentItem.parts) {
+            if (part.text) feedback += part.text;
           }
+        } else if (contentItem.text) {
+          feedback += contentItem.text;
         }
       }
     }
+  }
+}
 
-    // fallback
-    if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
+if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
 
 
     return res.status(200).json({ feedback });
