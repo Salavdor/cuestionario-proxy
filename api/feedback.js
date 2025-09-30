@@ -89,14 +89,21 @@ ${respuesta}
 
     // 🔹 Extraer el texto de manera segura
     let feedback = "";
-    const candidate = result.response?.candidates?.[0];
 
-    if (candidate?.content && candidate.content.length > 0) {
-      const textPart = candidate.content.find(part => part.text);
-      if (textPart?.text) feedback = textPart.text;
+    const candidate = result.response?.candidates?.[0];
+    if (candidate?.content) {
+      for (const c of candidate.content) {
+        if (c.parts) {
+          for (const p of c.parts) {
+            if (p.text) feedback += p.text;
+          }
+        }
+      }
     }
 
+    // fallback
     if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
+
 
     return res.status(200).json({ feedback });
   } catch (error) {
