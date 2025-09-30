@@ -82,9 +82,9 @@ ${respuesta}
 `;
 
     // 🔹 Imprime el prompt para depuración
-    console.log("=== Prompt enviado a Gemini ===");
-    console.log(prompt);
-    console.log("================================");
+    // console.log("=== Prompt enviado a Gemini ===");
+    // console.log(prompt);
+    // console.log("================================");
 
     // 🔹 Llamada a la API
     const result = await client.models.generateContent({
@@ -93,9 +93,9 @@ ${respuesta}
     });
 
     // 🔹 Imprime la respuesta completa del SDK
-    console.log("=== Respuesta completa de Gemini ===");
-    console.dir(result, { depth: null });
-    console.log("===================================");
+    // console.log("=== Respuesta completa de Gemini ===");
+    // console.dir(result, { depth: null });
+    // console.log("===================================");
 
     // 🔹 Extraer el texto de manera segura
     let feedback = "";
@@ -127,12 +127,6 @@ if (candidates.length > 0) {
 }
 
 if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
-
-
-    // 🔹 Imprime el texto extraído
-    console.log("=== Texto extraído de la respuesta ===");
-    console.log(feedback);
-    console.log("=====================================");
 
     return res.status(200).json({ feedback });
   } catch (error) {
