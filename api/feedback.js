@@ -1,7 +1,7 @@
 // api/feedback.js
 import { GoogleGenAI } from "@google/genai";
 
-const MODEL_NAME = "gemini-2.5-flash"; // ✅ Modelo actualizado
+const MODEL_NAME = "gemini-2.5-flash"; // Modelo válido
 const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export default async function handler(req, res) {
@@ -10,8 +10,13 @@ export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  if (req.method === "OPTIONS") return res.status(200).end();
-  if (req.method !== "POST") return res.status(405).json({ error: "Método no permitido" });
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Método no permitido" });
+  }
 
   try {
     const { planteamiento, consigna, respuesta, concepto } = req.body;
@@ -20,11 +25,12 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Faltan campos requeridos en el body" });
     }
 
+    // 🔹 Armar el prompt
     const prompt = `
-Eres un experimentado facilitador de procesos grupales, en comunidades de práctica, 
+Eres un experimentado facilitador de procesos grupales en comunidades de práctica, 
 y debes evaluar la respuesta de un aprendiz a una situación que debe demostrar ${concepto}.
 
-Utilizando los siguientes criterios (2= incorrecto; 3= insuficiente; 4= regular; 5= bien; 6= Muy bien; 7= excelente):
+Criterios: 2= incorrecto; 3= insuficiente; 4= regular; 5= bien; 6= Muy bien; 7= excelente:
 1. Claridad
 2. Aplicación
 3. Profundidad de análisis
@@ -34,10 +40,10 @@ Luego realiza:
 - 3 a 5 mejoras específicas
 - Corrección de errores si los hay
 
-Planteamiento de la situación:
+Planteamiento:
 ${planteamiento}
 
-Pregunta original o consigna:
+Consigna:
 ${consigna}
 
 Respuesta del aprendiz:
@@ -75,29 +81,22 @@ ${respuesta}
 <p>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</p>
 `;
 
-    // Llamada a la API
+    // 🔹 Llamada a la API
     const result = await client.models.generateContent({
       model: MODEL_NAME,
       contents: [{ role: "user", parts: [{ text: prompt }] }],
     });
 
-    // Extraer el texto de la estructura actual
-    const candidates = result?.response?.candidates || [];
+    // 🔹 Extraer el texto de manera segura
     let feedback = "";
+    const candidate = result.response?.candidates?.[0];
 
-    if (candidates.length > 0) {
-      const content = candidates[0].content;
-      if (Array.isArray(content?.parts)) {
-        feedback = content.parts.map(p => p.text || "").join("\n");
-      } else if (typeof content?.text === "string") {
-        feedback = content.text;
-      }
+    if (candidate?.content && candidate.content.length > 0) {
+      const textPart = candidate.content.find(part => part.text);
+      if (textPart?.text) feedback = textPart.text;
     }
 
-    if (!feedback) {
-      console.warn("⚠️ No se encontró texto en la respuesta:", result);
-      feedback = "No se pudo generar retroalimentación.";
-    }
+    if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
 
     return res.status(200).json({ feedback });
   } catch (error) {
