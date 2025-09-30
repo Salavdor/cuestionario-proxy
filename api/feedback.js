@@ -81,35 +81,49 @@ ${respuesta}
 <p>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</p>
 `;
 
+    // 🔹 Imprime el prompt para depuración
+    console.log("=== Prompt enviado a Gemini ===");
+    console.log(prompt);
+    console.log("================================");
+
     // 🔹 Llamada a la API
     const result = await client.models.generateContent({
       model: MODEL_NAME,
       contents: [{ role: "user", parts: [{ text: prompt }] }],
     });
 
-    // 🔹 Extraer el texto de manera segura
-let feedback = "";
-const candidates = result.candidates || result.response?.candidates || [];
+    // 🔹 Imprime la respuesta completa del SDK
+    console.log("=== Respuesta completa de Gemini ===");
+    console.dir(result, { depth: null });
+    console.log("===================================");
 
-if (candidates.length > 0) {
-  for (const candidate of candidates) {
-    const contentArray = candidate.content;
-    if (Array.isArray(contentArray)) {
-      for (const contentItem of contentArray) {
-        if (contentItem.parts) {
-          for (const part of contentItem.parts) {
-            if (part.text) feedback += part.text;
+    // 🔹 Extraer el texto de manera segura
+    let feedback = "";
+    const candidates = result.candidates || result.response?.candidates || [];
+
+    if (candidates.length > 0) {
+      for (const candidate of candidates) {
+        const contentArray = candidate.content;
+        if (Array.isArray(contentArray)) {
+          for (const contentItem of contentArray) {
+            if (contentItem.parts) {
+              for (const part of contentItem.parts) {
+                if (part.text) feedback += part.text;
+              }
+            } else if (contentItem.text) {
+              feedback += contentItem.text;
+            }
           }
-        } else if (contentItem.text) {
-          feedback += contentItem.text;
         }
       }
     }
-  }
-}
 
-if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
+    if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
 
+    // 🔹 Imprime el texto extraído
+    console.log("=== Texto extraído de la respuesta ===");
+    console.log(feedback);
+    console.log("=====================================");
 
     return res.status(200).json({ feedback });
   } catch (error) {
