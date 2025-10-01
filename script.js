@@ -590,10 +590,12 @@ function renderTabsSimple(actividad) {
   </div>`;
 
   const containerHTML = `
-    <div class="tab-wrapper mb-3 pt-3">
+  <div class="px-3">
+    <div class="tab-wrapper mb-3 pt-3 px-3">
       <div class="tab-buttons d-flex align-items-start justify-content-between mb-2">${botonesHTML}</div>
       ${contenidoHTML}
     </div>
+  </div>  
   `;
 
   // Eventos de los botones: se agregan después de insertarlo en DOM
