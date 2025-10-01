@@ -588,7 +588,17 @@
               }
           ]
         },
-                {
+        {
+          "id": "3-5",
+          "titulo": "Seguimiento y evaluación de la CoP para la mejora continua",
+          "tituloContext": "Seguimiento y evaluación de la CoP para la mejora continua",
+        "contenido": "<p>La evaluación de las CoPs involucra observar la forma de organización que presenta, las tareas que se han realizado y los resultados obtenidos, con el objeto de discriminar aquellos aspectos que apuntan a la mejora profesional y organizacional. De esta manera podemos enfocar los esfuerzos del equipo impulsor y asegurar los mejores resultados posibles.<br><br><br><strong>Al evaluar, es necesario:</strong><br><br>Cumplir con los momentos de medición que fueron definidos en etapas anteriores.<br><br>Utilizar las métricas definidas en etapas anteriores: indicadores de actividad y de resultados.<br><br>Tener presente qué objetivo(s) estamos reflejando.<br><br>Analizar la pertinencia de estas mediciones y evaluar sus posibles modificaciones.<br><br>Registrar los resultados. Para ello, se completan las mismas plantillas de evaluación presentadas en la etapa de diseño.</p><div class='d-flex justify-content-end'><button type='button' class='btn btn-sm btn-outline-secondary btn-ejemplos' data-bs-toggle='modal' data-bs-target='#ModalEjemplos0'><img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong></button></div>",
+         "modal": [
+              {
+                "modalitem": "<div class='modal fade' id='ModalEjemplos0' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: #fe6d02'><div class='modal-header border-0'><h5 class='modal-title fw-bold'></h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p><strong>Algunas ideas de indicadores de medición:<strong></p><ul class='list-styled'><li>Participación de expertos invitados</li><li>Número de documentos generados y calidad</li><li>Satisfacción de los participantes</li><li>Cantidad de participantes que aportan</li><li>Número de consultas y respuestas o participación por cada tema</li><li>Noticias o aportes generados hacia la organización</li></ul></div></div></div></div>"
+            }]
+        },
+        {
           "id": "3-6",
           "titulo": "Apoyar al líder en mantener informada a la organización sobre el estado del arte de la CoP",
           "tituloContext": "",
@@ -608,8 +618,8 @@
             },
                 {
                 "modalitem": "<div class='modal fade' id='Modalreconocimiento' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-md'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modalreconocimiento.png' ></div></div></div></div>"
-            }]},
-
+            }]
+        },
            {
             "id": "3-7",
             "titulo": "Evaluación",
