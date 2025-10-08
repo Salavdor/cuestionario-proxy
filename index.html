@@ -857,7 +857,7 @@ table.tabla-vf .vf-input[type="radio"]:checked::after {
   width: 100px;         /* ancho fijo */
   height: 100px;        /* alto fijo */
   border-radius: 50%;   /* forma circular */
-  border: 2px solid #fff;  /* color primario */
+ /*  border: 2px solid #fff;  color primario */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -915,6 +915,44 @@ h5 {
   font-size: 26px;
 }
 } */
+
+
+/* 1. Definición de la animación de "latido" */
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08); /* Se agranda un 5% */
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 2. Aplicación a <a> y <button> */
+.latir {
+ display: inline-block;
+  transform-origin: center center;
+  animation: latido 2.5s ease-in-out infinite;
+  will-change: transform;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.latir2 {
+
+  transform-origin: center center;
+  animation: latido 2.5s ease-in-out infinite;
+  will-change: transform;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+.latir2.active {
+
+
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
   </style>
 </head>
 

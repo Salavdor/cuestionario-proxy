@@ -3,7 +3,7 @@
       "id": 0,
       "titulo": "Inicio",
       "img": "src/img/inicio_curso.jpg",
-      "contenido": "<div class='col-12 px-3'><h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto \"Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs)\", tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidad de Práctica.</br> <span style='color: var(--color-primario-1);'><b>Está diseñado para resoluciones de pantalla superiores a 1368 x 912 píxeles, para una mejor experiencia de uso, le sugerimos considerar este requisito.</b></span><br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p></div>"
+      "contenido": "<div class='col-12 px-3'><h5 class='fw-bold mb-3' style='color: var(--color-secundario-3);'>Introducción</h5><p>Este curso, parte del proyecto \"Desarrollo de una metodología para el lanzamiento e implementación de Comunidades de Práctica (CoPs)\", tiene como finalidad presentar una aproximación a aquellos contenidos y destrezas fundamentales que deben considerarse para guiar o facilitar el funcionamiento y desarrollo de una Comunidad de Práctica.</br> <span style='color: var(--color-primario-3);'></br>Está diseñado para resoluciones de pantalla superiores a 1368 x 912 píxeles, para una mejor experiencia de uso, le sugerimos considerar este requisito.</span><br><br>Por tratarse de un curso autoaplicado y de contenidos experienciales, le recomendamos solicitar el apoyo de un tutor para comentar, reflexionar y experimentar sobre las siguientes temáticas:</p></div>"
     },
     {
       "id": 1,
@@ -20,24 +20,24 @@
           "id": "1.2",
           "titulo": "¿Por qué una Comunidad de Práctica?",
           "tituloContext": "¿Por qué una <span class='title-body-secondary'>Comunidad de Práctica (CoP)?</span>",
-          "contenido": "<p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una sola solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
+          "contenido": "<p>Una de las razones para crear una <span class='fw-bold'>CoP</span> se relaciona con la naturaleza de los problemas que enfrentamos hoy.<br><br>Estamos permanentemente desafiados por problemas complejos y/o situaciones cambiantes, que no tienen una solución clara, única ni lineal, que dependen de múltiples variables (culturales, sociales, técnicas, emocionales). Ante ello, ninguna persona por sí sola suele tener todo el conocimiento o perspectiva para resolverlos.<br><br>Por ello, una CoP funciona como un <span class='fw-bold'>espacio colectivo de aprendizaje adaptativo</span>, donde se comparten múltiples visiones, experiencias y métodos que ayudan a descomponer, comprender y abordar estos desafíos.</p>",
           "imagen": "<img src='src/img/m1_s3_f1.jpg' alt='Modulo1' class='img-fluid'>"
         },
         {
           "id": "1.3",
           "titulo": "Metodología para el desarrollo y la gestión de una CoP",
-          "tituloContext":"Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span>",
+          "tituloContext":"Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span> " ,
           "contenido": "",
           "imagen": "",
           "actividad": {
             "tipo": "tabs",
             "default": {
               "titulo": "",
-              "contenido": "<img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'>"
+              "contenido": " <img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'> "
             },
             "showArrows": true,
             "items": [{
-                "label": "<img src='src/img/m1_s4_icono_deteccion.svg'>Etapa 1 <br><strong class='title-body-secondary'>DETECCIÓN</strong>",
+                "label": "<img  src='src/img/m1_s4_icono_deteccion.svg' class='latir'>Etapa 1 <br><strong class='title-body-secondary '>DETECCIÓN</strong>",
                 "contenido": "<p>En esta primera etapa, el objetivo consiste en identificar aquellos casos en que una COP puede resultar la respuesta adecuada para una serie de personas que buscan la oportunidad de trabajar y aprender colaborativamente.<br><br>Para ello, proponemos responder estas 3 preguntas, de manera flexible ya que cada caso reúne sus propias peculiaridades:</p>",
                 "actividad": {
                   "tipo": "openquestion",
@@ -49,7 +49,7 @@
                         "Buscas un espacio para reflexionar en el que puedan participar profesionales distribuidos geograficamente.",
                         "Quieres crear una instancia para que personas que realizan tareas similares puedan compartir sus experiencias y conocimientos.",
                         "Un equipo o un área necesita elaborar un producto, resolver una problemática, consensuar una mejor manera de hacer las cosas o lograr un resultado.",
-                        "Personas con intereses comunes -<strong><i>de diferentes organizaciones</i></strong>- queremos aprender más de loque sabemos sobre algo."
+                        "Personas con intereses comunes -<strong><i>de diferentes organizaciones</i></strong>- queremos aprender más de lo que sabemos sobre algo."
                       ]
                     },
                     {
@@ -67,7 +67,7 @@
                       "enunciado": "",
                       "placeholder": "Ensaya una respuesta y luego compara con algunos ejemplos",
                       "ejemplos": [
-                        "Que recursos hacen falta para que la COP y sus integrantes puedan lograr su propósito:",
+                        "¿Qué recursos hacen falta para que la COP y sus integrantes puedan lograr su propósito?",
                         "<strong>Por ejemplo:</strong> apoyo directivo (patrocinador), tiempo y cargas de trabajo necesarias, permisos o información a las jefaturas, disponibilidad de un espacio físico para las sesiones, recursos tecnológicos, dinero para traslados u otros, acceso a expertos, etc."
                       ]
                     }
@@ -75,8 +75,8 @@
                 }
               },
               {
-                "label": "<img src='src/img/m1_s4_icono_diseno.svg'>Etapa 2 <br><strong class='title-body-secondary'>DISEÑO</strong>",
-                "contenido": "<p class='mb-5'>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestasobtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
+                "label": "<img src='src/img/m1_s4_icono_diseno.svg' class='latir'>Etapa 2 <br><strong class='title-body-secondary'>DISEÑO</strong>",
+                "contenido": "<p class='mb-5'>En esta segunda etapa, el objetivo consiste en comenzar a dar forma a la COP a partir de las respuestas obtenidas en la etapa previa.<br><br>En este caso, se trata de concretar un equipo que impulse la COP y proponer los elementos principales que ayudarán a crear un marco de trabajo de la COP en relación con el cumplimiento de su propósito.</p>",
                 "actividad": {
                   "tipo": "collapse",
                   "bloques": [{
@@ -85,10 +85,13 @@
                       "opciones": [{
                         "boton": "▼",
                         "contenido": {
+        
                           "tipo": "lista",
                           "estilo": "nodot",
+                         
                           "items": [{
-                              "texto": "<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):"
+                            "texto":"<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):"
+                              
                             },
                             {
                               "texto": "<strong>Un patrocinador</strong><br>(representante de la alta gerencia de la empresa) que entiende el valor que aporta la COP, la apoya con los recursos a su alcance, aunque no participa en su operativa."
@@ -179,7 +182,7 @@
                 }
               },
               {
-                "label": "<img src='src/img/m1_s4_icono_lanzamiento.svg'>Etapa 3 <br><strong class='title-body-secondary'>LANZAMIENTO</strong>",
+                "label": "<img src='src/img/m1_s4_icono_lanzamiento.svg' class='latir'>Etapa 3 <br><strong class='title-body-secondary'>LANZAMIENTO</strong>",
                 "contenido": "<p class='mb-5'>Esta tercera etapa consiste en reunir a los participantes propuestos en la etapa previa para explicarles lo que es una CoP y presentarles el marco general de trabajo con el objeto de que estos –si aceptan participar- lo complementen y concreten en su propio plan de trabajo.<br><br>Se espera abarcar todos los aspectos delineados en la etapa anterior, más lo que este grupo considere necesario para el cumplimiento del propósito; ejercicio que también contribuye poderosamente al sentimiento de propiedad que las personas han de tener sobre el propósito, naturaleza y características de la comunidad a la que pertenecerán.<br><br><span style='color: var(--color-primario-2);'>Consideraciones sobre algunos elementos del Plan de Trabajo de la CoP</span> (no es indispensable abarcarlos todos durante el primer taller. De no alcanzar a cubrirlo todo, es posible completar los temas necesarios durante las primeras sesiones de funcionamiento de la comunidad).</p>",
                 "actividad": {
                   "tipo": "tabsSimple",
@@ -211,11 +214,11 @@
                 }
               },
               {
-                "label": "<img src='src/img/m1_s4_icono_gestion.svg'>Etapa 4 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
+                "label": "<img src='src/img/m1_s4_icono_gestion.svg' class='latir'>Etapa 4 <br><strong class='title-body-secondary'>GESTIÓN</strong>",
                 "contenido": "<p><strong>Esta etapa constituye el funcionamiento o marcha -propiamente tal- de la comunidad y está fundamentalmente a cargo de un líder o coordinador y un facilitador.</strong><br><br><small>Esta etapa se revisa más adelante en el curso, en el Módulo III.</small></p><img src='src/img/m1_s4_f1_gestion.jpg' alt='Modulo1' class='img-fluid' style='transform: scale(1.080) translateY(45px); position: relative; z-index: -1;'>"
               },
               {
-                "label": "<img src='src/img/m1_s4_icono_cierre.svg'>Etapa 5 <br><strong class='title-body-secondary'>CIERRE</strong>",
+                "label": "<img src='src/img/m1_s4_icono_cierre.svg' class='latir'>Etapa 5 <br><strong class='title-body-secondary'>CIERRE</strong>",
                 "contenido": "<p>En este último período, se asume que ya existe un resultado sobre el propósito definido (exitoso o no) y que, por tanto, la comunidad -como fue inicialmente concebida- ya no tiene sentido.<br><br><small>Esto abre dos alternativas de acción:</small></p><img src='src/img/m1_s5_f1.svg' alt='Modulo1' class='img-fluid' style='padding: 0 10%;'><div class='row m-0 p-3'><div><h2 class='pb-4 fw-bold'>Actividades para asegurar el aprendizaje en la organización</h2><ul id='lista_u_unidad1_4-lista1' class='list-unstyled'><li><p><strong class='title-body-secondary'>Comunicar la intención de cerrar</strong> a todos los miembros de la CoP, agradeciendo los logros obtenidos y reconociendo las contribuciones de los miembros.</p></li><li><p><strong class='title-body-secondary'>Realizar Taller de cierre</strong>, para lo cual se propone la utilización de la metodología de Retrospectiva (descrita en el documento de metodología de CoPs).</p></li><li><p><strong class='title-body-secondary'>Recopilación/archivo de los documentos y artefactos de conocimiento</strong> generados por la CoP para ponerlos a disposición de la organización en el formato o canales que permitan su localización y uso.</p></li><li><p><strong class='title-body-secondary'>Transferencia/difusión de productos de la COP</strong>, hacia el resto de la organización. Esto puede incluir actividades de difusión de los aprendizajes generados (como talleres, sesiones de presentación de resultados), o también actividades concretas de formación u otras.</p></li></ul></div></div><img src='src/img/m1_s6_f1.jpg' alt='Modulo1' class='img-fluid' style='transform: translateY(33px);'>"
               }
             ]
@@ -271,7 +274,7 @@
         "id": "2-1",
         "titulo": "Roles básicos de una CoP",
         "tituloContext": "",
-        "contenido": "<h2 class='pb-4 fw-bold'>Roles básicos de una <span class='title-body-secondary'>(CoP)</span></h2><p><b>Esta relación de roles es meramente orientativa.</b><br/> No es necesario realizar todos estos roles en casos de comunidades pequeñas. Por el contrario, en comunidades numerosas pueden incorporarse otros roles, como sub-líderes, coordinadores, etc.</p><div class='col-12 ' ><img style='width:100%; height:auto; padding-left:20vw; padding-right:20vw' src='src/img/modulo2_item2_fondo.jpg' alt='fondo'><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalPatrocinador'><img class='img-fluid' src='src/img/patrocinador.png' style='margin-top:-46%; left:29%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalParticipantes'><img class='card-img-overlay img-fluid' src='src/img/participantes.png' style='margin-top:-43%; left:49.3%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalLider'><img class='img-fluid' src='src/img/lider.png' style='margin-top:-26.5%; margin-left:36%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalFacilitador'><img class='img-fluid' src='src/img/facilitador.png' style='margin-top:-26.5%;; left:12.5%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalComunidades'><img class='img-fluid' src='src/img/comunidades.png' style='margin-top:-12%; margin-left:54.3%; width:3.5vw; height:3.5vw; position:relative;'></a></div><p><b>En este módulo revisaremos los roles claves para el funcionamiento de una <span class='title-body-secondary'>(CoP)</span>, el papel del Líder y del Facilitador.</b><br/></p>",
+        "contenido": "<h2 class='pb-4 fw-bold'>Roles básicos de una <span class='title-body-secondary'>(CoP)</span></h2><p><b>Esta relación de roles es meramente orientativa.</b><br/> No es necesario realizar todos estos roles en casos de comunidades pequeñas. Por el contrario, en comunidades numerosas pueden incorporarse otros roles, como sub-líderes, coordinadores, etc.</p><div class='col-12 ' ><img style='width:100%; height:auto; padding-left:20vw; padding-right:20vw' src='src/img/modulo2_item2_fondo.jpg' alt='fondo'><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalPatrocinador'><img class='img-fluid latir' src='src/img/patrocinador.png' style='margin-top:-46%; left:29%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalParticipantes'><img class='card-img-overlay img-fluid latir' src='src/img/participantes.png' style='margin-top:-43%; left:49.3%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalLider'><img class='img-fluid latir' src='src/img/lider.png' style='margin-top:-26.5%; margin-left:36%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalFacilitador'><img class='img-fluid latir' src='src/img/facilitador.png' style='margin-top:-26.5%;; left:12.5%; width:3.5vw; height:3.5vw; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalComunidades'><img class='img-fluid latir' src='src/img/comunidades.png' style='margin-top:-7%; margin-left:54.3%; width:3.5vw; height:3.5vw; position:relative;'></a></div><p><b>En este módulo revisaremos los roles claves para el funcionamiento de una <span class='title-body-secondary'>(CoP)</span>, el papel del Líder y del Facilitador.</b><br/></p>",
          "modal": [
               {
                 "modalitem": "<div class='modal fade' id='ModalPatrocinador' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content '><div class='modal-body'><h5>Patrocinador</h5> Se trata de la persona con autoridad suficiente dentro de la organización que valida su creación y asigna los recursos necesarios para asegurar su correcto funcionamiento. No participa directamente en ella.</div></div></div></div>"
@@ -280,7 +283,7 @@
                 "modalitem": "<div class='modal fade' id='ModalLider' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Líder / Representante de la CoP</h5>Se trata de una persona, con una cierta ascendencia y reconocimiento entre sus pares y compañeros de la COP. Su función principal es la de ser un tractor de la Comunidad, asegurando el cumplimiento de los objetivos establecidos. Se relaciona con el patrocinador.</div></div></div></div>"
             },
             {
-                "modalitem": "<div class='modal fade' id='ModalParticipantes' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Participantes</h5> Participantes. Son todas las personas miembros de la CoP. Han asumido el compromiso de aportar su esfuerzo y conocimiento para que la CoP alcance los objetivos establecidos.</div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='ModalParticipantes' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Participantes</h5> Son todas las personas miembros de la CoP. Han asumido el compromiso de aportar su esfuerzo y conocimiento para que la CoP alcance los objetivos establecidos.</div></div></div></div>"
             },
                 {
                 "modalitem": "<div class='modal fade' id='ModalFacilitador' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><div class='modal-body'><h5>Facilitador</h5> Se trata de la persona que vela por el clima de la CoP y por fomentar la participación de todos sus miembros.  Se ocupa de la comunicación y de registrar los acuerdos tomados, las tareas, etc. </div></div></div></div>"
@@ -293,13 +296,13 @@
         "id": "2-2",
         "titulo": "Roles claves de la comunidad",
         "tituloContext": "",
-        "contenido": "<div><h2 class='pb-4 fw-bold'>Roles claves de la comunidad: líder y facilitador</h2><p>La función esencial de estos roles es mantener activa la comunidad, atender las necesidades de sus participantes y velar por el cumplimiento de los objetivos fijados.<br><br>A continuación, se describen 5 tareas fundamentales que deben realizarse durante el desarrollo de una CoP, las cuales serán asumidas principalmente por el líder y el facilitador:</p><table border='1' width='100%' style='border-collapse: collapse; font-family: sans-serif;'> <thead style='background:#2670e0; color:white; border: 3px solid #1fb0ee;'> <tr> <th>Tarea</th> <th>Lider</th> <th>Facilitador</th> </tr> </thead> <tbody style='border: 3px solid #1fb0ee;'> <!-- Fila 1 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>1. PLANIFICAR – ORGANIZAR EL TRABAJO DE LA COMUNIDAD</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Velar por que los esfuerzos realizados por los participantes apunten hacia el cumplimiento de los objetivos y el propósito. Así como, en la medida que surjan nuevos puntos de interés, evaluar la factibilidad de abarcar, postergar o desechar su abordaje.</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal<br>(estratégica)</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal<br>(operativa)</p></td> </tr> <!-- Fila 2 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>2. FOMENTAR LA PARTICIPACIÓN.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Motivar a los miembros a participar activamente en la Comunidad, compartiendo su experiencias, proponiendo temas de debate; conectando a quien tiene necesidad con quien tiene soluciones y contribuyendo con sus conocimientos e inquietudes.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 3 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>3. ADMINISTRAR y SISTEMATIZAR CONTENIDOS.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Buscar, seleccionar y distribuir recursos relevantes, como artículos, estudios de caso y herramientas, que puedan ayudar a los miembros a mejorar sus habilidades y conocimientos. Generar contenido a partir del trabajo de la propia CoP.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 4 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>4. SEGUIMIENTO Y EVALUACIÓN DE LA CoP PARA LA MEJORA CONTINUA.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Monitorear el progreso de la Comunidad y recoger feedback de los miembros para identificar áreas de mejora y ajustar las estrategias de gestión en consecuencia.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 5 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>5. MANTENER INFORMADA A LA ORGANIZACIÓN SOBRE EL ESTADO DEL ARTE DE LA COMUNIDAD.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>La información sobre los avances de la CoP es esencial para asegurar su éxito y sostenibilidad a largo plazo, así como para maximizar el impacto positivo en la organización.</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> </tr> </tbody> </table>"
+        "contenido": "<div><h2 class='pb-4 fw-bold'>Roles claves de la comunidad: líder y facilitador</h2><p>La función esencial de estos roles es mantener activa la comunidad, atender las necesidades de sus participantes y velar por el cumplimiento de los objetivos fijados.<br><br>A continuación, se describen 5 tareas fundamentales que deben realizarse durante el desarrollo de una CoP, las cuales serán asumidas principalmente por el líder y el facilitador:</p><table border='1' width='100%' style='border-collapse: collapse; font-family: sans-serif;'> <thead style='background:#2670e0; color:white; border: 3px solid #1fb0ee;'> <tr> <th>Tarea</th> <th>Líder</th> <th>Facilitador</th> </tr> </thead> <tbody style='border: 3px solid #1fb0ee;'> <!-- Fila 1 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>1. PLANIFICAR – ORGANIZAR EL TRABAJO DE LA COMUNIDAD</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Velar por que los esfuerzos realizados por los participantes apunten hacia el cumplimiento de los objetivos y el propósito. Así como, en la medida que surjan nuevos puntos de interés, evaluar la factibilidad de abarcar, postergar o desechar su abordaje.</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal<br>(estratégica)</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal<br>(operativa)</p></td> </tr> <!-- Fila 2 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>2. FOMENTAR LA PARTICIPACIÓN.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Motivar a los miembros a participar activamente en la Comunidad, compartiendo su experiencias, proponiendo temas de debate; conectando a quien tiene necesidad con quien tiene soluciones y contribuyendo con sus conocimientos e inquietudes.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 3 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>3. ADMINISTRAR y SISTEMATIZAR CONTENIDOS.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Buscar, seleccionar y distribuir recursos relevantes, como artículos, estudios de caso y herramientas, que puedan ayudar a los miembros a mejorar sus habilidades y conocimientos. Generar contenido a partir del trabajo de la propia CoP.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 4 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>4. SEGUIMIENTO Y EVALUACIÓN DE LA CoP PARA LA MEJORA CONTINUA.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>Monitorear el progreso de la Comunidad y recoger feedback de los miembros para identificar áreas de mejora y ajustar las estrategias de gestión en consecuencia.</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> </tr> <!-- Fila 5 --> <tr class='collapse-row'> <td><span style='color:#2670e0;'>5. MANTENER INFORMADA A LA ORGANIZACIÓN SOBRE EL ESTADO DEL ARTE DE LA COMUNIDAD.</span></td> <td></td> <td></td> </tr> <tr class='tabla-interactiva'> <td><p style='padding:20px;'>La información sobre los avances de la CoP es esencial para asegurar su éxito y sostenibilidad a largo plazo, así como para maximizar el impacto positivo en la organización.</p></td> <td><p style='padding:10px; text-align:center;'>Función<br>principal</p></td> <td><p style='padding:10px; text-align:center;'>Apoyo</p></td> </tr> </tbody> </table>"
       },
             {
         "id": "2-3",
         "titulo": "La participación del líder",
         "tituloContext": "",
-        "contenido": "<h2 class='pb-4 fw-bold'>La participación del Líder</h2> <p>Se basa en su conocimiento del tema o bien, en su capacidad para orientar, coordinar y representar el trabajo que se realiza en la CoP.<br><br> <b>Su rol supone:</b></p><div class='col-12'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;'><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalRelacionarse'> <img class='card-img-overlay img-fluid' src='src/img/m2_i3_2relacionarse.svg' style='margin-top: 9%;left:32%;width:12vw;height:auto;position:absolute;z-index:1'></a><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalDesafiar'> <img class='img-fluid' src='src/img/m2_i3_3desafiar.svg' style='margin-top: 9%;left:47%;width:12vw;height:auto;position: absolute;'></a><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalProponer'> <img class=' img-fluid' src='src/img/m2_i3_1proponer.svg' style='margin-top: -3%;margin-left:38.5%;width:12vw;height:auto;position: absolute;z-index:3'></a></div></div><img src='src/img/modulo2_item3_fondo.jpg' alt='Modulo2' class='img-fluid ' style='z-index:-10; margin-top:9%'> </div>",  
+        "contenido": "<h2 class='pb-4 fw-bold'>La participación del Líder</h2> <p>Se basa en su conocimiento del tema o bien, en su capacidad para orientar, coordinar y representar el trabajo que se realiza en la CoP.<br><br> <b>Su rol supone:</b></p><div class='col-12'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;margin-top:3%'><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalRelacionarse'> <img class='card-img-overlay img-fluid latir' src='src/img/m2_i3_2relacionarse.svg' style='margin-top: 9%;left:32%;width:12vw;height:auto;position:absolute;z-index:1'></a><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalDesafiar'> <img class='img-fluid latir' src='src/img/m2_i3_3desafiar.svg' style='margin-top: 9%;left:47%;width:12vw;height:auto;position: absolute;'></a><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalProponer'> <img class=' img-fluid latir' src='src/img/m2_i3_1proponer.svg' style='margin-top: -3%;margin-left:38.5%;width:12vw;height:auto;position: absolute;z-index:3'></a></div></div><img src='src/img/modulo2_item3_fondo.jpg' alt='Modulo2' class='img-fluid ' style='z-index:-10; margin-top:9%'> </div>",  
          "modal": [
                   {
                     "modalitem": "<div class='modal fade' id='ModalProponer' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_proponer.png' alt='' class='img-fluid ' ></div></div></div></div>"
@@ -315,7 +318,7 @@
         "id": "2-4",
         "titulo": "La participación del facilitador",
         "tituloContext": "",
-        "contenido": "<h2 class='pb-4 fw-bold'>La participación del facilitador</h2> <p>Se basa en la motivación, el apoyo y el intercambio comunicacional entre los participantes.</br></br> <b>Su rol supone:</b></p><div class='col-12'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;'><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalFacilitar'> <img class='card-img-overlay img-fluid' src='src/img/m2_i4_1facilitar.svg' style=' margin-top: 9%%; left:35%; width:12vw;height:auto;position:absolute; z-index:4'></a><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalAdministrar'> <img  class='img-fluid' src='src/img/m2_i4_2administrar.svg' style=' margin-top:0%; left:49% ; width:12vw; height:auto; position:absolute; z-index:3'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalCrear'> <img class=' img-fluid' src='src/img/m2_i4_3crear.svg' style=' margin-top:11%;left:35% ;width:12vw;height:auto;position:absolute; z-index:3'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalModerar'> <img class=' img-fluid' src='src/img/m2_i4_4moderar.svg' style=' margin-top:11%;left:49% ;width:12vw;height:auto;position:absolute; z-index:1'></a> </div></div><img src='src/img/modulo2_item4_fondo.jpg' alt='Modulo2' class='img-fluid ' style='z-index:-10; margin-top:5%;padding-left:-2%'></div>",
+        "contenido": "<h2 class='pb-4 fw-bold'>La participación del facilitador</h2> <p>Se basa en la motivación, el apoyo y el intercambio comunicacional entre los participantes.</br></br> <b>Su rol supone:</b></p><div class='col-12'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;'><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalFacilitar'> <img class='card-img-overlay img-fluid latir' src='src/img/m2_i4_1facilitar.svg' style=' margin-top: 9%%; left:29%; width:12vw;height:auto;position:absolute; z-index:4'></a><a style='cursor:pointer'  class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalAdministrar'> <img  class='img-fluid latir' src='src/img/m2_i4_2administrar.svg' style=' margin-top:0%; left:55% ; width:12vw; height:auto; position:absolute; z-index:3'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalCrear'> <img class=' img-fluid latir' src='src/img/m2_i4_3crear.svg' style=' margin-top:14%;left:29% ;width:12vw;height:auto;position:absolute; z-index:3'></a><a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalModerar'> <img class=' img-fluid latir' src='src/img/m2_i4_4moderar.svg' style=' margin-top:14%;left:55% ;width:12vw;height:auto;position:absolute; z-index:1'></a> <a style='cursor:pointer'class='botonmano' data-bs-toggle='modal' data-bs-target='#ModalMantener'> <img class=' img-fluid latir' src='src/img/m2_i4_5mantener.svg' style=' margin-top:6%;left:42% ;width:12vw;height:auto;position:absolute; z-index:10'></a> </div></div><img src='src/img/modulo2_item4_fondo.jpg' alt='Modulo2' class='img-fluid ' style='z-index:-10; margin-top:12% ;padding-left:-2%'></div>",
         "modal": [
                   {
                     "modalitem": "<div class='modal fade' id='ModalFacilitar' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_1Facilitar.png' alt='' class='img-fluid ' ></div></div></div></div>"
@@ -328,7 +331,11 @@
                 },
                     {
                     "modalitem": "<div class='modal fade' id='ModalModerar' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_4Moderar.png' alt='' class='img-fluid ' ></div></div></div></div>"
-                }]
+                },
+              {
+                    "modalitem": "<div class='modal fade' id='ModalMantener' tabindex='-1'><div class='modal-dialog modal-dialog-centered'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/modal_5Mantener.png' alt='' class='img-fluid ' ></div></div></div></div>"
+                }
+              ]
       },
        {
         "id": "2-5",
@@ -357,32 +364,32 @@
                   {
                     "pregunta": "La tarea fundamental del facilitador es proponer las metas de la CoP",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Es tarea fundamental del líder",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta":"¡Felicitaciones respuesta correcta!" ,
+                    "retroIncorrecta": "Es tarea fundamental del líder"
                   },
                   {
                     "pregunta": "Retroalimentar al grupo, se relaciona con el objetivo de generar confianza",
                     "respuestaCorrecta": "V",
-                    "retroCorrecta": "¡Bien!",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "¡Felicitaciones respuesta correcta!",
+                    "retroIncorrecta": "Ciertamente la retroalimentación es necesaria para guiar y dar confianza (estamos siendo escuchados, estamos siendo integrados…). "
                   },
                   {
                     "pregunta": "El facilitador debe mantener el foco de la conversación, evitando la dispersión del grupo",
                     "respuestaCorrecta": "V",
-                    "retroCorrecta": "¡Bien!",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "¡Felicitaciones respuesta correcta!",
+                    "retroIncorrecta": "Una de las tareas del facilitador es evitar la dispersión (mantener el foco en los temas relevantes). </br>Aunque hay situaciones en que temas relevantes invaden una sesión… hay que saber distinguir."
                   },
                   {
                     "pregunta": "El facilitador debe dar cuenta del estado de avance de la CoP a las autoridades de la organización",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Es tarea fundamental del líder",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "¡Felicitaciones respuesta correcta!",
+                    "retroIncorrecta": "Esta es una tarea fundamental del Líder"
                   },
                   {
                     "pregunta": "El líder debe sistematizar los contenidos y aprendizajes de la CoP",
                     "respuestaCorrecta": "F",
-                    "retroCorrecta": "Es tarea fundamental del facilitador",
-                    "retroIncorrecta": "No es correcto"
+                    "retroCorrecta": "¡Felicitaciones respuesta correcta!",
+                    "retroIncorrecta": "Esta es una tarea fundamental del Facilitador"
                   }
                 ]
               }
@@ -414,19 +421,19 @@
                     "actividad": {
                   "tipo": "tabsSimple",
                   "items": [{
-                      "label": "<span class='circle-btn' style='background-color: var(--color-secundario-1);'><span class='btn-number'>1</span><span class='btn-text'>Definir<br> objetivos</span></span>",
+                      "label": "<span class='circle-btn latir2' style='background-color: var(--color-secundario-1);'><span class='btn-number'>1</span><span class='btn-text'>Definir<br> objetivos</span></span>",
                       "contenido": "<div class='lanzamientoTAB p-3' style='background-color: var(--color-secundario-1); border: 0px; color: #fff;'><p class='m-0'><span class='fw-bold'>Definir los objetivos</span> específicos que persigue (toda actividad, reunión o evento debe cumplir con un objetivo) y referir a qué objetivo estratégico de la CoP responde.</p></div>"
                     },
                     {
-                      "label": "<span class='circle-btn' style='background-color: var(--color-secundario-2);'><span class='btn-number'>2</span><span class='btn-text'>Plantear las<br> tareas</span></span>",
+                      "label": "<span class='circle-btn latir2' style='background-color: var(--color-secundario-2);'><span class='btn-number'>2</span><span class='btn-text'>Plantear las<br> tareas</span></span>",
                       "contenido": "<div class='lanzamientoTAB p-3' style='background-color: var(--color-secundario-2); border: 0px; color: #fff;'><p class='m-0'><span class='fw-bold'>Plantear las tareas</span> primarias, necesarias para alcanzar esos objetivos y revisar si requiere actividades de apoyo o secundarias para cumplir con las anteriores (ejemplo; realizar entrevistas vs. solicitar permisos para entrevistar; enviar invitaciones, coordinar horarios de salas para entrevista, preparar la pauta, etc.).</p></div>"
                     },
                     {
-                      "label": "<span class='circle-btn' style='background-color: var(--color-secundario-3);'><span class='btn-number'>3</span><span class='btn-text'>Asegurar las<br> personas</span></span>",
+                      "label": "<span class='circle-btn latir2' style='background-color: var(--color-secundario-3);'><span class='btn-number'>3</span><span class='btn-text'>Asegurar las<br> personas</span></span>",
                       "contenido": "<div class='lanzamientoTAB p-3' style='background-color: var(--color-secundario-3); border: 0px; color: #fff;'><p class='m-0'><span class='fw-bold'>Asegurarse de que cuenta con personas</span> con la disposición y capacidad para realizar o hacerse cargo de tales actividades.</p></div>"
                     },
                     {
-                      "label": "<span class='circle-btn' style='background-color: var(--color-secundario-4);'><span class='btn-number'>4</span><span class='btn-text'>Estimar<br> recursos</span></span>",
+                      "label": "<span class='circle-btn latir2' style='background-color: var(--color-secundario-4);'><span class='btn-number'>4</span><span class='btn-text'>Estimar<br> recursos</span></span>",
                       "contenido": "<div class='lanzamientoTAB p-3' style='background-color: var(--color-secundario-4); border: 0px; color: #fff;'><p class='m-0'><span class='fw-bold'>Estimar los recursos necesarios</span> -financieros, tecnológicos, humanos-, para llevar a cabo de buena forma las actividades planteadas.</p></div>"
                     }
                   ]
@@ -447,7 +454,7 @@
               "id": "3-2-3",
                     "titulo": "Calendarización de actividades",
                     "tituloContext": "Calendarización de actividades",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><div class='px-3'><ol class='ps-3 fw-bold'><li>Primero, agregar el evento de más largo plazo, especialmente si es un evento importante, y luego completar las actividades de apoyo que deben ocurrir.</li><li>A continuación, agregar las actividades mensuales habituales que se deben realizar</li><li>Después destacar aquellas actividades que sean las de mayor prioridad y que se alineen más estrechamente con sus objetivos.</li><li>Finalmente, hacer ajustes al plan. Es posible que haya demasiadas actividades planificadas en un mes determinado.</li></ol></div></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/calendario.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><div class='px-3'><ol class='ps-3 fw-bold'><li>Primero, agregar el evento de más largo plazo, especialmente si es un evento importante, y luego completar las actividades de apoyo que deben ocurrir.</li><li>A continuación, agregar las actividades mensuales habituales que se deben realizar.</li><li>Después destacar aquellas actividades que sean las de mayor prioridad y que se alineen más estrechamente con sus objetivos.</li><li>Finalmente, hacer ajustes al plan. Es posible que haya demasiadas actividades planificadas en un mes determinado.</li></ol></div></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/calendario.jpg'></div></div>"
             },
             {
           "id": "3-2-4",
@@ -456,13 +463,13 @@
           "contenido": "<p>Cualquier actividad de la CoP debe diseñarse teniendo en cuenta tres principios fundamentales para lograr el éxito deseado en el proceso de avance y desarrollo de la CoP:</p><div class='row m-0 d-flex justify-content-between py-5 px-3 px-lg-5'><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-1' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones1'><strong>Todos pueden/deben participar</strong></button></div><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-2' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones2'><strong>Establecer los conocimientos, prácticas o competencias que se requieren</strong></button></div><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-3' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones3'><strong>Evaluar, probar, iterar</strong></button></div></div>",
           "modal": [
               {
-                "modalitem": "<div class='modal fade' id='ModalRecomendaciones1' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-3)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'></h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>si todos se sienten invitados a hablar y contribuir, se sentirán más incluidos, más conectados. Entonces, para cualquier actividad de la Comunidad, debemos pensar en: ¿cómo sabrán los participantes que son importantes?</p></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='ModalRecomendaciones1' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-3)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'></h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Si todos se sienten invitados a hablar y contribuir, se sentirán más incluidos, más conectados. Entonces, para cualquier actividad de la Comunidad, debemos pensar en: ¿cómo sabrán los participantes que son importantes?</p></div></div></div></div>"
             },
           {
                 "modalitem": "<div class='modal fade' id='ModalRecomendaciones2' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-2)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'></h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>... para cumplir con el propósito o los objetivos: Defina la manera en que la Comunidad -o parte de ella- adquirirá estos conocimientos o prácticas durante la(s) sesión(es).</p></div></div></div></div>"
             },
           {
-                "modalitem": "<div class='modal fade' id='ModalRecomendaciones3' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-1)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'></h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>todo es perfectible. Se trata de aprender y mejorar continuamente, en función de lo que opinan los miembros de la CoP, de sus objetivos e indicadores de éxito.</p></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='ModalRecomendaciones3' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-1)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'></h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Todo es perfectible. Se trata de aprender y mejorar continuamente, en función de lo que opinan los miembros de la CoP, de sus objetivos e indicadores de éxito.</p></div></div></div></div>"
             }]
             },
             {
@@ -476,7 +483,7 @@
               "titulo": "Diseñar una sesión",
               "tituloContext": "Planificar – organizar el trabajo de la comunidad ",
               
-             "contenido": "<h2 class='pb-4 fw-bold'>Diseñar una sesión</h2></br><h4>Plantilla para el diseño de una sesión</h4> <div class='d-flex flex-column' style=' height:auto;width: 100%;position: relative;'><div><img class='card-img-overlay img-fluid' src='src/img/m3_i2F_cuadro_diseniar.jpg' style='width:100%;height:auto;position:relative;z-index:1;objet-fit:cover'></div><div class='d-flex justify-content-end'><a style=' cursor:pointer' href='src/img/m3_Diseniar_una_sesion.docx' target='_blank'><img src='src/img/m3_botondescarga.jpg' style='width:150px;height:auto;padding-top:10px'></a></div></div> <div><p style='padding-top:10px'><b>NOTA</b>: la sesión no siempre debe estar del todo planificada. También es factible permitir que la comunidad vaya buscando caminos. Todo dependerá de los objetivos perseguidos.</p></div><div><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalcuadrodiseniar'> <img class='card-img-overlay img-fluid' src='src/img/m3_i2B_iconosigueejemplo.jpg' style='width:30rem;height:auto;position:relative;z-index:1;objet-fit:cover'></a>",  
+             "contenido": "<h2 class='pb-4 fw-bold'>Diseñar una sesión</h2></br><h4>Plantilla para el diseño de una sesión</h4> <div class='d-flex flex-column' style=' height:auto;width: 100%;position: relative;'><div><img class='card-img-overlay img-fluid' src='src/img/m3_i2F_cuadro_diseniar.jpg' style='width:100%;height:auto;position:relative;z-index:1;objet-fit:cover'></div><div class='d-flex justify-content-end'><a style=' cursor:pointer' href='src/img/m3_Diseniar_una_sesion.docx' target='_blank'><img src='src/img/m3_botondescarga.jpg' style='width:150px;height:auto;padding-top:10px'></a></div></div> <div><p style='padding-top:10px'><b>NOTA</b>: la sesión no siempre debe estar del todo planificada. También es factible permitir que la comunidad vaya buscando caminos. Todo dependerá de los objetivos perseguidos.</p></div><div><a style='cursor:pointer' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalcuadrodiseniar'> <img class='card-img-overlay img-fluid' src='src/img/m3_i2F_iconosigueejemplo.jpg' style='width:30rem;height:auto;position:relative;z-index:1;objet-fit:cover'></a>",  
          "modal": [
                   {
                     "modalitem": "<div class='modal fade ' id='modalcuadrodiseniar' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-xl'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/m3_i2F_modalcuadrodiseniar.jpg' alt='' class='img-fluid ' ></div></div></div></div>"
@@ -486,7 +493,7 @@
               "id": "3-2-7",
               "titulo": "Tenga presente",
               "tituloContext": "Tenga presente",
-               "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><div class='px-3'><ul class='ps-3'><li>Hay que convocar las reuniones con margen de tiempo e indicando los temas a tratar.</li><li>Si la convocatoria es en fecha fija, siempre será útil un recordatorio previo.</li><li>La hora de término también es importante respetarla... no hay que abusar de la voluntad de los participantes.</li><li>En grupos pequeños, puede estimular conversaciones directas, generando preguntas, conjeturas, planteando dificultades, etc.</li><li>En audiencias más amplias, se puede trabajar inicialmente en pequeños grupos (aprox. 6 personas) para darles a todos la posibilidad de opinar y luego compartir entre todos.</li><li><strong>La planificación debe ser flexible, y respetar las necesidades del grupo.</strong> De tal manera que, si surgen situaciones personales de índole relacional o emocional, la comunidad pueda darles algún espacio y acogerlas (escuchar, respetar y si es necesario, intentar darle una salida satisfactoria). Si se presenta un tema extenso, que debe ser tratado por todo el grupo, se puede convocar a una reunión extra.</li></ul></div></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/atencion.jpg' style='max-width:300px'></div></div>"
+               "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><div class='px-3'><ul class='ps-3'  '><li style='margin-bottom: .8em;'>Hay que convocar las reuniones con margen de tiempo e indicando los temas a tratar.</li><li style='margin-bottom: .8em;'>Si la convocatoria es en fecha fija, siempre será útil un recordatorio previo.</li><li style='margin-bottom: .8em;'>La hora de término también es importante respetarla... no hay que abusar de la voluntad de los participantes.</li><li style='margin-bottom: .8em;'>En grupos pequeños, puede estimular conversaciones directas, generando preguntas, conjeturas, planteando dificultades, etc.</li><li style='margin-bottom: .8em;'>En audiencias más amplias, se puede trabajar inicialmente en pequeños grupos (aprox. 6 personas) para darles a todos la posibilidad de opinar y luego compartir entre todos.</li><li style='margin-bottom: .8em;'><strong>La planificación debe ser flexible, y respetar las necesidades del grupo.</strong> De tal manera que, si surgen situaciones personales de índole relacional o emocional, la comunidad pueda darles algún espacio y acogerlas (escuchar, respetar y si es necesario, intentar darle una salida satisfactoria). Si se presenta un tema extenso, que debe ser tratado por todo el grupo, se puede convocar a una reunión extra.</li ></ul></div></div><div class='col-md-4 col-12 p-0 d-flex align-items-start justify-content-end'><img class='img-fluid' src='src/img/atencion.jpg' style='max-width:300px; margin-top:-20%'></div></div>"
               
             }
           ]
@@ -495,7 +502,7 @@
           "id": "3-3",
           "titulo": "Fomentar la participación",
           "tituloContext":"Fomentar la participación",
-          "contenido": "<p>Para fomentar la participación grupal en las Comunidades de Práctica (CoPs), es importante considerar diversos aspectos clave que pueden ayudar a crear un ambiente propicio para la colaboración y el intercambio de conocimientos. Estas tareas las debe realizar el líder y el facilitador. </br></br><h5><b>A continuación, presentamos las siguientes:</b></h5></p><div class='col-12 ' style='width:100vw; heigth:20vw; position:relative' ><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalfomentar'><img class='img-fluid' src='src/img/m3_i3_fomentar.png' style='margin-top:2%; left:29%; width:200px; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalidentificacion'><img class='card-img-overlay img-fluid' src='src/img/m3_i3_identificacion.png' style='margin-top:10%; left:21%; width:200px; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalclarificacion'><img class='img-fluid' src='src/img/m3_i3_clarificacion.png' style='margin-top:10%; left:37%; width:200px; height:auto; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalmapeo'><img class='img-fluid' src='src/img/m3_i3_mapeo.png' style='margin-top:18%; left:16%; width:200px; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalreflexion'><img class='img-fluid' src='src/img/m3_i3_reflexion.png' style='margin-top:18%; left:42%; width:200px; height:auto; position:absolute;'></a></div>",
+          "contenido": "<p>Para fomentar la participación grupal en las Comunidades de Práctica (CoPs), es importante considerar diversos aspectos clave que pueden ayudar a crear un ambiente propicio para la colaboración y el intercambio de conocimientos. Estas tareas las debe realizar el líder y el facilitador. </br></br><h5><b>A continuación, presentamos las siguientes:</b></h5></p><div class='col-12 ' style='width:100%; heigth:20vw; position:relative' ><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalfomentar'><img class='img-fluid' src='src/img/m3_i3_fomentar.png' style='margin-top:2%; left:29%; width:200px; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalidentificacion'><img class='card-img-overlay img-fluid' src='src/img/m3_i3_identificacion.png' style='margin-top:10%; left:21%; width:200px; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalclarificacion'><img class='img-fluid' src='src/img/m3_i3_clarificacion.png' style='margin-top:10%; left:37%; width:200px; height:auto; position:relative;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalmapeo'><img class='img-fluid' src='src/img/m3_i3_mapeo.png' style='margin-top:18%; left:16%; width:200px; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#modalreflexion'><img class='img-fluid' src='src/img/m3_i3_reflexion.png' style='margin-top:18%; left:42%; width:200px; height:auto; position:absolute;'></a></div>",
                   "modal": [
               {
                 "modalitem": "<div class='modal fade' id='modalfomentar' tabindex='-1' '><div class='modal-dialog modal-dialog-centered modal-lg'><div class=' style='background-color:none; border: none;'><div class=''><img class='img-fluid' src='src/img/m3_i3_modalfomentar.png' ></div></div></div></div>"
@@ -517,7 +524,7 @@
               "id": "3-3-1",
               "titulo": "Ejercicio: Plantilla para el seguimiento y planificación de sesiones ",
               "tituloContext": "Fomentar la participación",
-              "contenido": "<h4><b>Ejercicio:</b> Plantilla para el seguimiento y participación en sesiones </h4> <div class='d-flex flex-column' style=' height:auto;width: 100%;position: relative;'><div><img class='card-img-overlay img-fluid' src='src/img/m3_i3A_cuadro_ejercicio.jpg' style='width:100%;height:auto;position:relative;z-index:1;objet-fit:cover'></div><div class='d-flex justify-content-end'><a style=' cursor:pointer' href='src/img/m3_Fomentar_la_participacion.docx' target='_blank'><img src='src/img/m3_botondescarga.jpg' style='width:150px;height:auto;padding-top:10px'></a></div></div> ",  
+              "contenido": "<h4><b>Ejercicio:</b> Plantilla para el seguimiento y participación en sesiones </h4> <div class='d-flex flex-column' style=' height:auto;width: 100%;position: relative;'><div><img class='card-img-overlay img-fluid' src='src/img/m3_i3A_cuadro_ejercicio.jpg' style='width:100%;height:auto;position:relative;z-index:1;objet-fit:cover'></div><div class='d-flex justify-content-end'><a style=' cursor:pointer' href='src/img/m3_Fomentar_la_participacion.docx' target='_blank'><img src='src/img/m3_botondescarga.jpg' style='width:150px;height:auto;padding-top:10px'></a></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/modulo3_item3_fondo.jpg'></div></div> ",  
          "modal": [
                   {
                     "modalitem": "<div class='modal fade ' id='modalcuadrodiseniar' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-xl'><div class='modal-content' style='background-color: #00000000; border: none;'><div class=''><img src='src/img/m3_i2F_modalcuadrodiseniar.jpg' alt='' class='img-fluid ' ></div></div></div></div>"
@@ -527,13 +534,13 @@
               "id": "3-3-2",
               "titulo": "Si la CoP va a desarrollar su trabajo de forma VIRTUAL",
               "tituloContext": "Si la CoP va a desarrollar su trabajo de forma VIRTUAL",
-              "contenido": "<div class='content m-0 p-0 h-100 flex-column'><div class='row m-0 px-3'><p class='px-3'>El facilitador en línea debe tener en cuenta los siguientes aspectos.</p><ul id='listaProcesoParticipativos' class='list-disc ps-4 mx-3'><li>Hacer que se sientan bienvenidos y valorados en la plataforma.</li><li>Comunicación constante, especialmente con nuevos miembros.</li><li>Preguntar qué esperan de la comunidad en lugar de imponer un entorno predefinido. Mantener algún grado de contacto entre sesiones (resúmenes, información especial, etc.)</li><li>No controlar las conversaciones.</li><li>Permitir que los usuarios decidan qué es importante y se expresen con su propia voz.</li><li>Evitar objetivos de gestión poco realistas.</li><li>Medir el número y/o tasa de crecimiento de los miembros activos es efectivo.</li><li>Introducir novedades.</li><li>Organizar eventos comunitarios regulares, seminarios, entrevistas y retos para mantener la comunidad activa.</li><li>Reconocimiento de logros.</li><li>Celebrar los logros personales de los miembros, como promociones, nacimientos y matrimonios.</li></ul></div></div>"
+              "contenido": "<div class='content m-0 p-0 h-100 flex-column'><div class='row m-0 px-3'><p class='px-3'style=' line-height: 3;'><b>El facilitador en línea debe tener en cuenta los siguientes aspectos</b></p><ul id='listaProcesoParticipativos' class='list-disc ps-4 mx-3' px><li style='margin-bottom: .8em;'>Hacer que se sientan bienvenidos y valorados en la plataforma.</li><li style='margin-bottom: .8em;'>Comunicación constante, especialmente con nuevos miembros.</li><li style='margin-bottom: .8em;'>Preguntar qué esperan de la comunidad en lugar de imponer un entorno predefinido. Mantener algún grado de contacto entre sesiones (resúmenes, información especial, etc.)</li><li style='margin-bottom: .8em;'>No controlar las conversaciones.</li><li style='margin-bottom: .8em;'>Permitir que los usuarios decidan qué es importante y se expresen con su propia voz.</li><li style='margin-bottom: .8em;'>Evitar objetivos de gestión poco realistas.</li><li style='margin-bottom: .8em;'>Medir el número y/o tasa de crecimiento de los miembros activos es efectivo.</li><li style='margin-bottom: .8em;'>Introducir novedades.</li><li style='margin-bottom: .8em;'>Organizar eventos comunitarios regulares, seminarios, entrevistas y retos para mantener la comunidad activa.</li><li style='margin-bottom: .8em;'>Reconocimiento de logros.</li><li style='margin-bottom: .8em;'>Celebrar los logros personales de los miembros, como promociones, nacimientos y matrimonios.</li></ul></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/modulo3_item3_Silacop.jpg'></div></div>"
             },
             {
                "id": "3-3-3",
                     "titulo": "Tenga presente",
                     "tituloContext": "Tenga presente",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><p class='px-3'>La dinámica del grupo es responsabilidad principal del facilitador.<br><br>Durante las reuniones, se debe:</p><div class='px-3'><ul class='ps-3'><li>Respetar el tiempo de la reunión.</li><li>Incentivar la participación con preguntas que movilicen al grupo.</li><li>Incentivar la participación individual de todos, con preguntas o reflexiones dirigidas a las personas menos participativas.</li><li>Para aquellos que suelen acaparar el dialogo: se les puede solicitar tareas que –de alguna manera- dificulten o distraigan la situación, como por ejemplo darles el rol de registrar las opiniones del grupo.</li><li>Dirigir al grupo dentro de los temas previstos: si el tema se desvía, \"reenfocarlo\" con cortesía. A no ser que el tema resulte de importancia para la mayoría.</li></ul></div><p class='px-3'>Recuerda que en la web podrás encontrar material que te ayude a cumplir con el gran objetivo de fomentar la participación.</p></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/atencion.jpg' style='max-width:300px'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><p class='px-3'><b>La dinámica del grupo es responsabilidad principal del facilitador.</b><br><br>Durante las reuniones, se debe:</p><div class='px-3'><ul class='ps-3' ><li style='margin-bottom: .8em;' >Respetar el tiempo de la reunión.</li><li style='margin-bottom: .8em;'>Incentivar la participación con preguntas que movilicen al grupo.</li><li style='margin-bottom: .8em;'>Incentivar la participación individual de todos, con preguntas o reflexiones dirigidas a las personas menos participativas.</li><li style='margin-bottom: .8em;'>Para aquellos que suelen acaparar el dialogo: se les puede solicitar tareas que –de alguna manera- dificulten o distraigan la situación, como por ejemplo darles el rol de registrar las opiniones del grupo.</li><li style='margin-bottom: .8em;'>Dirigir al grupo dentro de los temas previstos: si el tema se desvía, \"reenfocarlo\" con cortesía. A no ser que el tema resulte de importancia para la mayoría, advierta la derivación y encauce hacia el tema original.</li></ul></div><p class='px-3'>Recuerda que en la web podrás encontrar material que te ayude a cumplir con el gran objetivo de fomentar la participación.</p></div><div class='col-md-4 col-12 p-0 d-flex align-items-start justify-content-end'><img class='img-fluid' src='src/img/atencion.jpg' style='max-width:300px; margin-top:-20%'></div></div>"
                   }
           ]
         },
@@ -541,8 +548,8 @@
           "id": "3-4",
           "titulo": "Administrar y sistematizar contenidos",
           "tituloContext":"Administrar y sistematizar contenidos",
-          "contenido": "<p>El contenido es clave para lograr que las personas se interesen por la Comunidad. El contenido debe satisfacer las necesidades de los miembros y atender al propósito de la Comunidad.<br><br><strong>Captura y difusión de contenido relevante</strong><br>Una de las tareas fundamentales de una CoP es capturar el conocimiento crítico -entendido como aquel conocimiento que se relaciona directamente con la consecución del propósito de la comunidad o con sus objetivos estratégicos- que administra o produce; a la vez que lo organiza y difunde.<br><br><strong>Capturar y sistematizar el conocimiento</strong>Es el proceso de almacenar, organizar y estructurar (relacionar) el conocimiento crítico, las experiencias e ideas que poseen personas y equipos de una organización, para que ésta pueda acceder, compartir y reutilizar los aprendizajes que cada día viven sus colaboradores.</p>",
-          "imagen": "<img src='src/img/organiza.jpg' alt='Modulo1' class='img-fluid'>",
+          "contenido": "<p>El contenido es clave para lograr que las personas se interesen por la Comunidad. El contenido debe satisfacer las necesidades de los miembros y atender al propósito de la Comunidad.<br><br><strong>Captura y difusión de contenido relevante</strong><br>Una de las tareas fundamentales de una CoP es capturar el conocimiento crítico -entendido como aquel conocimiento que se relaciona directamente con la consecución del propósito de la comunidad o con sus objetivos estratégicos- que administra o produce; a la vez que lo organiza y difunde.<br><br><strong>Capturar y sistematizar el conocimiento</strong></br>Es el proceso de almacenar, organizar y estructurar (relacionar) el conocimiento crítico, las experiencias e ideas que poseen personas y equipos de una organización, para que ésta pueda acceder, compartir y reutilizar los aprendizajes que cada día viven sus colaboradores.</p>",
+          "imagen": "<img src='src/img/organiza.jpg' alt='Modulo1' class='img-fluid' style='martin-top:-10%'>",
           "subtemas": [
             {
               "id": "3-4-1",
@@ -564,7 +571,7 @@
                "id": "3-4-3",
                     "titulo": "Tenga presente",
                     "tituloContext": "Tenga presente",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><div class='px-3'><ul class='ps-3'><li>Mantener informado al conjunto de la comunidad asegura que todos los miembros estén al tanto de los avances y cambios, lo que fortalece el sentido de pertenencia y cohesión dentro de la comunidad.</li><li>Esto es especialmente importante para aquellos que no han podido participar en todas las actividades, ya que les permite ponerse al día y seguir siendo parte activa del grupo.</li><li>La transparencia y la comunicación continua fomentan un am- biente de confianza y colaboración, donde cada miembro siente que su contribución es valorada y relevante. Esto, impulsa la sos- tenibilidad de la comunidad.</li></ul></div></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/atencion.jpg' style='max-width:300px'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><div class='px-3'><ul class='ps-3'><li style='margin-bottom: .8em;'>Mantener informado al conjunto de la comunidad asegura que todos los miembros estén al tanto de los avances y cambios, lo que fortalece el sentido de pertenencia y cohesión dentro de la comunidad.</li><li style='margin-bottom: .8em;'>Esto es especialmente importante para aquellos que no han podido participar en todas las actividades, ya que les permite ponerse al día y seguir siendo parte activa del grupo.</li><li style='margin-bottom: .8em;'>La transparencia y la comunicación continua fomentan un am- biente de confianza y colaboración, donde cada miembro siente que su contribución es valorada y relevante. Esto, impulsa la sos- tenibilidad de la comunidad.</li></ul></div></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/atencion.jpg' style='max-width:300px;margin-top:-20%'></div></div>"
               }
           ]
         },
@@ -572,29 +579,29 @@
           "id": "3-5",
           "titulo": "Seguimiento y evaluación de la CoP para la mejora continua",
           "tituloContext": "Seguimiento y evaluación de la CoP para la mejora continua",
-        "contenido": "<p>La evaluación de las CoPs involucra observar la forma de organización que presenta, las tareas que se han realizado y los resultados obtenidos, con el objeto de discriminar aquellos aspectos que apuntan a la mejora profesional y organizacional. De esta manera podemos enfocar los esfuerzos del equipo impulsor y asegurar los mejores resultados posibles.<br><br><br><strong>Al evaluar, es necesario:</strong><br><br>Cumplir con los momentos de medición que fueron definidos en etapas anteriores.<br><br>Utilizar las métricas definidas en etapas anteriores: indicadores de actividad y de resultados.<br><br>Tener presente qué objetivo(s) estamos reflejando.<br><br>Analizar la pertinencia de estas mediciones y evaluar sus posibles modificaciones.<br><br>Registrar los resultados. Para ello, se completan las mismas plantillas de evaluación presentadas en la etapa de diseño.</p><div class='d-flex justify-content-end'><button type='button' class='btn btn-sm btn-outline-secondary btn-ejemplos' data-bs-toggle='modal' data-bs-target='#ModalEjemplos0'><img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong></button></div>",
+        "contenido": "<p>La evaluación de las CoPs involucra observar la forma de organización que presenta, las tareas que se han realizado y los resultados obtenidos, con el objeto de discriminar aquellos aspectos que apuntan a la mejora profesional y organizacional. De esta manera podemos enfocar los esfuerzos del equipo impulsor y asegurar los mejores resultados posibles.<br><br><br><strong>Al evaluar, es necesario:</strong><br><br><ul><li  style='margin-bottom: .8em;'>Cumplir con los momentos de medición que fueron definidos en etapas anteriores.</li><li  style='margin-bottom: .8em;'>Utilizar las métricas definidas en etapas anteriores: indicadores de actividad y de resultados.</li><li  style='margin-bottom: .8em;'>Tener presente qué objetivo(s) estamos reflejando.</li><li  style='margin-bottom: .8em;'>Analizar la pertinencia de estas mediciones y evaluar sus posibles modificaciones.</li><li  style='margin-bottom: .8em;'>Registrar los resultados. Para ello, se completan las mismas plantillas de evaluación presentadas en la etapa de diseño.</li></ul></p><div class='d-flex justify-content-center'><button type='button' class='btn btn-sm btn-outline-secondary btn-ejemplos' data-bs-toggle='modal' data-bs-target='#ModalEjemplos0'><img src='src/img/m1_s4_icono_diseno_ideas.svg'><strong>ideas</strong></button></div>",
          "modal": [
               {
-                "modalitem": "<div class='modal fade' id='ModalEjemplos0' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: #fe6d02'><div class='modal-header border-0'><h5 class='modal-title fw-bold'></h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p><strong>Algunas ideas de indicadores de medición:<strong></p><ul class='list-styled'><li>Participación de expertos invitados</li><li>Número de documentos generados y calidad</li><li>Satisfacción de los participantes</li><li>Cantidad de participantes que aportan</li><li>Número de consultas y respuestas o participación por cada tema</li><li>Noticias o aportes generados hacia la organización</li></ul></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='ModalEjemplos0' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content p-5' style='background-color: #fe6d02'><div class='modal-body'><p><strong>Algunas ideas de indicadores de medición:<strong></p><ul class='list-styled'><li>Participación de expertos invitados</li><li>Número de documentos generados y calidad</li><li>Satisfacción de los participantes</li><li>Cantidad de participantes que aportan</li><li>Número de consultas y respuestas o participación por cada tema</li><li>Noticias o aportes generados hacia la organización</li></ul></div></div></div></div>"
             }]
         },
         {
           "id": "3-6",
           "titulo": "Apoyar al líder en mantener informada a la organización sobre el estado del arte de la CoP",
           "tituloContext": "",
-        "contenido": "<h2 class='pb-4 fw-bold'>Apoyar al líder en mantener informada a la organización sobre el estado del arte de la <span class='title-body-secondary'>(CoP)</span></h2><p>El líder, debe mantener informada a la organización y especialmente al patrocinador, sobre los avances de la Comunidad de Práctica (<span class='title-body-secondary'><b>CoP</b></span>). La información es crucial por varias razones:<div class='col-12'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;'><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalapoyo'><img class='img-fluid' src='src/img/m3_i6_apoyo.png' style='margin-top:0%; left:21%; width:19vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaldifusion'><img class='card-img-overlay img-fluid' src='src/img/m3_i6_difusion.png' style='margin-top:0%; left:52%; width:19vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalalineacion'><img class='img-fluid' src='src/img/m3_i6_alineacion.png' style='margin-top:26.5%; margin-left:58%; width:19vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalreconocimiento'><img class='img-fluid' src='src/img/m3_i6_reconocimiento.png' style='margin-top:42.5%;; left:36.5%; width:19vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaltransparencia'><img class='img-fluid' src='src/img/m3_i6_transparencia.png' style='margin-top:26.5%; margin-left:12.3%; width:19vw; height:auto; position:absolute;'></a></div></div><img style='width:100%; height:auto;margin-top:-10%;z-index:-3 ' src='src/img/m3_i6_pentagono.jpg' alt='fondo'><p style='padding-top:8%;'> En resumen, la tarea de la CoP de <b>mantener informada a la organización sobre sus avances es esencial para asegurar sostenibilidad</b> a largo plazo. </b><br/></p></div>",
+        "contenido": "<h2 class='pb-4 fw-bold'>Apoyar al líder en mantener informada a la organización sobre el estado del arte de la <span class='title-body-secondary'>(CoP)</span></h2><p>El líder, debe mantener informada a la organización y especialmente al patrocinador, sobre los avances de la Comunidad de Práctica (<span class='title-body-secondary'><b>CoP</b></span>). La información es crucial por varias razones:<div class='col-12'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;'><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalapoyo'><img class='img-fluid' src='src/img/m3_i6_apoyo.png' style='margin-top:2%; left:20%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaldifusion'><img class='card-img-overlay img-fluid' src='src/img/m3_i6_difusion.png' style='margin-top:2%; left:43%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalalineacion'><img class='img-fluid' src='src/img/m3_i6_alineacion.png' style='margin-top:23.5%; margin-left:48%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalreconocimiento'><img class='img-fluid' src='src/img/m3_i6_reconocimiento.png' style='margin-top:35.5%;; left:31.5%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaltransparencia'><img class='img-fluid' src='src/img/m3_i6_transparencia.png' style='margin-top:22.5%; margin-left:12.3%; width:15vw; height:auto; position:absolute;'></a></div></div><img style='width:59vw; height:auto;margin-top:-10%;z-index:-3 ' src='src/img/m3_i6_pentagono.jpg' alt='fondo'><p style='padding-top:8%;'> En resumen, la tarea de la CoP de <b>mantener informada a la organización sobre sus avances es esencial para asegurar sostenibilidad</b> a largo plazo. </b><br/></p></div>",
          "modal": [
               {
-                "modalitem": "<div class='modal fade' id='Modalapoyo' tabindex='-1' '><div class='modal-dialog modal-dialog-centered modal-md'><div class=' style='background-color:none; border: none;'><div class=''><img class='img-fluid' src='src/img/m3_i6_modalapoyo.png' ></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='Modalapoyo' tabindex='-1' '><div class='modal-dialog modal-dialog-centered modal-lg'><div class=' style='background-color:none; border: none;'><div class=''><img class='img-fluid' src='src/img/m3_i6_modalapoyo.png' ></div></div></div></div>"
             },
                   {
-                "modalitem": "<div class='modal fade' id='Modaldifusion' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-md'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modaldifusion.png' ></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='Modaldifusion' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-lg'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modaldifusion.png' ></div></div></div></div>"
             },
             {
-                "modalitem": "<div class='modal fade' id='Modalalineacion' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-md'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modalalineacion.png' ></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='Modalalineacion' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-lg'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modalalineacion.png' ></div></div></div></div>"
             },
                 {
-                "modalitem": "<div class='modal fade' id='Modaltransparencia' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-md'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modaltransparencia.png' ></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='Modaltransparencia' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-lg'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modaltransparencia.png' ></div></div></div></div>"
             },
                 {
                 "modalitem": "<div class='modal fade' id='Modalreconocimiento' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-md'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modalreconocimiento.png' ></div></div></div></div>"
@@ -612,19 +619,19 @@
                     "pregunta": "Es deber fundamental del facilitador tener todo muy bien planificado, con actividades y tiempos establecidos",
                     "respuestaCorrecta": "F",
                     "retroCorrecta": "¡Felicitaciones respuesta correcta!",
-                    "retroIncorrecta": "Es tarea fundamental del líder"
+                    "retroIncorrecta": "La sesión no siempre debe estar del todo planificada. También es factible permitir que la comunidad vaya buscando su camino. Todo dependerá de los objetivos perseguidos."
                   },
                   {
                     "pregunta": "Si la cultura organizacional no favorecer el desarrollo de una CoP, lo mejor será descartar su inicio.",
                     "respuestaCorrecta": "F",
                     "retroCorrecta": "¡Felicitaciones respuesta correcta!",
-                    "retroIncorrecta": "Ya que dependerá del grado de resistencia que se encuentre en la organización. Muchas veces es posible planificar actividades iniciales, que no exijan demasiado a la comunidad, y así ir paulatinamente integrando estrategias para fomentar la participación y el compromiso de los miembros."
+                    "retroIncorrecta": "Dependerá del grado de resistencia que se encuentre en la organización. Muchas veces es posible planificar actividades iniciales, que no exijan demasiado a la comunidad, y así ir paulatinamente integrando estrategias para fomentar la participación y el compromiso de los miembros."
                   },
                   {
                     "pregunta": "Los errores se pueden utilizar como estímulo de aprendizaje, si evitamos individualizar y culpabilizar esas acciones. ",
                     "respuestaCorrecta": "V",
                     "retroCorrecta": "¡Felicitaciones respuesta correcta!",
-                    "retroIncorrecta": "Claro que es posible utilizar los errores para aprender… de hecho es una de las mejores fuentes de aprendizaje, siempre que se evite castigar y culpabilizar a quienes los cometen."
+                    "retroIncorrecta": "Es posible utilizar los errores para aprender… de hecho es una de las mejores fuentes de aprendizaje, siempre que se evite castigar y culpabilizar a quienes los cometen."
                   },
                   {
                     "pregunta": "Un “artefacto de conocimiento” es un intangible que aprovecha toda la organización.",
@@ -673,7 +680,7 @@
                 "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-4'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Comunicación asertiva:</span> <br> facilitar el diálogo y evitar malentendidos.</p></div>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-5'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar tensiones o desacuerdos de forma constructiva.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-2-5'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Gestión de conflictos:</span> <br> mediar en tensiones o desacuerdos de forma constructiva.</p></div>"
               }
             ]
           },
@@ -1087,7 +1094,7 @@
                 "grupo": "Empatía",
                 "items": [{
                     "titulo": "Empatía",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-7 px-3'><p class='px-3'>Es la habilidad para reconocer, comprender y apreciar los sentimientos de los otros.<br><br>La empatía es la capacidad de conectarse emocionalmente con las demás personas, permite reconocer, compartir y entender los sentimientos y los estados de ánimo de otros seres humanos.<br><br>En otras palabras, ser empáticos es el ser capaces de \"leer\" emocionalmente a las personas y actuar en consecuencia.</p></div><div class='col-12 col-md-5 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' style='transform: translateX(31px);' src='src/img/m4_empatia.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-7 px-3'><p class='px-3'>Es la habilidad para reconocer, comprender y apreciar los sentimientos de los otros.<br><br>La empatía es la capacidad de conectarse emocionalmente con las demás personas, permite reconocer, compartir y entender los sentimientos y los estados de ánimo de otros seres humanos.<br><br>En otras palabras, ser empáticos es ser capaces de \"leer\" emocionalmente a las personas y actuar en consecuencia.</p></div><div class='col-12 col-md-5 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' style='transform: translateX(31px);' src='src/img/m4_empatia.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para desarrollar flexibilidad.",
@@ -1459,8 +1466,8 @@
                     "actividad": {
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la comunicación asertiva.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Crítica injusta de un colega</span><br>Tu compañero dice:<br> <i>“No entiendo por qué hiciste la exposición así, está llena de impresiciones.”</i><br>Tú sabes que la crítica no es justificada.",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad.</span>.",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Crítica injusta de un colega</span><br>Tu compañero dice:<br> <i>“No entiendo por qué hiciste la exposición así, está llena de imprecisiones.”</i><br>Tú sabes que la crítica no es justificada.",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad</span>.",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -1471,7 +1478,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la comunicación asertiva.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Te interpelan en público sin previo aviso</span><br>En plena reunión, te piden una opinión sobre un tema y estabas distraído, no pusiste atención y no sabes de que se trata …",
-                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad.</span>.",
+                      "pregunta": "Intenta una respuesta que demuestre <span class='title-body-secondary'>Asertividad</span>.",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
@@ -1481,17 +1488,17 @@
             },
             {
               "id": "4-2-5",
-              "titulo": "Gestión de Conflictos",
+              "titulo": "Gestión de conflictos",
           "tituloContext": "Habilidades Interpersonales",
           "contenido": "",
               "slides": [{
-                "grupo": "Gestión de Conflictos",
+                "grupo": "Gestión de conflictos",
                 "items": [{
-                    "titulo": "Gestión de Conflictos",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><p class='px-3'>Consiste en identificar los aspectos que separan a las partes, a la vez que se desarrollan e implementan soluciones que sean aceptables para las partes primarias que intervienen en el conflicto.<br><br>Esta práctica, de identificar y manejar conflictos de manera sensata, justa y eficiente ayuda a prevenir escaladas innecesarias, mantener la confianza dentro del grupo y fomentar una cultura de colaboración consciente y madura.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' src='src/img/m4_gestion_conflicto.jpg'></div></div>"
+                    "titulo": "Gestión de conflictos",
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><p class='px-3'>Consiste en identificar los aspectos que separan a las partes, a la vez que se desarrollan e implementan soluciones que sean aceptables para las partes primarias que intervienen en el conflicto.<br><br>Esta práctica, de identificar y manejar conflictos de manera sensata, justa y eficiente, ayuda a prevenir escaladas innecesarias, mantener la confianza dentro del grupo y fomentar una cultura de colaboración consciente y madura.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end overflow-hidden'><img class='img-fluid' src='src/img/m4_gestion_conflicto.jpg'></div></div>"
                   },
                   {
-                    "titulo": "Consejos para gestionar Conflictos",
+                    "titulo": "Consejos para gestionar conflictos",
                     "contenido": {
                       "tipo": "lista",
                       "estilo": "dot",
@@ -1694,10 +1701,10 @@
             "estilo": "nodot",
             "img": "src/img/m4_Portadilla_habilidadesfacilitador.jpg",
             "items": [{
-                "texto": "<p>Permiten conducir sesiones, promover la colaboración y el aprendizaje compartido.</p>"
+                "texto": "<p>Permiten conducir sesiones, promover la colaboración y facilitar el aprendizaje compartido.</p>"
               },
               {
-                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-3-1'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Dinamizar de reuniones y talleres:</span> <br>activar espacios presenciales y virtuales (foros, chats o plataformas colaborativas) para que sean productivos y motivantes.</p></div>"
+                "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-3-1'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Dinamizar reuniones y talleres:</span> <br>activar espacios presenciales y virtuales (foros, chats o plataformas colaborativas) para que sean productivos y motivantes.</p></div>"
               },
               {
                 "texto": "<div class='d-flex align-items-start align-items-center gap-3 mb-3'><button class='btn btn-lista btn-inter m-0' data-target='4-3-2'>Revisa aquí</button><p class='fw-bold m-0'><span style='color: var(--color-primario-2);'>Diseño de procesos participativos:</span> <br>estructurar actividades que fomenten la confianza y el intercambio de conocimientos.</p></div>"
@@ -1932,7 +1939,7 @@
                 "grupo": "Diseñar procesos participativos",
                 "items": [{
                     "titulo": "Diseñar procesos participativos",
-                    "contenido": "<div class='content m-0 p-0 h-100 flex-column'><div class='row m-0 px-3'><p class='px-3'>Significa crear estructuras, metodologías o dinámicas que permitan que todas las personas involucradas en un proyecto, decisión o actividad puedan opinar, colaborar y construir colectivamente.<br><br>Esto implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-4 mx-3'><li>Pensar <strong>cómo, cuándo y con qué herramientas</strong> que permitan que todas las personas involucradas en un proyecto, decisión o actividad <strong>puedan opinar, colaborar y construir colectivamente.</strong></li><li>Asegurarse de que <strong>todas las voces sean escuchadas,</strong> no solo las de quienes tienen más poder o experiencia.</li><li>Generar un entorno donde <strong>se fomente la confianza, la escucha activa y el respeto.</strong></li></ul></div><div class='flex-grow-1 d-flex align-items-end justify-content-center'><img class='img-fluid' src='src/img/m4_disenar.jpg'></div></div>"
+                    "contenido": "<div class='content m-0 p-0 h-100 flex-column'><div class='row m-0 px-3'><p class='px-3'>Significa crear estructuras, metodologías o dinámicas que permitan que todas las personas involucradas en un proyecto, decisión o actividad puedan opinar, colaborar y construir colectivamente.<br><br>Esto implica:</p><ul id='listaProcesoParticipativos' class='list-disc ps-4 mx-3'><li>Pensar <strong>cómo, cuándo y qué herramientas</strong> utilizar que permitan que todas las personas involucradas en un proyecto, decisión o actividad <strong>puedan opinar, colaborar y construir colectivamente.</strong></li><li>Asegurarse de que <strong>todas las voces sean escuchadas,</strong> no solo las de quienes tienen más poder o experiencia.</li><li>Generar un entorno donde <strong>se fomente la confianza, la escucha activa y el respeto.</strong></li></ul></div><div class='flex-grow-1 d-flex align-items-end justify-content-center'><img class='img-fluid' src='src/img/m4_disenar.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para diseñar procesos participativos",
@@ -2399,13 +2406,13 @@
           "subtemas": [
             {
               "id": "4-4-1",
-              "titulo": "Visión Estratégica",
+              "titulo": "Visión estratégica",
               "tituloContext": "Habilidades de Liderazgo y Gestión",
               "contenido": "",
               "slides": [{
-                "grupo": "Visión Estratégica",
+                "grupo": "Visión estratégica",
                 "items": [{
-                    "titulo": "Visión Estratégica",
+                    "titulo": "Visión estratégica",
                     "contenido": "<div class='row m-0 h-100'><div class='col-md-8 col-12 px-3'><p class='px-3'>Es la capacidad de imaginar, planificar y orientar acciones a largo plazo con un enfoque claro en los objetivos clave de una organización, proyecto o iniciativa. Implica ver más allá del presente, anticipar escenarios futuros y tomar decisiones alineadas con una meta global.<br><br><strong>Esto significa:</strong></p><div class='px-3'><ol class='ps-3'><li>Saber hacia dónde se quiere ir.</li><li>Entender el entorno y sus cambios (sociales, económicos, políticos, tecnológicos).</li><li>Definir metas claras y sostenibles.</li><li>Tomar decisiones coherentes con el objetivo final, no sólo con lo urgente.</li><li>Evaluar riesgos y oportunidades.</li><li>Saber priorizar y adaptar según el contexto.</li></ol></div></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_plan.jpg'></div></div>"
                   },
                   {
@@ -2609,7 +2616,7 @@
                 "grupo": "Motivación e inspiración",
                 "items": [{
                     "titulo": "Motivación e inspiración",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-md-9 col-12 px-3'><p class='px-3'>Motivar o inspirar a otros significa generar en las personas entusiasmo, compromiso o deseo de actuar, ya sea para alcanzar un objetivo, superar un desafío o desarrollarse personalmente. Es despertar en otros la alegría, el goce o energía interna que los mueve a hacer algo con ganas y propósito.<br><br><strong>Motivar es:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-unstyled ps-3'><li>Estimular la acción: provocar que alguien quiera hacer algo.</li><li>Conectar con deseos, valores o necesidades de la persona.</li><li>Acompañar y sostener el entusiasmo frente a obstáculos o dificultades.</li><li>Celebrar los éxitos</li></ul></div><p class='px-3'><strong>Inspirar va un paso más allá:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-unstyled ps-3'><li>Encender una idea, emoción o visión poderosa en otros.</li><li>Ser un ejemplo, transmitir pasión o mostrar un propósito que contagia.</li><li>No se impone: se transmite naturalmente por cómo se actúa o se comunica.</li></ul></div></div><div class='col-md-3 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_motivacion.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-md-9 col-12 px-3'><p class='px-3'>Motivar o inspirar a otros significa generar en las personas entusiasmo, compromiso o deseo de actuar, ya sea para alcanzar un objetivo, superar un desafío o desarrollarse personalmente. Es despertar en otros la alegría, el goce o energía interna que los mueve a hacer algo con ganas y propósito.<br><br><strong>Motivar es:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-unstyled ps-3'><li>Estimular la acción: provocar que alguien quiera hacer algo.</li><li>Conectar con deseos, valores o necesidades de la persona.</li><li>Acompañar y sostener el entusiasmo frente a obstáculos o dificultades.</li><li>Celebrar los éxitos.</li></ul></div><p class='px-3'><strong>Inspirar va un paso más allá:</strong></p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-unstyled ps-3'><li>Encender una idea, emoción o visión poderosa en otros.</li><li>Ser un ejemplo, transmitir pasión o mostrar un propósito que contagia.</li><li>No se impone: se transmite naturalmente por cómo se actúa o se comunica.</li></ul></div></div><div class='col-md-3 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_motivacion.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para motivar e inspirar",
@@ -2829,17 +2836,17 @@
             },
             {
               "id": "4-4-3",
-              "titulo": "Colaboración y Compromiso",
+              "titulo": "Colaboración y compromiso",
               "tituloContext": "Habilidades de Liderazgo y Gestión",
               "contenido": "",
               "slides": [{
-                "grupo": "Colaboración y Compromiso",
+                "grupo": "Colaboración y compromiso",
                 "items": [{
-                    "titulo": "Colaboración y Compromiso",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><p class='px-3'><strong>En conjunto</strong>, significan <strong>crear y mantener un entorno donde todos aportan, asumen responsabilidades y se sienten corresponsables de los logros</strong>, lo que favorece la sostenibilidad y efectividad de la comunidad.<br><br><strong class='title-body-secondary'>Colaboración</strong><br>Es la disposición y capacidad de <strong>trabajar conjuntamente</strong> con otros miembros para alcanzar objetivos comunes, compartiendo conocimientos, experiencias y recursos.<br><br>Implica construir confianza,  aportar activamente ideas, retroalimentación y soluciones e integrar y coordinar esfuerzos. <br><br><strong class='title-body-secondary'>Compromiso</strong><br>Es el <strong>grado de implicación y responsabilidad</strong> que cada miembro asume con la misión, los acuerdos y los resultados de la CoP.<br><br>En la práctica se traduce en participación constante en actividades, Cumplimiento de acuerdos y cuidado del propósito común.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_colaboracion.jpg'></div></div>"
+                    "titulo": "Colaboración y compromiso",
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 px-3'><p class='px-3'><strong>En conjunto</strong>, significan <strong>crear y mantener un entorno donde todos aportan, asumen responsabilidades y se sienten corresponsables de los logros</strong>, lo que favorece la sostenibilidad y efectividad de la comunidad.<br><br><strong >Colaboración</strong><br><br>Es la disposición y capacidad de <strong>trabajar conjuntamente</strong> con otros miembros para alcanzar objetivos comunes, compartiendo conocimientos, experiencias y recursos. Implica construir confianza,  aportar activamente ideas, retroalimentación y soluciones e integrar y coordinar esfuerzos. <br><br><strong >Compromiso</strong><br><br>Es el <strong>grado de implicación y responsabilidad</strong> que cada miembro asume con la misión, los acuerdos y los resultados de la CoP. En la práctica se traduce en participación constante en actividades, cumplimiento de acuerdos y cuidado del propósito común.</p></div><div class='col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_colaboracion.jpg'></div></div>"
                   },
                   {
-                    "titulo": "Consejos para la lograr Colaboración y Compromiso",
+                    "titulo": "Consejos para la lograr Colaboración y compromiso",
                     "contenido": {
                       "tipo": "lista",
                       "estilo": "dot",
@@ -2981,7 +2988,7 @@
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Colaboración y Compromiso",
+                    "titulo": "Prueba tus habilidades de Colaboración y compromiso",
                     "contenido": "",
                     "actividad": {
                       "tipo": "skillquiz",
@@ -3012,7 +3019,7 @@
                     }
                   },
                   {
-                    "titulo": "Prueba tus habilidades de Colaboración y Compromiso",
+                    "titulo": "Prueba tus habilidades de Colaboración y compromiso",
                     "contenido": "",
                     "actividad": {
                       "tipo": "openquiz",
@@ -3045,7 +3052,7 @@
                 "grupo": "Gestión del tiempo y recursos",
                 "items": [{
                     "titulo": "Gestión del tiempo y recursos",
-                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-8 px-3'><p class='px-3'>Significa organizar, planificar y utilizar de forma eficiente el tiempo disponible y los medios que se tienen (humanos, materiales, financieros, tecnológicos, etc.) para lograr objetivos concretos de la mejor manera posible.<br><br><strong>Gestionar el tiempo</strong>, es administrar las horas del día para cumplir con tareas y responsabilidades, evitando pérdidas de tiempo, retrasos o estrés innecesario. Implica:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Planificar actividades.</li><li>Priorizar lo importante sobre lo urgente.</li><li>Evitar distracciones.</li><li>Ser realista con lo que se puede hacer en un plazo.</li></ul></div> <p class='px-3'><strong>Gestionar los recursos</strong> es aprovechar al máximo lo que se tiene para lograr resultados sin desperdicio ni sobrecarga. Recursos pueden ser:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Personas (equipo de trabajo, voluntarios, etc.)</li><li>Dinero o presupuesto.</li><li>Herramientas y materiales.</li><li>Información o tecnología.</li></ul></div></div><div class='col-12 col-md-4 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestiontiempo.jpg'></div></div>"
+                    "contenido": "<div class='row m-0 h-100'><div class='col-12 col-md-8 px-3'><p class='px-3'>Significa organizar, planificar y utilizar de forma eficiente el tiempo disponible y los medios que se tienen (humanos, materiales, financieros, tecnológicos, etc.) para lograr objetivos concretos de la mejor manera posible.<br><br><strong>Gestionar el tiempo</strong>, es administrar las horas del día para cumplir con tareas y responsabilidades, evitando pérdidas de tiempo, retrasos o estrés innecesario. Implica:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Planificar actividades.</li><li>Priorizar lo importante sobre lo urgente.</li><li>Evitar distracciones.</li><li>Ser realista con lo que se puede hacer en un plazo.</li></ul></div> <p class='px-3'><strong>Gestionar los recursos</strong> es aprovechar al máximo lo que se tiene para lograr resultados sin desperdicio ni sobrecarga. Recursos pueden ser:</p><div class='px-3'><ul id='listaProcesoParticipativos' class='list-disc ps-3 px-3'><li>Personas (equipo de trabajo, voluntarios, etc.).</li><li>Dinero o presupuesto.</li><li>Herramientas y materiales.</li><li>Información o tecnología.</li></ul></div></div><div class='col-12 col-md-4 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m4_gestiontiempo.jpg'></div></div>"
                   },
                   {
                     "titulo": "Consejos para gestionar el tiempo y los recursos",
@@ -3556,7 +3563,7 @@
           "id": "4-5",
           "titulo": "Cierre del módulo",
           "tituloContext": "¡Felicidades por haber llegado hasta aquí!",
-          "contenido": "<div class='row m-0'><p class='p-0'>Finalizar esta etapa es un logro importante que demuestra tu compromiso, esfuerzo y dedicación. Has recorrido un camino de aprendizaje que te brinda herramientas valiosas para seguir creciendo.<br><br>Recuerda que todas las habilidades —especialmente aquellas que hoy están más débiles— pueden fortalecerse. La práctica constante, el estudio y la curiosidad son aliados poderosos. Puedes seguir aprendiendo a través de libros, experiencias, personas, cursos, talleres o incluso explorando nuevas formas de hacer las cosas.<br><br><strong>Sigue adelante, con confianza,<br> y nunca dejes de aprender.!!</strong></p></div><div class='row m-0 p-0 d-flex flex-column h-100'><img class='img-fluid' src='src/img/m4_felicitaciones.jpg'></div>"
+          "contenido": "<div class='row m-0'><p class='p-0'>Finalizar esta etapa es un logro importante que demuestra tu compromiso, esfuerzo y dedicación. Has recorrido un camino de aprendizaje que te brinda herramientas valiosas para seguir creciendo.<br><br>Recuerda que todas las habilidades —especialmente aquellas que hoy están más débiles— pueden fortalecerse. La práctica constante, el estudio y la curiosidad son aliados poderosos. Puedes seguir aprendiendo a través de libros, experiencias, personas, cursos, talleres o incluso explorando nuevas formas de hacer las cosas.<br><br><strong>¡¡Sigue adelante, con confianza,<br> y nunca dejes de aprender!!</strong></p></div><div class='row m-0 p-0 d-flex flex-column h-100'><img class='img-fluid' src='src/img/m4_felicitaciones.jpg'></div>"
         }
       ]
     },
@@ -3568,16 +3575,16 @@
           "id": "5-1",
           "titulo": "Recomendaciones",
           "tituloContext": "Recomendaciones",
-          "contenido": "<p>Antes de disponer situaciones de conducción de un grupo, recuerda que existe una serie de criterios de gestión que el facilitador debe considerar:</p><div class='row m-0 d-flex justify-content-between py-5 px-3 px-lg-5'><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-1' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones1'><strong>Estrategias de participación</strong></button></div><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-2' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones2'><strong>Fomentar la colaboración</strong></button></div><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-3' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones3'><strong>Valores en acción</strong></button></div></div><div><button type='button' class='btnRecomenExtra btn-inter' data-target='5-2'><img src='src/img/facilitador_solo.png' alt='icono'><strong>Ahora, vamos a proponer situaciones para que las resuelvas:</strong></button></div>",
+          "contenido": "<p>Antes de disponer situaciones de conducción de un grupo, recuerda que existen una serie de criterios de gestión que el facilitador debe considerar:</p><div class='row m-0 d-flex justify-content-between py-5 px-3 px-lg-5'><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-1 px-3' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones1'><strong>Estrategias de participación</strong></button></div><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-2 px-3' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones2'><strong>Fomentar la colaboración</strong></button></div><div class='col-12 col-md-4'><button type='button' class='btn-Modulo5-1 btn-color-3' data-bs-toggle='modal' data-bs-target='#ModalRecomendaciones3'><strong>Valores en acción</strong></button></div></div><div><button type='button' class='btnRecomenExtra btn-inter' data-target='5-2'><img src='src/img/facilitador_solo.png' alt='icono'><strong>Ahora, vamos a proponer situaciones para que las resuelvas:</strong></button></div>",
           "modal": [
               {
-                "modalitem": "<div class='modal fade' id='ModalRecomendaciones1' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-3)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'>Estrategias de participación</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Fomentarla es una de las principales tareas del facilitador y suele requerir gran inversión de energía.</p><br><p>Algunas estrategias que se pueden considerar:</p><ul class='list-styled'><li>Es fundamental la elección de temas a trabajar sobre todo cuando están enfocados a resolver obstáculos que generan angustia y/o estrés en la dinámica de trabajo habitual. Reducir el estrés siempre motiva.</li><li>Si cada uno de los miembros de la comunidad entiende que es responsabilidad de todos la participación, es más fácil fomentar la colaboración.</li><li>Hacer pequeños grupos si facilita la movilización de energías. Es recomendable trabajar en grupos de alrededor de 6 personas.</li><li>Si se requiere un consenso general, se puede trabajar escalonadamente, iniciando con pequeños grupos e ir integrándolos en la medida que se avanza en el trabajo.</li><li>Contar con la participación de asesores y expertos (internos o externos) en áreas de interés de la comunidad de práctica.</li><li>Ideas claras, mensajes claros - Mantener al colectivo informado a través de un boletín de noticias.</li></ul></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='ModalRecomendaciones1' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content ' style='background-color: var(--color-secundario-3)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'>Estrategias de participación</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Fomentar la participación es una de las principales tareas del facilitador y suele requerir gran inversión de energía.</p><br><p>Algunas estrategias que se pueden considerar:</p><ul class='list-styled'><li>Es fundamental la elección de temas a trabajar, sobre todo cuando están enfocados a resolver obstáculos que generan angustia y/o estrés en la dinámica de trabajo habitual. Reducir el estrés siempre motiva.</li><li>Si cada uno de los miembros de la comunidad entiende que es responsabilidad de todos la participación, es más fácil fomentar la colaboración.</li><li>Hacer pequeños grupos sí facilita la movilización de energías. Es recomendable trabajar en grupos de alrededor de 6 personas.</li><li>Si se requiere un consenso general, se puede trabajar escalonadamente, iniciando con pequeños grupos e ir integrándolos en la medida que se avanza en el trabajo.</li><li>Contar con la participación de asesores y expertos (internos o externos) en áreas de interés de la comunidad de práctica.</li><li>Ideas claras, mensajes claros. Mantener al colectivo informado a través de un boletín de noticias.</li></ul></div></div></div></div>"
             },
           {
-                "modalitem": "<div class='modal fade' id='ModalRecomendaciones2' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-2)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'>Fomentar la colaboración</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Para que la participación florezca se requiere de un terreno fértil, esto se logra con 4 pilares fundamentales:</p><ul class='list-styled'><li>El tema debe ser relevante para los participantes. Hay que enfocarse en obstáculos que generen estrés o preocupación en el trabajo habitual.</li><li>Mantén objetivos claros, bien socializados - comunicados, que sean alcanzables pero desafiantes.</li><li>La responsabilidad debe ser compartida, que cada miembro comprenda que la consecución de los objetivos es tarea de todos, no sólo del líder o del facilitador.</li><li>Hay que mantener un ambiente positivo, el tono debe ser “vamos a pasarlo bien”.</li></ul></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='ModalRecomendaciones2' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-2)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'>Fomentar la colaboración</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Para que la participación florezca se requiere de un terreno fértil. Esto se logra con 4 pilares fundamentales:</p><ul class='list-styled'><li>El tema debe ser relevante para los participantes. Hay que enfocarse en obstáculos que generen estrés o preocupación en el trabajo habitual.</li><li>Mantén objetivos claros, bien socializados y comunicados, que sean alcanzables pero desafiantes.</li><li>La responsabilidad debe ser compartida. Que cada miembro comprenda que la consecución de los objetivos es tarea de todos, no sólo del líder o del facilitador.</li><li>Hay que mantener un ambiente positivo: el tono debe ser “vamos a pasarlo bien”.</li></ul></div></div></div></div>"
             },
           {
-                "modalitem": "<div class='modal fade' id='ModalRecomendaciones3' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-1)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'>Valores en acción</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Algunos de los valores más destacados que debe proyectar el facilitador, son:</p><ul class='list-styled'><li><strong>Humildad</strong>; no es necesario ni posible tener todas las respuestas.</li><li><strong>Colaboración</strong> hacer evidente al colectivo la importancia de la participación desde el reconocimiento de los aportes realizados.</li><li><strong>Consideración</strong>: proximidad y rapidez en las respuestas a las consultas planteadas, especialmente por correo electrónico.</li><li><strong>Identidad</strong>: crear complicidades, visiones y objetivos comunes.</li><li><strong>Energía</strong>: la energía es un predictor poderoso del éxito organizacional, ya que inspira compromiso, creatividad y colaboración en los equipos.</li><li><strong>Logro</strong>: mantener la motivación y el foco, para cumplir los objetivos que se ha propuesto la comunidad.</li></ul></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='ModalRecomendaciones3' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-1)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'>Valores en acción</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Algunos de los valores más destacados que debe proyectar el facilitador son:</p><ul class='list-styled'><li><strong>Humildad</strong>: no es necesario ni posible tener todas las respuestas.</li><li><strong>Colaboración:</strong> hacer evidente al colectivo la importancia de la participación desde el reconocimiento de los aportes realizados.</li><li><strong>Consideración</strong>: proximidad y rapidez en las respuestas a las consultas planteadas, especialmente por correo electrónico.</li><li><strong>Identidad</strong>: crear complicidades, visiones y objetivos comunes.</li><li><strong>Energía</strong>: la energía es un predictor poderoso del éxito organizacional, ya que inspira compromiso, creatividad y colaboración en los equipos.</li><li><strong>Logro</strong>: mantener la motivación y el foco, para cumplir los objetivos que se ha propuesto la comunidad.</li></ul></div></div></div></div>"
             }]
         },
                   {
@@ -3586,7 +3593,7 @@
           "tituloContext": "",
           "contenido": "",
               "slides": [{
-                "grupo": "Principales dificultades al conducir el grupo y como resolverlas",
+                "grupo": "Principales dificultades al conducir el grupo y cómo resolverlas",
                 "items": [
                   {
                     "titulo": "Nadie responde a tu demanda",
@@ -3594,8 +3601,8 @@
                     "actividad": {
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Nadie responde a tu demanda</span><br>Si después de unos días de anunciar una actividad o un debate nadie del grupo ha realizado alguna aportación no debes quedarte sin hacer nada, ya que así no estimulas la participación. Tampoco recrimines al grupo su falta de interés, no conseguirás otra cosa que ponerlos en tu contra.",
-                      "pregunta": "¿Qué harias tú?",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Nadie responde a tu demanda</span><br>Si después de unos días de anunciar una actividad o un debate nadie del grupo ha realizado alguna aportación, no debes quedarte sin hacer nada, ya que así no estimulas la participación. Tampoco recrimines al grupo su falta de interés, no conseguirás otra cosa que ponerlos en tu contra.",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3605,8 +3612,8 @@
                     "actividad": {
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Los grandes ausentes</span><br>Tras unas semanas detectas que algunos miembros del grupo no participan activamente en las actividades ni en los debates, son los grandes ausentes. No sabes las causas de su ausencia, pero no puedes presuponer que no participan porque no quieren.",
-                      "pregunta": "¿Qué harias tú?",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Los grandes ausentes</span><br>Tras unas semanas, detectas que algunos miembros del grupo no participan activamente en las actividades ni en los debates, son los grandes ausentes. No sabes las causas de su ausencia, pero no puedes presuponer que no participan porque no quieren.",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3617,7 +3624,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Nadie pregunta nada</span><br>El hecho de que no te lleguen preguntas sobre los materiales formativos o las actividades del grupo no quiere decir que no existan, puede que nadie se atreva a preguntar. Ante esta situación debes fomentar su participación.",
-                      "pregunta": "¿Qué harias tú?",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3628,7 +3635,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Cómo responder las preguntas redundantes</span><br>En ocasiones puedes recibir preguntas sobre los materiales formativos que te demuestren que el remitente no los ha leído, ya que éstas quedan respondidas con una primera lectura. En cualquier caso, debes dar una respuesta. No debes recriminarles por el hecho de no haber leído el material de consulta, ya que puedes provocar una reacción negativa, pero tampoco puedes hacer el trabajo por ellos.",
-                      "pregunta": "¿Qué harias tú?",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3639,7 +3646,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Suavizar un clima de discusión tenso</span><br>Cuando detectas que ha surgido una situación de conflicto en un debate, entre dos o más personas, es hora de intervenir. No se trata de asumir una posición paternal ni de sancionar a nadie, sino de aclarar la situación.<brEl trasladar el lenguaje verbal al escrito representa la pérdida de los signos de la comunicación no verbal, como la ironía o el humor, lo que puede crear malentendidos que degeneren en conflictos, cuando se trabaja on-line.",
-                      "pregunta": "¿Qué harias tú?",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3649,8 +3656,8 @@
                     "actividad": {
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 6:</span><br><span class='title-body-secondary fs-5'>Soluciones difíciles, ¡aprovéchalas!</span><br>Afronta las preguntas difíciles como oportunidades para el trabajo en equipo. Por ejemplo, surge la situación de una persona del grupo que plantea un caso real al que debe enfrentarse y al que no sabe qué solución dar.",
-                      "pregunta": "¿Qué harias tú?",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 6:</span><br><span class='title-body-secondary fs-5'>Soluciones difíciles, ¡aprovéchalas!</span><br>Afronta las preguntas difíciles como oportunidades para el trabajo en equipo. Por ejemplo, surge la situación de una persona del grupo que plantea un caso real al que debe enfrentarse y no sabe qué solución dar.",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3661,7 +3668,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 7:</span><br><span class='title-body-secondary fs-5'>Hay personas reticentes a compartir el conocimiento</span><br>Es habitual que ciertas personas -dentro de los grupos de trabajo- sean reticentes a compartir su conocimiento. Esto se produce por diversas razones como: problemas de ego, falta de reconocimiento previo, expectativas de contratación posterior, u otras.",
-                      "pregunta": "¿Qué harias tú?",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3672,7 +3679,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 8:</span><br><span class='title-body-secondary fs-5'>Falta de hábito de los participantes de trabajar de manera virtual</span><br>En el caso que se decida utilizar una plataforma diferente de la habitual o algún programa específico, para trabajar en la comunidad, es probable que no todos los participantes estén en condiciones de utilizar estas herramientas, al nivel esperado. Por lo tanto, habrá que ver cómo se trabaja para emparejar o complementar las competencias de estos participantes a nivel de usuario.",
-                      "pregunta": "¿Qué harias tú?",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3683,7 +3690,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 9:</span><br><span class='title-body-secondary fs-5'>Colaboradores que acaparan la participación con sus anécdotas y experiencias</span><br>En todo grupo, siempre hay una o dos personas que hablan más que el promedio y que tienden a acaparar la atención con sus intervenciones.  Esto puedes usarlo en tu favor porque muchas veces te va a permitir y te va a servir para romper el hielo. Pero, también es cierto que puede ser una complicación si esto se extiende demasiado. Hay algunas alternativas que puedes utilizar para aminorar ese efecto.",
-                      "pregunta": "¿Qué harias tú?",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3694,7 +3701,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "<p>Lee atentamente la situación e intenta  generar una respuesta que sea <strong>adecuada</strong> desde la empatía.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 10:</span><br><span class='title-body-secondary fs-5'>Altas exigencias de tiempo / responsabilidad en los trabajos de origen de los participantes</span><br>Este problema, más que habitual, es casi una regla. Buena parte de los participantes de cualquier grupo, sienten que están sometidos a altas exigencias de tiempo o de responsabilidades, lo que justifica su escasa participación en la comunidad.",
-                      "pregunta": "¿Qué harias tú?",
+                      "pregunta": "¿Qué harías tú?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
