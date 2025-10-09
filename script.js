@@ -1028,20 +1028,41 @@ function renderLista(lista, tipo = "dot", nivel = 0, parentId = "lista", unidad 
     default: claseLista = "list-disc ps-3"; break;
   }
 
-  return `
-  <div class="px-3">
-    <ul ${listaId ? `id="${listaId}"` : ""} class="${claseLista}">
-      ${lista.map((item) => {
-        let childrenHTML = "";
-        if (item.hijos && item.hijos.length > 0) {
-          childrenHTML = renderLista(item.hijos, tipo, nivel + 1, parentId, unidad);
-        }
-        return `<li>${item.texto || item}${childrenHTML}</li>`;
-      }).join("")}
-    </ul>
-  </div>
-  `;
+  // Vamos a ir acumulando el HTML mezclando listas y párrafos
+  let html = "";
+  let listaActual = [];
+
+  const flushLista = () => {
+    if (listaActual.length > 0) {
+      html += `
+      <ul ${listaId && nivel === 0 ? `id="${listaId}"` : ""} class="${claseLista}">
+        ${listaActual.join("")}
+      </ul>
+      `;
+      listaActual = [];
+    }
+  };
+
+  lista.forEach((item) => {
+    // Detectar si es texto plano
+    if ("textoplano" in item) {
+      flushLista(); // Cierra la lista antes del texto plano
+      html += `<p class="px-3">${item.textoplano}</p>`;
+    } else {
+      let childrenHTML = "";
+      if (item.hijos && item.hijos.length > 0) {
+        childrenHTML = renderLista(item.hijos, tipo, nivel + 1, parentId, unidad);
+      }
+      listaActual.push(`<li>${item.texto || item}${childrenHTML}</li>`);
+    }
+  });
+
+  // Cierra la última lista si quedó abierta
+  flushLista();
+
+  return `<div class="px-3">${html}</div>`;
 }
+
 
 // ---------------- Render Skill Quiz ----------------
 function renderSkillQuiz(actividad, containerId) {
@@ -1151,7 +1172,7 @@ function handleSkillQuizAuto(actividad, container) {
       // Actualizamos contenido
       const textDiv = feedbackDiv.querySelector(".feedback-text");
       textDiv.innerHTML = `
-        <p class="m-0">${opcion.correcta ? '✔ Correcto' : '✘ Incorrecto'}<br>${opcion.feedback}</p>
+        <p class="m-0">${opcion.correcta ? '✔ Correcto' : '✘ No es la respuesta más adecuada. '}<br>${opcion.feedback}</p>
       `;
       feedbackDiv.style.display = "flex";
     });
@@ -1180,7 +1201,16 @@ function renderOpenQuiz(actividad, containerId) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-              ${actividad.instrucciones || "<p>Lee atentamente y escribe tu respuesta.</p>"}
+                            <p>Lea atentamente la situación e intente generar una respuesta que demuestre esta habilidad y resulte adecuada a la situación planteada.</p>
+              <p>Tenga presente que las evaluaciones de sus respuestas serán realizadas por un sistema de Inteligencia Artificial (IA). Por lo tanto, en lo posible, verifique y complemente esta valoración.</p>
+              <p>El sistema tiene la tarea de analizar y calificar cada respuesta en base a tres aspectos fundamentales, asignando una nota en escala de 1 a 7 para cada uno, según:</p>
+              <ul>
+                <li><strong>Claridad.</strong> Se refiere a qué tan comprensible y bien expresada está la respuesta.</li>
+                <li><strong>Aplicación.</strong> Analiza la relación entre la situación presentada y la respuesta entregada por el usuario.</li>
+                <li><strong>Profundidad de análisis.</strong> Mide el nivel de desarrollo y detalle incluido en la explicación. Evalúa si la respuesta va más allá de lo superficial, mostrando comprensión y una revisión exhaustiva del tema.</li>
+              </ul>
+              <p>Adicionalmente, cada respuesta será retroalimentada con orientaciones sobre posibilidades de mejora y corrección de errores puntuales que pudieran haberse cometido.</p>
+              <p>Esperamos que esta retroalimentación le sirva para mejorar continuamente.</p>
             </div>
           </div>
         </div>

@@ -90,7 +90,7 @@
                           "estilo": "nodot",
                          
                           "items": [{
-                            "texto":"<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):"
+                            "textoplano":"<strong>Algunos ejemplos de integrantes del equipo impulsor</strong><br> (no es obligatorio que una COP tenga todos los roles para funcionar):"
                               
                             },
                             {
@@ -106,7 +106,7 @@
                               "texto": "Si es factible,<strong>un “futuro facilitador”</strong><br>que dinamizará las actividades de la comunidad, promoverá la participación y sistematizará los avances."
                             },
                             {
-                              "texto": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>"
+                              "textoplano": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>"
                             }
                           ]
                         }
@@ -121,7 +121,7 @@
                           "tipo": "lista",
                           "estilo": "nodot",
                           "items": [{
-                              "texto": "<strong>Elementos del Marco de Trabajo:</strong><br>(no es obligatorio que el equipo impulsor defina todos elementos para comenzar la CoP)"
+                              "textoplano": "<strong>Elementos del Marco de Trabajo:</strong><br>(no es obligatorio que el equipo impulsor defina todos elementos para comenzar la CoP)"
                             },
                             {
                               "texto": "<strong>Propósito:</strong> la razón por la que se crea la COP y lo que desea alcanzar."
@@ -139,7 +139,10 @@
                               "texto": "<strong>Recursos</strong> necesarios como asignación de tiempo, espacio físico, apoyo institucional, permiso de las jefaturas, tecnología, presupuesto, etc."
                             },
                             {
-                              "texto": "<strong>Planificación del taller de lanzamiento</strong> e invitación a los participantes. Reflexione y complete algunas ideas respecto de los elementos del marco de trabajo y reúna a su equipo impulsor para profundizar en ellas."
+                              "texto": "<strong>Planificación del taller de lanzamiento</strong> e invitación a los participantes."
+                            },
+                            {
+                              "textoplano": "Reflexione y complete algunas ideas respecto de los elementos del marco de trabajo y reúna a su equipo impulsor para profundizar en ellas."
                             }
                           ]
                         }
@@ -154,7 +157,7 @@
                           "tipo": "lista",
                           "estilo": "nodot",
                           "items": [{
-                              "texto": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>"
+                              "textoplano": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>"
                             },
                             {
                               "texto": "<strong>Propósito:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
@@ -412,13 +415,13 @@
           "titulo": "Planificar – organizar el trabajo de la comunidad",
           "tituloContext":"Planificar – organizar el trabajo de la comunidad",
           "contenido": "<p>Una vez que se ha cumplido con la(s) jornada(s) de lanzamiento, llega la hora de efectuar los compromisos que la Comunidad ha adquirido en su carta de navegación (que incluye tareas, fechas para cada actividad y responsables) de forma que los participantes puedan organizar con anticipación la agenda de trabajo, jerarquizar las actividades y organizar su tiempo según sus intereses.<br><br><strong>Lo primero será clasificar las actividades generales en corto, mediano o largo plazo.</strong></p><div class='row m-0 px-0 h-100'><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/m3_3dedos.jpg'></div><div class='col-md-8 col-12 px-0 pt-5'><p style='color: var(--color-primario-2);'><strong>Permite que la planificación sea mucho más manejable y que no se olvide nada:</strong><br><br>Garantiza que las actividades que fueron proyectadas a largo plazo no se vean interferidas por muchas actividades de corto plazo.<br><br>Y, por otra parte, garantiza que las actividades a corto plazo, que conducen a esos eventos de más largo plazo, sean suficientes y estén bien coordinadas entre sí.</p></div></div>",
-          "subtemas": [
+          "subtema": [
             {
               "id": "3-2-1",
               "titulo": "Estructurar un plan de acción",
               "tituloContext": "Estructurar un plan de acción",
               "contenido": "",
-                    "actividad": {
+                  "actividad": {
                   "tipo": "tabsSimple",
                   "items": [{
                       "label": "<span class='circle-btn latir2' style='background-color: var(--color-secundario-1);'><span class='btn-number'>1</span><span class='btn-text'>Definir<br> objetivos</span></span>",
@@ -585,11 +588,11 @@
                 "modalitem": "<div class='modal fade' id='ModalEjemplos0' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content p-5' style='background-color: #fe6d02'><div class='modal-body'><p><strong>Algunas ideas de indicadores de medición:<strong></p><ul class='list-styled'><li>Participación de expertos invitados</li><li>Número de documentos generados y calidad</li><li>Satisfacción de los participantes</li><li>Cantidad de participantes que aportan</li><li>Número de consultas y respuestas o participación por cada tema</li><li>Noticias o aportes generados hacia la organización</li></ul></div></div></div></div>"
             }]
         },
-        {
+ {
           "id": "3-6",
           "titulo": "Apoyar al líder en mantener informada a la organización sobre el estado del arte de la CoP",
           "tituloContext": "",
-        "contenido": "<h2 class='pb-4 fw-bold'>Apoyar al líder en mantener informada a la organización sobre el estado del arte de la <span class='title-body-secondary'>(CoP)</span></h2><p>El líder, debe mantener informada a la organización y especialmente al patrocinador, sobre los avances de la Comunidad de Práctica (<span class='title-body-secondary'><b>CoP</b></span>). La información es crucial por varias razones:<div class='col-12'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;'><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalapoyo'><img class='img-fluid' src='src/img/m3_i6_apoyo.png' style='margin-top:2%; left:20%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaldifusion'><img class='card-img-overlay img-fluid' src='src/img/m3_i6_difusion.png' style='margin-top:2%; left:43%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalalineacion'><img class='img-fluid' src='src/img/m3_i6_alineacion.png' style='margin-top:23.5%; margin-left:48%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalreconocimiento'><img class='img-fluid' src='src/img/m3_i6_reconocimiento.png' style='margin-top:35.5%;; left:31.5%; width:15vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaltransparencia'><img class='img-fluid' src='src/img/m3_i6_transparencia.png' style='margin-top:22.5%; margin-left:12.3%; width:15vw; height:auto; position:absolute;'></a></div></div><img style='width:59vw; height:auto;margin-top:-10%;z-index:-3 ' src='src/img/m3_i6_pentagono.jpg' alt='fondo'><p style='padding-top:8%;'> En resumen, la tarea de la CoP de <b>mantener informada a la organización sobre sus avances es esencial para asegurar sostenibilidad</b> a largo plazo. </b><br/></p></div>",
+        "contenido": "<h2 class='pb-4 fw-bold'>Apoyar al líder en mantener informada a la organización sobre el estado del arte de la <span class='title-body-secondary'>(CoP)</span></h2><p>El líder, debe mantener informada a la organización y especialmente al patrocinador, sobre los avances de la Comunidad de Práctica (<span class='title-body-secondary'><b>CoP</b></span>). La información es crucial por varias razones:<div class='col-12' style='margin-top:-2%'><div class='row d-flex justify-content-center' m-0=' p-0='><div style=' height: 10vw;width: 100vw;position: relative;'><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalapoyo'><img class='img-fluid' src='src/img/m3_i6_apoyo.png' style='margin-top:3%; left:24%; width:12vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaldifusion'><img class='card-img-overlay img-fluid' src='src/img/m3_i6_difusion.png' style='margin-top:3%; left:43%; width:12vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalalineacion'><img class='img-fluid' src='src/img/m3_i6_alineacion.png' style='margin-top:20%; margin-left:47.3%; width:12vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modalreconocimiento'><img class='img-fluid' src='src/img/m3_i6_reconocimiento.png' style='margin-top:30.3%;; left:33.5%; width:12vw; height:auto; position:absolute;'></a><a style='cursor:pointer;' class='botonmano' data-bs-toggle='modal' data-bs-target='#Modaltransparencia'><img class='img-fluid' src='src/img/m3_i6_transparencia.png' style='margin-top:20.5%; margin-left:18.1%; width:12vw; height:auto; position:absolute;'></a></div></div><img style='width:50vw; height:auto;margin-top:-10%; margin-left: 7%; z-index:-3 ' src='src/img/m3_i6_pentagono.jpg' alt='fondo'><p style='padding-top:4%;'> En resumen, la tarea de la CoP de <b>mantener informada a la organización sobre sus avances es esencial para asegurar sostenibilidad</b> a largo plazo. </b><br/></p></div>",
          "modal": [
               {
                 "modalitem": "<div class='modal fade' id='Modalapoyo' tabindex='-1' '><div class='modal-dialog modal-dialog-centered modal-lg'><div class=' style='background-color:none; border: none;'><div class=''><img class='img-fluid' src='src/img/m3_i6_modalapoyo.png' ></div></div></div></div>"
@@ -604,7 +607,7 @@
                 "modalitem": "<div class='modal fade' id='Modaltransparencia' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-lg'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modaltransparencia.png' ></div></div></div></div>"
             },
                 {
-                "modalitem": "<div class='modal fade' id='Modalreconocimiento' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-md'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modalreconocimiento.png' ></div></div></div></div>"
+                "modalitem": "<div class='modal fade' id='Modalreconocimiento' tabindex='-1'><div class='modal-dialog modal-dialog-centered modal-lg'><div class=''><div class='modal-body'><img class='img-fluid' src='src/img/m3_i6_modalreconocimiento.png' ></div></div></div></div>"
             }]
         },
            {
@@ -775,12 +778,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> \"Bueno, todos tenemos que aportar, no puedes esperar que siempre te respondan.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> \"Ya hablaremos de eso luego, tenemos que avanzar con la agenda.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> \"Entiendo que te sientas así, ¿podrías contarme un poco más sobre cuándo ocurre eso?\"",
@@ -790,7 +793,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> \"Eso no es verdad, a ti siempre se te escucha.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -806,12 +809,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> \"¿Y tú has pensado por qué él podría hacer eso?\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> \"Quizá es tu percepción, Luis es así con todos.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> \"Puedo ver que eso te molesta. ¿Quieres que te acompañe a hablar con él?\"",
@@ -821,7 +824,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> \"Yo nunca he notado eso. Tal vez lo estás exagerando.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -837,12 +840,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> \"Ah, yo antes era igual, pero luego hice un curso y se me pasó.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> \"¡Uy! Pues entonces no presentes la próxima reunión.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> \"¿Te ha pasado muchas veces? ¿Cómo lo vives en esos momentos?\"",
@@ -852,7 +855,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> \"No te preocupes, seguro lo haces bien.\"",
                           "correcta": false,
-                          "feedback": "No refleja escucha activa."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -978,17 +981,17 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Mantener estrictamente el plan original para cumplir el objetivo declarado.",
                           "correcta": false,
-                          "feedback": "No refleja flexibilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Escuchar las dudas y acordar otra sesión, manteniendo hoy la agenda inicial.",
                           "correcta": false,
-                          "feedback": "No refleja flexibilidad"
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Explorar rápidamente el nuevo tema para vincularlo con el objetivo actual.",
                           "correcta": false,
-                          "feedback": "No refleja flexibilidad"
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Abrir un espacio intermedio donde el grupo identifique cómo el software impacta en la atención al cliente, y luego decidir juntos si continuar o no con ese enfoque.",
@@ -1009,17 +1012,17 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Cambiar de plataforma en el momento, avisando por correo o chat.",
                           "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Pasar a audio únicamente y reorganizar la dinámica para mantener participación.",
                           "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Activar un canal paralelo de mensajería para apoyo visual y seguir por audio.",
                           "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Consultar rápidamente al grupo qué alternativa prefieren y ejecutar la elegida.",
@@ -1040,17 +1043,17 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Cumplir íntegramente con la petición, postergando la actividad.",
                           "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Presentar el informe primero y, si sobra tiempo, hacer la actividad.",
                           "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Transformar la presentación del informe en un ejercicio participativo que sirva como insumo para la actividad prevista.",
                           "correcta": false,
-                          "feedback": "No refleja Flexibilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Negociar con la dirección para entregar el informe por escrito y mantener la sesión tal como estaba planificada.",
@@ -1181,12 +1184,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> “Imagino que eso debe ser muy difícil para tí. Si necesitas algo, acá estoy.”",
                           "correcta": false,
-                          "feedback": "No presupone cómo se siente."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “Te admiro mucho por todo lo que estás haciendo, es valioso lo que haces.”",
                           "correcta": false,
-                          "feedback": "No dirige la atención a una evaluación externa"
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “¿Quieres contarnos cómo estás viviendo eso? A veces compartir alivia.”",
@@ -1196,7 +1199,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Si quieres puedes tomarte unos días, lo entendemos.”",
                           "correcta": false,
-                          "feedback": "No se adelanta a soluciones."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1217,17 +1220,17 @@
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “Tal vez es momento de que busques un nuevo desafío.”",
                           "correcta": false,
-                          "feedback": "Se adelanta a una solución"
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Yo pasé por algo parecido. Si quieres te cuento cómo lo manejé.”",
                           "correcta": false,
-                          "feedback": "Traslada el foco a la propia experiencia del interlocutor."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Seguro no es tan grave como parece, pero si lo sientes así, te apoyo.”",
                           "correcta": false,
-                          "feedback": "Sugiere que quizá está exagerando (“no es tan grave”) y eso puede invalidar su emoción."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1243,12 +1246,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> “No te preocupes, todos nos ponemos nerviosos. Te va a salir bien.”",
                           "correcta": false,
-                          "feedback": "Tranquiliza, pero minimiza el miedo concreto."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “¿Quieres que practiquemos juntas antes? Capaz que te sientas más segura.”",
                           "correcta": false,
-                          "feedback": "Ofrece una ayuda práctica (positiva), pero sin conectar primero con la emoción."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Gracias por compartir lo que sientes. ¿Qué es lo que más te incomoda?”",
@@ -1258,7 +1261,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Yo también solía sentirme así, pero con el tiempo se pasa.”",
                           "correcta": false,
-                          "feedback": "Intenta generar identificación, pero no se centra en ella, sino en la experiencia propia."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1378,12 +1381,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> “Perdón, ¿puedo terminar lo que estaba diciendo antes de que intervengas?”",
                           "correcta": false,
-                          "feedback": "Es educada, pero suena subordinada."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “Me molesta que me interrumpas. Por favor, respeta los turnos.”",
                           "correcta": false,
-                          "feedback": "Es directa, pero con tono confrontativo."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Sé que quieres aportar, pero me gustaría terminar mi idea primero.”",
@@ -1393,7 +1396,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Ya veo que no me estás escuchando, como siempre…”",
                           "correcta": false,
-                          "feedback": "Es pasivo-agresiva."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1409,12 +1412,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> “Si crees que me falta aportar algo, prefiero que me lo digas directamente.”",
                           "correcta": false,
-                          "feedback": "Es frontal, pero puede sonar a reproche."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “¿Puedes aclarar a quién te refieres?”",
                           "correcta": false,
-                          "feedback": "Pone al otro en evidencia."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Me gustaría saber si eso va dirigido a mí, para poder responder con claridad.”",
@@ -1424,7 +1427,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Si piensas eso de mí, podrías decirlo en privado.”",
                           "correcta": false,
-                          "feedback": "Pone límites, pero se enfoca más en la forma que en el contenido del mensaje."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1440,7 +1443,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> “No puedo hacer más, ya tengo demasiado.”",
                           "correcta": false,
-                          "feedback": "Es clara, pero puede sonar cerrada."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “Estoy al tope ahora. Si esta tarea es urgente, necesito reorganizar otras prioridades contigo.”",
@@ -1450,12 +1453,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Siempre me están cargando con más cosas, esto no es justo.”",
                           "correcta": false,
-                          "feedback": "Es reactiva y victimiza."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Voy a intentarlo, aunque estoy con mucho encima.”",
                           "correcta": false,
-                          "feedback": "Suena complaciente, pero oculta sobrecarga."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1587,17 +1590,17 @@
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “Si seguimos así no vamos a avanzar. Mejor lo dejo en tus manos.”",
                           "correcta": false,
-                          "feedback": "Suena a retirada pasiva."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Pido que alguien más lo resuelva porque no llegaremos a ningún lado.”",
                           "correcta": false,
-                          "feedback": "Evade la responsabilidad."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Respondo que está bien… hagámoslo como tu dices. Yo no quiero pelear por esto.”",
                           "correcta": false,
-                          "feedback": "Cede completamente sin resolver el desacuerdo, lo que puede acumular resentimiento."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1618,17 +1621,17 @@
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “Ignoro su actitud. Si tiene algo que decir, que lo diga de frente.”",
                           "correcta": false,
-                          "feedback": "Ignora el conflicto y lo deja crecer."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Lo confronto en público para que aclare lo que está haciendo.”",
                           "correcta": false,
-                          "feedback": "Puede generar una escalada."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Hablo con otras personas del equipo para ver si también lo han notado.”",
                           "correcta": false,
-                          "feedback": "Promueve rumores o triangulación."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1644,7 +1647,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> “Le digo que fue irresponsable y que su actitud perjudicó al grupo.”",
                           "correcta": false,
-                          "feedback": "Es frontal pero con tono acusatorio."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> “Propongo una conversación grupal para revisar qué pasó y cómo organizarnos mejor a futuro.”",
@@ -1654,12 +1657,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> “Le envío un mensaje recordándole su parte y diciendo que no vuelva a pasar.”",
                           "correcta": false,
-                          "feedback": "Es más control que solución."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> “Lo hablo con el facilitador para que le llame la atención.”",
                           "correcta": false,
-                          "feedback": "Delega el conflicto sin abordarlo directamente."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1823,12 +1826,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Intervienes para señalar directamente que el resto del grupo no está participando y pides que todos hablen.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Rediriges la conversación con una pregunta abierta, asignando turnos de participación para asegurar que todos hablen.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Realizas una pausa y propones una dinámica rompehielos para reactivar la energía del grupo.",
@@ -1838,7 +1841,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Continúas con la reunión tal como va, priorizando a quienes están participando activamente.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1854,12 +1857,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Le pides que permita hablar a los demás y le recuerdas las normas de convivencia.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Ignoras la actitud por el momento y luego le hablas en privado.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Cambias la metodología y aplicas una dinámica donde todos escriben sus ideas antes de compartirlas.",
@@ -1869,7 +1872,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Le agradeces por su experiencia y lo invitas a resumir sus ideas para dar paso a otros.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -1885,17 +1888,17 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Reenfocas la conversación recordando el objetivo y el tiempo disponible.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Dejas que fluya la conversación para no cortar la espontaneidad.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Propones una votación para decidir si se sigue o se retoma el foco.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para Dinamizar."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Propones agendar una sesión informal para continuar esas conversaciones y vuelves al tema actual.",
@@ -2038,7 +2041,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Propicias un foro abierto con micrófono para que quien quiera, comparta su experiencia.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Usas una dinámica de trabajo en subgrupos con preguntas guía, y luego se comparten aprendizajes en plenario.",
@@ -2048,12 +2051,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Pides que envíen sus experiencias por correo antes del taller y tú las presentas.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Asignas turnos para compartir experiencias en orden alfabético.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2069,7 +2072,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Tú sistematizas los aprendizajes y luego pides retroalimentación.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Propones una matriz sencilla para que los subgrupos registren hallazgos y luego los integren.",
@@ -2079,12 +2082,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Haces una lluvia de ideas colectiva sobre aprendizajes y tú los sintetizas al final.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Pides a cada participante escribir individualmente su mayor aprendizaje y luego lo compartes tú.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2100,17 +2103,17 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Haces una votación para saber si vale la pena revisar los acuerdos.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Divides al grupo en subgrupos y les pides revisar los acuerdos actuales para proponer ajustes.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Presentas los acuerdos actuales y haces una ronda para ver si alguien quiere proponer cambios.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para diseñar procesos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Partes de una actividad de identificación de tensiones o incomodidades recientes, antes de revisar los acuerdos.",
@@ -2265,12 +2268,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Seleccionas los 10 artículos más compartidos en redes para asegurar interés general.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Clasificas todo el contenido según tipo de fuente (artículo, video, herramienta) y los subes a una carpeta compartida.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Filtras los contenidos en función del tema del próximo encuentro y seleccionas los más pertinentes, agregando una breve introducción sobre por qué se recomiendan.",
@@ -2280,7 +2283,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Eliges solo los materiales de autores reconocidos para garantizar calidad académica.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2296,7 +2299,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Compartes los contenidos originales, aclarando que son exigentes pero necesarios.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Creas una infografía con los conceptos principales y adjuntas los documentos completos como recursos complementarios.",
@@ -2306,12 +2309,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Haces un resumen técnico de cada documento sin modificar el lenguaje original.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Buscas versiones más simples o divulgativas de los mismos temas para reemplazar los documentos originales.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2327,12 +2330,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Solo incluyes contenidos producidos en América Latina para asegurar pertinencia.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Incluyes los contenidos internacionales y pides que el grupo analice sus diferencias culturales.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Seleccionas contenidos internacionales, pero acompañados por ejemplos locales o notas de contexto.",
@@ -2342,7 +2345,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Eliges únicamente materiales neutros, que no hagan referencia a ninguna cultura específica.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para curar contenidos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2500,12 +2503,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Propones una visión inspiradora basada en experiencias exitosas de otras CoPs.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Invitas a cada persona a expresar sus expectativas, para luego buscar puntos comunes.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Realizas una actividad de visualización del futuro deseado en 2 años, y a partir de ahí guías la co-construcción de visión compartida.",
@@ -2515,7 +2518,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Defiendes que el propósito emergerá naturalmente y evitas forzar su definición.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2531,7 +2534,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Propones dividir la CoP en dos subgrupos con objetivos distintos.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Invitas a mapear colectivamente los impactos deseados a corto, mediano y largo plazo, buscando convergencias.",
@@ -2541,12 +2544,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Tomas una decisión de facilitación para priorizar una de las líneas, y retomar la otra más adelante.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Permites que el debate fluya sin intervención, para que el grupo resuelva solo.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2562,7 +2565,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Planteas acelerar la producción de entregables concretos para justificar su continuidad.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Propones una jornada de balance colectivo donde se identifiquen avances invisibles, aprendizajes y desafíos.",
@@ -2572,12 +2575,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Pides a los participantes que generen una memoria técnica con evidencias de avance.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Sugieres enfocarse solo en los aspectos relacionales del grupo, y no preocuparse por resultados.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades de visión estratégica."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2727,7 +2730,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> En el próximo encuentro, presentas un resumen con los logros alcanzados para mostrar avances concretos.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Realizas una actividad emocional de reconexión grupal para recordar por qué se unieron a la CoP.",
@@ -2737,12 +2740,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Pides que quienes no participen con frecuencia expliquen sus motivos para mejorar el proceso.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Propones que el grupo vote si vale la pena continuar o pausar la CoP.",
                           "correcta": true,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2758,7 +2761,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Nombras directamente lo que observas y pides que se activen más.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Introduces una dinámica lúdica breve que rompa el hielo y permita expresar emociones.",
@@ -2768,12 +2771,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Decides continuar con el contenido como estaba planificado, esperando que mejore solo.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Terminas la sesión antes, reconociendo que no es el mejor momento para continuar.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2794,17 +2797,17 @@
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Das la bienvenida con una presentación formal sobre los objetivos y funcionamiento actual del grupo.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Propones una lluvia de ideas conjunta para redefinir el rumbo entre todos.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Solicitas a los nuevos una carta de motivación para entender su interés antes de integrarlos completamente.",
                           "correcta": false,
-                          "feedback": "No refleja motivación e inspiración."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2941,17 +2944,17 @@
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Reformular la pregunta y hacerla de forma dirigida a quienes no han hablado.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Pedir directamente a los que hablan más que cedan la palabra.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Continuar con la discusión, ya que quienes no participan quizá no tengan nada relevante que decir.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2967,12 +2970,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Reasignar las tareas a otros miembros para cumplir el plazo.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Contactar a los miembros incumplidores para pedir una entrega inmediata, aunque sea incompleta.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Proponer una reunión urgente para redistribuir las tareas y terminar el documento juntos.",
@@ -2982,7 +2985,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Completar tú mismo la parte faltante para no poner en riesgo el resultado final.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -2998,17 +3001,17 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Reconocer públicamente a los más comprometidos para incentivar a los demás.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Mantener el ritmo de trabajo y esperar que los menos activos se adapten.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Delegar más responsabilidades a los más activos para avanzar más rápido.",
                           "correcta": false,
-                          "feedback": "No presupone habilidades de Colaboración y compromiso."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Generar una conversación abierta sobre expectativas y barreras de participación.",
@@ -3157,12 +3160,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Interrumpes la actividad, agradeces y pasas al siguiente bloque para cumplir la agenda.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Dejas que fluya hasta que se agote, aunque se desplace el resto del contenido.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Negocias con el grupo una extensión breve y reajustas la agenda en función del tiempo restante.",
@@ -3172,7 +3175,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Propones continuar la actividad de forma asincrónica después del taller.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -3188,7 +3191,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Cancelas los ejercicios tecnológicos y haces una exposición oral en su lugar.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Adaptas las actividades al formato analógico usando papel, tarjetas y trabajo colaborativo manual.",
@@ -3198,12 +3201,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Pides a los participantes que usen sus propios teléfonos móviles para acceder al contenido en línea.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Pospones la actividad hasta que haya mejores condiciones técnicas.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -3219,12 +3222,12 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Cancelas otras actividades para mantener el flujo actual.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Anuncias el cierre inmediato de la actividad y pasas al siguiente bloque.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Propones una síntesis rápida del trabajo actual y consultas al grupo sobre cómo utilizar o reordenar el tiempo restante.",
@@ -3234,7 +3237,7 @@
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Tomas nota del entusiasmo y lo recoges para una próxima sesión, sin modificar la actual.",
                           "correcta": false,
-                          "feedback": "No refleja habilidades para gestionar tiempo y recursos."
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -3450,7 +3453,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Medir el número promedio de personas conectadas por sesión y su permanencia.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Aplicar una encuesta de autoevaluación sobre niveles de contribución, satisfacción y aprendizajes.",
@@ -3460,12 +3463,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Registrar cuántas personas intervienen verbalmente o en el chat durante cada sesión.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Contar la cantidad de personas que descargan los materiales y recursos compartidos.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -3481,7 +3484,7 @@
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Pides a los participantes un informe individual sobre cambios aplicados en su trabajo.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Organizas grupos focales para explorar experiencias de aplicación de conocimientos compartidos.",
@@ -3491,12 +3494,12 @@
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Comparas los planes de trabajo institucional antes y después de la CoP.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Evalúas el número de veces que los recursos de la CoP han sido compartidos en redes.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -3517,17 +3520,17 @@
                         {
                           "texto": "<span class='title-body-secondary'>B.</span> Medir cuántos productos han sido generados (documentos, manuales, guías).",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>C.</span> Evaluar el número de publicaciones académicas derivadas de la CoP.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         },
                         {
                           "texto": "<span class='title-body-secondary'>D.</span> Contar la cantidad de veces que se han citado ideas de la CoP en otros espacios.",
                           "correcta": false,
-                          "feedback": ""
+                          "feedback": "Revise el contenido y pruebe nuevamente."
                         }
                       ]
                     }
@@ -3587,7 +3590,7 @@
                 "modalitem": "<div class='modal fade' id='ModalRecomendaciones3' tabindex='-1' aria-modal='true' role='dialog'><div class='modal-dialog modal-dialog-centered modal-lg'><div class='modal-content' style='background-color: var(--color-secundario-1)'><div class='modal-header border-0'><h5 class='modal-title fw-bold'>Valores en acción</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button></div><div class='modal-body'><p class='fw-bold'>Algunos de los valores más destacados que debe proyectar el facilitador son:</p><ul class='list-styled'><li><strong>Humildad</strong>: no es necesario ni posible tener todas las respuestas.</li><li><strong>Colaboración:</strong> hacer evidente al colectivo la importancia de la participación desde el reconocimiento de los aportes realizados.</li><li><strong>Consideración</strong>: proximidad y rapidez en las respuestas a las consultas planteadas, especialmente por correo electrónico.</li><li><strong>Identidad</strong>: crear complicidades, visiones y objetivos comunes.</li><li><strong>Energía</strong>: la energía es un predictor poderoso del éxito organizacional, ya que inspira compromiso, creatividad y colaboración en los equipos.</li><li><strong>Logro</strong>: mantener la motivación y el foco, para cumplir los objetivos que se ha propuesto la comunidad.</li></ul></div></div></div></div>"
             }]
         },
-                  {
+        {
               "id": "5-2",
               "titulo": "Principales dificultades al conducir el grupo",
           "tituloContext": "",
