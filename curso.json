@@ -26,14 +26,14 @@
         {
           "id": "1.3",
           "titulo": "Metodología para el desarrollo y la gestión de una CoP",
-          "tituloContext":"Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span> " ,
+          "tituloContext":"Metodología para el desarrollo y la gestión de una <span class='title-body-secondary'>CoP</span>" ,
           "contenido": "",
           "imagen": "",
           "actividad": {
             "tipo": "tabs",
             "default": {
               "titulo": "",
-              "contenido": " <img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'> "
+              "contenido": " <img class='img-fluid' style='width: 100%;' src='src/img/m1_s4_f1_con_iconos.svg'>"
             },
             "showArrows": true,
             "items": [{

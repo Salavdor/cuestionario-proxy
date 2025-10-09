@@ -488,6 +488,7 @@ function renderTabs(config) {
 
   const contenedor = `
     <div class="row m-0 p-3 actividad">
+    <p class="fw-bold">Selecciona una opción para comenzar:</p>
       <div class="d-flex align-items-center justify-content-between flex-wrap pt-5">${botones}</div>
       <div id="actividadContenido" class="mt-3 p-3">
         ${initialContent}
