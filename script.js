@@ -1201,7 +1201,7 @@ function renderOpenQuiz(actividad, containerId) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-                            <p>Lea atentamente la situación e intente generar una respuesta que demuestre esta habilidad y resulte adecuada a la situación planteada.</p>
+              <p>${actividad.instrucciones}</p>
               <p>Tenga presente que las evaluaciones de sus respuestas serán realizadas por un sistema de Inteligencia Artificial (IA). Por lo tanto, en lo posible, verifique y complemente esta valoración.</p>
               <p>El sistema tiene la tarea de analizar y calificar cada respuesta en base a tres aspectos fundamentales, asignando una nota en escala de 1 a 7 para cada uno, según:</p>
               <ul>
