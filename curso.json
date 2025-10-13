@@ -974,7 +974,7 @@
                       "tipo": "skillquiz",
                       "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Cambio inesperado de temática</span><br>Estás facilitando una sesión sobre “Buenas prácticas en atención al cliente”<br>A los 20 minutos, varios miembros plantean dudas urgentes sobre un nuevo software recién implementado.",
-                      "pregunta": "¿Cuál sería una respuesta que demuestra escucha activa?",
+                      "pregunta": "¿Cuál sería una respuesta que demuestra flexibilidad?",
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Mantener estrictamente el plan original para cumplir el objetivo declarado.",
                           "correcta": false,
@@ -1004,8 +1004,8 @@
                     "actividad": {
                       "tipo": "skillquiz",
                       "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
-                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Fallo tecnológico en plena reunión virtual</span><br>Estás en un intercambio de experiencias en línea y la plataforma falla:<br>sin video ni pantalla compartida.",
-                      "pregunta": "Alternativas:",
+                      "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Fallo tecnológico en plena reunión virtual</span><br>Estás en un intercambio de experiencias en línea y la plataforma falla:<br>te quedas sin video ni pantalla compartida.",
+                      "pregunta": "¿Qué alternativa demuestra, de mejor manera, flexibilidad?",
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Cambiar de plataforma en el momento, avisando por correo o chat.",
                           "correcta": false,
@@ -1036,7 +1036,7 @@
                       "tipo": "skillquiz",
                       "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la <strong>respuesta más adecuada</strong> desde la escucha activa. Marca solo una <strong>opción por situación.</strong></p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Conflicto de prioridades</span><br>La dirección pide que en la próxima reunión de la CoP presentes un informe formal en vez de la actividad colaborativa prevista, para la cual el grupo estaba motivado.",
-                      "pregunta": "Alternativas:",
+                      "pregunta": "¿Qué alternativa demuestra, de mejor manera, flexibilidad?",
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Cumplir íntegramente con la petición, postergando la actividad.",
                           "correcta": false,
@@ -2932,7 +2932,7 @@
                       "tipo": "skillquiz",
                       "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una opción por situación.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Participación desigual</span><br>En una reunión de la CoP, notas que tres personas acaparan casi toda la conversación y el resto se mantiene en silencio, aunque el tema les afecta a todos.",
-                      "pregunta": "Alternativas:",
+                      "pregunta": "¿Qué harías para fortalecer la colaboración y el compromiso?",
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Plantear una actividad en pequeños grupos para que todos aporten antes de volver al plenario.",
                           "correcta": true,
@@ -2963,7 +2963,7 @@
                       "tipo": "skillquiz",
                       "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una opción por situación.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 2:</span><br><span class='title-body-secondary fs-5'>Tarea pendiente</span><br>El equipo de la CoP tenía que entregar un documento colaborativo, pero dos miembros clave no cumplieron su parte. La fecha de entrega es mañana.",
-                      "pregunta": "Alternativas:",
+                      "pregunta": "¿Qué harías para fortalecer la colaboración y el compromiso?",
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Reasignar las tareas a otros miembros para cumplir el plazo.",
                           "correcta": false,
@@ -2994,7 +2994,7 @@
                       "tipo": "skillquiz",
                       "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la respuesta más motivadora y/o inspiradora. Marca solo una opción por situación.</p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 3:</span><br><span class='title-body-secondary fs-5'>Diferencias en el nivel de compromiso</span><br>Algunos miembros de la CoP participan intensamente en todas las actividades, mientras que otros apenas cumplen con lo mínimo. El grupo empieza a resentirse.",
-                      "pregunta": "Alternativas:",
+                      "pregunta": "¿Qué harías para fortalecer la colaboración y el compromiso?",
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Reconocer públicamente a los más comprometidos para incentivar a los demás.",
                           "correcta": false,
@@ -3025,7 +3025,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "Lea atentamente la situación e intente generar una respuesta que demuestre esta habilidad y resulte adecuada a la situación planteada.",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 4:</span><br><span class='title-body-secondary fs-5'>Conflicto de enfoques</span><br>En una sesión, dos miembros con alta influencia proponen enfoques opuestos para resolver un problema. El resto del grupo se divide y la discusión se estanca.",
-                      "pregunta": "¿Qué harías en favor de la <span class='title-body-secondary'>colaboración y el compromiso</span>?.",
+                      "pregunta": "¿Qué harías en favor de la <span class='title-body-secondary'>colaboración y el compromiso</span>?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   },
@@ -3036,7 +3036,7 @@
                       "tipo": "openquiz",
                       "instrucciones": "Lea atentamente la situación e intente generar una respuesta que demuestre esta habilidad y resulte adecuada a la situación planteada.",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 5:</span><br><span class='title-body-secondary fs-5'>Falta de seguimiento</span><br>Después de varias sesiones, las acciones acordadas en la CoP no se han implementado, aunque en las reuniones todos se muestran entusiastas.",
-                      "pregunta": "¿Qué harías en favor de la <span class='title-body-secondary'>colaboración y el compromiso</span>?.",
+                      "pregunta": "¿Qué harías en favor de la <span class='title-body-secondary'>colaboración y el compromiso</span>?",
                       "feedbackPlaceholder": "Aquí aparecerá la retroalimentación después de enviar"
                     }
                   }
@@ -3446,7 +3446,7 @@
                       "tipo": "skillquiz",
                       "instrucciones": "<p>Lee atentamente cada situación y selecciona la opción que representa la mejor estrategia para evaluar o hacer mejora continua. Marca solo una <strong>opción por situación.</strong></p>",
                       "planteamiento": "<span style='color: var(--color-primario-2)'>Situación 1:</span><br><span class='title-body-secondary fs-5'>Medir la participación significativa en la CoP</span><br>Tu CoP ha mantenido un número constante de participantes en sus encuentros, pero no sabes si la participación es activa o superficial. Necesitas una estrategia para evaluar la calidad de la participación.",
-                      "pregunta": "¿Cuál estrategia e indicador usarías?",
+                      "pregunta": "¿Qué estrategia usarías?",
                       "opciones": [{
                           "texto": "<span class='title-body-secondary'>A.</span> Medir el número promedio de personas conectadas por sesión y su permanencia.",
                           "correcta": false,
