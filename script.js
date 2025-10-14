@@ -1189,7 +1189,7 @@ function renderOpenQuiz(actividad, containerId) {
     <div class="actividad mb-4 px-3 pb-3" id="${containerId}">
       <div class="m-0 d-flex justify-content-end">
         <button class="btn btn-sm btn-outline-secondary btn-instrucciones" data-bs-toggle="modal" data-bs-target="#${modalId}">
-          <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones.svg"><strong>Instrucciones</strong>
+          <img  style="margin-left: 26px;" src="src/img/m4_icono_instrucciones2.svg"><strong style="color: var(--color-secundario-1)">Instrucciones</strong>
         </button>
       </div>
 
