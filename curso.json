@@ -106,7 +106,7 @@
                               "texto": "Si es factible,<strong>un “futuro facilitador”</strong><br>que dinamizará las actividades de la comunidad, promoverá la participación y sistematizará los avances."
                             },
                             {
-                              "texto": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>"
+                              "textoplano": "<strong>Ahora tómese un tiempo y ponga nombre real a estos roles y convóquelos a una reunión para delinear el marco de Trabajo de la CoP.</strong><br>"
                             }
                           ]
                         }
@@ -153,8 +153,10 @@
                         "contenido": {
                           "tipo": "lista",
                           "estilo": "nodot",
+                          "descargable": true,
+                          "archivo": "Marco_de_Trabajo.txt",
                           "items": [{
-                              "texto": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>"
+                              "textoplano": "<h4 class='fw-bold title-body-secondary'>Completar ideas para el Marco de Trabajo</h4>"
                             },
                             {
                               "texto": "<strong>Propósito:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
@@ -173,6 +175,9 @@
                             },
                             {
                               "texto": "<strong>Planificación de taller de lanzamiento:</strong><br><textarea class='empty mb-2' placeholder='' rows='1'></textarea>"
+                            },
+                            {
+                              "textoplano": "<button class='btn btn-outline-primary mt-3' onclick=\"descargarRespuestas('unidadLista2-0', 'Respuestas.txt')\">Descargar respuestas</button>"
                             }
                           ]
                         }

@@ -1014,54 +1014,112 @@ function renderCollapseActivity(actividad) {
 }
 
 /* ---------------------- Lista ---------------------- */
-function renderLista(lista, tipo = "dot", nivel = 0, parentId = "lista", unidad = "u") {
+function renderLista(data, tipo = "dot", nivel = 0, parentId = "lista", unidad = "u") {
+  // Extraer items y propiedades del objeto data
+  const lista = Array.isArray(data) ? data : (data.items || []);
+  const estilo = data.estilo || tipo;
+  const descargable = (!Array.isArray(data) && data.descargable) || false;
+
+
   if (!Array.isArray(lista)) return "";
 
-  // Solo asignar id si es la lista raíz
-  const listaId = (nivel === 0) ? `lista_subtema` : "";
+  const esRaiz = nivel === 0;
+  const listaId = esRaiz ? `lista_subtema` : "";
 
+  // Determinar la clase CSS según el estilo
   let claseLista = "";
-  switch (tipo) {
+  switch (estilo) {
     case "nodot": claseLista = "list-unstyled"; break;
     case "dot": claseLista = "list-disc ps-3"; break;
     case "numeric": claseLista = "list-decimal ps-3"; break;
     default: claseLista = "list-disc ps-3"; break;
   }
 
-  // Vamos a ir acumulando el HTML mezclando listas y párrafos
   let html = "";
   let listaActual = [];
 
+  // Función para "volcar" la lista acumulada
   const flushLista = () => {
     if (listaActual.length > 0) {
       html += `
-      <ul ${listaId && nivel === 0 ? `id="${listaId}"` : ""} class="${claseLista}">
-        ${listaActual.join("")}
-      </ul>
+        <ul ${esRaiz && nivel === 0 ? `id="${listaId}"` : ""} class="${claseLista}">
+          ${listaActual.join("")}
+        </ul>
       `;
       listaActual = [];
     }
   };
 
-  lista.forEach((item) => {
-    // Detectar si es texto plano
+  lista.forEach(item => {
+    // Si es texto plano, se muestra fuera de la lista
     if ("textoplano" in item) {
-      flushLista(); // Cierra la lista antes del texto plano
-      html += `<p class="px-3">${item.textoplano}</p>`;
+      flushLista();
+      html += `${item.textoplano}`;
     } else {
+      // Si tiene hijos, renderizar recursivamente
       let childrenHTML = "";
-      if (item.hijos && item.hijos.length > 0) {
-        childrenHTML = renderLista(item.hijos, tipo, nivel + 1, parentId, unidad);
+      if (item.hijos && Array.isArray(item.hijos) && item.hijos.length > 0) {
+        childrenHTML = renderLista(item.hijos, estilo, nivel + 1, parentId, unidad);
       }
       listaActual.push(`<li>${item.texto || item}${childrenHTML}</li>`);
     }
   });
 
-  // Cierra la última lista si quedó abierta
+  // Volcar la última lista si quedó pendiente
   flushLista();
 
-  return `<div class="px-3">${html}</div>`;
+  // Si es raíz y descargable, envolver con contenedor y botón
+  if (esRaiz && descargable) {
+    const contenedorId = `contenedor_${listaId}`;
+    return `
+      <div id="${contenedorId}" class="px-3">
+        ${html}
+        <button class="btn btn-outline-primary mt-3"
+                onclick="descargarRespuestas('${contenedorId}', 'Respuestas.txt')">
+          Descargar respuestas
+        </button>
+      </div>
+    `;
+  }
+
+  // Si no es raíz o no es descargable
+  return `<div id="${parentId}" class="px-3">${html}</div>`;
 }
+
+function descargarRespuestas(contenedorId, filename) {
+  const contenedor = document.getElementById(contenedorId);
+  let contenido = "";
+
+  // Función recursiva para obtener texto sin repetir etiquetas
+  function extraerTexto(element) {
+    for (const child of element.children) {
+      if (child.tagName === "TEXTAREA") {
+        contenido += child.value + "\n";
+      } else if (child.tagName !== "BUTTON") {
+        // Solo agregar texto si el hijo tiene texto visible y no es botón
+        if (child.children.length === 0) {
+          contenido += child.innerText + "\n";
+        } else {
+          // Recursión para hijos
+          extraerTexto(child);
+        }
+      }
+    }
+  }
+
+  extraerTexto(contenedor);
+
+  const blob = new Blob([contenido], { type: "text/plain" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+
+
+
 
 
 // ---------------- Render Skill Quiz ----------------
