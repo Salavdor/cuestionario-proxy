@@ -1,8 +1,9 @@
 // api/feedback.js
 import { GoogleGenAI } from "@google/genai";
 
-const MODEL_NAME = "gemini-2.5-flash"; // Modelo válido
-const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const MODEL_NAME = "gemini-2.5-flash"; 
+// El SDK toma automáticamente process.env.GEMINI_API_KEY si está nombrada así
+const ai = new GoogleGenAI(); 
 
 export default async function handler(req, res) {
   // CORS
@@ -81,56 +82,18 @@ ${respuesta}
 <p>[Texto con correcciones si aplica, si no escribe "No se encontraron errores"].</p>
 `;
 
-    // 🔹 Imprime el prompt para depuración
-    // console.log("=== Prompt enviado a Gemini ===");
-    // console.log(prompt);
-    // console.log("================================");
-
-    // 🔹 Llamada a la API
-    const result = await client.models.generateContent({
+    // 🔹 Llamada a la API usando la sintaxis unificada de @google/genai
+    const response = await ai.models.generateContent({
       model: MODEL_NAME,
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      contents: prompt, // En el nuevo SDK puedes pasar el string directo para prompts simples
     });
 
-    // 🔹 Imprime la respuesta completa del SDK
-    // console.log("=== Respuesta completa de Gemini ===");
-    // console.dir(result, { depth: null });
-    // console.log("===================================");
-
-    // 🔹 Extraer el texto de manera segura
-    let feedback = "";
-const candidates = result.candidates || result.response?.candidates || [];
-
-if (candidates.length > 0) {
-  const content = candidates[0].content;
-
-  if (Array.isArray(content)) {
-    // content es array de objetos
-    for (const item of content) {
-      if (item.parts) {
-        for (const part of item.parts) {
-          if (part.text) feedback += part.text;
-        }
-      } else if (item.text) {
-        feedback += item.text;
-      }
-    }
-  } else if (content?.parts) {
-    // content es objeto con parts
-    for (const part of content.parts) {
-      if (part.text) feedback += part.text;
-    }
-  } else if (content?.text) {
-    // content es objeto con text directo
-    feedback += content.text;
-  }
-}
-
-if (!feedback) feedback = "⚠️ No se encontró texto en la respuesta.";
+    // 🔹 Extraer el texto de manera segura (El nuevo SDK incluye la propiedad .text directamente)
+    const feedback = response.text || "⚠️ No se pudo generar una respuesta.";
 
     return res.status(200).json({ feedback });
   } catch (error) {
     console.error("❌ Error en el servidor Gemini:", error);
-    return res.status(500).json({ error: "Error procesando la solicitud" });
+    return res.status(500).json({ error: "Error procesando la solicitud", detalle: error.message });
   }
 }
