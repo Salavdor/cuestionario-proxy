@@ -3719,6 +3719,6 @@
       "id": 6,
       "titulo": "Cierre",
       "img": "src/img/inicio_curso.jpg",
-      "contenido": "<div class='col-md-8 col-12 px-3'><h2 class='fw-bold mb-3 display-6'>!Felicitaciones!</h2><p>Haz finalizado el curso de Facilitador/a de Comunidades de Práctica!<br><br><strong>Te deseamos mucho éxito en la conducción de tu próxima CoP, confiamos en que tu perseverancia y entusiasmo serán clave para inspirar y acompañar a tu comunidad.</strong></p></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/cierre.png' style='margin-top:-60%'></div>"
+      "contenido": "<div class='col-md-8 col-12 px-3'><h2 class='fw-bold mb-3 display-6'>!Felicitaciones!</h2><p>Has finalizado el curso de Facilitador/a de Comunidades de Práctica!<br><br><strong>Te deseamos mucho éxito en la conducción de tu próxima CoP, confiamos en que tu perseverancia y entusiasmo serán clave para inspirar y acompañar a tu comunidad.</strong></p></div><div class='col-md-4 col-12 p-0 d-flex align-items-end justify-content-end'><img class='img-fluid' src='src/img/cierre.png' style='margin-top:-60%'></div>"
     }]
 }
